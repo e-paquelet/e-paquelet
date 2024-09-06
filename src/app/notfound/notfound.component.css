@@ -233,7 +233,7 @@
 .bouton {
     display: flex;
     justify-content: center;
-    
+
     height: 50%;
 } */
 .container {
@@ -287,4 +287,11 @@
     align-items: center;
     justify-content: center;
     justify-items: center;
+}
+
+.bouton-right {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
 }

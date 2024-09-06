@@ -1,0 +1,11 @@
+<div class="container">
+    <button mat-flat-button (click)="reset()">Recommencer</button>
+    @if (finished) {
+    <p>{{message}}</p>
+    }
+    <div class="grid" id="grid" #grid>
+        @for (item of [].constructor(9); track $index) {
+        <div (click)="check($index, grid)"></div>
+        }
+    </div>
+</div>

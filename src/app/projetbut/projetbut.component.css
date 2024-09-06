@@ -27,11 +27,13 @@
 .first-container {
     /* display: flex; */
     display: flex;
-    justify-content: space-around; /* Espacement égal entre les éléments */
-    align-items: center; /* Centrage vertical */
-    width: 100%; 
+    justify-content: space-around;
+    /* Espacement égal entre les éléments */
+    align-items: center;
+    /* Centrage vertical */
+    width: 100%;
     /* margin-top: 70px; */
-    
+
 }
 
 .main-container {
@@ -62,7 +64,7 @@
     background-size: cover;
     position: relative;
     border-radius: 10px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .container1 {
@@ -76,7 +78,7 @@
     background-size: cover;
     position: relative;
     border-radius: 10px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .container2 {
@@ -90,7 +92,7 @@
     background-size: cover;
     position: relative;
     border-radius: 10px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .container3 {
@@ -104,7 +106,7 @@
     background-size: cover;
     position: relative;
     border-radius: 10px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 
@@ -113,7 +115,7 @@
     backdrop-filter: blur(5px);
     position: absolute;
     border-radius: 0 0 10px 10px;
-    
+
     bottom: 0px;
     right: 0px;
     left: 0px;
@@ -145,9 +147,13 @@
 
 .container3:hover .bandeau {
     opacity: 1;
-}.container:hover .bandeau {
+}
+
+.container:hover .bandeau {
     opacity: 1;
-}.container:hover .bandeau {
+}
+
+.container:hover .bandeau {
     opacity: 1;
 }
 
@@ -246,26 +252,27 @@
     overflow-x: hidden;
     /* border: 1px solid #7b7d7f; */
     /* margin-top: 20dvh; */
-  }
-  
-  .position-texte::-webkit-scrollbar {
+}
+
+.position-texte::-webkit-scrollbar {
     width: 7px;
-  }
-  .position-texte::-webkit-scrollbar-thumb {
-    background-color: rgba(0,0,0,0.4);
+}
+
+.position-texte::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.4);
     border-radius: 10rem;
     /* border: 1px solid #fff; */
-  }
-  
-  
-  /* .position-texte::-webkit-scrollbar-track-piece:start {
+}
+
+
+/* .position-texte::-webkit-scrollbar-track-piece:start {
     background: transparent;
   } */
-  
-  /* .position-texte::-webkit-scrollbar-track-piece:end {
+
+/* .position-texte::-webkit-scrollbar-track-piece:end {
     background: transparent;
   } */
-  .texte3 {
+.texte3 {
     padding: 20px;
     /* border-bottom: 1px solid #000; */
     line-height: 1.3;
@@ -273,7 +280,7 @@
     font-size: 1rem;
     overflow: hidden;
     /* margin-left: 7vw; */
-  }
+}
 
 @keyframes popup-animation {
     from {
@@ -320,7 +327,7 @@ ol {
 }
 
 .overlay1 {
-    text-align:justify;
+    text-align: justify;
     margin-left: 2vw;
     /* margin-top: dvh; */
     margin-bottom: 4vh;
