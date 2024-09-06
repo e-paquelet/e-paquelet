@@ -1,0 +1,28 @@
+<div class="header_container">
+    <div class="nom">
+        
+        <a href="accueil" title="Acceuil" class="profil2">
+            <div class="profil">
+                <!-- <div class="texteprofil">EP</div> -->
+                <img [src]="bgImgUrl1">
+            </div>
+            <div class="texte">
+            <p>Portfolio de</p>
+            <p>Etienne Paquelet</p>
+            </div>
+        </a>
+        
+    </div>
+    <div class="lien">
+        @for (element of listeMenu; track $index) {
+        <a href="{{element.redirection}}" [attr.title]="element.title ? element.title : null">{{element.titre}}</a>
+        }
+    </div>
+    <div class="reseaux">
+        @for (element of listeReseaux; track $index) {
+        <a target="_blank" href="{{element.redirection}}" [attr.title]="element.alt">
+            <img class="logo_reseau" src="{{element.img}}" alt="{{element.alt}}">
+        </a>
+        }
+    </div>
+</div>

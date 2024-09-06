@@ -1,0 +1,452 @@
+.main {
+    width: 90vw;
+    height: 90vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main>h1 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    font-size: 4em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+
+hr {
+    background-color: black;
+    margin-left: 5vw;
+    margin-right: 55vw;
+
+}
+
+
+
+
+
+/* .progress-container {
+    float: right;
+
+    width: 50%;
+    background-color: #e0e0df;
+
+    margin-left: 5vh;
+    margin-top: -4vh;
+    margin-bottom: 2vh;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+
+}
+
+.progress-bar {
+    height: 20px;
+    width: 0;
+    animation-name: test;
+    animation-duration: 3s;
+    background-color: rgb(85, 185, 238);
+    
+    border-radius: 25px;
+    text-align: right;
+    line-height: 20px;
+    Vertically center the text
+    color: white;
+    font-weight: bold;
+    transition: all 2s ease;
+
+    Smooth transition for width changes
+} */
+
+.progress-container {
+    float: right;
+    width: 50%;
+    background-color: #e0e0df;
+    margin-left: 5vh;
+    margin-top: -4vh;
+    margin-bottom: 2vh;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.progress-bar {
+    height: 20px;
+    width: 0; /* Initial width */
+    background-color: rgb(85, 185, 238);
+    border-radius: 25px;
+    text-align: right;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    animation: grow 3s ease forwards; /* Animation applied */
+    transition: all 2s ease; /* Smooth transition for width changes */
+}
+
+@keyframes grow {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%; /* Full width for animation */
+    }
+}
+
+/* Additional classes for different widths */
+.width-35 {
+    animation: grow35 2s ease forwards;
+}
+
+.width-30 {
+    animation: grow30 2s ease forwards;
+}
+
+.width-80 {
+    animation: grow80 2s ease forwards;
+}
+
+.width-75 {
+    animation: grow75 2s ease forwards;
+}
+
+.width-65 {
+    animation: grow65 2s ease forwards;
+}
+
+.width-45 {
+    animation: grow45 2s ease forwards;
+}
+
+.width-50 {
+    animation: grow50 2s ease forwards;
+}
+
+@keyframes grow35 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 35%;
+    }
+}
+
+@keyframes grow30 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 30%;
+    }
+}
+
+@keyframes grow45 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 45%;
+    }
+}
+
+@keyframes grow50 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes grow80 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+@keyframes grow75 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 75%;
+    }
+}
+
+@keyframes grow65 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 75%;
+    }
+}
+
+@keyframes test {
+    from {
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    to {
+        margin-left: 30%;
+        width: 100%;
+    }
+}
+
+span {
+
+    background-color: red;
+    height: 1vh;
+    width: 700px;
+}
+
+.OS {
+    margin-left: 10vw;
+    /* background-color: grey; */
+    margin-right: 10vw;
+}
+
+/* Set the width of the progress bar to 70% */
+/* .progress-bar {
+    width: 50%;
+} */
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 5px;
+    margin-top: 50px;
+}
+
+td {
+    padding: 5px;
+    text-align: left;
+    vertical-align: top;
+}
+
+td:first-child {
+    width: 40%;
+}
+
+
+
+/* td li {
+    list-style-type: none;
+} */
+.spacer {
+    width: 60%;
+    padding-left: 100px;
+}
+
+
+
+/* .button-positionning1 {
+    display: table;
+
+    float: right;
+    margin-left: 5vw;
+    margin-right: 50vw;
+    margin-bottom: 60px;
+    background-color: aqua;
+
+
+} */
+
+.positionboutoncyber {
+    float: left;
+    padding-left: 0;
+    font-size: 16px;
+    /* padding-bottom: 20vh; */
+    margin-right: 51vw;
+    margin-left: 10vh;
+    margin-bottom: 60px;
+    
+}
+
+ 
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3vw;
+    margin-bottom: 60px;
+}
+
+.positionboutonadmin, .positionboutonreseaux, .positionboutonvirtuel, .positionboutonbasedonne, .positionboutontelecom, .positionboutonscript {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin: 0 30px; /* Marges ajustables pour l'espacement entre les boutons */
+}
+
+.bouton {
+    background-color: white;
+    border: none;
+    color: white;
+    padding-left: 0;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
+    /* margin: 4px 4px; */
+    cursor: pointer;
+}
+
+.bouton:hover {
+    box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+    background-color: whitesmoke;
+}
+
+/*contenu css pour éléments a l'intérieur du bouton*/
+.textgauche {
+    float: right;
+    padding: 5vw;
+    padding-right: 15vh;
+    color: black;
+    padding-bottom: 0;
+}
+
+.textvirt {
+    float: right;
+    padding: 5vw;
+    padding-right: 21vh;
+    color: black;
+    padding-bottom: 0;
+}
+.imagegauche {
+    float: left;
+    width: 40%;
+    height: 30%;
+}
+
+.textdroite {
+    float: right;
+    padding: 5vw;
+    padding-right: 23vh;
+    color: black;
+    padding-bottom: 10px;
+}
+
+
+
+.imagedroite {
+    float: left;
+    width: 34%;
+    height: 30%;
+}
+
+.imagedb {
+    float: left;
+    width: 41%;
+    height: 30%;
+}
+
+.textdb {
+    float: right;
+    padding: 5vw;
+    padding-right: 18vh;
+    color: black;
+    padding-bottom: 0;
+}
+
+.imagedev {
+    float: left;
+    width: 31%;
+    height: 30%;
+}
+
+.textdev {
+    float: right;
+    padding: 5vw;
+    padding-right: 15vh;
+    color: black;
+    padding-bottom: 0;
+}
+
+.imagecyber {
+    float: left;
+    width: 50%;
+    height: 30%;
+}
+
+.textcyber {
+    float: right;
+    padding: 10vh;
+    padding-right: 6vw;
+    color: black;
+    padding-bottom: 0;
+}
+
+
+
+
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+@keyframes popup-animation {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 2px;
+    border-radius: 10px;
+    width: 95%;
+    height: 42%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation: popup-animation 0.3s ease-out;
+    overflow: hidden;
+}
+
+.close-popup {
+    position: relative;
+    top: 0px;
+    right: -123%;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s;
+    scale: 1.5;
+    font-size: x-large;
+}
+
+.close-popup:hover {
+    color: red;
+}

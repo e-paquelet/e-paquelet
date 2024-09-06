@@ -1,0 +1,179 @@
+<div class="main" [style.background-image]="makeImgUrl(bgImgUrl)">
+    <h1>Mes projets effectués au BUT</h1>
+
+</div>
+
+<!-- <p> Avant de présenter les projets que j'ai effectué au cours de ma scolarité au BUT Réseaux et Télécommunications, je
+    vais tout d'abord
+    présenter le fonctionnement de mon BUT.</p> -->
+<p class="ue">La formation du BUT Réseaux et Télécommunications se dispense en 6 semestres. Les deux premiers semestres
+    sont
+    composé de 3 UEs (Unité d'Enseignement) tandis que les 4 semestres qui suivent ont 5 UEs. En effet, dès la deuxième
+    année, nous avons eu la possibilité de choisir un parcours parmis les suivants :</p>
+<ol>
+    <li>Cybersécurité</li>
+    <li>Internet des Objets et Mobilité (IoT)</li>
+    <li>Pilotage de Projet Réseaux (PilPro)</li>
+</ol>
+<p class="ue">Ces parcours rajoutent 2 UEs chacuns à chaque semestre. J'ai choisi le parcours Cybersécurité. Je vais
+    donc vous
+    présenter quelques SAE que j'ai effectué
+    durant mes deux premières années de ma scolarité au BUT.
+</p>
+<p class="ue">Pour préciser les modalités de réalisation de ces SAE, ils se sont effectués seul ou en groupe de 2, 3, 4
+    ou 5. La durée de
+    chaque SAE était d'une semaine environ. Parmis ces SAE, deux d'entre elles étaient spécialisé en cybersécurité.</p>
+<!-- Dans chaque UE de la première année (Semestre 1 et 2), un projet devait être réalisé en lien avec son UE. J'ai pu
+    effectué 10 projets
+    durant la première année et 5 projets durant la deuxième année</p> -->
+<!-- <p>Dans le cadre de ma scolarité durant mes deux premières année au BUT R&T, dont 1 année avec l'option cybersécurité,
+    j’ai eu 15 projets, soit des
+    Situations d’Aprentissage et d’Evaluation (SAE), à réaliser. </p>
+<p>Il y a eu 10 SAE durant la prermière année soit 5 SAE par semestre. Il y avait 1 SAE par compétences enseignées
+    chaque semestres. (présenter le fonctionnement de mon BUT, non ? faire une section au dessus).</p> -->
+<!-- <div class="button-container"> -->
+<!-- <div class="sae101"> -->
+<div class="first-container">
+    <div class="main-container">
+        <div class="container" (click)="openpopup()">
+            <div class="bandeau">
+                <p>SAE301</p>
+                <p>Mettre en oeuvre un systèmes de transmission</p>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div matTooltip="Picture designed by Freepik" class="container1">
+            <div class="bandeau">
+                <p>SAE302</p>
+                <p>Développer des applications communicantes</p>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="container2">
+            <div class="bandeau">
+                <p>SAE303</p>
+                <p>Concevoir un réseau multi-sites</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="first-container">
+    <div class="main-container">
+        <div class="container3" (click)="openpopup()">
+            <div class="bandeau">
+                <p>SAE3-Cyber-04</p>
+                <p>Découvrir le pentesting</p>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="container">
+            <div class="bandeau">
+                <p>SAE4-Cyber-01</p>
+                <p>Sécuriser un système d'information</p>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="container">
+            <div class="bandeau">
+                <p>Stage</p>
+                <p>Préfecture de l'Ain</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- </div> -->
+<!-- <div class="positionboutoncyber">
+
+        <button class="bouton" matTooltip="Mes compétences en Administration Systèmes" (click)="openpopup()">
+            <img class="imagegauche" [src]="bgImgUrl2">
+            <div class="textgauche">
+                Administration Système
+            </div>
+        </button>
+
+
+
+    </div>
+</div> -->
+
+<div class="overlay" *ngIf="show" (click)="closeoverlay($event)">
+    <div class="popup-content">
+        <div class="close-popup" (click)="closepopup()">
+            &times;
+        </div>
+        <h3>SAE 301 - Mettre en oeuvre un système de transmission</h3>
+
+        <div class="position-texte">
+            <div class="texte3">
+                <p class="overlay1">Cette SAE concernait l'ensemble des étudiants en formation initiale et a été
+                    réalisée par groupe de 2 ou 3
+                    étudiants. J'ai été en binôme dans cette SAE. Ce projet se décomposait en plusieurs parties : </p>
+                <div id="liste" class="overlay1">
+                    <li>Partie 1: Plateforme d'apprentissage: Raspberry pi, machine virtuelle</li>
+                    <li>Partie 2: Débit d'une source d'information</li>
+                    <li>Partie 3: Systèmes d'analyse de débit (iperf, Munin)</li>
+                    <li>Partie 4: Application: Transmission vidéo: Serveur vidéo à débit adaptatif DASH</li>
+                    <li>Partie 4: Application: Transmission sécurisée: Serveur VPN Wireguard, Openvpn</li>
+                    <li>Partie 4: Application: Transmission multimédia: Serveur NAS OMV</li>
+                </div>
+                <p class="overlay1">
+                    Les objectifs de cette SAE étaient les suivants :</p>
+                <div id="liste" class="overlay1">
+                    <li>Mesurer le débit d'une source d'information en utilisant différents outils et sur différents
+                        types de transmissions.</li>
+                    <li>Initier à la mise en place de services réseau en lien avec les transmissions
+                    </li>
+                    <li>Sensibiliser à la qualité de des transmissions
+                    </li>
+                    <li>faire des interprétations comme un technicien dans le domaine des Réseaux et Télécommunications.
+                    </li>
+                    <li>Développer notre autonomie
+                    </li>
+                </div>
+                <p class="overlay1"> Voici l'infrastructure réseaux que nous avions mis en place</p>
+                <img [src]="bgImgUrl3" alt="">
+
+                <p class="overlay1">Afin d'être efficace et de ne pas perdre de temps dans la réalisation du projet,
+                    nous nous sommes répartit les tâches et j'ai été assignés aux tâches suivantes : Partie 3 : Systèmes
+                    d'analyse de débit (Iperf, Munin). J'ai également réalisé la partie 4 dédié au Serveur vidéo à
+                    débit adaptatif DASH et au Serveur VPN Wireguard et Openvpn </p>
+
+                <p class="overlay1">La première étape consistait à mettre en place l'infrastructure réseau évoquée
+                    précédemment
+                    ainsi que de rassembler des données sur les composants du Raspberry Pi tels que la carte réseau, le
+                    type du Rapsberry pi, le débit des informations... Cette partie a été réalisée par mon binôme.
+                    <!-- <a style="color: blue;" href="https://www.speedtest.net/fr">Ookla</a>. Une fois cette partie
+                    réalisée et que la deuxième
+                    fut accomplie, j'ai commencé à réaliser la 3° partie. -->
+                </p>
+            </div>
+
+            <div class="texte3">test</div>
+            <!-- <div class="texte3">test</div>
+            <div class="texte3">test</div>
+            <div class="texte3">test</div>
+            <div class="texte3">test</div>
+            <div class="texte3">test</div>
+            <div class="texte3">test</div>
+            <div class="texte3">test</div>
+            <div class="texte3">test</div>
+            <div class="texte3">test</div> -->
+        </div>
+
+
+    </div>
+</div>
+
+
+
+
+
+<!-- <input type="image" id="image" alt="Login" [style.background-image]="makeImgUrl(bgImgurl2)" /> -->

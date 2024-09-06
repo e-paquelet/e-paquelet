@@ -1,0 +1,453 @@
+<div class="main" [style.background-image]="makeImgUrl(bgImgUrl)">
+    <h1>Mes compétences</h1>
+
+</div>
+
+
+
+
+<div class="overlay" *ngIf="show" (click)="closeoverlay($event)">
+    <div class="popup-content">
+
+        <div class="close-popup" (click)="closepopup()">
+            &times;
+        </div>
+        <div class="OS">
+            <p>Administration Système</p>
+            <div class="progress-container">
+                <div class="progress-bar width-80">
+                    80%
+                </div>
+            </div>
+
+
+            <table>
+                <tr>
+                    <td>
+                        <li>Windows Server (2019/2022)</li>
+                    </td>
+                    <td class="spacer">
+                        <li>Active Directory, GPO, DHCP, DNS, Partages réseaux, DFS</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <li>Windows Client (10)</li>
+                    </td>
+                    <td class="spacer">
+                        <li>Installation, Configuration, Utilisation</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <li>Linux</li>
+                    </td>
+                    <td class="spacer">
+                        <li>DNS, Samba, ftp, tftp, ssh, Apache 2, DHCP</li>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</div>
+
+<div class="overlay" *ngIf="show1" (click)="closeoverlay($event)">
+    <div class="popup-content">
+
+        <div class="close-popup" (click)="closepopup1()">
+            &times;
+        </div>
+        <div class="OS">
+            <p>Réseaux</p>
+            <div class="progress-container">
+                <div class="progress-bar width-75">75%</div>
+            </div>
+        
+        
+            <table>
+                <tr>
+                    <td>
+                        <li>Switchs</li>
+                    </td>
+                    <td class="spacer">
+                        <li>Configuration de Switch et de routeurs physiques et virtuels.</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <li>Routeurs</li>
+                    </td>
+                    <td class="spacer">
+                        <li>Routage statique (RIPv1, RIPv2)</li>
+        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+        
+                    </td>
+                    <td class="spacer">
+        
+                        <li>Routage dynamique (OSPF, BGP, MPLS)</li>
+        
+                    </td>
+        
+                </tr>
+                <tr>
+                    <td>
+        
+                    </td>
+                    <td class="spacer">
+                        <li>Routage Inter-Vlan</li>
+        
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="spacer">
+                        <li> Gestion de VLAN</li>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</div>
+
+<div class="overlay" *ngIf="show2" (click)="closeoverlay($event)">
+    <div class="popup-content">
+
+        <div class="close-popup" (click)="closepopup2()">
+            &times;
+        </div>
+        <div class="OS">
+            <p>Virtualisation</p>
+            <div class="progress-container">
+                <div class="progress-bar width-65">65%</div>
+            </div>
+        
+        
+            <table>
+                <tr>
+                    <td>
+                        <li>GNS3</li>
+                    </td>
+                    <td class="spacer">
+                        <li>Création de réseaux d'entreprises complets (GNS3/Packet Tracer)</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <li>VirtualBox</li>
+                    </td>
+                    <td class="spacer">
+                        <li>Installation, Configuration, Utilisation de VirtualBox</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <li>Hyper-V</li>
+                    </td>
+                    <td class="spacer">
+                        <li>Installation, Configuration : réplication, et utilisation</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <li>Packet Tracer</li>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+<div class="overlay" *ngIf="show3" (click)="closeoverlay($event)">
+    <div class="popup-content">
+
+        <div class="close-popup" (click)="closepopup3()">
+            &times;
+        </div>
+        <div class="OS">
+            <p>Bases de Données</p>
+            <div class="progress-container">
+                <div class="progress-bar width-30">30%</div>
+            </div>
+        
+        
+            <table>
+                <tr>
+                    <td>
+                        <li>SQL</li>
+                    </td>
+                    <td class="spacer">
+                        <li>Création et modélisation de bases de données</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+        
+                    </td>
+                    <td class="spacer">
+                        <li>Réalisation de requêtes SQL simples</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+        
+                    </td>
+                    <td class="spacer">
+        
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</div>
+
+<div class="overlay" *ngIf="show4" (click)="closeoverlay($event)">
+    <div class="popup-content">
+
+        <div class="close-popup" (click)="closepopup4()">
+            &times;
+        </div>
+        <div class="OS">
+            <p>Télécommunications</p>
+            <div class="progress-container">
+                <div class="progress-bar width-45">45%</div>
+            </div>
+        
+        
+            <table>
+                <tr>
+                    <td>
+                        <li>Téléphonie sur IP</li>
+                    </td>
+                    <td class="spacer">
+                        <li>Mise en place d'un réseau téléphonique avec les logiciels : Astérisk, OXO.(A Vérifier avec contenu
+                            des cours)</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <li>Téléphonie sur IP</li>
+                    </td>
+                    <td class="spacer">
+                        <li>Compréhension des réseaux internet (1G, GSM, UMTS, 4G LTE, 5G, Réseaux fibre/cuivre)</li>
+                    </td>
+                </tr>
+                
+        
+            </table>
+        </div>
+        
+    </div>
+</div>
+
+<div class="overlay" *ngIf="show5" (click)="closeoverlay($event)">
+    <div class="popup-content">
+
+        <div class="close-popup" (click)="closepopup5()">
+            &times;
+        </div>
+        <div class="OS">
+            <p>Scripting & Développement</p>
+            <div class="progress-container">
+                <div class="progress-bar width-50">50%</div>
+            </div>
+        
+        
+            <table>
+                <tr>
+                    <td>
+                        <li>PowerShell/Shell</li>
+                    </td>
+                    <td class="spacer">
+                        <li>Création de script pour l'administration système</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <li>HTML/CSS/JavaScript/Angular/PHP</li>
+                    </td>
+                    <td class="spacer">
+                        <li>Création de site web statique/dynamique</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <li>C++</li>
+                    </td>
+                    <td class="spacer">
+                        <li>Connaissances basiques (Condition, Tableaux, Boucles)</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <li>Java</li>
+                    </td>
+                    <td class="spacer">
+                        <li>Création d'une application basique de chat.</li>
+                    </td>
+                </tr>
+            </table>
+        </div> 
+        
+    </div>
+</div>
+
+<div class="overlay" *ngIf="show6" (click)="closeoverlay($event)">
+    <div class="popup-content">
+
+        <div class="close-popup" (click)="closepopup6()">
+            &times;
+        </div>
+        <div class="OS">
+            <p>Cybersécurité</p>
+            <div class="progress-container">
+                <div class="progress-bar width-35">35%</div>
+            </div>
+        
+        
+            <table>
+                <tr>
+                    <td>
+                        <li>Firewall (StormShield)</li>
+                    </td>
+                    <td class="spacer">
+                        <li>Gestion de Firewall, Routing et configuration basique</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <li>Pentesting</li>
+                    </td>
+                    <td class="spacer">
+                        <li>Gestion d'ACL</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                    </td>
+                    <td class="spacer">
+                        <li>Création d'autorité de certification</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                    </td>
+                    <td class="spacer">
+                        <li>Root-Me, Over The Wire : Bandit</li>
+                    </td>
+                </tr>
+            </table>
+        </div> 
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="button-container">
+    <div class="positionboutonadmin">
+
+        <button class="bouton" id="admin" matTooltip="Mes compétences en Administration Systèmes" (click)="openpopup()">
+            <img class="imagegauche" [src]="bgImgUrl2">
+            <div class="textgauche">
+                Administration Système
+            </div>
+        </button>
+
+
+    </div>
+    <div class="positionboutonreseaux">
+
+        <button class="bouton" matTooltip="Mes compétences en Réseaux" (click)="openpopup1()">
+            <img class="imagedroite" [src]="bgImgUrl3">
+            <div class="textdroite">
+                Réseaux
+            </div>
+        </button>
+
+
+
+    </div>
+
+</div>
+
+<div class="button-container">
+    <div class="positionboutonadmin">
+
+        <button class="bouton" id="admin" matTooltip="Mes compétences en Virtualisation" (click)="openpopup2()">
+            <img class="imagegauche" [src]="bgImgUrl4">
+            <div class="textvirt">
+                Virtualisation
+            </div>
+        </button>
+
+
+    </div>
+    <div class="positionboutonreseaux">
+
+        <button class="bouton" matTooltip="Mes compétences en Bases de données" (click)="openpopup3()">
+            <img class="imagedb" [src]="bgImgUrl5">
+            <div class="textdb">
+                Bases de données
+            </div>
+        </button>
+
+
+
+    </div>
+
+</div>
+
+<div class="button-container">
+    <div class="positionboutonadmin">
+
+        <button class="bouton" id="admin" matTooltip="Mes compétences en Virtualisation" (click)="openpopup4()">
+            <img class="imagegauche" [src]="bgImgUrl6">
+            <div class="textvirt">
+                Télécommunication
+            </div>
+        </button>
+
+
+    </div>
+    <div class="positionboutonreseaux">
+
+        <button class="bouton" matTooltip="Mes compétences en Bases de données" (click)="openpopup5()">
+            <img class="imagedev" [src]="bgImgUrl7">
+            <div class="textdev">
+                Scripting & Développement
+            </div>
+        </button>
+
+
+
+    </div>
+
+</div>
+
+
+
+<div class="positionboutoncyber">
+
+    <button class="bouton" matTooltip="Mes compétences en Administration Systèmes" (click)="openpopup6()">
+        <img class="imagecyber" [src]="bgImgUrl8">
+        <div class="textcyber">
+            Cybersécurité
+        </div>
+    </button>
+
+
+</div>
