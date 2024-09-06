@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 
 @Component({
@@ -24,7 +24,7 @@ export class TiktaktoeComponent {
         // récupère la case
         const CaseClick = element.children[zone];
         // vérifie que la case n'est pas déjà pleine
-        if (CaseClick.classList.length > 0) return;
+        if (CaseClick.classList.contains("cross") || CaseClick.classList.contains("circle")) return;
         // ajoute la classe correspondante
         CaseClick.classList.add(this.turnCross ? "cross" : "circle");
         // change de tour
@@ -100,9 +100,6 @@ export class TiktaktoeComponent {
                 break;
             case "draw":
                 this.message = "Il n'y a pas de gagnant!";
-                break;
-
-            default:
                 break;
         }
     }
