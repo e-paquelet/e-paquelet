@@ -1,0 +1,25 @@
+<div class="selection">
+    <div>
+        <p>Choisissez votre difficulté:</p>
+        <mat-radio-group aria-label="Select an option">
+            <mat-radio-button (click)="changeDifficulte(1)" value="1" checked>Facile</mat-radio-button>
+            <mat-radio-button (click)="changeDifficulte(2)" value="2">Moyen</mat-radio-button>
+            <mat-radio-button (click)="changeDifficulte(3)" value="3">Difficile</mat-radio-button>
+        </mat-radio-group>
+    </div>
+    <div>
+        <p>La case centrale est toujours sans bombe.</p>
+        @if (isMobile) {
+        <p>Appareil mobile détecté. Les drapeaux ne peuvent pas (encore) être placé sur mobile.</p>
+        }
+    </div>
+    <div>
+        <button mat-flat-button (click)="resetGame()">Recommencer</button>
+    </div>
+    <div>
+        @if (end) {
+        <p>{{message}}</p>
+        }
+    </div>
+</div>
+<div id="game"></div>
