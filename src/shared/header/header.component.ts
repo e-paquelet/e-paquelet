@@ -25,20 +25,20 @@ bgImgUrl1 = "/assets/img/favicon.png"
   listeMenu: ListeMenu[] = [
     {
       titre: "Alternance",
-      redirection: "/entreprise"
+      redirection: "./entreprise"
     },
     {
       titre: "Mes compétences",
-      redirection: "/portfolio",
+      redirection: "./portfolio",
     },
     {
       titre: "Projet BUT",
-      redirection: "/projet-but",
+      redirection: "./projet-but",
       title: "Les projets fait pour mon BUT"
     },
     {
       titre: "Contact",
-      redirection: "/contact",
+      redirection: "./contact",
     },
   ];
 
