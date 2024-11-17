@@ -20,7 +20,7 @@ export interface ListeReseau {
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-bgImgUrl1 = "/assets/img/favicon.png"
+bgImgUrl1 = "./assets/img/favicon.png"
 
   listeMenu: ListeMenu[] = [
     {

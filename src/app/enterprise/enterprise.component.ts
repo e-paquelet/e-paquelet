@@ -9,10 +9,10 @@ import { MatTooltipModule } from '@angular/material/tooltip';
   styleUrl: './enterprise.component.css'
 })
 export class EnterpriseComponent {
-  bgImgUrl = "/assets/img/background2.mp4";
-  bgImgUrl2 = "/assets/img/logoain.png";
-  carteain = "/assets/img/carteain.png";
-  marque = "/assets/img/ica.png";
+  bgImgUrl = "./assets/img/background2.mp4";
+  bgImgUrl2 = "./assets/img/logoain.png";
+  carteain = "./assets/img/carteain.png";
+  marque = "./assets/img/ica.png";
   altmarque = "Marque du Conseil Départemental de l'Ain";
   altain = "Localisation du Département de l'Ain. Son chef lieu est Bourg en Bresse"
 

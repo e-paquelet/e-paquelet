@@ -22,9 +22,9 @@ type MiniGameType = "Tic Tac Toe" | "Snake" | "Puissance 4" | "Démineur" | "Auc
     styleUrl: './notfound.component.css'
 })
 export class NotfoundComponent {
-    bgImgUrl = "/assets/img/grdrouage.png";
-    bgImgUrl2 = "/assets/img/rouage.png";
-    bgImgUrl3 = "/assets/img/bg4.jpg";
+    bgImgUrl = "./assets/img/grdrouage.png";
+    bgImgUrl2 = "./assets/img/rouage.png";
+    bgImgUrl3 = "./assets/img/bg4.jpg";
 
     makeImgUrl(str: string): string {
         return "url('" + str + "')"

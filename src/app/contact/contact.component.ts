@@ -17,14 +17,14 @@ type ListeContactItem = {
   styleUrl: './contact.component.css'
 })
 export class ContactComponent {
-  bgImgUrl = "/assets/img/background.jpg";
-  bgImgUrl2 = "/assets/img/profil.png";
-  bgImgUrl3 = "/assets/img/linkedin.png";
-  bgImgUrl4 = "/assets/img/mail.png";
-  bgImgUrl5 = "/assets/img/background2.mp4";
-  dianeUrl = "/assets/img/mdp.jpg";
-  cv = "/assets/img/CV_PAQUELET_Etienne.pdf";
-  CV = "/assets/img/cv.png";
+  bgImgUrl = "./assets/img/background.jpg";
+  bgImgUrl2 = "./assets/img/profil.png";
+  bgImgUrl3 = "./assets/img/linkedin.png";
+  bgImgUrl4 = "./assets/img/mail.png";
+  bgImgUrl5 = "./assets/img/background2.mp4";
+  dianeUrl = "./assets/img/mdp.jpg";
+  cv = "./assets/img/CV_PAQUELET_Etienne.pdf";
+  CV = "./assets/img/cv.png";
   dianeArray: string[] = [];
 
   listeContact: ListeContactItem[] = [

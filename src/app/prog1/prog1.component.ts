@@ -15,15 +15,15 @@ type ListeContactItem = {
   styleUrl: './prog1.component.css'
 })
 export class Prog1Component {
-    bgImgUrl = "/assets/img/background.jpg";
-    bgImgUrl4 = "/assets/img/profil.png";
-    bgImgUrl1 = "/assets/img/linkedin.png";
-    bgImgUrl2 = "/assets/img/mail.png";
-    bgImgUrl3 = "/assets/img/ain.jpg";
-    video = "/assets/img/background2.mp4"
-    video_sae_302 = "/assets/img/sae302/video_sae_302.mp4";
-    dianeUrl = "/assets/img/mdp.jpg";
-    flechebas = "/assets/img/fleche.png";
+    bgImgUrl = "./assets/img/background.jpg";
+    bgImgUrl4 = "./assets/img/profil.png";
+    bgImgUrl1 = "./assets/img/linkedin.png";
+    bgImgUrl2 = "./assets/img/mail.png";
+    bgImgUrl3 = "./assets/img/ain.jpg";
+    video = "./assets/img/background2.mp4"
+    video_sae_302 = "./assets/img/sae302/video_sae_302.mp4";
+    dianeUrl = "./assets/img/mdp.jpg";
+    flechebas = "./assets/img/fleche.png";
     dianeArray: string[] = [];
   
     listeContact: ListeContactItem[] = [
