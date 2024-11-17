@@ -1,11 +1,9 @@
-
-
-
+/* 
 .main {
   width: 100vw;
   height: 100vh;
-  /* margin-left: 5vw; */
-  /* margin-right: 5vw; */
+  margin-left: 5vw;
+  margin-right: 5vw;
   margin-top: 5vh;
   margin-bottom: 5vh;
   background-repeat: no-repeat;
@@ -31,8 +29,8 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    /* background: linear-gradient(#4816ed, #0b83f3 45%, #fff 45%, #fff 100%); */
-    /* background-image: url(../../../public/assets/img/background.jpg); */
+    background: linear-gradient(#4816ed, #0b83f3 45%, #fff 45%, #fff 100%);
+    background-image: url(../../../public/assets/img/background.jpg);
   }
   
   .card {
@@ -96,7 +94,7 @@
   }
   
   .content .detail h2 {
-    /* color: #444; */
+    color: #444;
     color: black;
     font-size: 1.6em;
     font-weight: bolder;
@@ -108,7 +106,7 @@
   
   .content .detail h2 span {
     font-size: 0.7em;
-    /* color: #03a9f4; */
+    color: #03a9f4;
     color: white;
     font-weight: bold;
     
@@ -119,8 +117,8 @@
     display: flex;
     margin-top: 5px;
     
-  }
-  
+  } */
+/*   
   .sci li {
     list-style: none;
     margin: 4px;
@@ -145,23 +143,23 @@
   }
   
   .sci li a:hover {
-    /* box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5); */
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
     background-color: #03a9f4;
   }
 
 .image {
   width: 5vh;
-  /* border-radius: 100%; */
-}
+  border-radius: 100%;
+} */
 
-.faq-body {
+/* .faq-body {
   width: 250px;
   height: 400px;
   background: #fff;
   overflow-y: scroll;
   border: 1px solid #7b7d7f;
   margin-top: 20dvh;
-}
+}z
 
 .faq-body::-webkit-scrollbar {
   width: 7px;
@@ -186,4 +184,322 @@
   line-height: 1.3;
   color: #15191b;
   font-size: 0.8rem;
+} */
+
+/* Style the video: 100% width and height to cover the entire window */
+/* .main {
+  width: 90vw;
+  height: 90vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
+
+.main>h1 {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  font-size: 4em;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+
+
+.photo {
+  width: 35vw;
+  height: 80vh;
+  margin-left: 6vw;
+  margin-right: 5vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  float: left;
+}
+
+.texte {
+  float: right;
+  background: white;
+  width: 42vw;
+  height: 83vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  overflow: scroll;
+  overflow-x: hidden;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 35px;
+  text-indent: 5%;
+
+}
+
+.titre {
+  color: black;
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.soustitre {
+  text-align: center;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+li {
+  text-indent: 10%;
+}
+
+.guitar {
+  float: left;
+  width: 30%;
+  height: 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+}
+
+.guitartext {
+  float: center;
+  margin-top: 80px;
+}
+
+.metal {
+  float: right;
+  margin-top: 5%;
+  margin-right: ;
+  width: 30%;
+  height: 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-left: 0;
+
+}
+
+.metaltext {
+  margin-left: 205px;
+  float: center;
+  margin-top: 110px;
+}
+
+.tennis {
+  float: left;
+  width: 29%;
+  height: 29%;
+  margin-top: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+}
+
+.tennistext {
+  float: center;
+  margin-top: 100px;
+  margin-left: 205px;
+
+}
+
+.gaming {
+  float: right;
+  margin-top: 5%;
+  margin-right: ;
+  width: 30%;
+  height: 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-left: 0;
+
+}
+
+.gamingtext {
+  margin-left: 205px;
+  float: center;
+  margin-top: 110px;
+}
+
+.chess {
+  float: left;
+  width: 29%;
+  height: 29%;
+  margin-top: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+}
+
+.chesstext {
+  float: center;
+  margin-top: 100px;
+  margin-left: 205px;
+
+}
+
+.bike {
+  float: right;
+  margin-top: 5%;
+  margin-right: ;
+  width: 30%;
+  height: 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-left: 0;
+
+}
+
+.biketext {
+  margin-left: 205px;
+  float: center;
+  margin-top: 110px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  border-bottom: 1px dotted black;
+  margin-right: 20px;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  text-align: center;
+  margin-top: 5px;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s;
+  top: 100%;
+  left: 42%;
+  transform: translateX(-50%);
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip.bottom .tooltiptext {
+  top: 100%;
+  bottom: auto;
+}
+
+.citation {
+  text-align: center;
+  margin-bottom: 2dvh;
+}
+
+
+video {
+  position: absolute;
+
+  width: 90vw;
+  height: 90dvh;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 2;
+  Assure que l'overlay est au-dessus de la vidéo
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay h2 {
+  color: white;
+  Le texte est blanc
+  font-size: 4em;
+
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 2dvh 30vw 0;
+  padding: 5px 15px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5); 
+}
+
+
+.overlay2 {
+  position: absolute;
+  z-index: 3;
+  Assure que l'overlay est au-dessus de la vidéo
+  min-height: 100vh;
+  width: 10%;
+  height: 10%;
+  margin-left: 40vw;
+  margin-top: 80dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+}
+
+.overlay2 a {
+  color: white;
+
+  font-size: 3em;
+  animation: fadeBlink 3s infinite;
+  font-family: Arial, Helvetica, sans-serif;
+
+  text-align: center;
+
+}
+
+@keyframes fadeBlink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0; 
+  }
+
+
+}
+ */
+
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Cache la scrollbar */
+}
+
+/* Solution pour Firefox */
+html {
+  scrollbar-width: none; /* Cache la scrollbar dans Firefox */
+}
+
+/* body {
+  overflow-y: auto; 
+} */

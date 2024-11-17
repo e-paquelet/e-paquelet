@@ -1,140 +1,119 @@
-<!-- <div id="prog1-container">
-    <div class="image-container">
-        <span style="--i: 1">
-            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240213150115/ppp.png" alt="">
-        </span>
-        <span style="--i: 2">
-            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240216133007/20.jpg" alt="">
-        </span>
-        <span style="--i: 3">
-            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240216140352/Business-Intelligence-Tools.webp"
-                alt="">
-        </span>
-        <span style="--i: 4">
-            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240216134711/stock-vector-food-chain-colored-vector-illustration-2184501363.jpg"
-                alt="">
-        </span>
-        <span style="--i: 5">
-            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240216135604/file.webp" alt="">
-        </span>
-        <span style="--i: 6">
-            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240216135739/Data-Management-tools.webp"
-                alt="">
-        </span>
-        <span style="--i: 7">
-            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240216141611/file.jpg" alt="">
-        </span>
-        <span style="--i: 8">
-            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240216141633/2.webp" alt="">
-        </span>
+<!-- 
+
+
+<html>
+<div class="main">
+  <video disablePictureInPicture playsinline autoplay muted loop>
+      <source [src]="video" type="video/mp4">
+      Your browser does not support the video tag. I suggest you upgrade your browser.
+    </video>
+  
+    <div class="overlay">
+      <h2>Bienvenue dans mon portfolio</h2>
     </div>
 
-    <div class="overlay" id="overlay">
-        <img class="popup-img" id="popup-img" src="" alt="Popup Image">
-    </div>
+    <div class="overlay2">
+        <a href="/prog1#presentation" class="btn btn-default">&#9207;</a>
+      </div>
 
-    <div class="btn-container">
-        <button class="btn" id="prev">
-            Left
-        </button>
-        <button class="btn" id="next">
-            Right
-        </button>
-    </div>
+</div>
+<div id="presentation"></div>
+<div class="citation">
+ <i>mettre une recommandation d'un pair, mettre une page présentation entreprise, mettre un lien vers le programme national ou une partie du programme national</i>
+
+</div>
+<div class="titre">
+  <p>Qui suis-je ?</p>
+</div>
 
 
+<div class="photo" [style.background-image]="makeImgUrl(bgImgUrl)">
 
 
 </div>
-<div class="test">
-    <img [src]="bgImgUrl" alt="">
-    <div class="fadeup">
-        Content
-    </div>
+<div class="texte">
 
-</div> -->
 
-<!-- <html lang="en">
-<head>
-  <meta charset="UTF-8" />
+  <p>Etienne, 20 ans, étudiant en troisième année de B.U.T Réseaux et Télécommunications, option Cybersécurité, à
+      l'Université de Franche-Comté à Montbéliard. <br> </p>
+  J'effectue cette dernière année de formation en alternance et je suis accueilli par le
+  <div class="tooltip bottom">
+      <a target="_blank" href="https://www.ain.fr"> Conseil Départemental de l'Ain </a>
+      <span class="tooltiptext">
+          <img [src]="bgImgUrl2" alt="Ici c'est l'Ain !" style="width: 250px; height: auto;">
+      </span>
+  </div>
+  à Bourg en Bresse au sein de la Direction de la
+  Transition et des Solutions Numériques (DTSN)<br><br>
+  <div class="soustitre">
+      Mon Parcours
+  </div><br>
+  <p>J’ai obtenu le diplôme du Baccalauréat série Générale en 2022 avec la mention ASSEZ BIEN avec pour enseignements
+      de spécialités les
+      Mathématiques et la Physique-Chimie. J’ai également eu la mention section européenne (anglais). <br>
+      
+      
+  </p>
+  <br>
+  <div class="soustitre">
+      Mes expériences professionnelles
+
+  </div><br>
+  <p>J’ai effectué deux vacations au sein de la Direction Départementale des Finances Publiques à Bourg en Bresse :<br><br>
+      <li> Juillet 2022 : Trésorerie Publique Hospitalière</li>
+      <li style="text-align: left;"> Juillet 2023 : Service de la Publicité Foncière et de l'Enregistrement</li>
+      <br>
+      J’ai également effectué un stage de 8 semaines au sein du Bureau Interministériel des Systèmes d’Information et de
+      Communication de la
+      Préfecture de l’Ain en 2024 dans le cadre de ma deuxième année de BUT.
+  </p><br>
+  <div class="soustitre">
+      Mon projet professionnel
+  </div><br>
+  <p>
+      Après l’obtention du B.U.T Réseaux et Télécommunications, je souhaite continuer de me former en
+      alternance
+      dans une école d’ingénieur. J'aimerais ensuite travailler en tant qu’ingénieur systèmes et réseaux.
+  </p>
+  <br>
+  <div class="soustitre">
+      Mes qualités
+  </div><br>
+
+  <p>
+      <li>Autonome</li>
+      <li>Motivé</li>
+      <li>Fiable</li>
+      <li>Curieux</li>
+      <li>Serviable</li>
+      <li>Persévérant</li>
+
+  </p><br>
+  <div class="soustitre">
+      Mes passions
+  </div>
+  <br>
+  <div class="guitar" [style.background-image]="makeImgUrl(bgImgUrl3)"></div>
+  <div class="guitartext">
+      <li>La guitare </li>
+  </div>
+  <div class="metal" [style.background-image]="makeImgUrl(bgImgUrl4)"></div>
+  <div class="metaltext">
+      <li>Le Métal/Rock</li>
+  </div>
   
-</head>
 
-<body><div class="main" [style.background-image]="makeImgUrl(bgImgUrl)">
-
-
-
-  <div class="card">
-    <div class="img-bx">
-      <img src="https://i.postimg.cc/dQ7zWbS5/img-4.jpg" alt="img" />
-    </div>
-    <div class="content">
-      <div class="detail">
-        <h2>Etienne PAQUELET<br /><span>Etudiant en 3° année de <br />BUT Réseaux et Télécommunications</span></h2>
-        <ul class="sci">
-          <li>
-            <a href="https://www.linkedin.com/in/etienne-paquelet/" target="_blank"><img class="image" [src]="bgImgUrl1"></a>
-          </li>
-          
-          <li>
-            <a href="mailto:etienne.paquelet.01@gmail.com"><img class="image" [src]="bgImgUrl2"></a>
-          </li>
-          
-        </ul>
-      </div>
-    </div>
-  </div>
-  </div>
-</body>
+</div>
+<div id="footer-section">
+  <p>Merci d'avoir visité mon portfolio !</p>
+</div>
 </html> -->
 
-<div class="faq-body" data-simplebar>
-  <div class="faq-question">
-    Question
-  </div>
-  <div class="faq-question">
-    Question
-  </div>
-  <div class="faq-question">
-    Question
-  </div>
-  <div class="faq-question">
-    Question
-  </div>
-  <div class="faq-question">
-    Question
-  </div>
-  <div class="faq-question">
-    Question
-  </div>
-  <div class="faq-question">
-    Question
-  </div>
-  <div class="faq-question">
-    Question
-  </div>
-  <div class="faq-question">
-    Question
-  </div>
-  <div class="faq-question">
-    Question
-  </div>
-  <div class="faq-question">
-    Question
-  </div>
-  <div class="faq-question">
-    Question
-  </div>
-  <div class="faq-question">
-    Question
-  </div>
-  <div class="faq-question">
-    Question
-  </div>
-  <div class="faq-question">
-    Question
-  </div>
-  <div class="faq-question">
-    Question
-  </div>
+<div style="display: flex;align-items:center;
+justify-content: center; height: 100vh;">
+
+<video width="320" height="240" controls>
+    <source [src]="video_sae_302" type="video/mp4"/>
+    Your browser does not support the video tag
+</video>
 </div>

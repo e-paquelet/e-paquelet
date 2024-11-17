@@ -32,6 +32,6 @@ export class NotfoundComponent {
 
     directory = window.location.pathname.split("/").pop()?.trim();
 
-    miniGameListe: MiniGameType[] = ["Tic Tac Toe", /* "Snake", "Puissance 4", */ "Démineur", "Aucun"];
+    miniGameListe: MiniGameType[] = ["Tic Tac Toe", /* "Snake", "Puissance 4", */ "Aucun", 'Démineur'];
     miniGameChosen: MiniGameType = "Aucun";
 }

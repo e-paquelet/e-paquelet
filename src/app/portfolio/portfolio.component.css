@@ -8,6 +8,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
 }
 
 .main>h1 {
@@ -82,6 +83,20 @@ hr {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
+.progress-container2 {
+    float: right;
+    width: 50%;
+    background-color: #e0e0df;
+    
+    margin-left: 1vh;
+    margin-top: -4vh;
+    margin-bottom: 2vh;
+    margin-right: 5vw;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
 .progress-bar {
     height: 20px;
     width: 0; /* Initial width */
@@ -94,6 +109,8 @@ hr {
     animation: grow 3s ease forwards; /* Animation applied */
     transition: all 2s ease; /* Smooth transition for width changes */
 }
+
+
 
 @keyframes grow {
     from {
@@ -133,6 +150,24 @@ hr {
     animation: grow50 2s ease forwards;
 }
 
+.width-73 {
+    animation: grow73 2s ease forwards;
+}
+
+.width-52-5 {
+    animation: grow52-5 2s ease forwards;
+}
+
+
+.width-60 {
+    animation: grow60 2s ease forwards;
+}
+
+.width-40 {
+    animation: grow40 2s ease forwards;
+}
+
+
 @keyframes grow35 {
     from {
         width: 0;
@@ -151,6 +186,15 @@ hr {
     }
 }
 
+@keyframes grow40 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 40%;
+    }
+}
+
 @keyframes grow45 {
     from {
         width: 0;
@@ -160,12 +204,31 @@ hr {
     }
 }
 
+@keyframes grow52-5 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 53%;
+    }
+}
+
 @keyframes grow50 {
     from {
         width: 0;
     }
     to {
         width: 50%;
+    }
+}
+
+
+@keyframes grow60 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 60%;
     }
 }
 
@@ -184,6 +247,15 @@ hr {
     }
     to {
         width: 75%;
+    }
+}
+
+@keyframes grow73 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 73%;
     }
 }
 
@@ -216,9 +288,13 @@ span {
 }
 
 .OS {
-    margin-left: 10vw;
-    /* background-color: grey; */
-    margin-right: 10vw;
+    margin-left: 5vw;
+    padding-left: 5vw;
+    background-color: whitesmoke;
+    margin-right: 5vw;
+    padding-right: 5vw;
+    border-radius: 20px;
+    margin-top: 2dvh;
 }
 
 /* Set the width of the progress bar to 70% */
@@ -284,13 +360,15 @@ td:first-child {
 .button-container {
     display: flex;
     justify-content: space-between;
-    padding: 0 3vw;
+    /* background-color: grey; */
+    margin: 0 3vw;
     margin-bottom: 60px;
 }
 
-.positionboutonadmin, .positionboutonreseaux, .positionboutonvirtuel, .positionboutonbasedonne, .positionboutontelecom, .positionboutonscript {
+.positionboutongauche, .positionboutondroit { 
     display: flex;
     align-items: center;
+    /* background-color: red; */
     flex: 1;
     margin: 0 30px; /* Marges ajustables pour l'espacement entre les boutons */
 }
@@ -298,7 +376,7 @@ td:first-child {
 .bouton {
     background-color: white;
     border: none;
-    color: white;
+    background-color: whitesmoke;
     padding-left: 0;
     text-align: left;
     text-decoration: none;
@@ -317,8 +395,8 @@ td:first-child {
 /*contenu css pour éléments a l'intérieur du bouton*/
 .textgauche {
     float: right;
-    padding: 5vw;
-    padding-right: 15vh;
+    margin-top: 4vw;
+    margin-right: 8vh;
     color: black;
     padding-bottom: 0;
 }
@@ -338,13 +416,12 @@ td:first-child {
 
 .textdroite {
     float: right;
-    padding: 5vw;
-    padding-right: 23vh;
+    margin-top: 4vw;
+    margin-right: 5vh;
     color: black;
     padding-bottom: 10px;
+    
 }
-
-
 
 .imagedroite {
     float: left;
@@ -360,44 +437,21 @@ td:first-child {
 
 .textdb {
     float: right;
-    padding: 5vw;
-    padding-right: 18vh;
+    margin-top: 4vw;
+    margin-right: 20vh;
     color: black;
     padding-bottom: 0;
-}
-
-.imagedev {
-    float: left;
-    width: 31%;
-    height: 30%;
+    text-align: center;
 }
 
 .textdev {
     float: right;
-    padding: 5vw;
-    padding-right: 15vh;
+    margin-top: 4vw;
+    text-align: center;
+    margin-right: 2dvh;
     color: black;
     padding-bottom: 0;
 }
-
-.imagecyber {
-    float: left;
-    width: 50%;
-    height: 30%;
-}
-
-.textcyber {
-    float: right;
-    padding: 10vh;
-    padding-right: 6vw;
-    color: black;
-    padding-bottom: 0;
-}
-
-
-
-
-
 
 .overlay {
     position: absolute;
@@ -410,7 +464,7 @@ td:first-child {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    z-index: 3;
 
 }
 
@@ -433,8 +487,13 @@ td:first-child {
     height: 42%;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     animation: popup-animation 0.3s ease-out;
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+
 }
+
+
 
 .close-popup {
     position: relative;
@@ -449,4 +508,195 @@ td:first-child {
 
 .close-popup:hover {
     color: red;
+}
+
+
+video {
+    position: absolute;
+  
+    width: 90vw;
+    height: 90dvh;
+    object-fit: cover;
+    z-index: 1;
+  }
+  
+  .overlay10 {
+    position: absolute;
+    z-index: 2;
+    /* Assure que l'overlay est au-dessus de la vidéo */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay10>h1 {
+    color: white;
+    /* Le texte est blanc */
+    font-size: 4em;
+  
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 26vw ;
+    padding: 5px 15px;
+    text-align: center;
+    /* background: rgba(0, 0, 0, 0.5);  */
+  }
+  
+
+  .overlay20 {
+    position: absolute;
+    z-index: 3;
+    /* Assure que l'overlay est au-dessus de la vidéo */
+    /* min-height: 100vh; */
+    width: 10%;
+    height: 10%;
+    margin-left: 41vw;
+    margin-top: 80dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+  }
+  
+  .overlay20 a {
+    color: white;
+  
+    font-size: 3em;
+    animation: fadeBlink 3s infinite;
+    font-family: Arial, Helvetica, sans-serif;
+  
+    text-align: center;
+  
+  }
+  
+  @keyframes fadeBlink {
+    0%, 100% {
+      opacity: 1; /* Fully visible for the first half */
+    }
+    50% {
+      opacity: 0; /* Gradually fades out in the second half */
+    }
+  
+  
+  }
+  
+  
+  html {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+  }
+  
+  html::-webkit-scrollbar {
+    display: none; /* Cache la scrollbar */
+  }
+  
+  /* Solution pour Firefox */
+  html {
+    scrollbar-width: none; /* Cache la scrollbar dans Firefox */
+  }
+
+
+  .positiontexte {
+    /* width: 250px; */
+    height: 400px;
+    background: #fff;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* border: 1px solid #7b7d7f; */
+    /* margin-top: 20dvh; */
+}
+
+.positiontexte::-webkit-scrollbar {
+    width: 7px;
+}
+
+.positiontexte::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10rem;
+    /* border: 1px solid #fff; */
+}
+
+
+.title {
+    margin-left: 5vw;
+}
+
+.titre {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 10px 0;
+    z-index: 1;
+    /* border-bottom: 1px solid #ddd; */
+}
+
+
+.OS2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1px;
+    text-align: center;
+}
+
+/* Style du conteneur de table */
+.table {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 10px;
+    background-color: #f9f9f9;
+    border-radius: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table et cellules */
+.table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table td {
+    padding: 15px 10px;
+    vertical-align: top;
+    font-size: 16px;
+    color: #444;
+    font-weight: 500;
+}
+
+
+
+/* Style pour les éléments de liste */
+.table li {
+    list-style-type: none;
+    font-weight: 600;
+    color: #444;
+    padding-left: 0;
+}
+
+/* Cellule de séparation (description) */
+.spacer2 {
+    color: #666;
+    font-style: italic;
+    font-weight: 400;
+    padding-left: 15px;
+}
+
+/* Ligne de bordure entre chaque certification */
+.table tr:not(:last-child) td {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Effet visuel lors du survol de la ligne */
+.table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive - ajustements pour petits écrans */
+@media (max-width: 600px) {
+    .OS {
+        font-size: 20px;
+    }
+    .table td {
+        padding: 10px;
+    }
 }

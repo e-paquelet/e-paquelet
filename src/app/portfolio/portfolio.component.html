@@ -1,17 +1,42 @@
-<div class="main" [style.background-image]="makeImgUrl(bgImgUrl)">
+<!-- <div class="main" [style.background-image]="makeImgUrl(bgImgUrl)">
     <h1>Mes compétences</h1>
+
+</div> -->
+
+<html>
+<div class="main">
+    <video disablePictureInPicture playsinline autoplay muted loop>
+        <source [src]="bgImgUrl" type="video/mp4">
+        Your browser does not support the video tag. I suggest you upgrade your browser.
+    </video>
+
+    <div class="overlay10">
+        <h1>Mes compétences</h1>
+    </div>
+
+    <div class="overlay20">
+        <a href="/portfolio#presentation" class="btn btn-default">&#9207;</a>
+    </div>
 
 </div>
 
+<div id="presentation"></div>
 
-
-
-<div class="overlay" *ngIf="show" (click)="closeoverlay($event)">
+<div class="overlay" *ngIf="show" (click)="closeoverlay($event)"> <!-- Admininistrer les réseaux et l'Internet-->
     <div class="popup-content">
 
         <div class="close-popup" (click)="closepopup()">
             &times;
         </div>
+        <div class="titre">
+            <p class="title">Administrer les réseaux et Internet</p>
+            <div class="progress-container2">
+                <div class="progress-bar width-73">
+                    73%
+                </div>
+            </div>
+        </div>
+        <br><br>
         <div class="OS">
             <p>Administration Système</p>
             <div class="progress-container">
@@ -48,23 +73,14 @@
                 </tr>
             </table>
         </div>
-        
-    </div>
-</div>
-
-<div class="overlay" *ngIf="show1" (click)="closeoverlay($event)">
-    <div class="popup-content">
-
-        <div class="close-popup" (click)="closepopup1()">
-            &times;
-        </div>
+        <br><br>
         <div class="OS">
             <p>Réseaux</p>
             <div class="progress-container">
                 <div class="progress-bar width-75">75%</div>
             </div>
-        
-        
+
+
             <table>
                 <tr>
                     <td>
@@ -80,27 +96,27 @@
                     </td>
                     <td class="spacer">
                         <li>Routage statique (RIPv1, RIPv2)</li>
-        
+
                     </td>
                 </tr>
                 <tr>
                     <td>
-        
+
                     </td>
                     <td class="spacer">
-        
+
                         <li>Routage dynamique (OSPF, BGP, MPLS)</li>
-        
+
                     </td>
-        
+
                 </tr>
                 <tr>
                     <td>
-        
+
                     </td>
                     <td class="spacer">
                         <li>Routage Inter-Vlan</li>
-        
+
                     </td>
                 </tr>
                 <tr>
@@ -111,23 +127,14 @@
                 </tr>
             </table>
         </div>
-        
-    </div>
-</div>
-
-<div class="overlay" *ngIf="show2" (click)="closeoverlay($event)">
-    <div class="popup-content">
-
-        <div class="close-popup" (click)="closepopup2()">
-            &times;
-        </div>
+        <br><br>
         <div class="OS">
             <p>Virtualisation</p>
             <div class="progress-container">
                 <div class="progress-bar width-65">65%</div>
             </div>
-        
-        
+
+
             <table>
                 <tr>
                     <td>
@@ -150,7 +157,7 @@
                         <li>Hyper-V</li>
                     </td>
                     <td class="spacer">
-                        <li>Installation, Configuration : réplication, et utilisation</li>
+                        <li>Installation, Configuration : réplication et utilisation</li>
                     </td>
                 </tr>
                 <tr>
@@ -160,25 +167,215 @@
                 </tr>
             </table>
         </div>
-        
-        
-        
+
     </div>
 </div>
 
-<div class="overlay" *ngIf="show3" (click)="closeoverlay($event)">
+<div class="overlay" *ngIf="show1" (click)="closeoverlay($event)"> <!-- Connecter les entreprises et usagers-->
+    <div class="popup-content">
+
+        <div class="close-popup" (click)="closepopup1()">
+            &times;
+        </div>
+
+        <div class="titre">
+            <p class="title">Connecter les entreprises et usagers</p>
+            <div class="progress-container2">
+                <div class="progress-bar width-50">
+                    50%
+                </div>
+            </div>
+        </div>
+
+        <div class="OS">
+            <p>Télécommunications</p>
+            <div class="progress-container">
+                <div class="progress-bar width-50">50%</div>
+            </div>
+
+
+            <table>
+                <tr>
+                    <td>
+                        <li>Téléphonie sur IP</li>
+                    </td>
+                    <td class="spacer">
+                        <li>Mise en place de réseaux téléphoniques </li>
+                        <li>Asterisk : configuration et utilisation</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <li>Réseaux cellulaires</li>
+                    </td>
+                    <td class="spacer">
+                        <li>Compréhension des réseaux internet (1G, GSM, UMTS, 4G LTE, 5G, Réseaux fibre/cuivre)
+                        </li>
+                    </td>
+                </tr>
+
+
+            </table>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="overlay" *ngIf="show5" (click)="closeoverlay($event)"> <!-- certification-->
+    <div class="popup-content">
+
+        <div class="close-popup" (click)="closepopup2()">
+            &times;
+        </div>
+        <div style="font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 20px;
+        text-align: center;" class="titre">Certifications</div>
+        <div class="OS2">
+            <div class="table">
+                <table>
+                    <tr>
+                        <td>
+                            <li>CCNAv7</li>
+                        </td>
+                        <td class="spacer2">
+                            <li>Introduction aux
+                                réseaux</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <li>CCNAv7</li>
+                        </td>
+                        <td class="spacer2">
+                            <li>Notions de base
+                                sur la commutation, le routage et le sans fil</li>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <li>CCNAv7</li>
+                        </td>
+                        <td class="spacer2">
+                            <li>Mise en réseau,
+                                sécurité et automatisation des entreprises</li>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="overlay" *ngIf="show3" (click)="closeoverlay($event)"><!-- Sécuriser-->
     <div class="popup-content">
 
         <div class="close-popup" (click)="closepopup3()">
             &times;
         </div>
+        <div class="titre">
+            <p class="title">Sécuriser</p>
+            <div class="progress-container2">
+                <div class="progress-bar width-60">
+                    60%
+                </div>
+            </div>
+        </div>
         <div class="OS">
+            <p>Sécuriser</p>
+            <div class="progress-container">
+                <div class="progress-bar width-60">60%</div>
+            </div>
+
+
+            <table>
+                <tr>
+                    <td>
+                        <li>Firewall (StormShield)</li>
+                    </td>
+                    <td class="spacer">
+                        <li>Filtrage et NAT</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <li>Pentesting</li>
+                    </td>
+                    <td class="spacer">
+                        <li>Gestion d'ACL</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <li>Supervision Réseaux</li>
+                    </td>
+                    <td class="spacer">
+                        <li>Création d'autorité de certification</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td class="spacer">
+                        <li>Authentification : implicite (Certificat SSL) et explicite (portail captif : LDAP, Radius)
+                        </li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td class="spacer">
+                        <li>Proxy HTTP/HTTPS</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td class="spacer">
+                        <li>IDS/IPS</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td class="spacer">
+                        <li>Root-Me, Over The Wire : Bandit</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td class="spacer">
+                        <li>SNMP : supervision de la MiB</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td class="spacer">
+                        <li>Zabbix : supervision réseaux</li>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- <div class="OS">
             <p>Bases de Données</p>
             <div class="progress-container">
-                <div class="progress-bar width-30">30%</div>
+                <div class="progress-bar width-40">40%</div>
             </div>
-        
-        
+
+
             <table>
                 <tr>
                     <td>
@@ -190,7 +387,7 @@
                 </tr>
                 <tr>
                     <td>
-        
+
                     </td>
                     <td class="spacer">
                         <li>Réalisation de requêtes SQL simples</li>
@@ -198,19 +395,19 @@
                 </tr>
                 <tr>
                     <td>
-        
+
                     </td>
                     <td class="spacer">
-        
+
                     </td>
                 </tr>
             </table>
-        </div>
-        
+        </div> -->
+
     </div>
 </div>
 
-<div class="overlay" *ngIf="show4" (click)="closeoverlay($event)">
+<div class="overlay" *ngIf="show6" (click)="closeoverlay($event)"> <!-- ///-->
     <div class="popup-content">
 
         <div class="close-popup" (click)="closepopup4()">
@@ -221,47 +418,55 @@
             <div class="progress-container">
                 <div class="progress-bar width-45">45%</div>
             </div>
-        
-        
+
+
             <table>
                 <tr>
                     <td>
                         <li>Téléphonie sur IP</li>
                     </td>
                     <td class="spacer">
-                        <li>Mise en place d'un réseau téléphonique avec les logiciels : Astérisk, OXO.(A Vérifier avec contenu
-                            des cours)</li>
+                        <li>Mise en place de réseaux téléphoniques </li>
+                        <li>Asterisk : configuration et utilisation</li>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <li>Téléphonie sur IP</li>
+                        <li>Réseaux cellulaires</li>
                     </td>
                     <td class="spacer">
                         <li>Compréhension des réseaux internet (1G, GSM, UMTS, 4G LTE, 5G, Réseaux fibre/cuivre)</li>
                     </td>
                 </tr>
-                
-        
+
+
             </table>
         </div>
-        
+
     </div>
 </div>
 
-<div class="overlay" *ngIf="show5" (click)="closeoverlay($event)">
+<div class="overlay" *ngIf="show2" (click)="closeoverlay($event)"> <!-- Créer des outils et applications pour les R&T-->
     <div class="popup-content">
 
         <div class="close-popup" (click)="closepopup5()">
             &times;
         </div>
+        <div class="titre">
+            <p class="title">Créer des outils et applications pour les R&T</p>
+            <div class="progress-container2">
+                <div class="progress-bar width-52-5">
+                    52,5%
+                </div>
+            </div>
+        </div>
         <div class="OS">
             <p>Scripting & Développement</p>
             <div class="progress-container">
-                <div class="progress-bar width-50">50%</div>
+                <div class="progress-bar width-65">65%</div>
             </div>
-        
-        
+
+
             <table>
                 <tr>
                     <td>
@@ -296,31 +501,75 @@
                     </td>
                 </tr>
             </table>
-        </div> 
-        
+        </div>
+        <br><br>
+
+        <div class="OS">
+            <p>Bases de Données</p>
+            <div class="progress-container">
+                <div class="progress-bar width-40">40%</div>
+            </div>
+
+
+            <table>
+                <tr>
+                    <td>
+                        <li>SQL</li>
+                    </td>
+                    <td class="spacer">
+                        <li>Création et modélisation de bases de données</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td class="spacer">
+                        <li>Réalisation de requêtes SQL simples</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td class="spacer">
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+
     </div>
 </div>
 
-<div class="overlay" *ngIf="show6" (click)="closeoverlay($event)">
+<div class="overlay" *ngIf="show4" (click)="closeoverlay($event)"> <!-- Surveiller-->
     <div class="popup-content">
 
         <div class="close-popup" (click)="closepopup6()">
             &times;
         </div>
-        <div class="OS">
-            <p>Cybersécurité</p>
-            <div class="progress-container">
-                <div class="progress-bar width-35">35%</div>
+        <div class="titre">
+            <p class="title">Surveiller</p>
+            <div class="progress-container2">
+                <div class="progress-bar width-60">
+                    60%
+                </div>
             </div>
-        
-        
+        </div>
+        <div class="OS">
+            <p>Surveiller</p>
+            <div class="progress-container">
+                <div class="progress-bar width-60">60%</div>
+            </div>
+
+
             <table>
                 <tr>
                     <td>
                         <li>Firewall (StormShield)</li>
                     </td>
                     <td class="spacer">
-                        <li>Gestion de Firewall, Routing et configuration basique</li>
+                        <li>Filtrage et NAT</li>
                     </td>
                 </tr>
                 <tr>
@@ -333,7 +582,7 @@
                 </tr>
                 <tr>
                     <td>
-                        
+                        <li>Supervision Réseaux</li>
                     </td>
                     <td class="spacer">
                         <li>Création d'autorité de certification</li>
@@ -341,15 +590,56 @@
                 </tr>
                 <tr>
                     <td>
-                        
+
+                    </td>
+                    <td class="spacer">
+                        <li>Authentification : implicite (Certificat SSL) et explicite (portail captif : LDAP, Radius)
+                        </li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td class="spacer">
+                        <li>Proxy HTTP/HTTPS</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td class="spacer">
+                        <li>IDS/IPS</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
                     </td>
                     <td class="spacer">
                         <li>Root-Me, Over The Wire : Bandit</li>
                     </td>
                 </tr>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td class="spacer">
+                        <li>SNMP : supervision de la MiB</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td class="spacer">
+                        <li>Zabbix : supervision réseaux</li>
+                    </td>
+                </tr>
             </table>
-        </div> 
-        
+        </div>
+
     </div>
 </div>
 
@@ -357,24 +647,26 @@
 
 
 
-<div class="button-container">
-    <div class="positionboutonadmin">
 
-        <button class="bouton" id="admin" matTooltip="Mes compétences en Administration Systèmes" (click)="openpopup()">
+<div class="button-container"> <!-- bouton administrer réseau et connecter usager-->
+    <div class="positionboutongauche">
+
+        <button class="bouton" id="admin" matTooltip="Mes compétences en Administration Systèmes et réseaux"
+            (click)="openpopup()">
             <img class="imagegauche" [src]="bgImgUrl2">
             <div class="textgauche">
-                Administration Système
+                Administrer les réseaux et Internet
             </div>
         </button>
 
 
     </div>
-    <div class="positionboutonreseaux">
+    <div class="positionboutondroit">
 
-        <button class="bouton" matTooltip="Mes compétences en Réseaux" (click)="openpopup1()">
-            <img class="imagedroite" [src]="bgImgUrl3">
+        <button class="bouton" matTooltip="Mes compétences en Télécommunication" (click)="openpopup1()">
+            <img class="imagedb" [src]="bgImgUrl3">
             <div class="textdroite">
-                Réseaux
+                Connecter les entreprises et usagers
             </div>
         </button>
 
@@ -384,24 +676,25 @@
 
 </div>
 
-<div class="button-container">
-    <div class="positionboutonadmin">
+<div class="button-container"> <!-- bouton administrer réseau et connecter usager-->
+    <div class="positionboutongauche">
 
-        <button class="bouton" id="admin" matTooltip="Mes compétences en Virtualisation" (click)="openpopup2()">
-            <img class="imagegauche" [src]="bgImgUrl4">
-            <div class="textvirt">
-                Virtualisation
+        <button class="bouton" id="admin" matTooltip="Mes compétences en Administration Systèmes et réseaux"
+            (click)="openpopup2()">
+            <img class="imagegauche" [src]="bgImgUrl7">
+            <div class="textdev">
+                Créer des outils et applications informatiques <br> pour les R&T
             </div>
         </button>
 
 
     </div>
-    <div class="positionboutonreseaux">
+    <div class="positionboutondroit">
 
-        <button class="bouton" matTooltip="Mes compétences en Bases de données" (click)="openpopup3()">
-            <img class="imagedb" [src]="bgImgUrl5">
+        <button class="bouton" matTooltip="Mes compétences en Télécommunication" (click)="openpopup3()">
+            <img class="imagedb" [src]="bgImgUrl8">
             <div class="textdb">
-                Bases de données
+                Sécuriser
             </div>
         </button>
 
@@ -412,23 +705,51 @@
 </div>
 
 <div class="button-container">
-    <div class="positionboutonadmin">
+    <div class="positionboutongauche">
 
-        <button class="bouton" id="admin" matTooltip="Mes compétences en Virtualisation" (click)="openpopup4()">
-            <img class="imagegauche" [src]="bgImgUrl6">
+        <button class="bouton" id="admin" matTooltip="Mes compétences en Administration Systèmes et réseaux"
+            (click)="openpopup4()">
+            <img class="imagegauche" [src]="bgImgUrl8">
             <div class="textvirt">
-                Télécommunication
+                Surveiller
             </div>
         </button>
 
 
     </div>
-    <div class="positionboutonreseaux">
+    <div class="positionboutondroit">
 
-        <button class="bouton" matTooltip="Mes compétences en Bases de données" (click)="openpopup5()">
+        <button class="bouton" matTooltip="Mes compétences en Télécommunication" (click)="openpopup5()">
+            <img class="imagedb" [src]="bgImgUrl9">
+            <div class="textdb">
+                Certifications
+            </div>
+        </button>
+
+
+
+    </div>
+
+</div>
+
+<!-- <div class="button-container"> bouton test
+    <div class="positionboutongauche">
+
+        <button class="bouton" matTooltip="Mes compétences Scripting et Développement" (click)="openpopup5()">
             <img class="imagedev" [src]="bgImgUrl7">
             <div class="textdev">
-                Scripting & Développement
+                Créer des outils et applications informatique <br> pour les R&T
+            </div>
+        </button>
+
+
+    </div>
+    <div class="positionboutondroit">
+
+        <button class="bouton" matTooltip="Mes compétences en Bases de données" (click)="openpopup3()">
+            <img class="imagedb" [src]="bgImgUrl8">
+            <div class="textdb">
+                Sécuriser
             </div>
         </button>
 
@@ -436,18 +757,48 @@
 
     </div>
 
-</div>
+</div> -->
+
+<!-- <div class="button-container"> bouton cyber test
+    <div class="positionboutongauche">
+
+        <button class="bouton" id="admin" matTooltip="Mes compétences en Virtualisation" (click)="openpopup6()">
+            <img class="imagegauche" [src]="bgImgUrl8">
+            <div class="textvirt">
+                Surveiller
+            </div>
+        </button>
+
+
+    </div>
+    <div class="positionboutondroit">
+
+        <button class="bouton" matTooltip="Mes compétences en Bases de données" (click)="openpopup5()">
+            <img class="imageautre" [src]="bgImgUrl9">
+            <div class="textautre">
+                Créer des outils et applications informatique pour les R&T
+            </div>
+        </button>
 
 
 
-<div class="positionboutoncyber">
+    </div>
+
+</div> bouton cyber test -->
+
+
+
+
+<!-- <div class="positionboutoncyber"> ancien bouton cyber
 
     <button class="bouton" matTooltip="Mes compétences en Administration Systèmes" (click)="openpopup6()">
         <img class="imagecyber" [src]="bgImgUrl8">
         <div class="textcyber">
-            Cybersécurité
+            Surveiller
         </div>
     </button>
 
 
-</div>
+</div> -->
+
+</html>

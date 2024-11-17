@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Prog1Component } from "../prog1/prog1.component";
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 type ListeContactItem = {
   img: string;
@@ -11,7 +12,7 @@ type ListeContactItem = {
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [Prog1Component],
+  imports: [MatTooltipModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
 })
@@ -20,7 +21,10 @@ export class ContactComponent {
   bgImgUrl2 = "/assets/img/profil.png";
   bgImgUrl3 = "/assets/img/linkedin.png";
   bgImgUrl4 = "/assets/img/mail.png";
+  bgImgUrl5 = "/assets/img/background2.mp4";
   dianeUrl = "/assets/img/mdp.jpg";
+  cv = "/assets/img/CV_PAQUELET_Etienne.pdf";
+  CV = "/assets/img/cv.png";
   dianeArray: string[] = [];
 
   listeContact: ListeContactItem[] = [
@@ -42,9 +46,9 @@ export class ContactComponent {
     window.addEventListener("keydown", (ev) => {
       const elmt = document.getElementById("imgProfil") as HTMLImageElement;
       if (!ev || !elmt) return;
-      if (this.dianeArray.length == 5) { this.dianeArray.shift(); }
+      if (this.dianeArray.length == 7) { this.dianeArray.shift(); }
       this.dianeArray.push(ev.key.toLowerCase());
-      if (this.dianeArray.join("") == "diane") {
+      if (this.dianeArray.join("") == "etienne") {
         elmt.src = this.dianeUrl;
         elmt.alt = "Image easter egg";
       } else {

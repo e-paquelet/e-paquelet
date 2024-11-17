@@ -12,14 +12,16 @@ import { MatButtonModule } from '@angular/material/button';
   styleUrl: './portfolio.component.css'
 })
 export class PortfolioComponent {
-  bgImgUrl = "/assets/img/background.jpg";
+  // bgImgUrl = "/assets/img/background.jpg";
+  bgImgUrl = "/assets/img/background2.mp4";
   bgImgUrl2 = "/assets/img/os.jpg";
-  bgImgUrl3 = "/assets/img/reseaux.jpg";
+  bgImgUrl3 = "/assets/img/reseaux22.png";
   bgImgUrl4 = "/assets/img/virtual.jpg";
   bgImgUrl5 = "/assets/img/sql.png";
   bgImgUrl6 = "/assets/img/telecom.jpg";
-  bgImgUrl7 = "/assets/img/dev.jpg";
-  bgImgUrl8 = "/assets/img/cyber.jpg";
+  bgImgUrl7 = "/assets/img/dev2.jpg";
+  bgImgUrl8 = "/assets/img/cyber3.png";
+  bgImgUrl9 = "/assets/img/cert.jpg";
   show = false;
   show1 = false;
   show2 = false;
@@ -27,6 +29,7 @@ export class PortfolioComponent {
   show4 = false;
   show5 = false;
   show6=false;
+  show15=false;
   openpopup() {
 
     this.show = true;
@@ -45,6 +48,15 @@ export class PortfolioComponent {
 
   closepopup1() {
     this.show1 = false;
+  }
+
+  openpopup15() {
+
+    this.show15 = true;
+  }
+
+  closepopup15() {
+    this.show15 = false;
   }
   openpopup2() {
 
@@ -102,6 +114,7 @@ export class PortfolioComponent {
       this.show4 = false;
       this.show5 = false;
       this.show6 = false;
+      this.show15 = false;
     }
   }
   

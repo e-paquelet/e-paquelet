@@ -52,21 +52,19 @@
         </div>
 
         <div class="container2">
-            <!-- <div class="section bouton-left">
-                <a href="/gamemenu">
-                    <button class="mat-stroked-button" mat-raised-button>
-                        Mini-jeux
-                    </button>
-                </a>
+            <div class="section bouton-left">
+
+
+                <button mat-button [matMenuTriggerFor]="menu">Minis-jeux</button>
             </div>
             <div class="section texte3">
                 OU
-            </div> -->
+            </div>
             <div class="section bouton-right">
                 <a href="/accueil">
                     <button class="mat-stroked-button" mat-raised-button>Retour à la page d'accueil</button>
                 </a>
-                <button mat-button [matMenuTriggerFor]="menu">Minis-jeux</button>
+                <!-- <button mat-button [matMenuTriggerFor]="menu">Minis-jeux</button> -->
                 <mat-menu #menu="matMenu">
                     @for (item of miniGameListe; track $index) {
                     <button mat-menu-item [style.display]="miniGameListe[$index]==miniGameChosen?'none':'block'"
