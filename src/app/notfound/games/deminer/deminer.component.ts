@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, isDevMode, OnInit } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatRadioModule } from '@angular/material/radio';
 
@@ -131,38 +131,39 @@ export class DeminerComponent implements OnInit {
         const row = Math.floor(numero / largeur);
         let added = false;
 
-        if (col != 0) {
+        // on vérifie à chaque fois où l'on fait +1 que la case n'est pas une bombe
+        if (col != 0 && !this.CHB(numero - 1)) {
             this.board[numero - 1] += 1;
             added = true;
         }
-        if (col != largeur - 1) {
+        if (col != largeur - 1 && !this.CHB(numero + 1)) {
             this.board[numero + 1] += 1;
             added = true;
         }
 
-        if (row != 0) {
+        if (row != 0 && !this.CHB(numero - largeur)) {
             this.board[numero - largeur] += 1;
             added = true;
         }
-        if (row != largeur - 1) {
+        if (row != largeur - 1 && !this.CHB(numero + largeur)) {
             this.board[numero + largeur] += 1;
             added = true;
         }
 
-        if (col != 0 && row != 0) {
+        if (col != 0 && row != 0 && !this.CHB(numero - largeur - 1)) {
             this.board[numero - largeur - 1] += 1;
             added = true;
         }
-        if (col != 0 && row != largeur - 1) {
+        if (col != 0 && row != largeur - 1 && !this.CHB(numero + largeur - 1)) {
             this.board[numero + largeur - 1] += 1;
             added = true;
         }
 
-        if (col != largeur - 1 && row != 0) {
+        if (col != largeur - 1 && row != 0 && !this.CHB(numero - largeur + 1)) {
             this.board[numero - largeur + 1] += 1;
             added = true;
         }
-        if (col != largeur - 1 && row != largeur - 1) {
+        if (col != largeur - 1 && row != largeur - 1 && !this.CHB(numero + largeur + 1)) {
             this.board[numero + largeur + 1] += 1;
             added = true;
         }
@@ -178,6 +179,9 @@ export class DeminerComponent implements OnInit {
     }
 
     prettyLogBoard() {
+        // on n'affiche pas la carte si on est pas en mode développement
+        if (!isDevMode()) return;
+
         const largeur = (10 * this.difficulte + 1);
         let r = "";
         for (let i = 0; i < largeur; i++) {
@@ -253,16 +257,14 @@ export class DeminerComponent implements OnInit {
                 block.classList.add("num" + this.board[numero]);
                 break;
         }
-
-
-        if (this.bombs.includes(numero)) {
-            // BUG des fois, sans cette condition, les bombes disparaisse de la grille
-            console.log("Should contain bomb");
-            block.classList.remove("empty");
-            block.classList.add("bomb");
-            this.bombEndGame();
-            return;
-        }
+        // if (this.bombs.includes(numero)) {
+        //     // BUG des fois, sans cette condition, les bombes disparaisse de la grille
+        //     console.log("Should contain bomb");
+        //     block.classList.remove("empty");
+        //     block.classList.add("bomb");
+        //     this.bombEndGame();
+        //     return;
+        // }
 
         this.caseHidden--;
         console.log(this.caseHidden);
