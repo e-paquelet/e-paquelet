@@ -1,0 +1,80 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin: 10px;
+    gap: 10px;
+}
+
+.grid {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3, min(20vw, 20dvh));
+    grid-template-rows: repeat(3, min(20vw, 20dvh));
+
+    &>div {
+        border: solid black 1px;
+        width: min(20vw, 20dvh);
+        height: min(20vw, 20dvh);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+}
+
+.cross {
+    position: relative;
+
+    &::after {
+        color: red;
+        position: absolute;
+        content: "";
+        width: 80%;
+        height: 10px;
+        background-color: red;
+        border-radius: 999px;
+        rotate: 45deg;
+    }
+
+    &::before {
+        color: red;
+        position: absolute;
+        content: "";
+        width: 80%;
+        height: 10px;
+        background-color: red;
+        border-radius: 999px;
+        rotate: -45deg;
+    }
+}
+
+.circle {
+    position: relative;
+
+    &::after {
+        color: blue;
+        position: absolute;
+        z-index: -1;
+        content: "";
+        width: 80%;
+        height: 80%;
+        background-color: blue;
+        border-radius: 999px;
+    }
+
+    &::before {
+        position: absolute;
+        color: inherit;
+        content: "";
+        width: calc(80% - 20px);
+        height: calc(80% - 20px);
+        background-color: white;
+        border-radius: 999px;
+    }
+}

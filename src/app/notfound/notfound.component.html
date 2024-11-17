@@ -11,7 +11,8 @@
     <span class="id">4</span>
 </div> -->
 
-<img [src]="bgImgUrl3" style="width: 70%; height: 70%; margin-left: 15vw; margin-right: 15vw; margin-top: 5vw;"><a id="link"href="http://www.freepik.com">Picture Designed by Freepik</a>
+<img [src]="bgImgUrl3" style="width: 70%; height: 70%; margin-left: 15vw; margin-right: 15vw; margin-top: 5vw;"><a
+    id="link" href="http://www.freepik.com">Picture Designed by Freepik</a>
 <div class="body">
     <div class="contenu">
         <div class="grid">
@@ -47,27 +48,29 @@
         </div>
 
         <div class="texte">
-            La page {{ directory }}   n'existe pas.
+            La page {{ directory }} n'existe pas.
         </div>
 
         <div class="container2">
-            <!-- <div class="section bouton-left">
-                <a href="/gamemenu">
-                    <button class="mat-stroked-button" mat-raised-button>
-                        Mini-jeux
-                    </button>
-                </a>
+            <div class="section bouton-left">
+
+
+                <button mat-button [matMenuTriggerFor]="menu">Minis-jeux</button>
             </div>
             <div class="section texte3">
                 OU
-            </div> -->
+            </div>
             <div class="section bouton-right">
                 <a href="/accueil">
-                    <button class="mat-stroked-button" mat-raised-button>
-                        Retour à la page
-                        d'accueil
-                    </button>
+                    <button class="mat-stroked-button" mat-raised-button>Retour à la page d'accueil</button>
                 </a>
+                <!-- <button mat-button [matMenuTriggerFor]="menu">Minis-jeux</button> -->
+                <mat-menu #menu="matMenu">
+                    @for (item of miniGameListe; track $index) {
+                    <button mat-menu-item [style.display]="miniGameListe[$index]==miniGameChosen?'none':'block'"
+                        (click)="miniGameChosen = item">{{item}}</button>
+                    }
+                </mat-menu>
             </div>
         </div>
 
@@ -86,5 +89,16 @@
             <span class="id">4</span>
         </div> -->
     </div>
+
+    @if (miniGameChosen == "Tic Tac Toe") {
+    <app-tiktaktoe></app-tiktaktoe>
+    } @else if (miniGameChosen == "Puissance 4") {
+    <app-power4></app-power4>
+    }@else if (miniGameChosen == "Snake") {
+    <app-snake></app-snake>
+    }
+    @else if (miniGameChosen == "Démineur") {
+    <app-deminer></app-deminer>
+    }
 
 </div>

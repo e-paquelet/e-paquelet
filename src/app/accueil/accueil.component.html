@@ -1,51 +1,81 @@
-<div class="main" [style.background-image]="makeImgUrl(bgImgUrl)">
+<!-- <div class="main" [style.background-image]="makeImgUrl(bgImgUrl)">
     <h1>Bienvenue <br>dans mon<br> portfolio</h1>
-    
+
+</div> -->
+<html>
+<div class="main">
+    <video disablePictureInPicture playsinline autoplay muted loop>
+        <source [src]="bgImgUrl" type="video/mp4">
+        Your browser does not support the video tag. I suggest you upgrade your browser.
+    </video>
+
+    <div class="overlay">
+        <h2>Bienvenue dans mon portfolio</h2>
+    </div>
+
+    <div class="overlay2">
+        <a href="/accueil#presentation" class="btn btn-default">&#9207;</a>
+    </div>
+
+</div>
+<div id="presentation"></div>
+<div class="citation">
+    <i> mettre un lien vers le programme
+        national ou une partie du programme national</i>
+
 </div>
 <div class="titre">
     <p>Qui suis-je ?</p>
 </div>
-<div class="photo" [style.background-image]="makeImgUrl(bgImgUrl7)">
-
-
-</div>
+<div class="photo" [style.background-image]="makeImgUrl(bgImgUrl7)"></div>
 <div class="texte">
-   
 
-    <p>Etienne, 20 ans, étudiant en troisième année de B.U.T Réseaux et Télécommunications option Cybersécurité en
-        formation initiale à l’université Nord Franche-Comté à Montbéliard.</p><br>
+
+    <p>Etienne, 20 ans, étudiant en troisième année de B.U.T Réseaux et Télécommunications, option Cybersécurité, à
+        l'Université de Franche-Comté à Montbéliard. <br> </p>
+    J'effectue cette dernière année de formation en alternance et je suis accueilli par le
+    <div class="tooltip bottom">
+        <a target="_blank" href="https://www.ain.fr"> Conseil Départemental de l'Ain </a>
+        <span class="tooltiptext">
+            <img [src]="bgImgUrl8" alt="Ici c'est l'Ain !" style="width: 250px; height: auto;">
+        </span>
+    </div>
+    à Bourg en Bresse au sein de la Direction de la
+    Transition et des Solutions Numériques (DTSN)<br><br>
     <div class="soustitre">
         Mon Parcours
     </div><br>
-    <p>J’ai obtenu mon BAC Général en 2022 avec la mention ASSEZ BIEN. Mes spécialités pour le BAC étaient les
-        Mathématiques et la Physique-Chimie. J’ai également eu la mention section européenne (anglais) au diplôme du
-        BAC.<br>
-        <br>
-        Je réalise actuellement une formation au BUT Réseaux et Télécomunications à l'IUT Nord Franche-Comté avec une
-        spécialisation
-        en Cybersécurité
+    <p>J’ai obtenu le diplôme du Baccalauréat série Générale en 2022 avec la mention ASSEZ BIEN avec pour enseignements
+        de spécialités les
+        Mathématiques et la Physique-Chimie. J’ai également obtenu la mention section européenne (anglais). <br>
+
+
     </p>
-<br>
+    <br>
     <div class="soustitre">
         Mes expériences professionnelles
 
     </div><br>
-    <p>J’ai pu effectuer 2 vacations au sein des Finances Publiques à Bourg en Bresse en :<br><br>
-        <li> Juillet 2022</li>
-        <li> Juillet 2023</li>
+    <p>J’ai effectué deux vacations au sein de la Direction Départementale des Finances Publiques à Bourg en Bresse
+        :<br><br>
+        <li> Juillet 2022 : Trésorerie Publique Hospitalière</li>
+        <li style="text-align: left;"> Juillet 2023 : Service de la Publicité Foncière et de l'Enregistrement</li>
+        <li>Juillet 2024 : Intérimaire en tant que ripeur</li>
         <br>
-        J’ai également effectué un stage au sein du Bureau Interministériel des Systèmes d’Information et de
+        J’ai également effectué un stage de 8 semaines au sein du Bureau Interministériel des Systèmes d’Information et
+        de
         Communication de la
-        Préfecture de l’Ain en 2024 dans le cadre de ma deuxième année de BUT.
+        Préfecture de l’Ain en 2024 dans le cadre de ma deuxième année de BUT Réseaux et Télécommunications.
     </p><br>
     <div class="soustitre">
         Mon projet professionnel
     </div><br>
     <p>
-        J’aimerais, après l’obtention de mon B.U.T Réseaux et Télécommunications, continuer ma formation en alternance
+        Après l’obtention du B.U.T Réseaux et Télécommunications, je souhaite continuer de me former en
+        alternance
         dans une école d’ingénieur. J'aimerais ensuite travailler en tant qu’ingénieur systèmes et réseaux.
     </p>
-<br>
+    <br>
     <div class="soustitre">
         Mes qualités
     </div><br>
@@ -69,7 +99,7 @@
     </div>
     <div class="metal" [style.background-image]="makeImgUrl(bgImgUrl4)"></div>
     <div class="metaltext">
-        <li>Le métal</li>
+        <li>Le Métal/Rock</li>
     </div>
     <div class="tennis" [style.background-image]="makeImgUrl(bgImgUrl5)"></div>
     <div class="tennistext">
@@ -79,4 +109,93 @@
     <div class="gamingtext">
         <li>Les jeux vidéos</li>
     </div>
+
+    <div class="chess" [style.background-image]="makeImgUrl(bgImgUrl9)"></div>
+    <div class="chesstext">
+        <li>Les échecs</li>
+    </div>
+    <div class="bike" [style.background-image]="makeImgUrl(bgImgUrl10)"></div>
+    <div class="biketext">
+        <li>Le vélo</li>
+    </div>
+
+
 </div>
+<br><br><br><br><br><br><br>
+<div class="vide">test</div>
+<div class="titre">
+    <p>Il m'a recommandé</p>
+</div> <br>
+<div class="button-container"> <!-- bouton administrer réseau et connecter usager-->
+    <div class="positionboutongauche">
+
+        <button class="bouton" id="admin" matTooltip="Mes compétences en Administration Systèmes et réseaux"
+            (click)="openpopup()">
+            <img class="imagegauche" [src]="logojulien">
+            <div class="textgauche">
+                Julien Vadam
+            </div>
+        </button>
+
+
+    </div>
+    <!-- <div class="positionboutondroit">
+
+        <button class="bouton" matTooltip="Mes compétences en Télécommunication" (click)="openpopup1()">
+            <img class="imagedb" [src]="bgImgUrl3">
+            <div class="textdroite">
+                Connecter les entreprises et usagers
+            </div>
+        </button>
+
+
+
+    </div> -->
+
+</div>
+
+<div class="overlay1" *ngIf="show" (click)="closeoverlay($event)">
+    <!-- <div class="popup-content">
+
+        <div class="close-popup" (click)="closepopup()">
+            &times;
+        </div>
+        <div class="profil">
+            <img class="imagegauche1" [src]="logojulien">
+            <div class="textgauche1">
+                Julien Vadam
+            </div>
+        </div>
+        texte recommandation
+    </div> -->
+    <div class="popup-content">
+        <div class="close-popup" (click)="closepopup()">&times;</div>
+        <div class="profil">
+            <a target="_blank" [href]="linkedinjulien"><img class="imagegauche1" [src]="logojulien"
+                    alt="Profile Picture of Julien Vadam"></a>
+            <div class="textgauche1">
+                <a target="_blank" [href]="linkedinjulien">
+                    <h2>Julien Vadam</h2>
+                
+                <p>Étudiant de troisième année en BUT Réseaux et Télécommunications en parcours Cybersécurité à l'IUT Nord
+                    Franche-Comté de Montbéliard</p></a>
+            </div>
+        </div>
+        <div class="recommendation-text">
+            <p>
+                "Depuis trois ans maintenant, j'ai la chance de travailler avec Etienne en classe, mais aussi lors de
+                projets conséquents que nous avons réalisés ensemble.
+                Etienne est une personne compétente et sérieuse dans son travail, il est toujours pleinement impliqué
+                dans ce qu'il fait et toujours soucieux de faire de son mieux.
+                Depuis que je le connais il n'a jamais cessé de produire du travail conséquent et toujours de bonne
+                qualité.
+                De plus, il aime aider les autres et leur expliquer les choses qu'ils ne comprennent pas ne lui a jamais
+                fait peur.
+                En bref, Etienne est une personne qualifiée techniquement, mais aussi humainement, cela a toujours été
+                un plaisir de travailler avec lui."
+            </p>
+        </div>
+    </div>
+</div>
+
+</html>

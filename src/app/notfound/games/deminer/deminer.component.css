@@ -1,0 +1,283 @@
+.selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin: 10px;
+    gap: 10px;
+
+    &>* {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
+#game {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 10px;
+
+    & .case {
+        border: solid black 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+}
+
+/* gère selon la difficulté  */
+.large {
+    grid-template-columns: repeat(31, min(2vw, 2dvh));
+    grid-template-rows: repeat(31, min(2vw, 2dvh));
+
+}
+
+.medium {
+    grid-template-columns: repeat(21, min(3vw, 3dvh));
+    grid-template-rows: repeat(21, min(3vw, 3dvh));
+}
+
+.small {
+    grid-template-columns: repeat(11, min(6vw, 6dvh));
+    grid-template-rows: repeat(11, min(6vw, 6dvh));
+}
+
+/* :host /deep/ pour que angular applique le CSS quand on ajoute des éléments dynamiquement */
+
+:host /deep/ #game.large .flag::before {
+    border-width: 0.5vw;
+}
+
+:host /deep/ #game.medium .flag::before {
+    border-width: 0.8vw;
+}
+
+:host /deep/ #game.small .flag::before {
+    border-width: 1vw;
+}
+
+/* type des cases */
+
+:host /deep/ .case {
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    border: none;
+}
+
+:host /deep/ .hidden {
+    background-color: gray;
+    border: solid black 1px;
+    cursor: pointer;
+}
+
+:host /deep/ .flag {
+    &::before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-top: solid transparent;
+        border-bottom: solid transparent;
+        border-left: solid red;
+    }
+
+}
+
+:host /deep/ .bomb {
+    background-color: red;
+    border-radius: 999px;
+    width: 80%;
+    height: 80%;
+    border: solid black 1px;
+}
+
+:host /deep/ .empty {
+    background-color: transparent;
+}
+
+:host /deep/ .num1 {
+    border: solid black 1px;
+
+    &::before {
+        content: "1";
+        color: green;
+        font-weight: bold;
+    }
+
+    #game.small &::before {
+        font-size: 3vw;
+    }
+
+    #game.medium &::before {
+        font-size: 2vw;
+    }
+
+    #game.large &::before {
+        font-size: 1vw;
+    }
+}
+
+:host /deep/ .num2 {
+    border: solid black 1px;
+
+    &::before {
+        content: "2";
+        color: yellowgreen;
+        font-weight: bold;
+    }
+
+    #game.small &::before {
+        font-size: 3vw;
+    }
+
+    #game.medium &::before {
+        font-size: 2vw;
+    }
+
+    #game.large &::before {
+        font-size: 1vw;
+    }
+}
+
+:host /deep/ .num3 {
+    border: solid black 1px;
+
+    &::before {
+        content: "3";
+        color: orange;
+        font-weight: bold;
+    }
+
+    #game.small &::before {
+        font-size: 3vw;
+    }
+
+    #game.medium &::before {
+        font-size: 2vw;
+    }
+
+    #game.large &::before {
+        font-size: 1vw;
+    }
+}
+
+:host /deep/ .num4 {
+    border: solid black 1px;
+
+    &::before {
+        content: "4";
+        color: orangered;
+        font-weight: bold;
+    }
+
+    #game.small &::before {
+        font-size: 3vw;
+    }
+
+    #game.medium &::before {
+        font-size: 2vw;
+    }
+
+    #game.large &::before {
+        font-size: 1vw;
+    }
+}
+
+:host /deep/ .num5 {
+    border: solid black 1px;
+
+    &::before {
+        content: "5";
+        color: red;
+        font-weight: bold;
+    }
+
+    #game.small &::before {
+        font-size: 3vw;
+    }
+
+    #game.medium &::before {
+        font-size: 2vw;
+    }
+
+    #game.large &::before {
+        font-size: 1vw;
+    }
+}
+
+:host /deep/ .num6 {
+    border: solid black 1px;
+
+    &::before {
+        content: "6";
+        color: rebeccapurple;
+        font-weight: bold;
+    }
+
+    #game.small &::before {
+        font-size: 3vw;
+    }
+
+    #game.medium &::before {
+        font-size: 2vw;
+    }
+
+    #game.large &::before {
+        font-size: 1vw;
+    }
+}
+
+:host /deep/ .num7 {
+    border: solid black 1px;
+
+    &::before {
+        content: "7";
+        color: purple;
+        font-weight: bold;
+    }
+
+    #game.small &::before {
+        font-size: 3vw;
+    }
+
+    #game.medium &::before {
+        font-size: 2vw;
+    }
+
+    #game.large &::before {
+        font-size: 1vw;
+    }
+}
+
+:host /deep/ .num8 {
+    border: solid black 1px;
+
+    &::before {
+        content: "8";
+        color: blue;
+        font-weight: bold;
+    }
+
+    #game.small &::before {
+        font-size: 3vw;
+    }
+
+    #game.medium &::before {
+        font-size: 2vw;
+    }
+
+    #game.large &::before {
+        font-size: 1vw;
+    }
+}
