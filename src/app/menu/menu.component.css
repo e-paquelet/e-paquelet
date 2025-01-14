@@ -23,20 +23,33 @@
 .image-container {
     position: relative;
     max-width: 30vw;
-    
+
+}
+
+.image-container:hover {
+    img {
+        opacity: 1;
+        
+    }
+
+    .text-overlay {
+        color: white;
+    }
 }
 
 img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
     opacity: 0.5;
     border-radius: 10px;
+    transition: opacity 0.5s ease-in-out;
 }
 
 img:hover {
     cursor: pointer;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
 }
 
 .text-overlay {
@@ -48,5 +61,6 @@ img:hover {
     color: black;
     font-size: 25px;
     font-weight: bold;
+    transition: color 0.5s ease-in-out;
     /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); */
 }
