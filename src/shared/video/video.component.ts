@@ -3,18 +3,20 @@ import { RouterLink, Router, UrlTree, UrlSegment, UrlSegmentGroup } from '@angul
 
 @Component({
     selector: 'app-video',
-    imports: [RouterLink],
+    imports: [
+        // RouterLink
+    ],
     templateUrl: './video.component.html',
     styleUrl: './video.component.css'
 })
 export class VideoComponent {
-  @Input() bgImgUrl: string = "";
-  @Input() titre: string = "Titre du component";
-  @Input() lienFleche: string = "";
+    @Input() bgImgUrl: string = "";
+    @Input() titre: string = "Titre du component";
+    @Input() lienFleche: string = "";
 
-  tree: string;
-  constructor(router: Router) {
-    // TODO voir: https://stackoverflow.com/questions/46658522/how-to-smooth-scroll-to-page-anchor-in-angular-4-without-plugins-properly
-    this.tree = router.parseUrl(this.lienFleche).toString();
-  }
+    tree: string;
+    constructor(router: Router) {
+        // TODO voir: https://stackoverflow.com/questions/46658522/how-to-smooth-scroll-to-page-anchor-in-angular-4-without-plugins-properly
+        this.tree = router.parseUrl(this.lienFleche).toString();
+    }
 }
