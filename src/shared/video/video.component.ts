@@ -2,11 +2,10 @@ import { Component, Input } from '@angular/core';
 import { RouterLink, Router, UrlTree, UrlSegment, UrlSegmentGroup } from '@angular/router';
 
 @Component({
-  selector: 'app-video',
-  standalone: true,
-  imports: [RouterLink],
-  templateUrl: './video.component.html',
-  styleUrl: './video.component.css'
+    selector: 'app-video',
+    imports: [RouterLink],
+    templateUrl: './video.component.html',
+    styleUrl: './video.component.css'
 })
 export class VideoComponent {
   @Input() bgImgUrl: string = "";

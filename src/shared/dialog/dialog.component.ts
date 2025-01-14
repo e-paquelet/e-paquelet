@@ -15,7 +15,6 @@ export type DialogDataType = {
 
 @Component({
     selector: 'app-dialog',
-    standalone: true,
     imports: [
         MatDialogModule,
         NgComponentOutlet,

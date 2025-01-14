@@ -8,11 +8,10 @@ type ListeContactItem = {
 }
 
 @Component({
-  selector: 'app-prog1',
-  standalone: true,
-  imports: [],
-  templateUrl: './prog1.component.html',
-  styleUrl: './prog1.component.css'
+    selector: 'app-prog1',
+    imports: [],
+    templateUrl: './prog1.component.html',
+    styleUrl: './prog1.component.css'
 })
 export class Prog1Component {
     bgImgUrl = "./assets/img/background.jpg";

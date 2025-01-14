@@ -14,23 +14,22 @@ import { Sae401Component } from './sae401/sae401.component';
 
 
 @Component({
-  selector: 'app-projetbut',
-  standalone: true,
-  imports: [
-    MatButtonModule,
-    MatDividerModule,
-    MatIconModule,
-    CommonModule,
-    MatTooltipModule,
-    DialogComponent,
-    VideoComponent,
-    Sae301Component,
-    Sae302Component,
-    Sae303Component,
-    Sae401Component
-  ],
-  templateUrl: './projetbut.component.html',
-  styleUrl: './projetbut.component.css'
+    selector: 'app-projetbut',
+    imports: [
+        MatButtonModule,
+        MatDividerModule,
+        MatIconModule,
+        CommonModule,
+        MatTooltipModule,
+        DialogComponent,
+        VideoComponent,
+        Sae301Component,
+        Sae302Component,
+        Sae303Component,
+        Sae401Component
+    ],
+    templateUrl: './projetbut.component.html',
+    styleUrl: './projetbut.component.css'
 })
 export class ProjetbutComponent {
   constructor(

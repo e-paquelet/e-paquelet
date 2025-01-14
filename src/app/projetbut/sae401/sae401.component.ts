@@ -2,11 +2,10 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-sae401',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './sae401.component.html',
-  styleUrl: './sae401.component.css'
+    selector: 'app-sae401',
+    imports: [CommonModule],
+    templateUrl: './sae401.component.html',
+    styleUrl: './sae401.component.css'
 })
 export class Sae401Component {
 
