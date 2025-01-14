@@ -10,13 +10,14 @@ import { TiktaktoeComponent } from './games/tiktaktoe/tiktaktoe.component';
 import { DeminerComponent } from './games/deminer/deminer.component';
 
 
-type MiniGameType = "Tic Tac Toe" | "Snake" | "Puissance 4" | "Démineur" | "Aucun";
+type MiniGameType = "Tic Tac Toe" | "Snake" | "Puissance 4" /*| "Démineur"*/ | "Aucun";
 
 @Component({
     selector: 'app-notfound',
     standalone: true,
     imports: [CommonModule, MatTooltipModule, MatButtonModule, AccueilComponent, MatMenuModule,
-        Power4Component, SnakeComponent, TiktaktoeComponent, DeminerComponent,
+        Power4Component, SnakeComponent, TiktaktoeComponent,
+        // DeminerComponent,
     ],
     templateUrl: './notfound.component.html',
     styleUrl: './notfound.component.css'
@@ -32,6 +33,6 @@ export class NotfoundComponent {
 
     directory = window.location.pathname.split("/").pop()?.trim();
 
-    miniGameListe: MiniGameType[] = ["Tic Tac Toe", /* "Snake", "Puissance 4", */ "Aucun", 'Démineur'];
+    miniGameListe: MiniGameType[] = ["Tic Tac Toe", /* "Snake", "Puissance 4", */ "Aucun", /*'Démineur'*/];
     miniGameChosen: MiniGameType = "Aucun";
 }
