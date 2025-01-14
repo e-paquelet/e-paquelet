@@ -3,25 +3,26 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { CommonModule } from '@angular/common';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatButtonModule } from '@angular/material/button';
+import { VideoComponent } from '../../shared/video/video.component';
 
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [MatProgressBarModule, CommonModule, MatTooltipModule, MatButtonModule],
+  imports: [MatProgressBarModule, CommonModule, MatTooltipModule, MatButtonModule, VideoComponent],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.css'
 })
 export class PortfolioComponent {
   // bgImgUrl = "./assets/img/background.jpg";
   bgImgUrl = "./assets/img/background2.mp4";
-  bgImgUrl2 = "./assets/img/os.jpg";
-  bgImgUrl3 = "./assets/img/reseaux22.png";
-  bgImgUrl4 = "./assets/img/virtual.jpg";
-  bgImgUrl5 = "./assets/img/sql.png";
-  bgImgUrl6 = "./assets/img/telecom.jpg";
-  bgImgUrl7 = "./assets/img/dev2.jpg";
-  bgImgUrl8 = "./assets/img/cyber3.png";
-  bgImgUrl9 = "./assets/img/cert.jpg";
+  bgImgUrl2 = "./assets/img/competence/os.jpg";
+  bgImgUrl3 = "./assets/img/competence/reseaux22.png";
+  bgImgUrl4 = "./assets/img/competence/virtual.jpg";
+  bgImgUrl5 = "./assets/img/competence/sql.png";
+  bgImgUrl6 = "./assets/img/competence/telecom.jpg";
+  bgImgUrl7 = "./assets/img/competence/dev2.jpg";
+  bgImgUrl8 = "./assets/img/competence/cyber3.png";
+  bgImgUrl9 = "./assets/img/competence/cert.jpg";
   show = false;
   show1 = false;
   show2 = false;
@@ -38,6 +39,13 @@ export class PortfolioComponent {
 
   closepopup() {
     this.show = false;
+    this.show1 = false;
+    this.show2 = false;
+    this.show3 = false;
+    this.show4 = false;
+    this.show5 = false;
+    this.show6 = false;
+    this.show15 = false;
   }
 
   

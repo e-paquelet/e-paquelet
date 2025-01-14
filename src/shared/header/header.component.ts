@@ -20,22 +20,27 @@ export interface ListeReseau {
     styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-    bgImgUrl1 = "./assets/img/favicon.png"
+    bgImgUrl1 = "./assets/img/accueil/profillogo.JPG"
 
     listeMenu: ListeMenu[] = [
         {
             titre: "Alternance",
             redirection: "./entreprise"
         },
+        // { demander avis à Hugo
+        //     titre: "Mes centres d'intérêts",
+        //     redirection: "./entreprise"
+        // },
         {
             titre: "Mes compétences",
             redirection: "./portfolio",
         },
         {
-            titre: "Projet BUT",
+            titre: "Vitrine de mes projets",
             redirection: "./projet-but",
-            title: "Les projets fait pour mon BUT"
+            title: "Les projets fait dans mon BUT"
         },
+        
         {
             titre: "Contact",
             redirection: "./contact",
@@ -45,7 +50,7 @@ export class HeaderComponent {
     listeReseaux: ListeReseau[] = [
         {
             redirection: "https://www.linkedin.com/in/etienne-paquelet/",
-            img: "./assets/img/linkedin.png",
+            img: "./assets/img/contact/linkedin.png",
             alt: "Linkedin"
         },
 

@@ -4,7 +4,7 @@
 </div> -->
 
 <html>
-<div class="main">
+<!-- <div class="main">
     <video disablePictureInPicture playsinline autoplay muted loop>
         <source [src]="bgImgUrl" type="video/mp4">
         Your browser does not support the video tag. I suggest you upgrade your browser.
@@ -18,9 +18,14 @@
         <a href="./portfolio#presentation" class="btn btn-default">&#9207;</a>
     </div>
 
+</div> -->
+<app-video class="main" [bgImgUrl]="bgImgUrl" titre="Mes compétences"
+    lienFleche="./portfolio#presentation"></app-video>
+
+<div id="presentation" style="padding-left: 5vw; padding-bottom: 3vw; text-align: center;">
+    Voici une synthèse de mes compétences développées au cours de ma formation, vous trouverez dans l'onglet projets leur mise en œuvre
 </div>
 
-<div id="presentation"></div>
 
 <div class="overlay" *ngIf="show" (click)="closeoverlay($event)"> <!-- Admininistrer les réseaux et l'Internet-->
     <div class="popup-content">
@@ -225,7 +230,7 @@
 <div class="overlay" *ngIf="show5" (click)="closeoverlay($event)"> <!-- certification-->
     <div class="popup-content">
 
-        <div class="close-popup" (click)="closepopup2()">
+        <div class="close-popup" (click)="closepopup()">
             &times;
         </div>
         <div style="font-size: 24px;
@@ -449,7 +454,7 @@
 <div class="overlay" *ngIf="show2" (click)="closeoverlay($event)"> <!-- Créer des outils et applications pour les R&T-->
     <div class="popup-content">
 
-        <div class="close-popup" (click)="closepopup5()">
+        <div class="close-popup" (click)="closepopup()">
             &times;
         </div>
         <div class="titre">
@@ -545,7 +550,7 @@
 <div class="overlay" *ngIf="show4" (click)="closeoverlay($event)"> <!-- Surveiller-->
     <div class="popup-content">
 
-        <div class="close-popup" (click)="closepopup6()">
+        <div class="close-popup" (click)="closepopup()">
             &times;
         </div>
         <div class="titre">
@@ -679,7 +684,7 @@
 <div class="button-container"> <!-- bouton administrer réseau et connecter usager-->
     <div class="positionboutongauche">
 
-        <button class="bouton" id="admin" matTooltip="Mes compétences en Administration Systèmes et réseaux"
+        <button class="bouton" id="admin" matTooltip="Mes compétences en programmation"
             (click)="openpopup2()">
             <img class="imagegauche" [src]="bgImgUrl7">
             <div class="textdev">
@@ -691,7 +696,7 @@
     </div>
     <div class="positionboutondroit">
 
-        <button class="bouton" matTooltip="Mes compétences en Télécommunication" (click)="openpopup3()">
+        <button class="bouton" matTooltip="Mes compétences en cybersécurité" (click)="openpopup3()">
             <img class="imagedb" [src]="bgImgUrl8">
             <div class="textdb">
                 Sécuriser
@@ -707,7 +712,7 @@
 <div class="button-container">
     <div class="positionboutongauche">
 
-        <button class="bouton" id="admin" matTooltip="Mes compétences en Administration Systèmes et réseaux"
+        <button class="bouton" id="admin" matTooltip="Mes compétences en cybersécurité"
             (click)="openpopup4()">
             <img class="imagegauche" [src]="bgImgUrl8">
             <div class="textvirt">
@@ -719,7 +724,7 @@
     </div>
     <div class="positionboutondroit">
 
-        <button class="bouton" matTooltip="Mes compétences en Télécommunication" (click)="openpopup5()">
+        <button class="bouton" matTooltip="Mes certifications" (click)="openpopup5()">
             <img class="imagedb" [src]="bgImgUrl9">
             <div class="textdb">
                 Certifications

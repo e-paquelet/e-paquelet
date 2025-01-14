@@ -1,0 +1,144 @@
+<!-- <div class="position-texte"> -->
+<div class="texte">
+    <p class="overlay">Cette SAE concernait l'ensemble des étudiants en formation initiale et a été
+        réalisée par groupe de 4 ou 5 étudiants dont 2 étudiants en parcours cyber minimum. Dans notre cas,
+        nous étions 5 et notre groupe était composé de 3 étudiants en parcours cybersécurité et 2 étudiants
+        en parcours IoM. Cette SAE a durée 1 semaine<br> <br>L'objectif de cette SAE était de concevoir un
+        réseau entier d'une
+        entreprise
+        fictive nommée Beerok, avec tous les services nécessaires à son fonctionnement. <br><br> Voici
+        l'architecture réseau que nous devions mettre en place : </p>
+
+    <img class="image-archie" [src]="archisae303" (click)="enlargeImage()">
+    <br><br>
+    <p class="overlay">Voici le matériel dont nous avions à disposition pour réaliser cette SAE : </p>
+
+    <div id="liste" class="overlay">
+        <li>3 routeurs</li>
+        <li>3 switchs</li>
+        <li>un hyperviseur sous proxmox dédié</li>
+        <li>4 PCs de l'IUT</li>
+        <li>3 téléphones</li>
+        <li>2 bornes wifi</li>
+        <li>1 tablette</li>
+    </div>
+    <p class="overlay">Avant de présenter plus en détail ce projet, voici une vidéo de présentation du projet que j'ai
+        réalisé : </p><br>
+
+    <video class="video_sae_303" disablePictureInPicture controls controlsList="nodownload">
+        <source [src]="video_sae_303" type="video/mp4" />
+        Your browser does not support the video tag
+    </video> <br><br>
+
+    <p class="overlay">L'organisation de cette SAE (Situation d'Apprentissage et d'Évaluation) s'est
+        déroulée de la manière suivante : nous devions rendre différents jalons, qui représentaient des
+        points d'étape, à des moments précis de la semaine. La date de chaque jalon variait en fonction de
+        la difficulté de la tâche, et c'est surtout la durée de réalisation des jalons qui différait en
+        conséquence. <br><br> Nous avons donc commencé par la planification et l'attribution des tâches pour
+        lesquelles nous avons utilisé l'outil de gestion de projet Trello. Nous avons ensuite réalisé le
+        plan d'adressage IP. </p>
+
+    <p class="overlay">Voici notre plan IP : <a target="_blank" [href]="adressage_ip">adressage_ip.pdf</a>
+    </p>
+
+    <p class="overlay">Nous avons ensuite entamé la phase de déploiement où nous avons mis en place
+        l'infrastructure. <br>
+        J'ai ainsi commencé par m'occuper des tâches qui m'ont été assignés : </p>
+    <div id="liste" class="overlay">
+        <li> Création des VM (Machines Virtuelles) sous Proxmox qui hébergeront les services. Active
+            Directory</li>
+        <li>Installation, préparation et configuration des serveurs Windows : Mise en place de l'adressage
+            IP, des noms d'hôtes, en conformité avec le cahier des charges.</li>
+    </div>
+    <p class="overlay">Ayant régulièrement travaillé sur les proxmox de l'université où ont été stocké nos
+        serveurs de la SAE, je n'ai pas eu de problème concernant cette partie. J'ai ensuite mis en place
+        les services demandés :
+    </p>
+    <div id="liste" class="overlay">
+        <li>Active Directory</li>
+        <li>DNS</li>
+        <li>Terminal Server</li>
+        <li>Serveur mail</li>
+        <li>Nextcloud</li>
+        <li>RADIUS</li>
+    </div>
+    <p class="overlay">La mise en place des services a été relativement rapide, à l'exception de
+        l'installation et de la configuration du serveur NextCloud, qui ont posé plusieurs difficultés. Avec
+        un de mes camarades, j'ai
+        d'abord tenté de l'installer via Snap, comme recommandé dans notre documentation, mais cette méthode
+        échouait systématiquement en cours d'installation. J'ai ensuite essayé d'installer NextCloud avec
+        Flatpak et Flathub, mais cette fois-ci, une erreur de compatibilité est apparue : la version de PHP
+        de notre environnement était obsolète. Flathub est une plateforme communautaire qui héberge des
+        applications open source pour des environnements de bureau comme GNOME, KDE etc... Il permet
+        l'installation de ces applications par l'utilitaire &laquo; flatpak &raquo;.Après plusieurs
+        tentatives de mise à jour, j’ai constaté que
+        notre système ne supportait pas PHP 8.1, requis pour NextCloud, et ai dû opter pour une version
+        antérieure compatible. Par la suite, un autre problème est apparu pour l’authentification LDAP avec
+        Active Directory : le plugin PHP requis pour cette fonctionnalité n’était pas disponible dans la
+        version de PHP que nous utilisions. <br><br><br>A ce stade, le coeur de réseaux réalisé par un mes
+        camarades n'était pas encore opérationnel, ce qui m'a donné l'opportunité de configurer le réseau
+        sur les sites distants. J'ai ainsi configuré les solutions suivantes sur les équipements réseaux des
+        sites distants : </p>
+
+    <div id="liste" class="overlay">
+        <li>Router on a Stick (Roas)</li>
+        <li>DHCP</li>
+    </div>
+
+    <p class="overlay">La solution "Router on a Stick" permet d'utiliser une seule interface
+        du switch et du routeur pour faire communiquer plusieurs VLAN. Ainsi, le réseau d’un
+        magasin comprenant 5 VLANs, cette solution est donc idéale afin de faire communiquer ces
+        VLANs entre eux à travers le magasin. Voici un schéma représentant la solution du Router on a Stick
+        : </p>
+
+    <img class="image-roas" [src]="roas" (click)="enlargeImage2()">
+
+    <br>
+    <p class="overlay">J'ai ensuite configuré le DHCP sur chaque routeur des sites distants afin de
+        distribuer des adresses IP automatiquement à chaque client de chaque VLAN. <br><br>Nous avions
+        également eu une partie réservé aux étudiants de parcours cybersécurité, dont je fais partie, où
+        nous devions réaliser un audit de sécurité de nos réseaux.
+        Nous avons ainsi utilisé l'outil Nessus afin d'auditer le réseau et y découvrir les différentes
+        failles potentielles. <br><br> Voici le résultat d'un scan sur le réseau : <a target="_blank"
+            [href]="scan_reseau">scan_reseaux.pdf</a>
+    </p>
+
+
+    <div style="text-align: center; font-weight: bold;">Ce que j'ai appris durant ce projet</div> <br>
+
+    <div class="overlay">
+        <li>Mettre en place un réseau informatique semi-complexe et sécurisé dans un temps restreint</li>
+        <br>
+        <li>Approfondir mes connaissances sur la gestion des applications critiques : En rencontrant des
+            difficultés persistantes avec l'installation de NextCloud, j'ai dû approfondir mes recherches et
+            tester différentes méthodes d'installation (Snap, Flatpak et APT) pour parvenir à une
+            solution fonctionnelle. J'ai ainsi compris l'importance d'utiliser différentes méthodes
+            d'installation
+            d'un service et de renforcer ma capacité à adapter une méthode aux contraintes
+            d’un système spécifique. </li> <br>
+        <li>Résoudre des problèmes en totale autonomie tout en étant sous pression</li> <br>
+        <li>Développer une résilience face aux problèmes techniques : La nécessité de dépasser les blocages,
+            même en y travaillant tard dans des conditions exigeantes, m'a aidé à développer une résilience
+            et une détermination face aux défis techniques. J'ai ainsi appris à maintenir la rigueur et la
+            persévérance nécessaires pour résoudre des problèmes critiques dans des délais restreints. </li>
+        <br>
+        <li>Renforcer mon aptitude à travailler en équipe </li> <br>
+        <li>Améliorer ma gestion de temps sous pression tout en restant solidaire : En avançant sur mes
+            tâches tout en soutenant mes coéquipiers, j'ai acquis une meilleure maîtrise de la gestion de
+            mon propre travail dans un espace temps réduit. Assurer l’avancement de mes missions sans
+            retarder le groupe m'a montré l'importance de l'autonomie tout en contribuant au succès de
+            l'équipe.</li>
+    </div>
+    <p class="overlay">Pour en savoir plus sur ce projet, n'hésitez pas à jeter un &oelig;il à notre
+        rapport : <a target="_blank" [href]="cr_sae_303">cr_sae_303.pdf</a>
+    </p>
+</div>
+<!-- </div> -->
+
+<div class="overlay-image-agrandie" *ngIf="isImageEnlarged2" (click)="closeEnlargedImage()">
+    <img class="image-elargie" [src]="roas">
+</div>
+
+<div class="overlay-image-agrandie" *ngIf="isImageEnlarged" (click)="closeEnlargedImage()">
+    <img class="image-elargie" [src]="archisae303">
+</div>

@@ -1,81 +1,89 @@
-<html>
-<div class="main">
-    <video disablePictureInPicture playsinline autoplay muted loop>
-        <source [src]="bgImgUrl" type="video/mp4">
-        Your browser does not support the video tag. I suggest you upgrade your browser.
-    </video>
+<div>
 
-    <div class="overlay">
-        <h1>Présentation du Conseil Départemental de l'Ain</h1>
+    <app-video class="main" [bgImgUrl]="bgImgUrl" titre="Présentation du Conseil Départemental de l'Ain"
+        lienFleche="./entreprise#presentation"></app-video>
+
+    <div id="presentation"></div>
+    <p class="ue"> Je suis en alternance et je vais présenter dans cet onglet le Conseil Départemental de
+        l'Ain, où
+        je l'effectue actuellement au sein de la Direction de la Transition et des Solutions Numériques
+        (DTSN).
+    </p>
+
+    <h6 style="text-align: center;">Historique</h6>
+
+    <p class="ue">
+        Le département de l'Ain a été institué le 4 mars 1790. Aujourd'hui, à la suite des lois de décentralisation de
+        1984,
+        le Conseil Départemental de l'Ain forme une collectivité territoriale et &oelig;uvre sur l'ensemble du
+        département
+        de
+        l'Ain. Ses principaux domaines de compétences sont la gestion des collèges, des routes, des EHPAD.
+        Le 11 octobre 2024, le Département de l'Ain à été
+        élu &laquo; Département préféré des Fran&ccedil;ais &raquo;.
+
+        Le site principal du Conseil Départemental de l'Ain se situe au chef-lieu du Département de l'Ain, à Bourg en
+        Bresse. </p>
+    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 10px 0">
+        <img [src]="carteain" [alt]="altain">
+        <p style="font-size: smaller;">Localisation du Département de l'Ain</p>
     </div>
 
-    <div class="overlay2">
-        <a href="./entreprise#presentation" class="btn btn-default">&#9207;</a>
+    <br><br>
+
+    <h6 style="text-align: center;">Identité</h6>
+
+    <p class="ue">Le Conseil Départemental de l'Ain est identifié graphiquement par plusieurs éléments : </p>
+
+    <ul>
+        <li>Sa marque</li>
+        <li>Son logo</li>
+       
+    </ul>
+
+
+    <h6 style="text-align: center;">La marque</h6><br><br>
+
+    <p class="ue">Le Conseil Départemental a créé une marque dont le but est d’accompagner une grande partie de la
+        communication et de rassembler les habitants de l’Ain. <br><br> La marque est la suivante : </p>
+
+    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 10px 0">
+        <img class="image" [src]="marque" [alt]="altmarque">
+    </div>
+    <br><br>
+    <h6 style="text-align: center;">Le logo</h6>
+
+    <p class="ue">Ce logo, qui est d’actualité depuis février 2018, est le même graphiquement que celui présenté en mai
+        2015. Les couleurs ont cependant évolué. En effet, seul le bleu est présent et cette couleur se veut comme le
+        symbole de la vérité et de la sécurité. De couleur unie, celui-ci veut illustrer la sobriété et le raffinement.
+        Ce
+        logo veut également témoigner de l’unité du territoire et sa couleur unie peut être plus facilement associée à
+        d’autres couleurs.</p> <br>
+
+    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 10px 0">
+        <img class="image" [src]="bgImgUrl2" alt="Logo Ain">
     </div>
 
-</div>
+    <br><br>
 
-<div id="presentation"></div>
-<p class="ue"> Je suis en alternance et je vais présenter dans cet onglet le Conseil Départemental de
-    l'Ain, où
-    j'effectue actuellement mon alternance au sein de la Direction de la Transition et des Solutions Numériques (DTSN).
-</p>
+    <h6 style="text-align: center;">Présentation des services</h6>
+    <br>
 
-<h6 style="text-align: center;">Historique</h6>
+    <p class="ue">Le Conseil Départemental de l'Ain est présidé par M. Jean Deguerry. Le président délègue une partie de
+        ces
+        fonctions à 11 vice-présidents et à 2 conseillers délégués. Pour en savoir plus : </p>
 
-<p class="ue">
-    Le département de l'Ain a été institué le 4 mars 1790. Aujourd'hui, à la suite des lois de décentralisation de 1984,
-    le Conseil Départemental de l'Ain forme une collectivité territoriale et &oelig;uvre sur l'ensemble du département
-    de
-    l'Ain. Ses principaux domaines de compétences sont la gestion des collèges, des routes, des EHPAD.
-    Le 11 octobre 2024, le Département de l'Ain à été
-    élu &laquo; Département préféré des Fran&ccedil;ais &raquo;.
+   
 
-    Le site principal du Conseil Départemental de l'Ain se situe au chef-lieu du Département de l'Ain, à Bourg en
-    Bresse. </p> <br>
+    <ul class="savoirplus">
+        <li>Sur le bureau exécutif : <a target="_blank"
+                href="https://www.ain.fr/conseil-departemental/executif-departemental-ain-2021/">Bureau exécutif</a></li>
+        <li>Sur les différents services : <a target="_blank"
+            href="https://www.ain.fr/conseil-departemental/organigramme/">Organigramme</a></li>
+       
+    </ul>
 
-<img class="carteain" [src]="carteain" [alt]="altain">
-<p class="soustitre">Localisation du Département de l'Ain</p>
-<br><br>
-
-<h6 style="text-align: center;">Identité</h6>
-
-<p class="ue">Le Conseil Départemental de l'Ain est identifié graphiquement par plusieurs éléments : </p>
-
-<ul>
-    <li>Sa marque</li>
-    <li>Son logo</li>
-    <li>Son drapeau</li>
-</ul>
-
-
-<h6 style="text-align: center;">La marque</h6><br><br>
-
-<p class="ue">Le Conseil Départemental à crée une marque dont le but est d’accompagner une grande partie de la
-    communication et de rassembler les habitants de l’Ain. <br><br> La marque est la suivante : </p>
-
-<img class="marque" [src]="marque" [alt]="altmarque">
-<br><br>
-<h6 style="text-align: center;">Le logo</h6>
-
-<p class="ue">Ce logo, qui est d’actualité depuis février 2018, est le même graphiquement que celui présenté en mai
-    2015. Les couleurs ont cependant évolué. En effet, seul le bleu est présent et cette couleur se veut comme le
-    symbole de la vérité et de la sécurité. De couleur unie, celui-ci veut illustrer la sobriété et le raffinement. Ce
-    logo veut également témoigner de l’unité du territoire et sa couleur unie peut être plus facilement associée à
-    d’autres couleurs.</p> <br>
-
-<img class="logoain" [src]="bgImgUrl2">
-
-<br><br>
-
-<h6 style="text-align: center;">Présentation des services</h6>
-<br>
-
-<p class="ue">Le Conseil Départemental de l'Ain est présidé par M. Jean Deguerry. Le président délègue une partie de ces
-    fonctions à 11 vice-présidents et à 2 conseillers délégués. Pour en savoir plus, cliquez sur <a target="_blank"
-        style="text-decoration: underline;"
-        href="https://www.ain.fr/conseil-departemental/executif-departemental-ain-2021/">ce lien</a></p>
-<!-- <p class="ue">Le Département de l'Ain est composé de 6 Direction
+    <!-- <p class="ue">Le Département de l'Ain est composé de 6 Direction
     Générale Adjointe : </p> ( <b>a changer/vérifier</b> )
 
 
@@ -105,4 +113,4 @@
     <img matTooltip="Logo de l'Ain" class="logoain" [src]="bgImgUrl2" alt="logo de l'Ain">
 </div> -->
 
-</html>
+</div>

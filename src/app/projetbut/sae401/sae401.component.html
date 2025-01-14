@@ -1,0 +1,121 @@
+<div class="position-texte">
+    <div class="texte">
+        <p class="overlay1">Cette SAE concernait l'ensemble des étudiants en parcours cybersécurité et s'est
+            déroulé sur 3 semaines. Cette SAE a été réalisé par groupe de 4 étudiants. Le but de ce projet était
+            de mettre en place l'architecture suivante ainsi que de la sécuriser via différentes tâches :
+        </p>
+
+        <img class="archisae401" [src]="archisae401" (click)="enlargeImage()">
+
+        <p class="overlay1">Comme énoncé précédemment, nous devions sécuriser cette infrastructure par la
+            réalisation de différentes tâche :</p>
+
+        <div id="liste" class="overlay1">
+            <li>1 : Mise en place d'une infrastructure sécurisé </li>
+            <li>2 : Installation et configuration d'un firewall Stormshield</li>
+            <li>3 : Installation et configuration d’un serveur HTTP/HTTPS et d’un serveur FTP/FTPS </li>
+            <li>4 : Authentification transparente par certificat SSL</li>
+            <li>5 : Mettre en place un IDS</li>
+            <li>6 : Attaque sur le wifi</li>
+            <li>7 : Utilisation de scanners de vulnérabilité</li>
+            <li>8 : Attaque Man in the Middle</li>
+            <li>9 : Contre-mesures pour le Man in the Middle</li>
+            <li>10 : Supervision du réseau</li>
+            <li>11 : Mise en place d'une architecture Single Sign On</li>
+            <li>12 : Mise en place d'un VPN SSL pour client distant</li>
+            <li>13 : Mise en place d'un VPN IPSEC site à site</li>
+
+        </div>
+
+        <p class="overlay1">Pour cette SAE, notre groupe s'est organisé de la manière suivante : chacun de nous
+            a réalisé un challenge seul, et nous avons travaillé en binômes au sein du groupe pour réaliser deux
+            autres challenges. j'ai ainsi réalisé la tâche 7 : &laquo; Utilisation de scanners de vulnérabilité
+            &raquo; seul et j'ai réalisé les tâches 2 et 7 ( &laquo; Installation et configuration d'un firewall
+            Stormshield &raquo; et &laquo; Authentification transparente par certificat SSL &raquo; ) en binôme
+        </p>
+
+        <div style="text-align: center; font-weight: bold;"> Tâche 2 : Installation et configuration d'un
+            firewall Stormshield</div> <br>
+
+        <p class="overlay1">Le but de cette tâche était de configurer un firewall Stormshield. Une firewall est
+            un équipement réseau permettant de sécuriser un réseau informatique en agissant comme un point de
+            contrôle obligatoire
+            entre le réseau interne et le réseau externe. Par ce positionnement dans le réseau, il peut
+            ainsi mettre en oeuvre différents mécanismes permettant de sécuriser le réseau interne comme le
+            filtrage, NAT, la gestion des certificats, le controle d'accès, la détection et la prévention
+            d'intrusion, etc... <br> Mon binôme et moi avons mis en place une politique de filtrage et de NAT.
+            Le NAT est un
+            mécanisme qui permet de remplacer une adresse IP interne par l'adresse IP publique du pare-feu ou du
+            routeur. Nous avons également effectué une translation au niveau des ports, appelée PAT. Concernant
+            la politique de filtrage mise en place, nous avons interdit tout accès au réseau interne depuis
+            l'extérieur et avons seulement autorisé les connexions entrantes sur les ports web (HTTP puis HTTPS)
+            et le port FTP (21).
+        </p>
+
+        <p class="overlay1">Pour en savoir plus sur cette tâche, n'hésitez pas à jeter un &oelig;il à notre
+            rapport : <a target="_blank" [href]="cr_sae401_tache_2">cr_sae401_tache_2.pdf</a>
+        </p>
+
+        <div style="text-align: center; font-weight: bold;"> Tâche 4 : Authentification transparente par
+            certificat SSL</div> <br>
+
+        <p class="overlay1">L'objectif de cette tâche était de configurer une authentification transparente par
+            certificat SSL. Cette méthode repose sur l'utilisation de certificats numériques pour authentifier
+            les utilisateurs de manière automatique, sans nécessiter la saisie de mot de passe. Le certificat
+            est alors installé sur le PC de l'utilisateur et il est validé par l'instance qui a émis le
+            certificat, donnant alors une autorisation d'accéder aux ressources du réseau. Nous avons donc
+            configuré une autorité de certification racine (CA root) ainsi qu'un annuaire LDAP. Nous avons
+            également mis à jour la politique de filtrage afin de définir une règle d'authentification réseau
+            pour que les utilisateurs non authentifiés soient redirigés vers un portail captif.
+        </p>
+        <p class="overlay1">Pour en savoir plus sur cette tâche, n'hésitez pas à jeter un &oelig;il à notre
+            rapport : <a target="_blank" [href]="cr_sae401_tache_4">cr_sae401_tache_4.pdf</a>
+        </p>
+
+        <div style="text-align: center; font-weight: bold;"> Tâche 7 : Utilisation de scanners de vulnérabilités</div>
+        <br>
+
+        <p class="overlay1">La troisième tâche consistait à analyser les vulnérabilités du système
+            d'information. J'ai effectué cette tâche seul. Une vulnérabilité dans un système d'information est
+            une faille permettant à un attaquant de l'exploiter dans un but malveillant. Je devais réaliser un
+            scan depuis le réseau interne puis depuis le réseau externe afin de comparer les différences entre
+            les scans. À cette fin, j'ai utilisé différents scanners, chacun spécialisé dans la détection d'un
+            type de faille spécifique. Les scanners que j'ai utilisés sont les suivants :
+        </p>
+
+        <div id="liste" class="overlay1">
+            <li>Nikto : Recherche de faille web</li>
+            <li>Nuclei : Recherche de faille web mais également les failles de l'hôte</li>
+            <li>Codename SCNR : Scan détaillé de l'hôte ciblé</li>
+            <li>Legion : Scan les services et les ports des hôtes</li>
+
+        </div>
+
+        <p class="overlay1">Une fois les scans effectués, j'ai pu comparer les résultats entre ceux réalisés
+            depuis le réseau externe et ceux effectués depuis le réseau interne. J'ai ainsi pu émettre les
+            raisons pour lesquelles les scans externes ont fourni moins d'informations. Lors de la soutenance,
+            j'ai présenté une faille que j'ai découvert via le scanner Nuclei, nommée Ghostcat (CVE-2020-1938).
+            Le but de cette faille est d'usurper l'identité d'un serveur Apache tomcat afin de récupérer des
+            fichiers de configurations du vrai serveur Apache tomcat ou de créer une porte dérobée en injectant
+            du code dans les fichiers de configurations récupérés via l'AJP (Apache Jserv Protocol : protocole
+            de communication du serveur Apache Tomcat) </p>
+
+        <p class="overlay1">Pour en savoir plus sur cette tâche, n'hésitez pas à jeter un &oelig;il à notre
+            rapport : <a target="_blank" [href]="cr_sae401_tache_7">cr_sae401_tache_7.pdf</a>
+        </p>
+
+        <div style="text-align: center; font-weight: bold;">Ce que j'ai appris durant ce projet</div> <br>
+        <div id="liste" class="overlay1">
+            <li>Sécuriser un système d'information</li>
+            <li>Analyser les risques et les vulnérabilités d'un système d'information </li>
+            <li>Travailler en autonomie</li>
+            <li>Travailler en équipe</li>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="enlarged-image-overlay" *ngIf="isImageEnlarged" (click)="closeEnlargedImage()">
+    <img class="enlarged-image" [src]="archisae401">
+</div>

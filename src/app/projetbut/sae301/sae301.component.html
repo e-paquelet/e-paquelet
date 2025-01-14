@@ -1,0 +1,148 @@
+<div class="position-texte">
+    <div class="texte">
+        <p class="overlay1">Cette SAE concernait l'ensemble des étudiants en formation initiale et a été
+            réalisée par groupe de 2 ou 3
+            étudiants. Cette SAE était relié à l'UE &laquo; Connecter &raquo;. J'ai été en binôme dans cette
+            SAE. Ce projet se décomposait en plusieurs parties : </p>
+        <div id="liste" class="overlay1">
+            <li>Partie 1: Plateforme d'apprentissage: Raspberry pi, machine virtuelle</li>
+            <li>Partie 2: Débit d'une source d'information</li>
+            <li>Partie 3: Systèmes d'analyse de débit (iperf, Munin)</li>
+            <li>Partie 4: Application: Transmission vidéo: Serveur vidéo à débit adaptatif DASH</li>
+            <li>Partie 4: Application: Transmission sécurisée: Serveur VPN Wireguard, OpenVPN</li>
+            <li>Partie 4: Application: Transmission multimédia: Serveur NAS OMV</li>
+        </div>
+        <p class="overlay1">
+            Les objectifs de cette SAE étaient les suivants :</p>
+        <div id="liste" class="overlay1">
+            <li>Mesurer le débit d'une source d'information en utilisant différents outils et sur différents
+                types de transmissions.</li>
+            <li>Initier à la mise en place de services réseau en lien avec les transmissions
+            </li>
+            <li>Sensibiliser à la qualité de des transmissions
+            </li>
+            <li>faire des interprétations comme un technicien dans le domaine des Réseaux et Télécommunications.
+            </li>
+            <li>Développer notre autonomie
+            </li>
+        </div>
+
+        <p class="overlay1">Le matériel utilisé au cours de cette SAE comprend :</p>
+        <div id="liste" class="overlay1">
+            <li>Un Raspberry Pi 4, doté de son alimentation, d'une carte micro-SD et d'un
+                câble Ethernet pour la mise en réseau.</li>
+            <li>Un PC de l'IUT équipé de VirtualBox, permettant d'exécuter des machines
+                virtuelles.</li>
+            <li>L'un de nos propres PC, utilisé en remplacement d'un ordinateur de l'IUT qui
+                ne prenait pas en charge les machines virtuelles faisait l’hôte de l’autre VM
+                nécessaire.</li>
+        </div>
+        <p class="overlay1"> Voici l'infrastructure réseaux que nous avions mis en place</p>
+        <img class="archisae301" [src]="archisae301" (click)="enlargeImage()"> <br><br>
+
+        <p class="overlay1">Afin d'être efficace et de ne pas perdre de temps dans la réalisation du projet,
+            nous nous sommes répartit les tâches et j'ai été assignés aux tâches suivantes : Partie 3 : Systèmes
+            d'analyse de débit (Iperf, Munin). J'ai également réalisé la partie 4 dédié au Serveur vidéo à
+            débit adaptatif DASH et au Serveur VPN Wireguard et OpenVPN </p>
+
+        <p class="overlay1">La première étape consistait à mettre en place l'infrastructure réseau évoquée
+            précédemment
+            ainsi que de rassembler des données sur les composants du Raspberry Pi tels que la carte réseau, le
+            type du Rapsberry pi, le débit des informations... Cette partie a été réalisée par mon binôme.
+            <!-- <a style="color: blue;" href="https://www.speedtest.net/fr">Ookla</a>. Une fois cette partie
+                    réalisée et que la deuxième
+                    fut accomplie, j'ai commencé à réaliser la 3° partie. -->
+            <br><br>Une fois les deux première parties réalisées par mon camarade, j'ai réalisé la partie 3 :
+            Système d'analyse de débit.
+        </p>
+        <div style="text-align: center; font-weight: bold;">Partie 3 : Système d'analyse de débit : Munin</div>
+        <br>
+        <p class="overlay1">
+
+            Le but de cette partie était d'utiliser le logiciel Munin afin de relever le débit des cartes
+            réseaux.
+            <br><br>Munin est un système complet de monitoring (ou métrologie) de machine. Il permet
+            de générer une série de graphes à partir des informations envoyées par les autres
+            machines : utilisation de la mémoire vive, « load average », utilisation du processeur,
+            réeaux...
+            <br><br> Une fois l'installation et la configuration réalisé, nous avons pu voir que le logiciel
+            était
+            fonctionnel et relevait le trafic sur la carte réseau du Raspberry-pi distant. <br><br>Voici la page
+            web
+            de Munin où nous avons pu relever le trafic passant par la carte réseau du Raspberry Pi
+        </p>
+
+        <img class="munin" [src]="image_munin" (click)="enlargeImage1()">
+        <br><br>
+
+        <p class="overlay1">Un des problèmes que nous avons rencontré lors de l'installation de cet outil est
+            l'intervalle de mise à jour des graphique qui était de 5 minutes. Afin de réduire ce temps, nous
+            avons utilisé Fast Common Gateway Interface (FCGI) afin de mettre les données à jour en temps et en
+            heure.</p>
+        <br><br>
+
+        <p class="overlay1">
+            La deuxième partie que j'ai réalisé dans cette SAE fut la partie 4 : <br>
+        </p>
+        <div style="text-align: center; font-weight: bold;">Partie 4 : Application a une transmission
+            multimédia :
+            Serveur DASH</div> <br>
+        <p class="overlay1">
+            Dans cette partie, l’objectif était de produire un résultat similaire à YouTube à propos du
+            changement de résolution : lorsqu’on clique sur YouTube sur la résolution a 720p, la
+            qualité vidéo change et la fluidité de celle-ci également. Nous nous sommes basé sur
+            notre VM déjà installée avec 4 processeurs. <br><br>Afin de réaliser ceci, nous avons téléchargé 2
+            vidéos Youtube en 1080p. Puis, nous
+            avons utilisé l’utilitaire ffmpeg afin de segmenter ces vidéos en différents segment de
+            différentes qualités chacun afin de pouvoir la changer plus tard. <br><br>ffmpeg est une collection
+            de logiciels
+            libres destinés au traitement de flux audio ou vidéo. Cette bibliothèque est utilisée par de
+            nombreux autres logiciels ou services comme VLC, iTunes ou YouTube <br><br>
+            Après avoir fragmenté la vidéo en trois résolutions différentes, nous avons utilisé l’utilitaire
+            MP4Box pour créer des segments adaptés à chaque résolution. Ainsi, la vidéo peut s'ajuster
+            automatiquement à la résolution la plus appropriée en fonction du débit disponible sur l’appareil de
+            l'utilisateur, assurant une lecture optimisée et sans interruption.
+        </p>
+
+        <div style="text-align: center; font-weight: bold;">Partie 4 : Application a une transmission
+            sécurisé :
+            Serveur VPN</div> <br>
+
+        <p class="overlay1">Dans cette partie, j'ai eu la charge de mettre en place un tunnel VPN. Le principe
+            d'un tunnel VPN
+            est d'encapsuler des données puis de les chiffrer pour empêcher des personnes externes
+            d'accéder aux échanges. Je n'ai mis en place qu'un seul serveur VPN : Wireguard, et
+            j'ai commencé à configurer un deuxième serveur VPN, OpenVPN. Cependant celui-ci na pas fonctionné,
+            surement dû à des erreurs de configurations. Le temps impartis au projet étant écoulé, je n'ai pas
+            eu le temps de modifier la configuration pour que celui-ci soit fonctionnel. On peut voir dans la
+            capture wireshark suivante que le ping passe à travers l'interface du VPN wireguard nouvellement
+            créée. </p>
+
+        <img class="vpn" [src]="image_vpn" (click)="enlargeImage2()"> <br><br>
+
+        <div style="text-align: center; font-weight: bold;">Ce que j'ai appris durant ce projet</div> <br>
+        <div id="liste" class="overlay1">
+            <li>Comment mettre en place la résolution automatique des vidéos</li>
+            <li>Comment mettre en oeuvre un VPN</li>
+            <li>Renforcer mon aptitude à travailler en équipe</li>
+
+            <li>Résoudre des problèmes en totale autonomie tout en étant sous pression </li>
+        </div>
+
+        <p class="overlay1">Pour en savoir plus sur ce projet, n'hésitez pas à jeter un &oelig;il à notre
+            rapport : <a target="_blank" [href]="cr_sae_301">cr_sae_301.pdf</a>
+        </p>
+    </div>
+</div>
+
+<div class="enlarged-image-overlay" *ngIf="isImageEnlarged" (click)="closeEnlargedImage()">
+    <img class="enlarged-image" [src]="archisae301">
+</div>
+
+<div class="enlarged-image-overlay" *ngIf="isImageEnlarged1" (click)="closeEnlargedImage()">
+    <img class="enlarged-image" [src]="image_munin">
+</div>
+
+<div class="enlarged-image-overlay" *ngIf="isImageEnlarged2" (click)="closeEnlargedImage()">
+    <img class="enlarged-image" [src]="image_vpn">
+</div>

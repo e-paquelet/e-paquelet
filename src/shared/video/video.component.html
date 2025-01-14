@@ -1,0 +1,15 @@
+<div class="main">
+    <video disablePictureInPicture playsinline autoplay muted loop>
+        <source [src]="bgImgUrl" type="video/mp4">
+        Your browser does not support the video tag. I suggest you upgrade your browser.
+    </video>
+
+    <div class="text-overlay">
+        <h2>{{ titre }}</h2>
+    </div>
+    
+
+    <div class="link-overlay">
+        <a [href]="lienFleche.toString()" class="btn btn-default">&#9207;</a>
+    </div>
+</div>

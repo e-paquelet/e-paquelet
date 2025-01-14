@@ -59,7 +59,7 @@
     height: 50dvh; */
     width: 25vw;
     height: 70dvh;
-    background-image: url(../../../public/assets/img/transmission.jpg);
+    background-image: url(../../../public/assets/img/projet/transmission.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -73,7 +73,7 @@
     height: 50dvh; */
     width: 25vw;
     height: 70dvh;
-    background-image: url(../../../public/assets/img/app2.JPG);
+    background-image: url(../../../public/assets/img/projet/app2.JPG);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -87,7 +87,7 @@
     height: 50dvh; */
     width: 25vw;
     height: 70dvh;
-    background-image: url(../../../public/assets/img/reseaux2.jpg);
+    background-image: url(../../../public/assets/img/projet/reseaux2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -101,7 +101,7 @@
     height: 50dvh; */
     width: 25vw;
     height: 70dvh;
-    background-image: url(../../../public/assets/img/cyber.jpeg);
+    background-image: url(../../../public/assets/img/projet/cyber.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -247,7 +247,7 @@
 
 .position-texte {
     /* width: 250px; */
-    height: 400px;
+    height: 420px;
     background: #fff;
     overflow-y: scroll;
     overflow-x: hidden;

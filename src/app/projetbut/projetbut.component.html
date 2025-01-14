@@ -3,29 +3,18 @@
 
 </div> -->
 <html>
-<div class="main">
-    <video class="video" disablePictureInPicture playsinline autoplay muted loop>
-        <source [src]="bgImgUrl" type="video/mp4">
-        Your browser does not support the video tag. I suggest you upgrade your browser.
-    </video>
 
-    <div class="overlay10">
-        <h1>Mes projets effectués au BUT</h1>
-    </div>
-
-    <div class="overlay20">
-        <a href="./projet-but#presentation" class="btn btn-default">&#9207;</a>
-    </div>
-
-</div>
+<app-video class="main" [bgImgUrl]="bgImgUrl" titre="Mes projets effectués en BUT"
+    lienFleche="./projet-but#presentation"></app-video>
 
 <div id="presentation"></div>
+
 <!-- <p> Avant de présenter les projets que j'ai effectué au cours de ma scolarité au BUT Réseaux et Télécommunications, je
     vais tout d'abord
     présenter le fonctionnement de mon BUT.</p> -->
 <p class="ue"> La formation du BUT Réseaux et Télécommunications se dispense en 6 semestres. Pour obtenir le BUT,
     il faut acquérir 180 ECTS en validant toutes les UEs (Unité d'Enseignement). Les deux premiers semestres
-    sont composé de 3 UEs tandis que les 4 semestres qui suivent ont, par choix de parcours, 5 UEs. Voici les 3 UEs
+    sont composés de 3 UEs tandis que les 4 semestres qui suivent ont, par choix de parcours, 5 UEs. Voici les 3 UEs
     communes à tous les parcours
     :</p>
 <ol>
@@ -35,7 +24,7 @@
 </ol>
 
 <p class="ue">Dès la
-    deuxième année, nous avons eu la possibilité de choisir un parcours parmis les suivants :</p>
+    deuxième année, nous avons eu la possibilité de choisir un parcours parmi les suivants :</p>
 <ol>
     <li>Cybersécurité</li>
     <li>Internet des Objets et Mobilité (IoM)</li>
@@ -52,14 +41,15 @@
 
 <p class="ue">Je vais
     donc vous
-    présenter quelques SAE que j'ai effectué
-    durant mes deux premières années de ma scolarité au BUT. Une SAE est un projet qui dont la durée dépend de son
-    intensité et de sa difficulté. Pour les SAE de deuxième année, elles se sont toutes déroulées sur une semaine
+    présenter quelques SAEs que j'ai effectuées
+    durant mes deux premières années de ma scolarité au BUT. Une SAE, Situation d'Evaluation et d'Apprentissage, est un
+    projet dont le sujet englobe l'ensemble des connaissances reçues par les ressources
+    enseignées dans son UE. IL y a une SAE minimum par UE. Une SAE se déroule généralement sur une semaine mais la durée peut varier en fonction de l'intensité et
+    de la difficulté du projet. Pour les SAEs de deuxième année, elles se sont toutes déroulées sur une semaine
     entière.
 </p>
-<p class="ue">Pour préciser les modalités de réalisation de ces SAE, ils se sont effectués seul ou en groupe de 2, 3, 4
-    ou 5. La durée de
-    chaque SAE était d'une semaine environ. Parmis ces SAE, deux d'entre elles étaient spécialisé en cybersécurité.</p>
+<p class="ue">Pour préciser les modalités de réalisation de ces SAE, Elles se sont effectuées seules ou en groupe de 2, 3, 4
+    ou 5. Deux d'entre elles étaient spécialisées en cybersécurité.</p>
 <!-- Dans chaque UE de la première année (Semestre 1 et 2), un projet devait être réalisé en lien avec son UE. J'ai pu
     effectué 10 projets
     durant la première année et 5 projets durant la deuxième année</p> -->
@@ -72,7 +62,7 @@
 <!-- <div class="sae101"> -->
 <div class="first-container">
     <div class="main-container">
-        <div class="container" (click)="openpopup()">
+        <div class="container" (click)="openDialog('sae301')">
             <div class="bandeau">
                 <p>SAE301</p>
                 <p>Mettre en oeuvre un systèmes de transmission</p>
@@ -80,7 +70,7 @@
         </div>
     </div>
     <div class="main-container">
-        <div matTooltip="Picture designed by Freepik" class="container1" (click)="openpopup1()">
+        <div matTooltip="Picture designed by Freepik" class="container1" (click)="openDialog('sae302')">
             <div class="bandeau">
                 <p>SAE302</p>
                 <p>Développer des applications communicantes</p>
@@ -88,7 +78,7 @@
         </div>
     </div>
     <div class="main-container">
-        <div class="container2" (click)="openpopup2()">
+        <div class="container2" (click)="openDialog('sae303')">
 
             <div class="bandeau">
                 <p>SAE303</p>
@@ -102,7 +92,7 @@
 
 <div class="first-container">
     <div class="main-container">
-        <div class="container3" (click)="openpopup3()">
+        <div class="container3" (click)="openDialog('sae401')">
             <div class="bandeau">
                 <p>SAE4-Cyber-01</p>
                 <p>Sécuriser un système d'information</p>
@@ -144,7 +134,7 @@
     </div>
 </div> -->
 
-<div class="overlay" *ngIf="show" (click)="closeoverlay($event)">
+<!-- <div class="overlay" *ngIf="show" (click)="closeoverlay($event)">
     <div class="popup-content">
         <div class="close-popup" (click)="closepopup()">
             &times;
@@ -202,9 +192,7 @@
                     précédemment
                     ainsi que de rassembler des données sur les composants du Raspberry Pi tels que la carte réseau, le
                     type du Rapsberry pi, le débit des informations... Cette partie a été réalisée par mon binôme.
-                    <!-- <a style="color: blue;" href="https://www.speedtest.net/fr">Ookla</a>. Une fois cette partie
-                    réalisée et que la deuxième
-                    fut accomplie, j'ai commencé à réaliser la 3° partie. -->
+                 
                     <br><br>Une fois les deux première parties réalisées par mon camarade, j'ai réalisé la partie 3 :
                     Système d'analyse de débit.
                 </p>
@@ -287,9 +275,9 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
-<div class="overlay" *ngIf="show1" (click)="closeoverlay($event)">
+<!-- <div class="overlay" *ngIf="show1" (click)="closeoverlay($event)">
     <div class="popup-content">
         <div class="close-popup" (click)="closepopup1()">
             &times;
@@ -372,9 +360,9 @@
         </div>
     </div>
 
-</div>
+</div> -->
 
-<div class="overlay" *ngIf="show2" (click)="closeoverlay($event)">
+<!-- <div class="overlay" *ngIf="show2" (click)="closeoverlay($event)">
     <div class="popup-content">
         <div class="close-popup" (click)="closepopup2()">
             &times;
@@ -512,9 +500,9 @@
         </div>
     </div>
 
-</div>
+</div> -->
 
-<div class="overlay" *ngIf="show3" (click)="closeoverlay($event)">
+<!-- <div class="overlay" *ngIf="show3" (click)="closeoverlay($event)">
     <div class="popup-content">
         <div class="close-popup" (click)="closepopup3()">
             &times;
@@ -637,9 +625,9 @@
         </div>
     </div>
 
-</div>
+</div> -->
 
-<div class="enlarged-image-overlay" *ngIf="isImageEnlarged" (click)="closeEnlargedImage()">
+<!-- <div class="enlarged-image-overlay" *ngIf="isImageEnlarged" (click)="closeEnlargedImage()">
     <img class="enlarged-image" [src]="archisae303">
 </div>
 
@@ -653,7 +641,7 @@
 
 <div class="enlarged-image-overlay" *ngIf="isImageEnlarged3" (click)="closeEnlargedImage()">
     <img class="enlarged-image" [src]="archisae401">
-</div>
+</div> -->
 
 
 <!-- <div class="overlay" *ngIf="show1" (click)="closeoverlay($event)"> structure de base d'un overlay

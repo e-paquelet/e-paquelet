@@ -17,21 +17,21 @@ type ListeContactItem = {
   styleUrl: './contact.component.css'
 })
 export class ContactComponent {
-  bgImgUrl = "./assets/img/background.jpg";
-  bgImgUrl2 = "./assets/img/profil.png";
-  bgImgUrl3 = "./assets/img/linkedin.png";
-  bgImgUrl4 = "./assets/img/mail.png";
+  // bgImgUrl = "./assets/img/background.jpg";
+  profil = "./assets/img/accueil/profillogo.JPG";
+  bgImgUrl3 = "./assets/img/contact/linkedin.png";
+  bgImgUrl4 = "./assets/img/contact/mail.png";
   bgImgUrl5 = "./assets/img/background2.mp4";
-  dianeUrl = "./assets/img/mdp.jpg";
-  cv = "./assets/img/CV_PAQUELET_Etienne.pdf";
-  CV = "./assets/img/cv.png";
+  dianeUrl = "./assets/img/contact/mdp.jpg";
+  cv = "./assets/img/pdf/CV_PAQUELET_Etienne.pdf";
+  CV = "./assets/img/download.jpg";
   dianeArray: string[] = [];
 
   listeContact: ListeContactItem[] = [
     {
       img: this.bgImgUrl3,
       link: "https://www.linkedin.com/in/etienne-paquelet/",
-      text: "Etienne PAQUELET",
+      text: "Etienne  PAQUELET",
       alt: "Photo menant à mon compte Linkedin",
     },
     {
@@ -52,7 +52,7 @@ export class ContactComponent {
         elmt.src = this.dianeUrl;
         elmt.alt = "Image easter egg";
       } else {
-        elmt.src = this.bgImgUrl2;
+        elmt.src = this.profil;
         elmt.alt = "Image de profil";
       }
     });

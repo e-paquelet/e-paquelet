@@ -1,3 +1,25 @@
+.grille-passions {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+
+    & div.image-passion {
+        height: 80px;
+        width: 80px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .main {
     width: 90vw;
     height: 90dvh;
@@ -188,7 +210,7 @@ li {
 .tooltip {
     position: relative;
     display: inline-block;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     /* border-bottom: 1px dotted black; */
     /* margin-right: 20px; */
 }
@@ -305,18 +327,15 @@ video {
 html {
     scroll-behavior: smooth;
     overflow-y: scroll;
+    scrollbar-width: none;
+    /* Cache la scrollbar dans Firefox */
 }
 
 html::-webkit-scrollbar {
     display: none;
-    /* Cache la scrollbar */
 }
 
-/* Solution pour Firefox */
-html {
-    scrollbar-width: none;
-    /* Cache la scrollbar dans Firefox */
-}
+
 
 .vide {
     width: 100%;
@@ -357,7 +376,7 @@ html {
     margin: 4px 4px;
     cursor: pointer;
     border-radius: 20px;
-    /* text-align: right; */
+
 }
 
 .textgauche {
@@ -394,68 +413,13 @@ html {
 
 }
 
-/* @keyframes popup-animation {
-  from {
-      transform: scale(0);
-  }
-
-  to {
-      transform: scale(1);
-  }
-}
-
-.popup-content {
-  background-color: #fff;
-  padding: 2px;
-  border-radius: 10px;
-  width: 55%;
-  height: 42%;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  animation: popup-animation 0.3s ease-out;
-  overflow-y: auto;
-  overflow-x: hidden;
-
-}
-
-.close-popup {
-  position: relative;
-  top: 0px;
-  right: -123%;
-  cursor: pointer;
-  color: #333;
-  transition: color 0.3s;
-  scale: 1.5;
-  font-size: x-large;
-}
-
-.close-popup:hover {
-  color: red;
-}
-
-.imagegauche1 {
-  float: left;
-  width: 15%;
-}
-
-.textgauche1 {
-  float: right;
-  margin-top: 3vw;
-  margin-right: 10vw;
-}
-
-.profil {
-  display: flex;
-  justify-content: center;
-} */
-
-
 .popup-content {
     width: 40vw;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     position: relative;
 }
 
@@ -510,4 +474,87 @@ html {
     margin: 0;
     text-align: justify;
     font-style: italic;
+}
+
+
+.positionboutoncv {
+    display: flex;
+    justify-content: center;
+    /* Centre le bouton horizontalement */
+    margin: 20px 0;
+}
+
+/* Style général du bouton */
+.bouton1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    /* Fond blanc */
+    color: #000000;
+    /* Texte noir */
+    border: 2px solid #000000;
+    /* Bordure noire fine */
+    border-radius: 50px;
+    /* Bouton arrondi */
+    padding: 10px 20px;
+    /* Espacement interne */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Ombre douce */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* Transition pour les effets */
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    gap: 12px;
+    /* Espacement entre l'icône et le texte */
+}
+
+/* Animation au survol */
+.bouton1:hover {
+    background-color: #4ea4ef;
+    /* Fond noir */
+    color: #ffffff;
+    /* Texte blanc */
+    border-color: #000000;
+    /* Bordure blanche */
+}
+
+.bouton1:hover img {
+    filter: invert(1);
+    /* Inverse les couleurs de l'icône */
+}
+
+/* Texte */
+.textdownload {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Icône */
+.download {
+    width: 3dvw;
+    /* Taille de l'icône */
+    height: auto;
+    transition: all 0.3s ease;
+    /* Animation fluide au survol */
+}
+
+/* Responsive : ajustement pour les petits écrans */
+@media (max-width: 768px) {
+    .bouton1 {
+        padding: 8px 16px;
+        font-size: 14px;
+        gap: 8px;
+    }
+
+    .download {
+        width: 20px;
+        height: 20px;
+    }
+
+    .textdownload {
+        font-size: 14px;
+    }
 }
