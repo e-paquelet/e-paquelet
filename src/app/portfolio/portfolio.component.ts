@@ -6,11 +6,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { VideoComponent } from '../../shared/video/video.component';
 
 @Component({
-  selector: 'app-portfolio',
-  standalone: true,
-  imports: [MatProgressBarModule, CommonModule, MatTooltipModule, MatButtonModule, VideoComponent],
-  templateUrl: './portfolio.component.html',
-  styleUrl: './portfolio.component.css'
+    selector: 'app-portfolio',
+    imports: [MatProgressBarModule, CommonModule, MatTooltipModule, MatButtonModule, VideoComponent],
+    templateUrl: './portfolio.component.html',
+    styleUrl: './portfolio.component.css'
 })
 export class PortfolioComponent {
   // bgImgUrl = "./assets/img/background.jpg";

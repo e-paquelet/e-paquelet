@@ -2,11 +2,10 @@ import { Component } from '@angular/core';
 import { NgIf } from '@angular/common';
 
 @Component({
-  selector: 'app-sae301',
-  standalone: true,
-  imports: [NgIf],
-  templateUrl: './sae301.component.html',
-  styleUrl: './sae301.component.css'
+    selector: 'app-sae301',
+    imports: [NgIf],
+    templateUrl: './sae301.component.html',
+    styleUrl: './sae301.component.css'
 })
 export class Sae301Component {
   archisae301 = "./assets/img/sae301/infreseaux.png";

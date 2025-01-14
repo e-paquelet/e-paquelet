@@ -14,8 +14,9 @@ type MiniGameType = "Tic Tac Toe" | "Snake" | "Puissance 4" /*| "Démineur"*/ | 
 
 @Component({
     selector: 'app-notfound',
-    standalone: true,
-    imports: [CommonModule, MatTooltipModule, MatButtonModule, AccueilComponent, MatMenuModule,
+    imports: [CommonModule, MatTooltipModule, MatButtonModule,
+        // AccueilComponent,
+        MatMenuModule,
         Power4Component, SnakeComponent, TiktaktoeComponent,
         // DeminerComponent,
     ],

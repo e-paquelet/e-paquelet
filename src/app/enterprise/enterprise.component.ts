@@ -3,11 +3,10 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { VideoComponent } from '../../shared/video/video.component';
 
 @Component({
-  selector: 'app-enterprise',
-  standalone: true,
-  imports: [MatTooltipModule, VideoComponent],
-  templateUrl: './enterprise.component.html',
-  styleUrl: './enterprise.component.css'
+    selector: 'app-enterprise',
+    imports: [MatTooltipModule, VideoComponent],
+    templateUrl: './enterprise.component.html',
+    styleUrl: './enterprise.component.css'
 })
 export class EnterpriseComponent {
   bgImgUrl = "./assets/img/background2.mp4";

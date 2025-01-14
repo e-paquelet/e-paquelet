@@ -3,11 +3,10 @@ import { CommonModule } from '@angular/common';
 import { VideoComponent } from '../../shared/video/video.component';
 
 @Component({
-  selector: 'app-accueil',
-  standalone: true,
-  imports: [CommonModule, VideoComponent],
-  templateUrl: './accueil.component.html',
-  styleUrl: './accueil.component.css'
+    selector: 'app-accueil',
+    imports: [CommonModule, VideoComponent],
+    templateUrl: './accueil.component.html',
+    styleUrl: './accueil.component.css'
 })
 export class AccueilComponent {
   // bgImgUrl = "./assets/img/background.jpg";

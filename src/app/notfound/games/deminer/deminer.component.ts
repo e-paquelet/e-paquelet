@@ -17,7 +17,6 @@ enum BoardCaseType {
 
 @Component({
     selector: 'app-deminer',
-    standalone: true,
     imports: [
         MatRadioModule,
         MatButtonModule,

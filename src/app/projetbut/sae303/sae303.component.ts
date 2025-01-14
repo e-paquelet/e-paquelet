@@ -3,11 +3,10 @@ import { Component } from '@angular/core';
 
 
 @Component({
-  selector: 'app-sae303',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './sae303.component.html',
-  styleUrl: './sae303.component.css'
+    selector: 'app-sae303',
+    imports: [CommonModule],
+    templateUrl: './sae303.component.html',
+    styleUrl: './sae303.component.css'
 })
 export class Sae303Component {
 

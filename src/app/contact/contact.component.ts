@@ -10,11 +10,10 @@ type ListeContactItem = {
 }
 
 @Component({
-  selector: 'app-contact',
-  standalone: true,
-  imports: [MatTooltipModule],
-  templateUrl: './contact.component.html',
-  styleUrl: './contact.component.css'
+    selector: 'app-contact',
+    imports: [MatTooltipModule],
+    templateUrl: './contact.component.html',
+    styleUrl: './contact.component.css'
 })
 export class ContactComponent {
   // bgImgUrl = "./assets/img/background.jpg";
