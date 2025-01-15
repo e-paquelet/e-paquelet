@@ -1,0 +1,55 @@
+.container-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Espace entre les deux conteneurs */
+    align-items: stretch; /* Alignement vertical centré */
+    height: 100%;
+    margin-top: 15dvh;
+}
+
+.left-container {
+    width: 50dvw;
+    margin-right: 2dvw;
+    margin-left: 2dvw;
+    margin-top: 2dvh;
+    text-align: center;
+    height: 560px;
+    /* background-color: aqua; */
+    border-radius: 10px;
+    border: 2px solid black;
+    /* border-width: 2px; */
+}
+
+button {
+    display: block; /* Permet d'utiliser margin auto */
+    margin: 2dvh auto; /* Centre horizontalement */
+    border: none; /* Suppression de la bordure */
+    border-radius: 10px;
+    width: 25dvw;
+    height: 5dvh;
+    cursor: pointer; /* Ajout d'un curseur interactif */
+    background-color: rgb(29, 163, 230);
+    font-size: large;
+
+}
+
+img {
+    width: 50%;
+}
+
+.text-overlay {
+    text-align: justify;
+    margin-left: 2dvw;
+    margin-right: 2dvw;
+}
+
+.right-container {
+    width: 50dvw;
+    margin-top: 2dvh;
+    margin-left: 2dvw;
+    margin-right: 2dvw;
+    text-align: center;
+    height: 560px;
+    border-radius: 10px;
+    border: 2px solid black;
+}

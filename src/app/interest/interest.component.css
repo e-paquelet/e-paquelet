@@ -1,17 +1,11 @@
 .case {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
     gap: 2px;
-    
+   
 }
 
-.case1 {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 2px;
-  
-}
 
 
 
@@ -19,13 +13,10 @@
     position: relative;
     max-width: 30vw;
     margin-bottom: 10dvh;
+
 }
 
-/* .image-container1 {
-    position: relative;
-    max-width: 30vw;
 
-} */
 
 .image-container:hover {
     img {
@@ -41,23 +32,12 @@
     }
 
     .text-overlay:hover {
-        background: rgba(255, 255, 255, 0.8);
-        /* Fond plus clair */
-        color: black;
-        /* Texte noir au survol */
+        background: rgba(255, 255, 255, 0.8);      
+        color: black;        
     }
 }
 
-/* .image-container:hover {
-    img {
-        opacity: 1;
 
-    }
-
-    .text-overlay {
-        color: white;
-    }
-} */
 
 img {
     width: 30dvw;
@@ -84,5 +64,5 @@ img:hover {
     font-size: 25px;
     font-weight: bold;
     transition: color 0.5s ease-in-out;
-    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); */
+    
 }

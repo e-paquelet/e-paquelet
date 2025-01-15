@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
     styleUrl: './rs.component.css'
 })
 export class RsComponent {
-
+    github = "./assets/img/rs/github.png";
+    linkedin = "./assets/img/rs/linkedin.png";
 }
