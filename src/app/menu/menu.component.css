@@ -1,63 +1,31 @@
 .case {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap ;
-    gap: 2px;
-    
-}
-
-.case1 {
-    display: flex;
     justify-content: space-evenly;
-    gap: 2px;
-  
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+    margin-top: 18vh;
 }
-
 
 
 .image-container {
     position: relative;
     max-width: 30vw;
-    margin-bottom: 10dvh;
+    margin-bottom: 40px;
 }
 
-/* .image-container1 {
-    position: relative;
-    max-width: 30vw;
-
-} */
-
 .image-container:hover {
-    img {
-        opacity: 1;
-    }
-
     .text-overlay {
         background: rgba(0, 0, 0, 0.7);
-        color: white;
-        padding: 5px 10px;
-        border-radius: 5px;
-        transition: background 0.5s ease-in-out, color 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        color: white;        
     }
 
     .text-overlay:hover {
-        background: rgba(255, 255, 255, 0.8);
-        /* Fond plus clair */
-        color: black;
-        /* Texte noir au survol */
+        background: rgba(255, 255, 255, 0.8);      
+        color: black;    
+        cursor: pointer;    
     }
 }
-
-/* .image-container:hover {
-    img {
-        opacity: 1;
-
-    }
-
-    .text-overlay {
-        color: white;
-    }
-} */
 
 img {
     width: 30dvw;
@@ -65,24 +33,26 @@ img {
     display: block;
     opacity: 0.5;
     border-radius: 10px;
-    transition: opacity 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 img:hover {
     cursor: pointer;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-
+    opacity: 1;
 }
 
 .text-overlay {
-    position: absolute;
     text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: black;
     font-size: 25px;
     font-weight: bold;
-    transition: color 0.5s ease-in-out;
-    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); */
+    padding: 5px 10px;
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+    
+    position: absolute;
+    translate: -50% -100%;
+    top: 50%;
+    left: 50%;
 }

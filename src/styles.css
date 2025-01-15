@@ -9,6 +9,7 @@ html {
     margin: 0;
     color: black;
     overflow-x: hidden;
+    height: 100dvh;
 }
 
 a,
@@ -19,12 +20,9 @@ a:active {
     text-decoration: none;
 }
 
-html,
-body { 
-    height: 100dvh;
-}
-
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+* {
+    scrollbar-color: grey rgb(238, 238, 238);
+    scrollbar-width: thin;
+    scroll-snap-align: both;
+    scroll-margin-left: 10px;
 }

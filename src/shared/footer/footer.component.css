@@ -1,5 +1,6 @@
 .footer {
-    position: relative;
+    position: fixed;
+    bottom: 0;
     width: 100vw;
     background-color: whitesmoke;
     display: flex;
@@ -7,5 +8,11 @@
     justify-content: center;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
-    
+    height: 100px;
+}
+
+.clear {
+    padding-top: 60px;
+    clear: both;
+    background-color: red;
 }

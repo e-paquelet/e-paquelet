@@ -1,6 +1,12 @@
 import { Component } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 
+export interface ListeImage {
+  titre: string;
+  image: string;
+  link: string;
+}
+
 @Component({
     selector: 'app-menu',
     imports: [RouterLink],
@@ -20,6 +26,49 @@ export class MenuComponent {
     return "url('" + str + "')"
   }
   
+  listeImage: ListeImage[] = [
+      {
+        titre: "Accueil",
+        image: this.accueil,
+        link: "/accueil"
+      },
+      {
+        titre: "Mes centres d'intérêts",
+        image: this.pointinterro,
+        link: "/rs"
+      },
+      {
+        titre: "Alternance",
+        image: this.cd01,
+        link: "/entreprise"
+      },
+      {
+        titre: "Vitrine de mes compétences",
+        image: this.competence,
+        link: "portfolio"
+      },
+      {
+        titre: "Vitrine de mes projets",
+        image: this.photocompetence,
+        link: "/projet-but"
+      },
+      {
+        titre: "Liens divers",
+        image: this.rs,
+        link: "/liens-divers"
+      },
+      {
+        titre: "Contacts",
+        image: this.contact,
+        link: "/contact"
+      },
+      {
+        titre: "Autre",
+        image: this.pointinterro,
+        link: "/"
+      },
+    ];
+
 
   // redirect(e: any) {
   //   if (e.target.classList.contains('competence') ) {
