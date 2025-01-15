@@ -35,7 +35,7 @@ export class MenuComponent {
       {
         titre: "Mes centres d'intérêts",
         image: this.pointinterro,
-        link: "/rs"
+        link: "/centre-interet"
       },
       {
         titre: "Alternance",
