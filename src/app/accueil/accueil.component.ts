@@ -12,7 +12,7 @@ export class AccueilComponent {
   // bgImgUrl = "./assets/img/background.jpg";
   bgImgUrl = "./assets/img/background2.mp4";
   bgImgUrl2 = "./assets/img/accueil/insta.jpeg";
-  bgImgUrl3 = "./assets/img/accueil/guitare.jpeg";
+  bgImgUrl3 = "./assets/img/accueil/guitare.webp";
   bgImgUrl4 = "./assets/img/accueil/rock.jpg";
   bgImgUrl5 = "./assets/img/accueil/tennis.jpg";
   bgImgUrl6 = "./assets/img/accueil/gaming.jpg";

@@ -13,39 +13,32 @@ export interface ListeImage {
   styleUrl: './interest.component.css'
 })
 export class InterestComponent {
-  tennis = "./assets/img/interet/tennis.jpg";
-  guitare = "./assets/img/interet/guitare.webp";
-  chess = "./assets/img/interet/chess.jpg";
-  gaming = "./assets/img/interet/gaming.jpg";
+  adminsys = "./assets/img/interet/adminsys.PNG";
+  adminres = "./assets/img/interet/adminres.png";
+  devweb = "./assets/img/interet/devweb.PNG";
+  autoadm = "./assets/img/interet/powershell.PNG";
   velo = "./assets/img/interet/bike.jpg";
   rock = "./assets/img/interet/rock.jpg";
   pointinterro = "./assets/img/menu/pointinterro.jpg";
 
   listeImage: ListeImage[] = [
     {
-      titre: "Le tennis",
-      image: this.tennis,
+      titre: "L'administration système",
+      image: this.adminsys,
     },
     {
-      titre: "Les échecs",
-      image: this.chess,
+      titre: "L'administration réseaux",
+      image: this.adminres,
     },
     {
-      titre: "La guitare",
-      image: this.guitare,
+      titre: "Le développement web",
+      image: this.devweb,
     },
     {
-      titre: "Le métal - rock",
-      image: this.rock,
+      titre: "L'automatisation des tâches d'administration",
+      image: this.autoadm,
     },
-    {
-      titre: "Le VTT",
-      image: this.velo,
-    },
-    {
-      titre: "Les jeux vidéos",
-      image: this.gaming,
-    },
+    
   ];
 
   makeImgUrl(str: string): string {

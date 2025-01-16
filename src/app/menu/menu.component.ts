@@ -21,6 +21,7 @@ export class MenuComponent {
   cd01 = "./assets/img/menu/ain2.jpg";
   competence = "./assets/img/menu/competence.PNG";
   rs = "./assets/img/menu/rs.PNG";
+  projet = "./assets/img/menu/interet.jpg";
   pointinterro = "./assets/img/menu/pointinterro.jpg";
   makeImgUrl(str: string):string {
     return "url('" + str + "')"
@@ -49,7 +50,7 @@ export class MenuComponent {
       },
       {
         titre: "Vitrine de mes projets",
-        image: this.photocompetence,
+        image: this.projet,
         link: "/projet-but"
       },
       {
