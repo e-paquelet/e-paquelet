@@ -1,4 +1,9 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { AfterViewInit, Component, HostListener } from '@angular/core';
+import { MenuComponent } from '../menu/menu.component';
+import { CommonModule } from '@angular/common';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatButtonModule} from '@angular/material/button';
 
 type ListeContactItem = {
   img: string;
@@ -9,7 +14,7 @@ type ListeContactItem = {
 
 @Component({
     selector: 'app-prog1',
-    imports: [],
+    imports: [MenuComponent, CommonModule, MatIconModule, MatButtonModule, MatDividerModule],
     templateUrl: './prog1.component.html',
     styleUrl: './prog1.component.css'
 })
@@ -24,7 +29,7 @@ export class Prog1Component {
     dianeUrl = "./assets/img/mdp.jpg";
     flechebas = "./assets/img/fleche.png";
     dianeArray: string[] = [];
-  
+    menu = "./assets/img/interet/menu.png";
     listeContact: ListeContactItem[] = [
       {
         img: this.bgImgUrl3,
@@ -58,6 +63,38 @@ export class Prog1Component {
   
     makeImgUrl(str: string): string {
       return "url('" + str + "')"
+    }
+    
+    show = false;
+    private timeoutId: any = null;
+    private isClicked = false; // Ajout pour suivre le clic manuel
+    
+    openpopup() {
+        clearTimeout(this.timeoutId);  // Annule la fermeture en attente
+        this.show = true;
+    }
+    
+    delayedClosePopup() {
+        if (!this.isClicked) {
+            this.timeoutId = setTimeout(() => {
+                this.show = false;
+            }, 200); // Délai pour éviter la fermeture immédiate
+        }
+    }
+    
+    togglePopup(event: MouseEvent) {
+        event.stopPropagation();  // Empêche la propagation pour éviter l'appel du mouseleave
+        this.isClicked = true;
+        this.show = true;
+    }
+    
+    // Optionnel : Fermer si on clique ailleurs
+    @HostListener('document:click')
+    closeOnClickOutside() {
+        if (this.show && !this.isClicked) {
+            this.show = false;
+        }
+        this.isClicked = false;
     }
     
 

@@ -109,11 +109,28 @@
 </div>
 </html> -->
 
-<div style="display: flex;align-items:center;
-justify-content: center; height: 100vh;">
+<br><br><br><br><br><br>test
 
-<video width="320" height="240" controls>
-    <source [src]="video_sae_302" type="video/mp4"/>
-    Your browser does not support the video tag
-</video>
+<button class="bouton" matTooltip="Mes compétences en Administration Systèmes" (click)="openpopup()">
+
+    <div class="textgauche">
+        Open
+    </div>
+</button>
+<!-- <button class="bouton" matTooltip="Mes compétences en Administration Systèmes" (click)="closepopup()">
+
+    <div class="textgauche">
+        Close
+    </div>
+</button> -->
+<div class="position" (mouseover)="openpopup()" (mouseleave)="delayedClosePopup()">
+    <!-- <button class="bouton" (click)="togglePopup($event)">open while mouseover</button> -->
+    <button class="bouton" mat-raised-button (click)="togglePopup($event)">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="menu"></mat-icon>
+        <p>Menu</p>
+    </button>
 </div>
+
+
+
+<app-menu *ngIf="show"></app-menu>

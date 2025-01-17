@@ -27,7 +27,7 @@
     }
 }
 
-img {
+.image-container img {
     width: 30dvw;
     height: 35dvh;
     display: block;
@@ -36,7 +36,7 @@ img {
     transition: all 0.5s ease-in-out;
 }
 
-img:hover {
+.image-container img:hover {
     cursor: pointer;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     opacity: 1;

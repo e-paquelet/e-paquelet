@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatButtonModule } from '@angular/material/button';
 
 export interface ListeImage {
   titre: string;
@@ -9,7 +11,7 @@ export interface ListeImage {
 
 @Component({
     selector: 'app-menu',
-    imports: [RouterLink],
+    imports: [RouterLink, MatMenuModule, MatButtonModule],
     templateUrl: './menu.component.html',
     styleUrl: './menu.component.css'
 })
@@ -21,7 +23,7 @@ export class MenuComponent {
   cd01 = "./assets/img/menu/ain2.jpg";
   competence = "./assets/img/menu/competence.PNG";
   rs = "./assets/img/menu/rs.PNG";
-  projet = "./assets/img/menu/interet.jpg";
+  projet = "./assets/img/menu/projetbut.jpg";
   pointinterro = "./assets/img/menu/pointinterro.jpg";
   makeImgUrl(str: string):string {
     return "url('" + str + "')"

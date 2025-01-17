@@ -10,7 +10,7 @@ import { TiktaktoeComponent } from './games/tiktaktoe/tiktaktoe.component';
 import { DeminerComponent } from './games/deminer/deminer.component';
 
 
-type MiniGameType = "Morpion" | "Snake" | "Puissance 4" /*| "Démineur"*/ | "Aucun";
+type MiniGameType = "Morpion" | "Snake" | "Puissance 4" | "Démineur" | "Aucun";
 
 @Component({
     selector: 'app-notfound',
@@ -18,7 +18,7 @@ type MiniGameType = "Morpion" | "Snake" | "Puissance 4" /*| "Démineur"*/ | "Auc
         // AccueilComponent,
         MatMenuModule,
         Power4Component, SnakeComponent, TiktaktoeComponent,
-        // DeminerComponent,
+        DeminerComponent,
     ],
     templateUrl: './notfound.component.html',
     styleUrl: './notfound.component.css'
@@ -34,6 +34,6 @@ export class NotfoundComponent {
 
     directory = window.location.pathname.split("/").pop()?.trim();
 
-    miniGameListe: MiniGameType[] = ["Morpion", /* "Snake", "Puissance 4", */ "Aucun", /*'Démineur'*/];
+    miniGameListe: MiniGameType[] = ["Morpion", /* "Snake", "Puissance 4", */ "Aucun", 'Démineur'];
     miniGameChosen: MiniGameType = "Aucun";
 }

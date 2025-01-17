@@ -69,7 +69,7 @@ export class InterestComponent {
       image: this.chess,
     },
     {
-      titre: "la guitare",
+      titre: "La guitare",
       image: this.guitare,
     },
     {

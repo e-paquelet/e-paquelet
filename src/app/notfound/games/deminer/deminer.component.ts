@@ -25,6 +25,7 @@ enum BoardCaseType {
     styleUrl: './deminer.component.css'
 })
 export class DeminerComponent implements OnInit {
+
     // correspond à un plateau de 10 * difficulte +1
     difficulte: 1 | 2 | 3 = 1;
     // -1 est une bombe, 0 est empty, 1 à 8 est numN
@@ -35,7 +36,12 @@ export class DeminerComponent implements OnInit {
     message = "";
     caseHidden = 0;
 
-    readonly isMobile = (navigator as any).userAgentData.mobile;
+    isMobile = false;
+    constructor() {
+        if ((navigator as any).userAgentData && (navigator as any).userAgentData.mobile) {
+            this.isMobile = true;
+        }
+    }
 
     ngOnInit(): void {
         // construit le jeux au démarage
@@ -118,7 +124,7 @@ export class DeminerComponent implements OnInit {
         this.bombs.forEach(i => {
             this.checkAroundBomb(i);
         })
-        this.prettyLogBoard();
+        // this.prettyLogBoard();
     }
 
     checkAroundBomb(numero: number) {
@@ -190,7 +196,7 @@ export class DeminerComponent implements OnInit {
             }
             r += s + "\n";
         }
-        console.log(r);
+        // console.log(r);
     }
 
     resetGame() {
@@ -243,7 +249,7 @@ export class DeminerComponent implements OnInit {
         switch (this.board[numero]) {
             case BoardCaseType.Bomb:
                 block.classList.add("bomb");
-                console.log("bomb");
+                // console.log("bomb");
                 this.bombEndGame();
                 return;
             case BoardCaseType.Empty:
@@ -266,7 +272,7 @@ export class DeminerComponent implements OnInit {
         // }
 
         this.caseHidden--;
-        console.log(this.caseHidden);
+        // console.log(this.caseHidden);
         if (this.caseHidden <= 0) {
             this.endGame()
         }

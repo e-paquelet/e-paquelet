@@ -1,4 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
+import { MenuComponent } from '../../app/menu/menu.component';
+import { CommonModule } from '@angular/common';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatButtonModule} from '@angular/material/button';
 
 export interface ListeMenu {
     titre: string;
@@ -14,7 +19,7 @@ export interface ListeReseau {
 
 @Component({
     selector: 'app-header',
-    imports: [],
+    imports: [MatButtonModule, MatDividerModule, MenuComponent, MatIconModule, CommonModule],
     templateUrl: './header.component.html',
     styleUrl: './header.component.css'
 })
@@ -54,4 +59,37 @@ export class HeaderComponent {
         },
 
     ]
+
+     show = false;
+        private timeoutId: any = null;
+        private isClicked = false; // Ajout pour suivre le clic manuel
+        
+        openpopup() {
+            clearTimeout(this.timeoutId);  // Annule la fermeture en attente
+            this.show = true;
+        }
+        
+        delayedClosePopup() {
+            if (!this.isClicked) {
+                this.timeoutId = setTimeout(() => {
+                    this.show = false;
+                }, 200); // Délai pour éviter la fermeture immédiate
+            }
+        }
+        
+        togglePopup(event: MouseEvent) {
+            event.stopPropagation();  // Empêche la propagation pour éviter l'appel du mouseleave
+            this.isClicked = true;
+            this.show = true;
+        }
+        
+        // Optionnel : Fermer si on clique ailleurs
+        @HostListener('document:click')
+        closeOnClickOutside() {
+            if (this.show && !this.isClicked) {
+                this.show = false;
+            }
+            this.isClicked = false;
+        }
+        
 }
