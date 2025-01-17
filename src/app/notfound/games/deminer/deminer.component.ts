@@ -35,7 +35,13 @@ export class DeminerComponent implements OnInit {
     message = "";
     caseHidden = 0;
 
-    readonly isMobile = (navigator as any).userAgentData.mobile;
+    isMobile = false;
+
+    constructor() {
+        if ((navigator as any).userAgentData && (navigator as any).userAgentData.mobile) {
+            this.isMobile = true;
+        }
+    }
 
     ngOnInit(): void {
         // construit le jeux au démarage

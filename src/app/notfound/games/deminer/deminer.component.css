@@ -50,9 +50,9 @@
     grid-template-rows: repeat(11, min(6vw, 6dvh));
 }
 
-/* :host /deep/ pour que angular applique le CSS quand on ajoute des éléments dynamiquement */
+/* host /deep/ pour que angular applique le CSS quand on ajoute des éléments dynamiquement */
 
-/* :host /deep/ #game.large .flag::before {
+:host /deep/ #game.large .flag::before {
     border-width: 0.5vw;
 }
 
@@ -64,7 +64,7 @@
     border-width: 1vw;
 }
 
-// type des cases
+/* type des cases */
 
 :host /deep/ .case {
     width: calc(100% - 2px);
@@ -280,4 +280,4 @@
     #game.large &::before {
         font-size: 1vw;
     }
-} */
+}
