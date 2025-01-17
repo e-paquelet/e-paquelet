@@ -19,7 +19,13 @@ export interface ListeReseau {
 
 @Component({
     selector: 'app-header',
-    imports: [MatButtonModule, MatDividerModule, MenuComponent, MatIconModule, CommonModule],
+    imports: [
+        MatButtonModule,
+        MatDividerModule,
+        // MenuComponent,
+        MatIconModule, 
+        CommonModule
+    ],
     templateUrl: './header.component.html',
     styleUrl: './header.component.css'
 })
