@@ -12,7 +12,9 @@
 }
 
 .clear {
-    padding-top: 60px;
+    margin: 0;
+    padding-top: 75px;
     clear: both;
     background-color: red;
+    text-align: center;
 }

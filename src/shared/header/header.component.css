@@ -1,7 +1,8 @@
 .clear {
     clear: both;
-    padding-bottom: 2vh;
+    padding-bottom: calc(12vh - 23px);
     background-color: red;
+    text-align: center;
 }
 
 .header_container {
