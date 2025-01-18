@@ -110,6 +110,50 @@
     cursor: pointer;
 }
 
+.container4 {
+    /* width: 30vw;
+    height: 50dvh; */
+    width: 25vw;
+    height: 70dvh;
+    background-image: url(../../../public/assets/img/projet/technique.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container5 {
+    /* width: 30vw;
+    height: 50dvh; */
+    width: 25vw;
+    height: 70dvh;
+    background-image: url(../../../public/assets/img/projet/piloter.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+ 
+.container6 {
+    /* width: 30vw;
+    height: 50dvh; */
+    width: 25vw;
+    height: 70dvh;
+    background-image: url(../../../public/assets/img/projet/supervision.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
 
 .bandeau {
     background-color: rgba(255, 255, 255, 0.5);
@@ -150,14 +194,18 @@
     opacity: 1;
 }
 
-.container:hover .bandeau {
+.container4:hover .bandeau {
     opacity: 1;
 }
 
-.container:hover .bandeau {
+.container5:hover .bandeau {
     opacity: 1;
 }
 
+
+.container6:hover .bandeau {
+    opacity: 1;
+}
 .projets {
 
     display: flex;
@@ -167,6 +215,22 @@
     flex-direction: row;
     margin-bottom: 5vh;
 }
+
+.bouton {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    
+    
+}
+
+
+
+/* .mat-mdc-form-field-bottom-align {
+    width: 500px;
+} */
 
 .sae101,
 .sae102,

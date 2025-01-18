@@ -11,6 +11,12 @@ import { Sae301Component } from './sae301/sae301.component';
 import { Sae302Component } from './sae302/sae302.component';
 import { Sae303Component } from './sae303/sae303.component';
 import { Sae401Component } from './sae401/sae401.component';
+import { Sae501Component } from './sae501/sae501.component';
+import { Sae502Component } from './sae502/sae502.component';
+import { Sae503Component } from './sae503/sae503.component';
+import {MatInputModule} from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 @Component({
@@ -21,6 +27,9 @@ import { Sae401Component } from './sae401/sae401.component';
         MatIconModule,
         CommonModule,
         MatTooltipModule,
+        MatInputModule,
+        MatSelectModule,
+        MatFormFieldModule,
         // DialogComponent,
         VideoComponent,
         // Sae301Component,
@@ -33,10 +42,10 @@ import { Sae401Component } from './sae401/sae401.component';
 })
 export class ProjetbutComponent {
     constructor(
-        private dialog: MatDialog
+        private dialog: MatDialog //on peut ouvrir un dialog sur ce composant
     ) { }
 
-    openDialog(content: "sae301" | "sae302" | "sae303" | "sae401") {
+    openDialog(content: "sae301" | "sae302" | "sae303" | "sae401" | "sae501" | "sae502" | "sae503") {
         let compo: Type<any> = Sae301Component;
         let titre = "SAE 301 - Mettre en oeuvre un système de transmission";
         switch (content) {
@@ -55,14 +64,28 @@ export class ProjetbutComponent {
                 compo = Sae401Component;
                 titre = "SAE4-Cyber-01 - Sécuriser un système d'information";
                 break;
+            case "sae501":
+                compo = Sae501Component;
+                titre = "SAE501 - Concevoir une solution technique";
+                break;
+            case "sae502":
+                compo = Sae502Component;
+                titre = "SAE502 - Piloter un projet informatique";
+                break;
+            case "sae503":
+                compo = Sae503Component;
+                titre = "SAE5-Cyber-03 - Sécurisation et supervision avancée";
+                break;
         }
 
         const dialodRef = this.dialog.open<DialogComponent, DialogDataType, number>(DialogComponent, {
-            data: {
-                btnNotOk: "Fermer",
-                title: titre,
+            //on va ouvrir un dialog de type dialog container
+            data: { //quand on ouvre le dialog
+                btnNotOk: "Fermer", //les données qu'on veut mettre dedans
+                title: titre, 
                 component: compo,
             },
+            //propriété du Dialog en lui même
             maxHeight: "95dvh",
             maxWidth: "65vw",
             hasBackdrop: true,
@@ -70,39 +93,9 @@ export class ProjetbutComponent {
             autoFocus: false,
         });
 
-        dialodRef.afterClosed().subscribe(res => { });
+        dialodRef.afterClosed().subscribe(res => { }); //signale de type subscribe qui dit que dialog ref est fermée.
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    valueSelected = "adminsysres";
     // bgImgUrl = "./assets/img/background.jpg";
     bgImgUrl = "./assets/img/background2.mp4";
     // bgImgUrl2 = "./assets/img/os.jpg";

@@ -3,21 +3,22 @@ import { MAT_DIALOG_DATA, MatDialogModule, MatDialogRef } from '@angular/materia
 import { MatButton } from '@angular/material/button';
 import { NgComponentOutlet, NgStyle } from '@angular/common';
 
+
 export type DialogDataType = {
     // btnOk?: string;
-    btnNotOk?: string;
-    title?: string;
-    text?: string;
-    component?: Type<any>;
+    btnNotOk?: string; //Message du bouton annuler/refuser
+    title?: string; //titre
+    text?: string; //texte
+    component?: Type<any>; //composant
     // warn?: boolean;
-    data?: any;
+    data?: any; //tout type de données
 };
 
 @Component({
     selector: 'app-dialog',
     imports: [
-        MatDialogModule,
-        NgComponentOutlet,
+        MatDialogModule, //faire fonctionner le dialog
+        NgComponentOutlet, //permettre l'affichage d'un composant dans un autre composant car on peut pas afficher un composant sans ca
         MatButton,
     ],
     templateUrl: './dialog.component.html',
@@ -25,25 +26,25 @@ export type DialogDataType = {
 })
 export class DialogComponent {
     constructor(
-        @Inject(MAT_DIALOG_DATA) public data: DialogDataType,
-        private dialogRef: MatDialogRef<DialogComponent, any>
+        @Inject(MAT_DIALOG_DATA) public data: DialogDataType, //passer des paramètres plus complexe 
+        private dialogRef: MatDialogRef<DialogComponent, any> //le composant qui permet d'envoyer les signaux : fermer/ouvrir
     ) {
-        if (!data) data = {};
+        if (!data) data = {}; //si pas d'objet data, data vide
         // if (!data.btnNotOk) data.btnNotOk = "Fermer";
-        if (!data.title) data.title = "Dialog";
+        if (!data.title) data.title = "Dialog"; //si il y a pas de titre a data, le titre = Dialog
     }
 
-    output: any = undefined;
+    output: any = undefined; //la chimère des données que peut renvoyer le composant dans le data. Si il y a des retours, ca sera dans output
 
-    getOuput(o: any) {
+    getOuput(o: any) { //afficher le retour du composant si il y en a
         this.output = o;
     }
 
-    validate() {
+    validate() { //gère lorsque je ferme le dialog
         if (this.output == undefined) {
-            this.dialogRef.close(0);
+            this.dialogRef.close(0); //on ferme avec 0 = équivalent de false
         } else {
-            this.dialogRef.close(this.output);
+            this.dialogRef.close(this.output); // renvoi les données du composants
         }
     }
 }

@@ -10,7 +10,7 @@
 @if (valueSelected == "professionel") {
   <div class="case">
     @for (element of listeImage; track $index) {
-      <div class="image-container">
+      <div class="image-container" (click)="openCard(element.type)" >
         <img [src]="element.image" [alt]="element.titre">
         <p class="text-overlay">{{element.titre}}</p>
       </div>
@@ -19,7 +19,7 @@
 } @else if (valueSelected == "personnel") {
   <div class="case">
     @for (element of listeImage2; track $index) {
-      <div class="image-container">
+      <div class="image-container" (click)="openCard(element.type)">
         <img [src]="element.image" [alt]="element.titre">
         <p class="text-overlay">{{element.titre}}</p>
       </div>

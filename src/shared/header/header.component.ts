@@ -22,7 +22,7 @@ export interface ListeReseau {
     imports: [
         MatButtonModule,
         MatDividerModule,
-        // MenuComponent,
+        MenuComponent,
         MatIconModule, 
         CommonModule
     ],

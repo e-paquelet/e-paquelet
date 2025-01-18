@@ -123,14 +123,15 @@
         Close
     </div>
 </button> -->
-<div class="position" (mouseover)="openpopup()" (mouseleave)="delayedClosePopup()">
-    <!-- <button class="bouton" (click)="togglePopup($event)">open while mouseover</button> -->
+<!-- <div class="position" (mouseover)="openpopup()" (mouseleave)="delayedClosePopup()">
+    <button class="bouton" (click)="togglePopup($event)">open while mouseover</button>
     <button class="bouton" mat-raised-button (click)="togglePopup($event)">
         <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="menu"></mat-icon>
         <p>Menu</p>
     </button>
-</div>
+</div> -->
 
-
+<button (click)="openCard('tennis')">test</button>
+<button (click)="openCard('saetest')">test2</button>
 
 <app-menu *ngIf="show"></app-menu>

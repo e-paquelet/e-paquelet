@@ -39,17 +39,43 @@
 </ol>
 
 
-<p class="ue">Je vais
-    donc vous
-    présenter quelques SAEs que j'ai effectuées
-    durant mes deux premières années de ma scolarité au BUT. Une SAE, Situation d'Evaluation et d'Apprentissage, est un
-    projet dont le sujet englobe l'ensemble des connaissances reçues par les ressources
-    enseignées dans son UE. IL y a une SAE minimum par UE. Une SAE se déroule généralement sur une semaine mais la durée peut varier en fonction de l'intensité et
-    de la difficulté du projet. Pour les SAEs de deuxième année, elles se sont toutes déroulées sur une semaine
-    entière.
+<p class="ue">Je vais donc vous présenter quelques SAEs que j'ai effectuées durant mes deux premières années de ma
+    scolarité
+    au BUT. Une SAE, Situation d'Evaluation et d'Apprentissage, est unprojet dont le sujet englobe l'ensemble des
+    connaissances
+    reçues par les ressources enseignées dans son UE. IL y a une SAE minimum par UE. Une SAE se déroule généralement sur
+    une
+    semaine mais la durée peut varier en fonction de l'intensité et de la difficulté du projet. Pour les SAEs de
+    deuxième année,
+    elles se sont toutes déroulées sur une semaine entière.
 </p>
-<p class="ue">Pour préciser les modalités de réalisation de ces SAE, Elles se sont effectuées seules ou en groupe de 2, 3, 4
+<p class="ue">Pour préciser les modalités de réalisation de ces SAE, Elles se sont effectuées seules ou en groupe de 2,
+    3, 4
     ou 5. Deux d'entre elles étaient spécialisées en cybersécurité.</p>
+<p class="ue">Utilisez le bouton ci-dessous pour explorer nos projets en fonction de leur UE (catégorie). Voici les
+    catégories disponibles :</p>
+<ol>
+    <li>Cybersécurité: 2 projets</li>
+    <li>Administration système et réseau : 2 projets</li>
+    <li>Développement d'application : 1 projet</li>
+    <li>Télécommunication : 1 projet</li>
+    <li>Gestion de projet : 1 projet</li>
+</ol>
+
+<p class="ue">Choisissez une spécialité et découvrez les projets associés !</p>
+
+<div class="bouton">
+    <mat-form-field>
+        <mat-label>Mes projets en :</mat-label>
+        <mat-select #fontSize id="selection" value="professionel" [(value)]="valueSelected">
+            <mat-option id="cybersécurité" value="cyber">Cybersécurité </mat-option>
+            <mat-option id="adminsysres" value="adminsysres">Administration système et réseau </mat-option>
+            <mat-option id="devapp" value="devapp">Développement d'application</mat-option>
+            <mat-option id="télécom" value="télécom">Télécommunication</mat-option>
+            <mat-option id="gp" value="gp">Gestion de projet</mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
 <!-- Dans chaque UE de la première année (Semestre 1 et 2), un projet devait être réalisé en lien avec son UE. J'ai pu
     effectué 10 projets
     durant la première année et 5 projets durant la deuxième année</p> -->
@@ -61,6 +87,7 @@
 <!-- <div class="button-container"> -->
 <!-- <div class="sae101"> -->
 <div class="first-container">
+    @if (valueSelected == "télécom") {
     <div class="main-container">
         <div class="container" (click)="openDialog('sae301')">
             <div class="bandeau">
@@ -69,6 +96,8 @@
             </div>
         </div>
     </div>
+    }
+    @if (valueSelected == "devapp") {
     <div class="main-container">
         <div matTooltip="Picture designed by Freepik" class="container1" (click)="openDialog('sae302')">
             <div class="bandeau">
@@ -77,6 +106,9 @@
             </div>
         </div>
     </div>
+    }
+
+    @if (valueSelected == "adminsysres") {
     <div class="main-container">
         <div class="container2" (click)="openDialog('sae303')">
 
@@ -88,9 +120,18 @@
         </div>
     </div>
 
-</div>
+    <div class="main-container">
+        <div class="container4" (click)="openDialog('sae501')">
+            <div class="bandeau">
+                <p>SAE501</p>
+                <p>Concevoir une solution technique</p>
+            </div>
+        </div>
+    </div>
+    }
 
-<div class="first-container">
+
+    @if (valueSelected == "cyber") {
     <div class="main-container">
         <div class="container3" (click)="openDialog('sae401')">
             <div class="bandeau">
@@ -99,19 +140,40 @@
             </div>
         </div>
     </div>
-    <!-- <div class="main-container">
-        <div class="container">
+
+    <div class="main-container">
+        <div class="container6" (click)="openDialog('sae503')">
             <div class="bandeau">
-                <p>SAE4-Cyber-01</p>
-                <p>Sécuriser un système d'information</p>
+                <p>SAE5-Cyber-03</p>
+                <p>Sécurisation et supervision avancée</p>
+            </div>
+        </div>
+
+    </div>
+    }
+    @if (valueSelected == "gp") {
+    <div class="main-container">
+        <div class="container5" (click)="openDialog('sae502')">
+            <div class="bandeau">
+                <p>SAE502</p>
+                <p>Piloter un projet informatique</p>
+            </div>
+        </div>
+    </div>
+    }
+    <!-- <div class="main-container">
+        <div class="container4" (click)="openDialog('sae501')">
+            <div class="bandeau">
+                <p>SAE501</p>
+                <p>Concevoir une solution technique</p>
             </div>
         </div>
     </div>
     <div class="main-container">
-        <div class="container">
+        <div class="container5" (click)="openDialog('sae502')">
             <div class="bandeau">
-                <p>Stage</p>
-                <p>Préfecture de l'Ain</p>
+                <p>SAE502</p>
+                <p>Piloter un projet informatique</p>
             </div>
         </div>
     </div> -->
