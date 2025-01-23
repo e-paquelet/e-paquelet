@@ -1,12 +1,10 @@
-
-
 <html>
 
-<app-video class="main" [bgImgUrl]="bgImgUrl" titre="Mes compétences"
-    lienFleche="./portfolio#presentation"></app-video>
+<app-video class="main" [bgImgUrl]="bgImgUrl" titre="Mes compétences" lienFleche="./portfolio#presentation"></app-video>
 
 <div id="presentation" style="padding-left: 5vw; padding-bottom: 3vw; text-align: center;">
-    Voici une synthèse de mes compétences développées au cours de ma formation, vous trouverez dans l'onglet projets leur mise en œuvre
+    Voici une synthèse de mes compétences développées au cours de ma formation, vous trouverez dans l'onglet projets
+    leur mise en œuvre
 </div>
 
 
@@ -636,9 +634,9 @@
 
 
 
-<div class="button-container"> <!-- bouton administrer réseau et connecter usager-->
+<!-- bouton administrer réseau et connecter usager-->
+<!-- <div class="button-container"> 
     <div class="positionboutongauche">
-
         <button class="bouton" id="admin" matTooltip="Mes compétences en Administration Systèmes et réseaux"
             (click)="openpopup()">
             <img class="imagegauche" [src]="bgImgUrl2">
@@ -646,78 +644,69 @@
                 Administrer les réseaux et Internet
             </div>
         </button>
-
-
     </div>
     <div class="positionboutondroit">
-
         <button class="bouton" matTooltip="Mes compétences en Télécommunication" (click)="openpopup1()">
             <img class="imagedb" [src]="bgImgUrl3">
             <div class="textdroite">
                 Connecter les entreprises et usagers
             </div>
         </button>
-
-
-
     </div>
-
 </div>
-
-<div class="button-container"> <!-- bouton créer outil et sécurioserr-->
+<div class="button-container"> <
     <div class="positionboutongauche">
-
-        <button class="bouton" id="admin" matTooltip="Mes compétences en programmation"
-            (click)="openpopup2()">
+        <button class="bouton" id="admin" matTooltip="Mes compétences en programmation" (click)="openpopup2()">
             <img class="imagegauche" [src]="bgImgUrl7">
             <div class="textdev">
                 Créer des outils et applications informatiques <br> pour les R&T
             </div>
         </button>
-
-
     </div>
     <div class="positionboutondroit">
-
         <button class="bouton" matTooltip="Mes compétences en cybersécurité" (click)="openpopup3()">
             <img class="imagedb" [src]="bgImgUrl8">
             <div class="textdb">
                 Sécuriser
             </div>
         </button>
-
-
-
     </div>
-
 </div>
-
 <div class="button-container">
     <div class="positionboutongauche">
-
-        <button class="bouton" id="admin" matTooltip="Mes compétences en cybersécurité"
-            (click)="openpopup4()">
+        <button class="bouton" id="admin" matTooltip="Mes compétences en cybersécurité" (click)="openpopup4()">
             <img class="imagegauche" [src]="bgImgUrl8">
             <div class="textvirt">
                 Surveiller
             </div>
         </button>
-
-
     </div>
     <div class="positionboutondroit">
-
         <button class="bouton" matTooltip="Mes certifications" (click)="openpopup5()">
             <img class="imagedb" [src]="bgImgUrl9">
             <div class="textdb">
                 Certifications
             </div>
         </button>
-
-
-
     </div>
+</div> -->
 
+<div class="button-container">
+    @for (item of buttons; track $index) {
+        <div class="button">
+            <button [matTooltip]="item.tooltip" (click)="item.fct()">
+                <img [src]="item.img">
+                <div class="divider">
+                    <p>{{ item.text }}</p>
+                    <div class="tags-container">
+                        @for (tag of item.tags; track $index) {
+                            <p>{{tag}}</p>
+                        }
+                    </div>
+                </div>
+            </button>
+        </div>
+    }
 </div>
 
 <!-- <div class="button-container"> bouton test

@@ -190,7 +190,13 @@ export class InterestComponent {
         frontpicture = this.velo;
         break;
       case "adminsys":
-        compo = `<p> </p>
+        compo = `<p>A titre professionnel, j'ai une préférence pour l'administration système et réseaux, 
+        ainsi que leur sécurisation par rapport aux autres compétences que j'ai acquéris au BUT Réseaux et Télécommunications.
+        J'aime approfondir les connaissances que j'acquiers durant les TPs et les cours dans mon temps libre 
+        ainsi qu'en entreprise dans les différentes missions qui me sont confiés.
+         De plus, par ma participation aux sélections régionales des Worldskills en Bourgogne Franche-Comté, 
+         je m'entraine régulièrement pour améliorer et approfondir ces connaissances sur des machines virtuelles mises à disposition par l'IUT 
+        </p>
         `;
         titre = "L'administration système";
         headerpicture = this.windowsserver;

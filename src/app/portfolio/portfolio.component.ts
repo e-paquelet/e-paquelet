@@ -5,9 +5,21 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatButtonModule } from '@angular/material/button';
 import { VideoComponent } from '../../shared/video/video.component';
 
+type Button = {
+  img: string,
+  text: string,
+  tags: string[],
+  fct: Function,
+  tooltip: string
+}
+
 @Component({
     selector: 'app-portfolio',
-    imports: [MatProgressBarModule, CommonModule, MatTooltipModule, MatButtonModule, VideoComponent],
+    imports: [MatProgressBarModule, 
+      CommonModule, 
+      MatTooltipModule,
+      MatButtonModule, 
+      VideoComponent],
     templateUrl: './portfolio.component.html',
     styleUrl: './portfolio.component.css'
 })
@@ -30,6 +42,52 @@ export class PortfolioComponent {
   show5 = false;
   show6=false;
   show15=false;
+
+  buttons: Button[] = [
+    {
+      text: "Administrer les réseaux et Internet",
+      tooltip: "Mes compétences en Administration Systèmes et réseaux",
+      tags: ["Windows ", "Linux", "Ploof", "Ploof", "Ploof"],
+      fct: () => {this.openpopup()},
+      img: this.bgImgUrl2,
+    },
+    {
+      text: "Connecter les entreprises et usagers",
+      tooltip: "Mes compétences en Télécommunication",
+      tags: ["Windows ", "Linux"],
+      fct: () => {this.openpopup1()},
+      img: this.bgImgUrl3,
+    },
+    {
+      text: "Créer des outils et applications informatiques pour les R&T",
+      tooltip: "Mes compétences en programmation",
+      tags: ["Windows ", "Linux"],
+      fct: () => {this.openpopup2()},
+      img: this.bgImgUrl7,
+    },
+    {
+      text: "Sécuriser",
+      tooltip: "Mes compétences en cybersécurité",
+      tags: ["Windows ", "Linux"],
+      fct: () => {this.openpopup3()},
+      img: this.bgImgUrl8,
+    },
+    {
+      text: "Surveiller",
+      tooltip: "Mes compétences en cybersécurité",
+      tags: ["Windows ", "Linux"],
+      fct: () => {this.openpopup4()},
+      img: this.bgImgUrl8,
+    },
+    {
+      text: "Certifications",
+      tooltip: "Mes certifications",
+      tags: ["Windows ", "Linux"],
+      fct: () => {this.openpopup5()},
+      img: this.bgImgUrl9,
+    },
+  ]
+
   openpopup() {
 
     this.show = true;
