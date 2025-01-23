@@ -1,40 +1,36 @@
+<div class="main">
+    <video disablePictureInPicture playsinline autoplay muted loop>
+        <source [src]="bgImgUrl5" type="video/mp4">
+        Your browser does not support the video tag. I suggest you upgrade your browser.
+    </video>
 
+    <div class="overlay">
+        <div class="card">
+            <div class="img-bx">
+                <!-- <img src="https://i.postimg.cc/dQ7zWbS5/img-4.jpg" alt="img" /> -->
+                <img id="imgProfil" [src]="profil" alt="">
+                <p style="visibility:collapse;">Tapez "etienne"</p>
+            </div>
+            <div class="content">
+                <div class="detail">
+                    <h2>Etienne PAQUELET<br /><span>Etudiant en 3° année de <br />BUT Réseaux et
+                            Télécommunications</span></h2>
+                    <ul class="sci">
+                        <li>
+                            <a matTooltip="Mon profil LinkedIn" href="https://www.linkedin.com/in/etienne-paquelet/" target="_blank"><img
+                                    class="image" [src]="bgImgUrl3"></a>
+                        </li>
 
-<body>
-    <div class="main">
-        <video disablePictureInPicture playsinline autoplay muted loop>
-            <source [src]="bgImgUrl5" type="video/mp4">
-            Your browser does not support the video tag. I suggest you upgrade your browser.
-        </video>
+                        <li>
+                            <a matTooltip="Mon mail" href="mailto:etienne.paquelet.01@gmail.com"><img class="image" [src]="bgImgUrl4"></a>
+                        </li>
+                        <li> 
+                            <a matTooltip="Mon CV" target="_blank" [href]="cv"><img class="image" [src]="CV"></a>
+                        </li>
 
-        <div class="overlay">
-            <div class="card">
-                <div class="img-bx">
-                    <!-- <img src="https://i.postimg.cc/dQ7zWbS5/img-4.jpg" alt="img" /> -->
-                    <img id="imgProfil" [src]="profil" alt="">
-                    <p style="visibility:collapse;">Tapez "etienne"</p>
-                </div>
-                <div class="content">
-                    <div class="detail">
-                        <h2>Etienne PAQUELET<br /><span>Etudiant en 3° année de <br />BUT Réseaux et
-                                Télécommunications</span></h2>
-                        <ul class="sci">
-                            <li>
-                                <a matTooltip="Mon profil LinkedIn" href="https://www.linkedin.com/in/etienne-paquelet/" target="_blank"><img
-                                        class="image" [src]="bgImgUrl3"></a>
-                            </li>
-
-                            <li>
-                                <a matTooltip="Mon mail" href="mailto:etienne.paquelet.01@gmail.com"><img class="image" [src]="bgImgUrl4"></a>
-                            </li>
-                            <li> 
-                                <a matTooltip="Mon CV" target="_blank" [href]="cv"><img class="image" [src]="CV"></a>
-                            </li>
-
-                        </ul>
-                    </div>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-</body>
+</div>

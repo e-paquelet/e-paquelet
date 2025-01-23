@@ -262,12 +262,7 @@ hr {
     }
 }
 
-span {
 
-    background-color: red;
-    height: 1vh;
-    width: 700px;
-}
 
 .OS {
     margin-left: 5vw;
@@ -315,47 +310,10 @@ td:first-child {
 
 
 
-/* .button-positionning1 {
-    display: table;
-
-    float: right;
-    margin-left: 5vw;
-    margin-right: 50vw;
-    margin-bottom: 60px;
-    background-color: aqua;
 
 
-} */
-
-.positionboutoncyber {
-    float: left;
-    padding-left: 0;
-    font-size: 16px;
-    /* padding-bottom: 20vh; */
-    margin-right: 51vw;
-    margin-left: 10vh;
-    margin-bottom: 60px;
-
-}
 
 
-/* .button-container {
-    display: flex;
-    justify-content: space-between;
-    background-color: grey;
-    margin: 0 3vw;
-    margin-bottom: 60px;
-} */
-
-.positionboutongauche,
-.positionboutondroit {
-    display: flex;
-    align-items: center;
-    /* background-color: red; */
-    flex: 1;
-    margin: 0 30px;
-    /* Marges ajustables pour l'espacement entre les boutons */
-}
 
 .button-container {
     display: flex;
@@ -445,26 +403,8 @@ td:first-child {
     }
 }
 
-/* .bouton {
-    background-color: white;
-    border: none;
-    background-color: whitesmoke;
-    padding-left: 0;
-    text-align: left;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    width: 100%;
-    margin: 4px 4px;
-    cursor: pointer;
-} */
 
-/* .bouton:hover {
-    box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
-    background-color: whitesmoke;
-} */
 
-/*contenu css pour éléments a l'intérieur du bouton*/
 .textgauche {
     float: right;
     margin-top: 4vw;

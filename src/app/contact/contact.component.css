@@ -1,5 +1,5 @@
 .main {
-    width: 100vw;
+    /* width: 100vw; */
     height: 100vh;
     margin-left: 5vw;
     margin-right: 5vw;
@@ -22,15 +22,15 @@
     overflow: hidden;
   }
   
-  body {
-    /* font-family: 'Times New Roman', Times, serif; */
+  /* body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    /* background: linear-gradient(#4816ed, #0b83f3 45%, #fff 45%, #fff 100%); */
-    /* background-image: url(../../../public/assets/img/background.jpg); */
-  }
+  } */
+  /* font-family: 'Times New Roman', Times, serif; */
+  /* background: linear-gradient(#4816ed, #0b83f3 45%, #fff 45%, #fff 100%); */
+  /* background-image: url(../../../public/assets/img/background.jpg); */
   
   .card {
     position: relative;

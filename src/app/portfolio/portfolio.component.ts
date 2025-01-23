@@ -47,7 +47,7 @@ export class PortfolioComponent {
     {
       text: "Administrer les réseaux et Internet",
       tooltip: "Mes compétences en Administration Systèmes et réseaux",
-      tags: ["Windows ", "Linux", "Ploof", "Ploof", "Ploof"],
+      tags: ["Windows ", "Linux"],
       fct: () => {this.openpopup()},
       img: this.bgImgUrl2,
     },
