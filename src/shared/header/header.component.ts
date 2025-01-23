@@ -68,10 +68,10 @@ export class HeaderComponent {
 
      show = false;
         private timeoutId: any = null;
-        private isClicked = false; // Ajout pour suivre le clic manuel
+        private isClicked = false; 
         
         openpopup() {
-            clearTimeout(this.timeoutId);  // Annule la fermeture en attente
+            clearTimeout(this.timeoutId);  
             this.show = true;
         }
         
@@ -79,12 +79,12 @@ export class HeaderComponent {
             if (!this.isClicked) {
                 this.timeoutId = setTimeout(() => {
                     this.show = false;
-                }, 200); // Délai pour éviter la fermeture immédiate
+                }, 200); 
             }
         }
         
         togglePopup(event: MouseEvent) {
-            event.stopPropagation();  // Empêche la propagation pour éviter l'appel du mouseleave
+            event.stopPropagation();  
             this.isClicked = true;
             this.show = true;
         }
@@ -93,9 +93,10 @@ export class HeaderComponent {
         @HostListener('document:click')
         closeOnClickOutside() {
             if (this.show && !this.isClicked) {
-                this.show = false;
+                
             }
             this.isClicked = false;
+            this.show = false;
         }
         
 }

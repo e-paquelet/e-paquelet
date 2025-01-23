@@ -1,9 +1,20 @@
 .example-card {
-    max-width: 400px;
+    overflow-x: hidden;
+    
+    width: 35dvw;
+    height: 92dvh;
+    overflow-y: hidden;
   }
   
   .example-header-image {
     /* background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg'); */
-    
+
     background-size: cover;
+  }
+
+  .frontpicture {
+    width: 60%;
+    margin: 0 auto;
+    /* margin-top: -30px; */
+   
   }

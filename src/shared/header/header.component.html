@@ -13,16 +13,16 @@
         
     </div>
     <div class="lien">
-        @for (element of listeMenu; track $index) {
+        <!-- @for (element of listeMenu; track $index) {
         <a href="{{element.redirection}}" [attr.title]="element.title ? element.title : null">{{element.titre}}</a>
-        }
-        <!-- <div class="position" (mouseover)="openpopup()" (mouseleave)="delayedClosePopup()">
+        } -->
+        <div class="position" >
             
             <button class="bouton" mat-raised-button (click)="togglePopup($event)">
                 <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="menu"></mat-icon>
                 <p>Menu</p>
             </button>
-        </div> -->
+        </div>
     </div>
     <div class="reseaux">
         @for (element of listeReseaux; track $index) {
@@ -32,5 +32,5 @@
         }
     </div>
 </div>
-<app-menu *ngIf="show"></app-menu>
+<app-menu style="position: absolute; z-index: 10; top: 4em; background-color: white;" *ngIf="show"></app-menu>
 <p class="clear">ploof</p>

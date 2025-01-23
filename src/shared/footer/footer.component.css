@@ -13,8 +13,8 @@
 
 .clear {
     margin: 0;
-    padding-top: 75px;
+    padding-top: 55px;
     clear: both;
-    background-color: red;
+    /* background-color: red; */
     text-align: center;
 }

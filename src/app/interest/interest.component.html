@@ -1,28 +1,34 @@
+<app-video class="main" [bgImgUrl]="bgImgUrl" titre="Mes centres d'intérêts"
+  lienFleche="./entreprise#presentation"></app-video>
+
+
+
+
 <div class="bouton">
-    <mat-form-field>
-        <mat-label>Mes centres d'intérêts</mat-label>
-        <mat-select #fontSize id="selection" value="professionel" [(value)]="valueSelected">
-            <mat-option id="professionel" value="professionel">Professionels</mat-option>
-            <mat-option id="personnel" value="personnel">Personnels</mat-option>
-        </mat-select>
-    </mat-form-field>
+  <mat-form-field>
+    <mat-label>Mes centres d'intérêts</mat-label>
+    <mat-select #fontSize id="selection" value="professionel" [(value)]="valueSelected">
+      <mat-option id="professionel" value="professionel">Professionels</mat-option>
+      <mat-option id="personnel" value="personnel">Personnels</mat-option>
+    </mat-select>
+  </mat-form-field>
 </div>
 @if (valueSelected == "professionel") {
-  <div class="case">
-    @for (element of listeImage; track $index) {
-      <div class="image-container" (click)="openCard(element.type)" >
-        <img [src]="element.image" [alt]="element.titre">
-        <p class="text-overlay">{{element.titre}}</p>
-      </div>
-    }
+<div class="case">
+  @for (element of listeImage; track $index) {
+  <div class="image-container" (click)="openCard(element.type)">
+    <img [src]="element.image" [alt]="element.titre">
+    <p class="text-overlay">{{element.titre}}</p>
   </div>
+  }
+</div>
 } @else if (valueSelected == "personnel") {
-  <div class="case">
-    @for (element of listeImage2; track $index) {
-      <div class="image-container" (click)="openCard(element.type)">
-        <img [src]="element.image" [alt]="element.titre">
-        <p class="text-overlay">{{element.titre}}</p>
-      </div>
-    }
+<div class="case">
+  @for (element of listeImage2; track $index) {
+  <div class="image-container" (click)="openCard(element.type)">
+    <img [src]="element.image" [alt]="element.titre">
+    <p class="text-overlay">{{element.titre}}</p>
   </div>
+  }
+</div>
 }

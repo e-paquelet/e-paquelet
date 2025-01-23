@@ -1,18 +1,19 @@
 <mat-card class="example-card" appearance="outlined">
     <mat-card-header>
-      <div mat-card-avatar class="example-header-image" [style.background-image]="'url('+data.headerpicture+')'"></div>
-      <mat-card-title>{{data.titre}}</mat-card-title>
-      <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
+        <div mat-card-avatar class="example-header-image" [style.background-image]="'url('+data.headerpicture+')'">
+        </div>
+        <mat-card-title>{{data.titre}}</mat-card-title>
+        <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
     </mat-card-header>
-    <img mat-card-image [src]="data.frontpicture" alt="Photo of a Shiba Inu">
+    <img  mat-card-image class="frontpicture" [src]="data.frontpicture" alt="Photo of a Shiba Inu">
     <mat-card-content>
-      <p [innerHTML]="data.texte"> 
-       
-      </p>
-      
+        <p style="text-align: justify;" [innerHTML]="data.texte">
+
+        </p>
+<button mat-button>LIKE</button>
     </mat-card-content>
-    <mat-card-actions>
-      <button mat-button>LIKE</button>
-      <button mat-button>SHARE</button>
-    </mat-card-actions>
-  </mat-card>
+    <!-- <mat-card-actions>
+        
+        
+    </mat-card-actions> -->
+</mat-card>
