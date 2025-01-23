@@ -380,6 +380,7 @@ td:first-child {
 
                     margin-left: 10px;
                     width: 100%;
+                    /* background-color: white; */
 
                     p {
                         padding: 8px;
@@ -392,6 +393,13 @@ td:first-child {
                         margin: 0;
                         margin-right: 5px;
                         margin-top: 5px;
+                        
+                        opacity: 0.5;
+                        transition: opacity 0.2s ease-in-out;
+                        
+                        &:hover {
+                            opacity: 1;
+                        }
                     }
                 }
             }
