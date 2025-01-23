@@ -339,6 +339,7 @@ td:first-child {
             border-radius: 10px;
             border: 1px #0000ff solid;
             background-color: #04206910;
+            cursor: pointer;
 
             img {
                 width: 50%;

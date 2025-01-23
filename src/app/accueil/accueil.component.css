@@ -40,7 +40,7 @@
     height: 100%;
     font-size: 4em;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,7 +85,7 @@
     text-align: center;
     font-size: xx-large;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 .soustitre {
@@ -210,9 +210,7 @@ li {
 .tooltip {
     position: relative;
     display: inline-block;
-    font-family: Arial, Helvetica, sans-serif;
-    /* border-bottom: 1px dotted black; */
-    /* margin-right: 20px; */
+    
 }
 
 .tooltip .tooltiptext {
@@ -272,7 +270,7 @@ video {
         /* Le texte est blanc */
         font-size: 4em;
 
-        font-family: Arial, Helvetica, sans-serif;
+        /* font-family: Arial, Helvetica, sans-serif; */
         margin-left: 18dvw;
         margin-top: 45dvh;
         /* padding: 5px 15px; */
@@ -300,7 +298,7 @@ video {
 
         font-size: 3em;
         animation: fadeBlink 3s infinite;
-        font-family: Arial, Helvetica, sans-serif;
+        /* font-family: Arial, Helvetica, sans-serif; */
 
         text-align: center;
 
@@ -419,7 +417,7 @@ html::-webkit-scrollbar {
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     position: relative;
 }
 
@@ -505,7 +503,7 @@ html::-webkit-scrollbar {
     transition: all 0.3s ease;
     /* Transition pour les effets */
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     font-size: 18px;
     gap: 12px;
     /* Espacement entre l'icône et le texte */

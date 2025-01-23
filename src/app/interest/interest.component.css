@@ -15,11 +15,12 @@ mat-form-field {
 
 .case {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     gap: 2px;
     /* margin-top: 50px; */
     padding: 20px;
+    
 }
 
 .image-container {
@@ -46,6 +47,7 @@ img {
     display: block;
     opacity: 0.5;
     border-radius: 10px;
+    border: 2px solid #0000ff;
     transition: all 0.5s ease-in-out;
 }
 

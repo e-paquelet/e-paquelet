@@ -33,9 +33,11 @@ export class InterestComponent {
 
   }
   bgImgUrl = "./assets/img/background2.mp4";
+  profil = "./assets/img/profil.JPG";
   adminsys = "./assets/img/interet/admsys.png";
   adminres = "./assets/img/interet/adminres.png";
   devweb = "./assets/img/interet/devweb.PNG";
+  devweb2 = "./assets/img/interet/devweb2.png";
   autoadm = "./assets/img/interet/powershell.PNG";
   velo = "./assets/img/interet/bike.jpg";
   rock = "./assets/img/interet/rock.jpg";
@@ -54,11 +56,11 @@ export class InterestComponent {
       image: this.adminsys,
       type: "adminsys",
     },
-    {
-      titre: "L'administration réseaux",
-      image: this.adminres,
-      type: "adminres",
-    },
+    // {
+    //   titre: "L'administration réseaux",
+    //   image: this.adminres,
+    //   type: "adminres",
+    // },
     {
       titre: "Le développement web",
       image: this.devweb,
@@ -70,9 +72,9 @@ export class InterestComponent {
       type: "autoadm",
     },
     {
-      titre: "La sécurisation du SI",
+      titre: "Cybersécurité",
       image: this.autoadm,
-      type: "autoadm",
+      type: "securesi",
     },
 
   ];
@@ -125,7 +127,7 @@ export class InterestComponent {
 <a target="_blank" href="${this.tennisclassement}">Retrouvez mon classement ici.</a>
 `;
     let titre = "Le tennis";
-    let headerpicture = this.tennis;
+    let headerpicture = this.profil;
     let frontpicture = this.tennis;
     switch (content) {
       default:
@@ -141,7 +143,7 @@ export class InterestComponent {
         <a target="_blank" href="${this.chessclassement}">Retrouvez mon classement ici</a>
         `;
         titre = "Les échecs";
-        headerpicture = this.chess;
+        headerpicture = this.profil;
         frontpicture = this.chess;
         break;
       case "guitare":
@@ -174,7 +176,7 @@ export class InterestComponent {
           Toujours curieux, je n'hésite pas à explorer de nouveaux jeux, étant constamment en quête de découvertes et de nouveautés.</p>
         `;
         titre = "Les jeux vidéos";
-        headerpicture = this.gaming;
+        headerpicture = this.profil;
         frontpicture = this.gaming;
         break;
       case "velo":
@@ -186,48 +188,67 @@ export class InterestComponent {
           vélo dans les transports quotidiens, à condition d'une météo clémente.  </p>
         `;
         titre = "Le vélo";
-        headerpicture = this.velo;
+        headerpicture = this.profil;
         frontpicture = this.velo;
         break;
       case "adminsys":
-        compo = `<p>A titre professionnel, j'ai une préférence pour l'administration système et réseaux, 
-        ainsi que leur sécurisation par rapport aux autres compétences que j'ai acquéris au BUT Réseaux et Télécommunications.
-        J'aime approfondir les connaissances que j'acquiers durant les TPs et les cours dans mon temps libre 
-        ainsi qu'en entreprise dans les différentes missions qui me sont confiés.
-         De plus, par ma participation aux sélections régionales des Worldskills en Bourgogne Franche-Comté, 
-         je m'entraine régulièrement pour améliorer et approfondir ces connaissances sur des machines virtuelles mises à disposition par l'IUT 
+        compo = `<p>À titre professionnel, je privilégie l’administration système et réseaux ainsi que leur sécurisation, 
+        par rapport aux autres compétences que j’ai acquises durant mon BUT Réseaux et Télécommunications.
+J’aime approfondir les connaissances acquises lors des TPs et des cours, que ce soit pendant mon temps libre 
+ou dans le cadre des missions qui me sont confiées en entreprise. 
+Par ailleurs, ma participation aux sélections régionales des WorldSkills en Bourgogne-Franche-Comté 
+m’incite à m’entraîner régulièrement pour perfectionner et enrichir ces compétences. 
+Je profite des machines virtuelles mises à disposition par l’IUT pour simuler et résoudre des cas pratiques.
         </p>
         `;
         titre = "L'administration système";
-        headerpicture = this.windowsserver;
+        headerpicture = this.profil;
         frontpicture = this.adminsys;
         break;
-      case "adminres":
-        compo = `<p> </p>
-        `;
-        titre = "L'administration réseau";
-        headerpicture = this.adminres;
-        frontpicture = this.adminres;
-        break;
+      // case "adminres":
+      //   compo = `<p> </p>
+      //   `;
+      //   titre = "L'administration réseau";
+      //   headerpicture = this.profil;
+      //   frontpicture = this.adminres;
+      //   break;
       case "devweb":
-        compo = `<p> </p>
+        compo = `<p>Le développement web n’a pas toujours été au cœur de mes intérêts. 
+        Cependant, souhaitant renforcer mes compétences dans ce domaine, j’ai décidé, durant l’été 2024 et après une discussion avec un ami,
+         de me lancer dans la création de ce site web en utilisant le framework Angular. Ce projet a été entièrement réalisé avec Angular,
+          offrant une grande flexibilité dans son développement. J’ai pris beaucoup de plaisir à travailler sur ce projet et, depuis,
+           je continue à approfondir mes connaissances en programmation web, notamment avec Angular, pour toujours m'améliorer.
+           Ce projet m’a ainsi permis d’entrevoir de nombreuses idées pour d’autres réalisations. 
+           Les compétences que j’ai développées à cette occasion me seront précieuses à l’avenir pour mener à bien de futurs projets
+            </p>
         `;
         titre = "Le développement web";
-        headerpicture = this.devweb;
-        frontpicture = this.devweb;
+        headerpicture = this.profil;
+        frontpicture = this.devweb2;
         break;
       case "autoadm":
-        compo = `<p> </p>
+        compo = `<p>L’automatisation des tâches d’administration n’a pas toujours été au cœur de mes intérêts.
+         Cependant, j’ai eu l’occasion d’explorer plus en détail cette facette de l’administration système lors de mon stage
+          au sein du service informatique de la Préfecture de l’Ain. Une de mes missions consistait à créer un script capable
+           de récupérer diverses informations, telles que la date du dernier accès à un dossier, les autorisations associées,
+            la présence ou l'absence d’héritage des permissions, ainsi que les permissions en vigueur. Ce travail avait pour 
+            objectif de faciliter la documentation et de clarifier les droits en place. Depuis, j’ai eu l’occasion de développer
+             plusieurs scripts, notamment pour l’ajout massif d’utilisateurs dans Active Directory dans le cadre d’un projet.  </p>
         `;
         titre = "L'automatisation des tâches d'administrations";
-        headerpicture = this.autoadm;
+        headerpicture = this.profil;
         frontpicture = this.autoadm;
         break;
       case "securesi":
-        compo = `<p> </p>
+        compo = `<p>Durant, notre formation en BUT R&T, on a eu un choix de spécialité à réaliser et j'ai choisi cybersécurité. 
+        La cybersécurité englobe de nombreuses facettes : sécurisation du système d'information (SI), hacking éthique des infrastructure (pentesting) pour détecter les failles potentielles.
+        J'apprécie particulièrement la sécurisation du SI avec l'utilisation de pare-feux : Stormshield, pfSense. 
+        J'ai également certains centre d'intérêts dans le pentesting, notamment pour sensibiliser, comme le développements de script pour rubber ducky à des fins de sensibilisation et
+         de test mais jamais dans une vision d'attaques pour voler des informations.
+         </p>
         `;
-        titre = "La sécurisation du SI";
-        headerpicture = this.autoadm;
+        titre = "Cybersécurité";
+        headerpicture = this.profil;
         frontpicture = this.autoadm;
         break;
     }

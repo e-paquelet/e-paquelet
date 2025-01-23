@@ -3,7 +3,7 @@
     
     width: 35dvw;
     height: 92dvh;
-    overflow-y: hidden;
+    overflow-y: auto;
   }
   
   .example-header-image {
