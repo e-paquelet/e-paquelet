@@ -18,6 +18,14 @@
     text-align: center;
     font-weight: bolder;
     margin-top: 5vh;
+
+    * {
+        transition: rotate 2s ease-in-out;
+
+        &:hover {
+            rotate: 360deg;
+        }
+    }
 }
 
 .letter-anim,
