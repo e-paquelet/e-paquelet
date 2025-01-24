@@ -22,18 +22,18 @@
 
 .main {
     width: 90vw;
-    height: 90dvh;
+    height: 10dvh;
     margin-left: 5vw;
     margin-right: 5vw;
     margin-top: 5vh;
-    margin-bottom: 5vh;
+    margin-bottom: 2vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
 }
 
-.main>h1 {
+/* .main>h1 {
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
@@ -45,7 +45,7 @@
     align-items: center;
     justify-content: center;
     justify-items: center;
-}
+} */
 
 
 
@@ -78,22 +78,29 @@
     margin-top: 35px;
     /* text-indent: 5%; */
 
+    p {
+        margin-right: 10px;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
 }
 
-.titre {
+/* .titre {
     color: black;
     text-align: center;
     font-size: xx-large;
     font-weight: bold;
-    /* font-family: Arial, Helvetica, sans-serif; */
+    
+} */
+
+h2 {
+    text-align: center;
+    margin-top: 0 auto;
 }
 
-.soustitre {
-    text-align: center;
-    font-size: large;
-    /* font-family: Arial, Helvetica, sans-serif; */
-    font-weight: bold;
-}
 
 li {
     text-indent: 10%;
