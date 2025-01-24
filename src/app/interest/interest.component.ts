@@ -38,17 +38,19 @@ export class InterestComponent {
   adminres = "./assets/img/interet/adminres.png";
   devweb = "./assets/img/interet/devweb.PNG";
   devweb2 = "./assets/img/interet/devweb2.png";
-  autoadm = "./assets/img/interet/powershell.PNG";
+  autoadm = "./assets/img/interet/powershell.jpeg";
   velo = "./assets/img/interet/bike.jpg";
   rock = "./assets/img/interet/rock.jpg";
   guitare = "./assets/img/interet/guitare.webp";
   chess = "./assets/img/interet/chess.jpg";
-  gaming = "./assets/img/interet/gaming.jpg";
+  gaming = "./assets/img/interet/front.PNG";
   tennis = "./assets/img/interet/tennis.jpg";
+  cyber = "./assets/img/interet/cyber.jpg";
   windowsserver = "./assets/img/interet/ws.png";
   tennisclassement = "https://tenup.fft.fr/fichejoueur/10000315868?pratique=TENNIS";
   chessclassement = "https://www.chess.com/member/sotrf";
   valueSelected = "professionel";
+  
 
   listeImage: ListeImage[] = [
     {
@@ -73,7 +75,7 @@ export class InterestComponent {
     },
     {
       titre: "Cybersécurité",
-      image: this.autoadm,
+      image: this.cyber,
       type: "securesi",
     },
 
@@ -249,7 +251,7 @@ Je profite des machines virtuelles mises à disposition par l’IUT pour simuler
         `;
         titre = "Cybersécurité";
         headerpicture = this.profil;
-        frontpicture = this.autoadm;
+        frontpicture = this.cyber;
         break;
     }
 

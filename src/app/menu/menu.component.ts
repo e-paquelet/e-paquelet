@@ -25,6 +25,7 @@ export class MenuComponent {
   rs = "./assets/img/menu/rs.PNG";
   projet = "./assets/img/menu/projetbut.jpg";
   pointinterro = "./assets/img/menu/pointinterro.jpg";
+  centreinteret = "./assets/img/menu/interet.PNG";
   makeImgUrl(str: string):string {
     return "url('" + str + "')"
   }
@@ -37,7 +38,7 @@ export class MenuComponent {
       },
       {
         titre: "Mes centres d'intérêts",
-        image: this.pointinterro,
+        image: this.centreinteret,
         link: "/centre-interet"
       },
       {
