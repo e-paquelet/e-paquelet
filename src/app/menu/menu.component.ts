@@ -19,11 +19,11 @@ export class MenuComponent {
 
   photocompetence = "./assets/img/background.jpg";
   contact = "./assets/img/menu/contact.jpg";
-  accueil = "./assets/img/menu/accueil.PNG";
+  accueil = "./assets/img/menu/accueil.jpg";
   cd01 = "./assets/img/menu/ain2.jpg";
-  competence = "./assets/img/menu/competence.PNG";
-  rs = "./assets/img/menu/rs.PNG";
-  projet = "./assets/img/menu/projetbut.jpg";
+  competence = "./assets/img/menu/competence.jpg";
+  rs = "./assets/img/menu/rs.jpg";
+  projet = "./assets/img/menu/projet.jpg";
   pointinterro = "./assets/img/menu/pointinterro.jpg";
   centreinteret = "./assets/img/menu/interet.PNG";
   makeImgUrl(str: string):string {

@@ -63,14 +63,14 @@
 <p class="ue">Choisissez une spécialité et découvrez les projets associés !</p>
 
 <div class="bouton">
-    <mat-form-field>
+    <mat-form-field style="width: 300px;">
         <mat-label>Mes projets en :</mat-label>
-        <mat-select #fontSize id="selection" value="professionel" [(value)]="valueSelected">
+        <mat-select #fontSize id="selection" value="professionel" [(value)]="valueSelected"><mat-option id="adminsysres"
+                value="adminsysres">Administration système et réseau </mat-option>
             <mat-option id="cybersécurité" value="cyber">Cybersécurité </mat-option>
-            <mat-option id="adminsysres" value="adminsysres">Administration système et réseau </mat-option>
             <mat-option id="devapp" value="devapp">Développement d'application</mat-option>
             <mat-option id="télécom" value="télécom">Télécommunication</mat-option>
-            <mat-option id="gp" value="gp">Gestion de projet</mat-option>
+            <mat-option id="gp" value="gp">Piloter un projet technique</mat-option>
         </mat-select>
     </mat-form-field>
 </div>

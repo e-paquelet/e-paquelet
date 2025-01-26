@@ -1,1 +1,264 @@
-<p>sae501 works!</p>
+<!-- <div class="position-texte"> -->
+<div class="texte">
+    <p>Cette SAE impliquait l’ensemble des étudiants et a été réalisée par groupes de 4 ou 5, comprenant
+        au minimum 2 étudiants du parcours cybersécurité. Dans mon cas, dû au fait que le nombre d'étudiant dans la
+        promo ne permettait pas de faire exclusivement des groupes de 4, j'ai réalisé la SAE en binôme. Etant en
+        parcours cybersécurité, je me suis naturellement occupé de la sécurisation de l'infrastructure. Mon binôme était
+        en parcours IoM, il s'est occupé de l'installation et de la configuration du WiFi. Cette SAE s’est déroulée sur
+        une durée d’une semaine et
+        trois jours. <br><br>
+
+        L’objectif de cette SAE était de réaliser une infrastructure basée sur les
+        WorldSkills, un concours international. Le mot d’ordre était « Fonctionnel ». Cette infrastructure était composé
+        de 3 sites : Remote, HQ, Internet.
+        . <br><br> Voici
+        l'architecture réseau que nous devions mettre en place : </p>
+
+    <p style="text-align: center;">N'hésitez pas à cliquez sur l'image pour l'agrandir.</p>
+    <div class="picturelist">
+        @for (element of ListeImage; track $index) {
+        <div class="picture-item">
+            <img style="margin: 0 auto; " [src]="element.img" (click)="element.fct()">
+            <p style="text-align: center;">{{element.text}}</p>
+        </div>
+        }
+    </div>
+
+    <br><br>
+    <p>Voici le matériel dont nous avions à disposition pour réaliser cette SAE : </p>
+
+    <div id="liste" class="overlay">
+        <li>3 routeurs</li>
+        <li>6 switchs</li>
+        <li>une baie de brassage contenant 1 serveur sous ESXi et 1 switch dédié</li>
+        <li>2 hyperviseurs sous proxmox dédié</li>
+        <li>2 PCs de l'IUT</li>
+        <li>2 bornes wifi</li>
+        <li>1 tablette</li>
+    </div>
+    <!-- <p>Avant de présenter plus en détail ce projet, voici une vidéo de présentation du projet que j'ai
+        réalisé : </p><br>
+
+    <video class="video_sae_303" disablePictureInPicture controls controlsList="nodownload">
+        <source [src]="video_sae_303" type="video/mp4" />
+        Your browser does not support the video tag
+    </video> <br><br> -->
+
+    <p>L'organisation de cette SAE (Situation d'Apprentissage et d'Évaluation) s'est
+        déroulée de la manière suivante : nous devions rendre différents jalons, qui représentaient des
+        points d'étape, tout au long de la semaine. La date de certains jalon variait en fonction de
+        la difficulté de la tâche, sa priorité dans l'ensemble des tâches à réaliser (Par exemple, le réseau devait être
+        opérationnel avant tout, et par conséquent, les jalons concernant l'installation de services Windows ont été
+        réalisé après les jalons qui concernaient la mise en place du réseau.). C'est donc en fonction de ces priorités
+        que la durée de réalisation des jalons a différé, certains nécessitant plus de temps en raison de leur
+        complexité ou de leur importance dans la progression globale du projet.<br><br> Nous avons donc commencé par la
+        planification et l'attribution des tâches pour
+        lesquelles nous avons utilisé l'outil de gestion de projet Trello. Nous avons ensuite réalisé le
+        plan d'adressage IP. </p>
+
+    <p>Voici notre plan IP : <a target="_blank" [href]="adressage_ip">Adressage IP.xlsx</a>
+    </p>
+
+    <p>Nous avons ensuite entamé la phase de déploiement où nous avons mis en place
+        l'infrastructure. <br>
+        J'ai ainsi commencé par réaliser les tâches qui m'ont été assignés : </p>
+    <div id="liste" class="overlay">
+        <li> Simulation du routage sous GNS3</li>
+        <li>Installation, préparation et configuration des routeurs : Mise en place de l'adressage
+            IP, des noms d'hôtes, en conformité avec le cahier des charges.</li>
+        <li>Mise en place du routage sur les équipements réseaux</li>
+        <li>Installation et configuration de l'ESXi</li>
+        <li>Mise en place de la majorité des services Windows et Linux. Bien que mon coéquipier devait initialement en
+            prendre une partie, il n'a malheureusement pas pu s'en charger en raison d'un problème personnel.</li>
+        <li>Sécurisation de l'infrastructure</li>
+
+    </div>
+    <p>Ayant régulièrement travaillé sur les proxmox de l'université où ont été stocké les
+        serveurs de la partie Internet et Remote de la SAE, je n'ai pas eu de problème concernant cette partie.
+        Concernant l'ESXi, j'ai eu l'occasion de travailler sur cet hyperviseur lors de mes périodes d'entreprises.
+        Concernant l'ESXi, j'ai eu l'occasion de travailler sur cet hyperviseur lors de mes périodes en entreprise. Je
+        n'ai donc pas rencontré de difficulté particulière à prendre en main cet environnement, même si je n'avais
+        encore jamais manipulé la configuration réseau d'un ESXi, grâce à mes expériences précédentes. <br><br> Voici
+        les services demandés lors de cette SAE :
+    </p>
+    <div id="liste" class="overlay">
+        <li>Active Directory (Domaine racine)</li>
+        <li>Active Directory (domaine enfant - Site Remote)</li>
+        <li>GPO</li>
+        <li>Scripts (Ajout d'utilisateurs auto - Ajout d'utilisateur dans un groupe global auto)</li>
+        <li>DNS (master)</li>
+        <li>DNS (failover)</li>
+        <li>DHCP</li>
+        <li>RAID </li>
+        <li>Serveurs de fichiers</li>
+        <li>ADCS</li>
+        <li>pfSense</li>
+        <li>Terminal Server</li>
+        <li>Serveur mail</li>
+        <li>DFS</li>
+        <li>Partages réseaux</li>
+        <li>FTP/FTPS</li>
+        <li>Serveur WEB</li>
+
+    </div>
+
+    <p>La partie réseau a été scindée en deux volets : la configuration des switches (routage inter-VLAN) et celle des
+        routeurs.
+        Voici les protocoles que mon binôme, en charge de cette partie, a mis en place concernant la partie switches :
+    </p>
+    <div id="liste" class="overlay">
+        <li>EtherChannel</li>
+        <li>HSRP</li>
+        <li>VTP</li>
+        <li>STP</li>
+    </div>
+    <p> Voici les protocoles de routage que j'ai mis en place sur les routeurs : </p>
+    <div id="liste" class="overlay">
+        <li>OSPF</li>
+        <li>BGP</li>
+        <li>VRF</li>
+        <li>HSRP</li>
+        <li>NAT/PAT</li>
+        <li>EEM (Embedded Event Manager)</li>
+
+    </div>
+
+    <p>Le VRF (Virtual Routing and Forwarding) est un protocole de routage qui permet de virtualiser les tables de
+        routage sur un seul routeur physique. Ainsi, ce routeur peut gérer à la fois du routage OSPF et du routage BGP,
+        sans que leurs tables de routage respectives n’interfèrent entre elles. <br><br>
+        l'EMM, Embedded Event Manager, est une sorte de language de script propre à cisco. Ce language permet
+        d'automatiser des actions sur les routeurs comme par exemple : </p>
+
+    <div id="liste" class="overlay">
+        <li>Lorsqu'une interface tombe en panne, la rallumer automatiquement,</li>
+        <li>Modifier la table de routage,</li>
+        <li>Changer la priorité HSRP.</li>
+
+    </div>
+
+    <p>Il était demandé de réaliser un script avec l'EEM sur CORESW1 pour faire face à la situation suivante : </p>
+    <div id="liste" class="overlay">
+        <li>Si EDGE1 ne répond pas, abaisser sa priorité HSRP afin que le switch de couche 3 CORESW2 devienne la
+            passerelle par
+            défaut vers l'extérieur.</li>
+    </div>
+
+    <p>J'ai donc réalisé le script suivant : <a target="_blank" [href]="lienscript">script_on_CORESW1.txt</a>.
+        Cependant, bien que j’ai vérifié le script avec l’intervenant supervisant le
+        projet ainsi qu’avec mon
+        professeur, je n’ai pas réussi à le faire fonctionner. Cela pourrait être dû à la version de l’IOS Cisco du
+        routeur en question ou à une incompatibilité non identifiée ou une erreur dans le script. <br><br>
+
+        La majorité des serveurs virtuels étant stockés sur une baie (sur l'ESXi) non connectée à internet, j'ai ainsi
+        implanté une solution de télétravail permettant la prise en main à distance de l'ESXi et de ses VMs :
+        En passant par les Proxmox accessibles via Internet, nous avons mis en place plusieurs machines permettant
+        d'accéder aux ESXi, ce qui nous a permis de gérer les serveurs ESXi à distance. Cette solution a offert la
+        possibilité de poursuivre notre travail depuis chez nous, même après la fermeture des salles universitaires.
+        <br><br>
+
+        En complément du script d'automatisation sur Cisco, il a été demandé de réaliser 2 scripts powershell : <br><br>
+        <li>User provisionning : Ajout d'utilisateur en nombre (1000 utilisateurs à ajouter)</li>
+        <li>Group provisionning : A chaque création d'utilisateur, celui-ci devait être ajouté à un groupe global.</li>
+
+        <br>
+        Je me suis ainsi occupé de créer le script permettant l'ajout automatique d'utilisateur nouvellement créé dans
+        un groupe global.
+        Afin que la compréhension du script soit facilité, voici le squelette du script et le script : <a
+            target="_blank" [href]="liensquelette">squelette.PNG</a> et <a target="_blank"
+            [href]="lienscriptpws">adduserou.ps1</a>.
+    </p>
+
+
+
+    <!-- <p>La mise en place des services a été relativement rapide, à l'exception de
+        l'installation et de la configuration du serveur NextCloud, qui ont posé plusieurs difficultés. Avec
+        un de mes camarades, j'ai
+        d'abord tenté de l'installer via Snap, comme recommandé dans notre documentation, mais cette méthode
+        échouait systématiquement en cours d'installation. J'ai ensuite essayé d'installer NextCloud avec
+        Flatpak et Flathub, mais cette fois-ci, une erreur de compatibilité est apparue : la version de PHP
+        de notre environnement était obsolète. Flathub est une plateforme communautaire qui héberge des
+        applications open source pour des environnements de bureau comme GNOME, KDE etc... Il permet
+        l'installation de ces applications par l'utilitaire &laquo; flatpak &raquo;.Après plusieurs
+        tentatives de mise à jour, j’ai constaté que
+        notre système ne supportait pas PHP 8.1, requis pour NextCloud, et ai dû opter pour une version
+        antérieure compatible. Par la suite, un autre problème est apparu pour l’authentification LDAP avec
+        Active Directory : le plugin PHP requis pour cette fonctionnalité n’était pas disponible dans la
+        version de PHP que nous utilisions. <br><br><br>A ce stade, le coeur de réseaux réalisé par un mes
+        camarades n'était pas encore opérationnel, ce qui m'a donné l'opportunité de configurer le réseau
+        sur les sites distants. J'ai ainsi configuré les solutions suivantes sur les équipements réseaux des
+        sites distants : </p>
+
+    <div id="liste" class="overlay">
+        <li>Router on a Stick (Roas)</li>
+        <li>DHCP</li>
+    </div>
+
+    <p>La solution "Router on a Stick" permet d'utiliser une seule interface
+        du switch et du routeur pour faire communiquer plusieurs VLAN. Ainsi, le réseau d’un
+        magasin comprenant 5 VLANs, cette solution est donc idéale afin de faire communiquer ces
+        VLANs entre eux à travers le magasin. Voici un schéma représentant la solution du Router on a Stick
+        : </p>
+
+    <img class="image-roas" [src]="roas" (click)="enlargeImage2()">
+
+    <br>
+    <p>J'ai ensuite configuré le DHCP sur chaque routeur des sites distants afin de
+        distribuer des adresses IP automatiquement à chaque client de chaque VLAN. <br><br>Nous avions
+        également eu une partie réservé aux étudiants de parcours cybersécurité, dont je fais partie, où
+        nous devions réaliser un audit de sécurité de nos réseaux.
+        Nous avons ainsi utilisé l'outil Nessus afin d'auditer le réseau et y découvrir les différentes
+        failles potentielles. <br><br> Voici le résultat d'un scan sur le réseau : <a target="_blank"
+            [href]="scan_reseau">scan_reseaux.pdf</a>
+    </p> -->
+
+
+    <div style="text-align: center; font-weight: bold;">Ce que j'ai appris durant ce projet</div> <br>
+
+    <div class="overlay">
+        <li>Mettre en place un réseau informatique semi-complexe et sécurisé dans un temps restreint</li>
+        <br>
+        <li>Approfondir mes connaissances sur la gestion des applications critiques : En rencontrant des
+            difficultés persistantes avec l'installation de NextCloud, j'ai dû approfondir mes recherches et
+            tester différentes méthodes d'installation (Snap, Flatpak et APT) pour parvenir à une
+            solution fonctionnelle. J'ai ainsi compris l'importance d'utiliser différentes méthodes
+            d'installation
+            d'un service et de renforcer ma capacité à adapter une méthode aux contraintes
+            d’un système spécifique. </li> <br>
+        <li>Résoudre des problèmes en totale autonomie tout en étant sous pression</li> <br>
+        <li>Développer une résilience face aux problèmes techniques : La nécessité de dépasser les blocages,
+            même en y travaillant tard dans des conditions exigeantes, m'a aidé à développer une résilience
+            et une détermination face aux défis techniques. J'ai ainsi appris à maintenir la rigueur et la
+            persévérance nécessaires pour résoudre des problèmes critiques dans des délais restreints. </li>
+        <br>
+        <li>Renforcer mon aptitude à travailler en équipe </li> <br>
+        <li>Améliorer ma gestion de temps sous pression tout en restant solidaire : En avançant sur mes
+            tâches tout en soutenant mes coéquipiers, j'ai acquis une meilleure maîtrise de la gestion de
+            mon propre travail dans un espace temps réduit. Assurer l’avancement de mes missions sans
+            retarder le groupe m'a montré l'importance de l'autonomie tout en contribuant au succès de
+            l'équipe.</li>
+    </div>
+    <p>Pour en savoir plus sur ce projet, n'hésitez pas à jeter un &oelig;il à notre
+        rapport : <a target="_blank" [href]="cr_sae_303">cr_sae_303.pdf</a>
+    </p>
+</div>
+<!-- </div> -->
+
+<div class="overlay-image-agrandie" *ngIf="isImageEnlarged" (click)="closeEnlargedImage()">
+    <img class="image-elargie" [src]="physicalscheme_simplified">
+</div>
+
+<div class="overlay-image-agrandie" *ngIf="isImageEnlarged1" (click)="closeEnlargedImage()">
+    <img class="image-elargie" [src]="physicalscheme_detailled">
+</div>
+<div class="overlay-image-agrandie" *ngIf="isImageEnlarged2" (click)="closeEnlargedImage()">
+    <img class="image-elargie" [src]="l3scheme">
+</div>
+<div class="overlay-image-agrandie" *ngIf="isImageEnlarged3" (click)="closeEnlargedImage()">
+    <img class="image-elargie" [src]="l2scheme">
+</div>
+<div class="overlay-image-agrandie" *ngIf="isImageEnlarged4" (click)="closeEnlargedImage()">
+    <img class="image-elargie" [src]="routingscheme">
+</div>
+<div class="overlay-image-agrandie" *ngIf="isImageEnlarged5" (click)="closeEnlargedImage()">
+    <img class="image-elargie" [src]="dnsscheme">
+</div>

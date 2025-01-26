@@ -1,5 +1,9 @@
 <div style="height: 100%;">
-    <h2 mat-dialog-title>{{data.title}}</h2>
+    <div class="project-header">
+        <h2 class="project-title" mat-dialog-title>{{data.title}}</h2>
+        <!-- <h2 style="text-align: right;" mat-dialog-title> {{data.note}}</h2> -->
+        <span class="project-note">Note : {{data.note}}</span>
+    </div>
     <mat-dialog-content style="display: relative">
         @if (data.text) {
         <p [innerHTML]="data.text"></p>
@@ -9,6 +13,8 @@
         }
     </mat-dialog-content>
     <mat-dialog-actions align="end">
-        <button mat-button [mat-dialog-close]="-1">{{data.btnNotOk}}</button> <!-- Bouton qui ferme et qui n'envoie pas de retour grâce au -1-->
+        <button mat-button [mat-dialog-close]="-1">{{data.btnNotOk}}</button>
+        <!-- Bouton qui ferme et qui n'envoie pas de retour grâce au -1-->
+        <!-- <button mat-button>{{data.note}}</button> -->
     </mat-dialog-actions>
 </div>

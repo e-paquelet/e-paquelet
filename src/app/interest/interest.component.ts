@@ -41,7 +41,7 @@ export class InterestComponent {
   autoadm = "./assets/img/interet/powershell.jpeg";
   velo = "./assets/img/interet/bike.jpg";
   rock = "./assets/img/interet/rock.jpg";
-  guitare = "./assets/img/interet/guitare.webp";
+  guitare = "./assets/img/interet/guitare.jpg";
   chess = "./assets/img/interet/chess.jpg";
   gaming = "./assets/img/interet/front.PNG";
   tennis = "./assets/img/interet/tennis.jpg";
@@ -156,8 +156,8 @@ export class InterestComponent {
          qui me permettent de me détendre après une journée bien remplie et de m'évader pendant quelques instants. 
          Je n'évolue pas pour l'instant dans un groupe de musique et j'ai fait une pause cette année sur la guitare 
          afin de me permettre de me concentrer sur mes études. Mes artistes préférés sont : Rammstein, Metallica, Powerwolf, Green Day, Volbeat. 
-         Je possède 2 guitares : une électrique et une électro-acoustique que je me suis acheté pour mes 18 ans. Ce sont les guitares présentes sur l'image ci-dessus</p>
-        `;
+         Je possède 2 guitares : une électrique et une électro-acoustique que je me suis acheté pour mes 18 ans. 
+         `;
         titre = "La guitare";
         headerpicture = this.guitare;
         frontpicture = this.guitare;

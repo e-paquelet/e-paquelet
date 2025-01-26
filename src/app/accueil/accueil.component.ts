@@ -24,7 +24,7 @@ export class AccueilComponent {
   linkedinjulien = "https://www.linkedin.com/in/julien-v-57ab442aa/";
   download = "./assets/img/download.jpg";
   // cv = "./assets/img/pdf/CV_PAQUELET_Etienne.pdf";
-  profil = "./assets/img/accueil/profil.JPG";
+  profil = "./assets/img/accueil/profil2.jpg";
   makeImgUrl(str: string): string {
     return "url('" + str + "')"
   }

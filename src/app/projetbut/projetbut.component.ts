@@ -48,6 +48,7 @@ export class ProjetbutComponent {
     openDialog(content: "sae301" | "sae302" | "sae303" | "sae401" | "sae501" | "sae502" | "sae503") {
         let compo: Type<any> = Sae301Component;
         let titre = "SAE 301 - Mettre en oeuvre un système de transmission";
+        let note = "12,5/20";
         switch (content) {
             default:
             case "sae301":
@@ -55,26 +56,32 @@ export class ProjetbutComponent {
             case "sae302":
                 compo = Sae302Component;
                 titre = "SAE 302 - Développer des applications communicantes";
+                note = "16,25/20";
                 break;
             case "sae303":
                 compo = Sae303Component;
                 titre = "SAE 303 - Concevoir un réseau multi-sites sécurisé";
+                note = "14,51/20";
                 break;
             case "sae401":
                 compo = Sae401Component;
                 titre = "SAE4-Cyber-01 - Sécuriser un système d'information";
+                note = "16,5/20";
                 break;
             case "sae501":
                 compo = Sae501Component;
                 titre = "SAE501 - Concevoir une solution technique";
+                note = "18,06/20";
                 break;
             case "sae502":
                 compo = Sae502Component;
                 titre = "SAE502 - Piloter un projet informatique";
+                note = "17/20";
                 break;
             case "sae503":
                 compo = Sae503Component;
                 titre = "SAE5-Cyber-03 - Sécurisation et supervision avancée";
+                note = "16/20";
                 break;
         }
 
@@ -84,6 +91,7 @@ export class ProjetbutComponent {
                 btnNotOk: "Fermer", //les données qu'on veut mettre dedans
                 title: titre, 
                 component: compo,
+                note: note, 
             },
             //propriété du Dialog en lui même
             maxHeight: "95dvh",

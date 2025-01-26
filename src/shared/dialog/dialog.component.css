@@ -1,0 +1,17 @@
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  
+  .project-title {
+    margin: 0;
+    font-size: 1.5rem; /* Ajustez la taille si nécessaire */
+  }
+  
+  .project-note {
+    font-size: 1.4rem; /* Ajustez la taille si nécessaire */
+    font-weight: normal;
+    margin-right: 25px;
+  }
+  
