@@ -11,6 +11,7 @@ import { RsComponent } from './rs/rs.component';
 import { InterestComponent } from './interest/interest.component';
 import { CardComponent } from '../shared/card/card.component';
 import { DialogComponent } from '../shared/dialog/dialog.component';
+import { AutreComponent } from './autre/autre.component';
 
 export const routes: Routes = [
     { path: "", component: AccueilComponent},
@@ -24,5 +25,6 @@ export const routes: Routes = [
     { path: "liens-divers", component: RsComponent},
     { path: "centre-interet", component: InterestComponent},
     { path: "card", component: CardComponent},
+    { path: "autre", component: AutreComponent},
     { path: "**", component:NotfoundComponent },
 ];

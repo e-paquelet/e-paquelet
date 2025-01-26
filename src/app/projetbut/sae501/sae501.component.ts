@@ -14,12 +14,9 @@ export interface ListeImage {
     styleUrl: './sae501.component.css'
 })
 export class Sae501Component {
-    archisae303 = "./assets/img/sae303/archi.PNG";
-    roas = "./assets/img/sae303/roas.PNG";
-    cr_sae_303 = "./assets/img/sae303/cr_sae_303.pdf";
-    scan_reseau = "./assets/img/sae303/scan_reseau.pdf";
+   
     adressage_ip = "./assets/img/sae501/Adressage IP.xlsx";
-    video_sae_303 = "./assets/img/sae303/etienne_paquelet_video.mp4";
+    cr_sae_501 = "./assets/img/sae501/cr_sae_501.pdf";
 
     physicalscheme_simplified = "./assets/img/sae501/SAE-schéma-physique-simplifié.png";
     physicalscheme_detailled = "./assets/img/sae501/SAE-schéma-Physical - Detailled.png";

@@ -69,7 +69,7 @@ export class MenuComponent {
       {
         titre: "Autre",
         image: this.pointinterro,
-        link: "/"
+        link: "/autre"
       },
     ];
 
