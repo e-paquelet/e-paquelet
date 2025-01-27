@@ -13,6 +13,10 @@ export type DialogDataType = {
     // warn?: boolean;
     data?: any; //tout type de données
     note?: string;
+    tag1?: string;
+    tag2?: string;
+    tag3?: string;
+    tag4?: string;
 };
 
 @Component({

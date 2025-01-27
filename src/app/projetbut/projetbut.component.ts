@@ -49,6 +49,10 @@ export class ProjetbutComponent {
         let compo: Type<any> = Sae301Component;
         let titre = "SAE 301 - Mettre en oeuvre un système de transmission";
         let note = "12,5/20";
+        let tag1 = "Débit";
+        let tag2 = "VPN";
+        let tag3 = "Télécommunications";
+        let tag4 = "";
         switch (content) {
             default:
             case "sae301":
@@ -57,6 +61,9 @@ export class ProjetbutComponent {
                 compo = Sae302Component;
                 titre = "SAE 302 - Développer des applications communicantes";
                 note = "16,25/20";
+                tag1 = "Créer des outils et applications pour les R&T ";
+                tag2 = "Java";
+                tag3 = "Applications";
                 break;
             case "sae303":
                 compo = Sae303Component;
@@ -72,6 +79,10 @@ export class ProjetbutComponent {
                 compo = Sae501Component;
                 titre = "SAE501 - Concevoir une solution technique";
                 note = "18,06/20";
+                tag1 = "Administrer les systèmes et réseaux";
+                tag2 = "Sécuriser";
+                tag3 = "Windows/Linux";
+                tag4 = "OSPF/BGP/VRF";
                 break;
             case "sae502":
                 compo = Sae502Component;
@@ -92,6 +103,10 @@ export class ProjetbutComponent {
                 title: titre, 
                 component: compo,
                 note: note, 
+                tag1: tag1,
+                tag2: tag2,
+                tag3: tag3,
+                tag4: tag4,
             },
             //propriété du Dialog en lui même
             maxHeight: "95dvh",

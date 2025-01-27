@@ -13,8 +13,12 @@
         }
     </mat-dialog-content>
     <mat-dialog-actions align="end">
-        <button mat-button [mat-dialog-close]="-1">{{data.btnNotOk}}</button>
+
         <!-- Bouton qui ferme et qui n'envoie pas de retour grâce au -1-->
-        <!-- <button mat-button>{{data.note}}</button> -->
+        <button mat-button>{{data.tag1}}</button>
+        <button mat-button>{{data.tag2}}</button>
+        <button mat-button>{{data.tag3}}</button>
+        <button mat-button>{{data.tag4}}</button>
+        <button mat-button [mat-dialog-close]="-1">{{data.btnNotOk}}</button>
     </mat-dialog-actions>
 </div>
