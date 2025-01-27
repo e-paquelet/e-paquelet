@@ -67,7 +67,7 @@ export class MenuComponent {
         link: "/contact"
       },
       {
-        titre: "Autre",
+        titre: "Actualité - Faits divers",
         image: this.pointinterro,
         link: "/autre"
       },
