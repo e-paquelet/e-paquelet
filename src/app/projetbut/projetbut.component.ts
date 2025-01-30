@@ -49,10 +49,10 @@ export class ProjetbutComponent {
         let compo: Type<any> = Sae301Component;
         let titre = "SAE 301 - Mettre en oeuvre un système de transmission";
         let note = "12,5/20";
-        let tag1 = "Débit";
-        let tag2 = "VPN";
+        let tag1 = "Connecter les usagers";
+        let tag2 = "Transmission vidéos";
         let tag3 = "Télécommunications";
-        let tag4 = "";
+        let tag4 = "Systèmes d'analyses de débits";
         switch (content) {
             default:
             case "sae301":
@@ -63,17 +63,26 @@ export class ProjetbutComponent {
                 note = "16,25/20";
                 tag1 = "Créer des outils et applications pour les R&T ";
                 tag2 = "Java";
-                tag3 = "Applications";
+                tag3 = "Applications de type réseau social";
+                tag4 = "GUI";
                 break;
             case "sae303":
                 compo = Sae303Component;
                 titre = "SAE 303 - Concevoir un réseau multi-sites sécurisé";
                 note = "14,51/20";
+                tag1 = "Administrer les systèmes et les réseaux";
+                tag2 = "Active Directory";
+                tag3 = "Serveur Mail";
+                tag4 = "Windows - Linux";
                 break;
             case "sae401":
                 compo = Sae401Component;
                 titre = "SAE4-Cyber-01 - Sécuriser un système d'information";
                 note = "16,5/20";
+                tag1 = "Sécuriser";
+                tag2 = "Surveiller";
+                tag3 = "Systèmes d'information";
+                tag4 = "Stormshield";
                 break;
             case "sae501":
                 compo = Sae501Component;
@@ -88,11 +97,19 @@ export class ProjetbutComponent {
                 compo = Sae502Component;
                 titre = "SAE502 - Piloter un projet informatique";
                 note = "17/20";
+                tag1 = "Administrer les systèmes et les réseaux";
+                tag2 = "Créer des outils et applications pour les R&T";
+                tag3 = "Pilotage de projet";
+                tag4 = "Hôpital de campagne";
                 break;
             case "sae503":
                 compo = Sae503Component;
                 titre = "SAE5-Cyber-03 - Sécurisation et supervision avancée";
                 note = "16/20";
+                tag1 = "Sécuriser";
+                tag2 = "Surveiller";
+                tag3 = "pfSense";
+                tag4 = "Snort";
                 break;
         }
 
