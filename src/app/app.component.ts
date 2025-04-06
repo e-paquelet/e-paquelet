@@ -7,7 +7,7 @@ import { Prog1Component } from './prog1/prog1.component';
 
 @Component({
     selector: 'app-root',
-    imports: [
+    imports: [Prog1Component,
         RouterOutlet,
         HeaderComponent,
         FooterComponent],
