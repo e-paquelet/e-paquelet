@@ -7,10 +7,13 @@ import { Prog1Component } from './prog1/prog1.component';
 
 @Component({
     selector: 'app-root',
-    imports: [Prog1Component, RouterOutlet, HeaderComponent, FooterComponent],
+    imports: [
+        RouterOutlet,
+        HeaderComponent,
+        FooterComponent],
     templateUrl: './app.component.html',
     styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'site_portfolio';
+    title = 'site_portfolio';
 }
