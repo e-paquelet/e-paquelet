@@ -1,1 +1,113 @@
-<p>sae502 works!</p>
+<div class="texte">
+
+    <p>Cette SAE concernait l'ensemble des étudiants de la promotion et a été réalisée par groupe de 4 ou 5 étudiants.
+        Le groupe devait
+        être composé de deux étudiants en parcours cybersécurité, 1 étudiant en parcours Internet des Objets, et un
+        étudiant en parcours Pilotage de projets réseaux.
+        <br><br>L'objectif de ce projet était de concevoir l'infrastructure informatique d'un hôpital de campagne devant
+        être déployé rapidement dans le cas d'une crise sanitaire. <br><br>Ce projet a été entièrement réalisé de
+        manière
+        autonome, en suivant une approche complète depuis la conception jusqu'à la mise en œuvre. Il comprenait les
+        étapes suivantes : création d'un cahier des charges détaillé, gestion des tâches, du temps et de leur
+        attribution via Trello, définition et mise en place d'une architecture sécurisée, choix des solutions
+        techniques, déploiement de l'infrastructure, ainsi que les phases de test et validation.
+<br><br>        Afin de réaliser ce projet en totale autonomie, nous avons utilisé Trello pour la gestion des tâches et du temps
+        de réalisation des tâches. Trello est
+        un outil permettant l'utilisation de la méthode de gestion de projet AGILE, que nous avons utilisée durant ce
+        projet. Voici un aperçu de notre tableau trello : <br>
+
+        <img [src]="trello" [alt]="trelloalt" (click)="enlargeImage3()">
+
+
+
+    </p>
+    <h4>Phase de conception</h4>
+
+    <p>Durant cette phase, mes camarades et moi-même avons tout d'abord défini un cahier des charges ainsi que les
+        schémas de la future infrastructure. Dans le cahier des charges, nous avons identifiés et définis les besoins
+        suivants :
+
+        <li>Gestion des dossiers patients</li>
+        <li>Gestion des rendez-vous</li>
+        <li>Prescriptions électroniques</li>
+        <li>Communication interne</li>
+        <li>Suivi post-consultation</li>
+        <li>infrastructure connectée</li>
+        <li>Redondance</li>
+
+        <br>
+        Voici le cahier des charges que nous avons rédigés. Le but de cette SAE étant d'être le plus réaliste
+        possible, une estimation financière a été réalisée par notre camarade en parcours Pilotage de Projets Réseaux et
+        des noms d'acteurs réels apparaissent dans celui-ci. Néanmoins, il demeure que ce cahier des charges reste dans
+        le cadre d'un projet et tous les noms d'entreprises, de collectivités apparaissant dans celui-ci ne
+        correspondent pas nécessairement à des noms d'entreprises et de collectivités réelles. <br> <br>
+        Notre cahier des charges : <a target="_blank" [href]="cdc" style="color: blue;">Cahier des charges</a> <br><br>
+
+        Nous avons ensuite définis l'infrastructure informatique à mettre en place en fonction des besoins. Ainsi, les
+        serveurs suivants ont été mis en place :
+        <br>
+        <li>Active Directory</li>
+        <li>Terminal Server</li>
+        <li>DNS</li>
+        <li>Veeam</li>
+        <li>Nextcloud</li>
+        <li>Zabbix</li>
+        <li>Serveur mail</li>
+        <li>Serveur de fichier</li>
+        <li>Radius</li>
+        <li>OpenEMR (Logiciel de gestion hospitalière)</li>
+        <li>FreePBX (serveur de téléphonie)</li>
+        <li>Serveur MQTT (IoT)</li>
+        <li>GLPI (Gestion de parc informatique)</li>
+        <br>
+    <div style="text-align: left; margin-left: 1vw;">Au niveau de l'infrastructure, nous avons premièrement tenté de
+        mettre en place l'infrastructure suivante,
+        composée de deux pare-feux ainsi que d'un coeur de réseau : </div>
+    <p>
+        <img [src]="infra" [alt]="altinfra" (click)="enlargeImage()"> <br>
+        Cependant, en raison de contraintes indépendantes de notre volonté, nous avons du repenser notre
+        infrastructure réseau pour simplifier celle-ci tout en garantissant sa sécurité et sa simplicité de mise en
+        place. Voici l'infrastructure informatique finale que nous avons mis en place :
+        <br>
+        <img [src]="infrav2" [alt]="altinfrav2" (click)="enlargeImage2()">
+    </p>
+    <h4> Phase de déploiement</h4>
+    <p>Durant cette phase, j'ai été en charge des logiciels et serveurs suivants :
+        <li>Mise en place de l'Active Directory et du DNS</li>
+        <li>Mise en place du logiciel de supervision Zabbix</li>
+        <li>Mise en place du logiciel de gestion de parc informatique GLPI</li>
+        <li>Mise en place du logiciel de sauvegarde Veeam</li>
+        <li>Mise en place du logiciel de gestion hospitalière OpenEMR</li>
+        <li>Mise en place du serveur cloud Nextcloud</li>
+        <br>
+        Je n'ai rencontré aucune difficulté particulière pour la mise en place des serveurs et logiciels, à l'exception
+        du logiciel de gestion hospitalière. J'ai exploré différentes approches pour son installation. Dans un premier
+        temps, j'ai tenté une installation sur un PC physique sous Windows. Bien que l'installation ait réussi, des
+        dysfonctionnements lors des requêtes sont apparus en raison d'une insuffisance de mémoire vive allouée à la base
+        de données intégrée. <br><br>
+        J'ai donc opté pour une installation sur une machine virtuelle, permettant d'augmenter les ressources
+        disponibles. Cependant, de nombreux problèmes persistaient, principalement en raison de la compatibilité limitée
+        avec Windows 10, malgré les indications de la documentation. Finalement, j'ai installé le logiciel sous Linux,
+        où l'installation s'est déroulée sans aucune difficulté.
+    </p>
+    <h4>Phase de test</h4>
+    <p>Concernant cette phase, je n'ai pas grand chose à écrire, les tests ayant été réalisés sans rencontrer de
+        problèmes significatifs ni nécessiter de modifications majeures de l'infrastructure. Il y a eu quelques petits
+        soucis cependant concernant les tests de certains logiciels (Veeam, Zabbix) n'arrivant pas à communiquer avec
+        les agents, et ce dû au fait qu'il y avait des règles trop restrictives au niveau des pare-feux. </p>
+    <h4>Ce que j'ai appris</h4>
+    <li> Travailler avec des étudiants avec lesquels je n'avais jamais travaillé en groupe auparavant</li>
+    <li> Concevoir un cahier des charges</li>
+    <li> Gérer un projet en partant d'une simple problématique : "Concevoir le système d'information d'un hôpital de campagne".
+    </li>
+    
+</div>
+<div class="overlay" *ngIf="isImageEnlarged" (click)="closeEnlargedImage()">
+    <img class="bigphoto" [src]="infra">
+</div>
+<div class="overlay" *ngIf="isImageEnlarged2" (click)="closeEnlargedImage()">
+    <img class="bigphoto" [src]="infrav2">
+</div>
+<div class="overlay" *ngIf="isImageEnlarged3" (click)="closeEnlargedImage()">
+    <img class="bigphoto" [src]="trello">
+</div>

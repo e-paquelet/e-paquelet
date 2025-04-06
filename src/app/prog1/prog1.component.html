@@ -1,137 +1,32 @@
-<!-- 
+<div class="colonne">
+
+    <div class="nom">
+        <a href="accueil" title="Acceuil" class="profil2">
+            <div class="profil">
+                <!-- <div class="texteprofil">EP</div> -->
+                <img [src]="bgImgUrl1">
+            </div>
+            <div class="texte">
+                <p> Portfolio de</p>
+              <p> Etienne Paquelet</p>
+            </div>
+        </a>        
+    </div>
+    @for (element of listeMenu; track $index) {
+    <button mat-button [routerLink]="element.link">{{element.titre}}</button>
 
 
-<html>
-<div class="main">
-  <video disablePictureInPicture playsinline autoplay muted loop>
-      <source [src]="video" type="video/mp4">
-      Your browser does not support the video tag. I suggest you upgrade your browser.
-    </video>
-  
-    <div class="overlay">
-      <h2>Bienvenue dans mon portfolio</h2>
+    }
+    <div class="image">
+        @for (element of listeRS; track $index) {
+
+        <a [href]="element.link" target="_blank"><img [src]="element.titre"></a>
+
+
+
+        }
     </div>
 
-    <div class="overlay2">
-        <a href="./prog1#presentation" class="btn btn-default">&#9207;</a>
-      </div>
-
 </div>
-<div id="presentation"></div>
-<div class="citation">
- <i>mettre une recommandation d'un pair, mettre une page présentation entreprise, mettre un lien vers le programme national ou une partie du programme national</i>
-
-</div>
-<div class="titre">
-  <p>Qui suis-je ?</p>
-</div>
-
-
-<div class="photo" [style.background-image]="makeImgUrl(bgImgUrl)">
-
-
-</div>
-<div class="texte">
-
-
-  <p>Etienne, 20 ans, étudiant en troisième année de B.U.T Réseaux et Télécommunications, option Cybersécurité, à
-      l'Université de Franche-Comté à Montbéliard. <br> </p>
-  J'effectue cette dernière année de formation en alternance et je suis accueilli par le
-  <div class="tooltip bottom">
-      <a target="_blank" href="https://www.ain.fr"> Conseil Départemental de l'Ain </a>
-      <span class="tooltiptext">
-          <img [src]="bgImgUrl2" alt="Ici c'est l'Ain !" style="width: 250px; height: auto;">
-      </span>
-  </div>
-  à Bourg en Bresse au sein de la Direction de la
-  Transition et des Solutions Numériques (DTSN)<br><br>
-  <div class="soustitre">
-      Mon Parcours
-  </div><br>
-  <p>J’ai obtenu le diplôme du Baccalauréat série Générale en 2022 avec la mention ASSEZ BIEN avec pour enseignements
-      de spécialités les
-      Mathématiques et la Physique-Chimie. J’ai également eu la mention section européenne (anglais). <br>
-      
-      
-  </p>
-  <br>
-  <div class="soustitre">
-      Mes expériences professionnelles
-
-  </div><br>
-  <p>J’ai effectué deux vacations au sein de la Direction Départementale des Finances Publiques à Bourg en Bresse :<br><br>
-      <li> Juillet 2022 : Trésorerie Publique Hospitalière</li>
-      <li style="text-align: left;"> Juillet 2023 : Service de la Publicité Foncière et de l'Enregistrement</li>
-      <br>
-      J’ai également effectué un stage de 8 semaines au sein du Bureau Interministériel des Systèmes d’Information et de
-      Communication de la
-      Préfecture de l’Ain en 2024 dans le cadre de ma deuxième année de BUT.
-  </p><br>
-  <div class="soustitre">
-      Mon projet professionnel
-  </div><br>
-  <p>
-      Après l’obtention du B.U.T Réseaux et Télécommunications, je souhaite continuer de me former en
-      alternance
-      dans une école d’ingénieur. J'aimerais ensuite travailler en tant qu’ingénieur systèmes et réseaux.
-  </p>
-  <br>
-  <div class="soustitre">
-      Mes qualités
-  </div><br>
-
-  <p>
-      <li>Autonome</li>
-      <li>Motivé</li>
-      <li>Fiable</li>
-      <li>Curieux</li>
-      <li>Serviable</li>
-      <li>Persévérant</li>
-
-  </p><br>
-  <div class="soustitre">
-      Mes passions
-  </div>
-  <br>
-  <div class="guitar" [style.background-image]="makeImgUrl(bgImgUrl3)"></div>
-  <div class="guitartext">
-      <li>La guitare </li>
-  </div>
-  <div class="metal" [style.background-image]="makeImgUrl(bgImgUrl4)"></div>
-  <div class="metaltext">
-      <li>Le Métal/Rock</li>
-  </div>
-  
-
-</div>
-<div id="footer-section">
-  <p>Merci d'avoir visité mon portfolio !</p>
-</div>
-</html> -->
-
-<br><br><br><br><br><br>test
-
-<button class="bouton" matTooltip="Mes compétences en Administration Systèmes" (click)="openpopup()">
-
-    <div class="textgauche">
-        Open
-    </div>
-</button>
-<!-- <button class="bouton" matTooltip="Mes compétences en Administration Systèmes" (click)="closepopup()">
-
-    <div class="textgauche">
-        Close
-    </div>
-</button> -->
-<!-- <div class="position" (mouseover)="openpopup()" (mouseleave)="delayedClosePopup()">
-    <button class="bouton" (click)="togglePopup($event)">open while mouseover</button>
-    <button class="bouton" mat-raised-button (click)="togglePopup($event)">
-        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="menu"></mat-icon>
-        <p>Menu</p>
-    </button>
-</div> -->
-
-<button (click)="openCard('tennis')">test</button>
-<button (click)="openCard('saetest')">test2</button>
-
-<app-menu *ngIf="show"></app-menu>
+<a href="https://www.flaticon.com/fr/icones-gratuites/departement-it" title="département it icônes">Département it
+    icônes créées par rukanicon - Flaticon</a>

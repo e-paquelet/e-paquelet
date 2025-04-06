@@ -6,25 +6,38 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
 import { Test1Component } from './test1/test1.component';
 import { Sae301Component } from '../projetbut/sae301/sae301.component';
-import {MatCard, MatCardModule} from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card';
+import { RouterLink } from '@angular/router';
 
-type ListeContactItem = {
-  img: string;
-  text: string;
+
+// type ListeContactItem = {
+//   img: string;
+//   text: string;
+//   link: string;
+//   alt: string;
+// }
+
+
+export interface ListeMenu {
+  titre: string;
   link: string;
-  alt: string;
+}
+
+export interface ListeRS {
+  titre: string;
+  link: string;
 }
 
 @Component({
   selector: 'app-prog1',
-  imports: [MenuComponent, CommonModule, MatIconModule, MatButtonModule, MatDividerModule, MatCardModule],
+  imports: [RouterLink, CommonModule, MatIconModule, MatButtonModule, MatDividerModule, MatCardModule],
   templateUrl: './prog1.component.html',
   styleUrl: './prog1.component.css'
 })
 export class Prog1Component {
   bgImgUrl = "./assets/img/background.jpg";
-  bgImgUrl4 = "./assets/img/profil.png";
-  bgImgUrl1 = "./assets/img/linkedin.png";
+  bgImgUrl1 = "./assets/img/profil.JPG";
+  bgImgUrl4 = "./assets/img/linkedin.png";
   bgImgUrl2 = "./assets/img/mail.png";
   bgImgUrl3 = "./assets/img/ain.jpg";
   video = "./assets/img/background2.mp4"
@@ -33,88 +46,80 @@ export class Prog1Component {
   flechebas = "./assets/img/fleche.png";
   dianeArray: string[] = [];
   menu = "./assets/img/interet/menu.png";
-  listeContact: ListeContactItem[] = [
-    {
-      img: this.bgImgUrl3,
-      link: "https://www.linkedin.com/in/etienne-paquelet/",
-      text: "Etienne PAQUELET",
-      alt: "Photo menant à mon compte Linkedin",
-    },
-    {
-      img: this.bgImgUrl4,
-      link: "ailto:etienne.paquelet.01@gmail.com",
-      text: "etienne.paquelet.01@gmail.com",
-      alt: "Photo boite mail",
-    },
-  ];
+  linkedin = "./assets/img/contact/linkedin.png";
+  linkedinlink = "https://www.linkedin.com/in/etienne-paquelet/";
 
-  constructor() {
-    window.addEventListener("keydown", (ev) => {
-      const elmt = document.getElementById("imgProfil") as HTMLImageElement;
-      if (!ev || !elmt) return;
-      if (this.dianeArray.length == 7) { this.dianeArray.shift(); }
-      this.dianeArray.push(ev.key.toLowerCase());
-      if (this.dianeArray.join("") == "etienne") {
-        elmt.src = this.dianeUrl;
-        elmt.alt = "Image easter egg";
-      } else {
-        elmt.src = this.bgImgUrl4;
-        elmt.alt = "Image de profil";
-      }
-    });
-   
+  github = "./assets/img/contact/github.png";
+  githublink = "https://github.com/e-paquelet";
 
-    
-  } 
+  // listeContact: ListeContactItem[] = [
+  //   {
+  //     img: this.bgImgUrl3,
+  //     link: "https://www.linkedin.com/in/etienne-paquelet/",
+  //     text: "Etienne PAQUELET",
+  //     alt: "Photo menant à mon compte Linkedin",
+  //   },
+  //   {
+  //     img: this.bgImgUrl4,
+  //     link: "ailto:etienne.paquelet.01@gmail.com",
+  //     text: "etienne.paquelet.01@gmail.com",
+  //     alt: "Photo boite mail",
+  //   },
+  // ];
+
+
 
   makeImgUrl(str: string): string {
     return "url('" + str + "')"
   }
 
-  show = false;
-  private timeoutId: any = null;
-  private isClicked = false; // Ajout pour suivre le clic manuel
+  listeRS: ListeRS[] = [
+    {
+      titre: this.linkedin,
+      link: this.linkedinlink,
+    },
+    {
+      titre: this.github,
+      link: this.githublink,
+    },
 
-  openpopup() {
-    clearTimeout(this.timeoutId);  // Annule la fermeture en attente
-    this.show = true;
-  }
+  ];
 
-  delayedClosePopup() {
-    if (!this.isClicked) {
-      this.timeoutId = setTimeout(() => {
-        this.show = false;
-      }, 200); // Délai pour éviter la fermeture immédiate
-    }
-  }
+  listeMenu: ListeMenu[] = [
+    {
+      titre: "A propos de moi",
+      link: "/accueil"
+    },
+    {
+      titre: "Mes centres d'intérêts",
+      link: "/interest",
+    },
+    {
+      titre: "Alternance",
+      link: "/enterprise",
+    },
+    {
+      titre: "Vitrine de mes compétences",
+      link: "/portfolio",
+    },
+    {
+      titre: "Vitrine de mes projets",
+      link: "/interest",
+    },
+    {
+      titre: "Mes réseaux professionnels",
+      link: "/liens-divers",
+    }, 
+    {
+      titre: "Articles",
+      link: "/autre",
+    },
+    {
+      titre: "Contacts",
+      link: "/contact",
+    },
 
-  togglePopup(event: MouseEvent) {
-    event.stopPropagation();  // Empêche la propagation pour éviter l'appel du mouseleave
-    this.isClicked = true;
-    this.show = true;
-  }
 
-  // Optionnel : Fermer si on clique ailleurs
-  @HostListener('document:click')
-  closeOnClickOutside() {
-    if (this.show && !this.isClicked) {
-      this.show = false;
-    }
-    this.isClicked = false;
-  }
-
- 
-  openCard(content: "tennis" | "saetest") {
-    let compo: Type<any> = Test1Component;
-    let titre = "Composant de test";
-    switch (content) {
-      default:
-      case "tennis":
-        break;
-      case "saetest":
-        compo = Sae301Component;
-        titre = "Composant SAE301";
-    }
-  }
+  ];
 
 }

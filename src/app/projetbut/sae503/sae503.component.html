@@ -1,1 +1,159 @@
-<p>sae503 works!</p>
+<div class="texte">
+
+    <p>Cette SAE concernait l'ensemble des étudiants de la promotion en parcours cybersécurité et a été réalisée en
+        binôme.
+
+        <br><br>L'objectif de ce projet était de recréer le système informatique du CHU Livrac tout en assurant sa
+        sécurité. Ainsi, ce projet s'est déroulé en 4 phases et comportait certaines consignes non négociables
+        concernant la sécurisation du site web :
+
+    <ul>
+        <li>Phase d'Etude </li>
+        <ul>
+            <li>Analyse du système d'information actuel du CHU Livrac</li>
+            <li>Etablir des solutions d'IPS/IDS du marché et en extraire une liste de 3 solutions</li>
+            <li>Comparer ces 3 solutions retenues</li>
+            <li>Sélectionner une solution et défendre celle-ci lors d'une présentation de notre solution aux décideurs.
+            </li>
+        </ul>
+        <li>Phase de déploiement</li>
+        <ul>
+            <li>Installer et configurer l'infrastructure informatique (matérielle et logicielle) choisie</li>
+
+        </ul>
+        <li>Phase de supervision</li>
+        <ul>
+            <li>Mise en place d'un outil de supervision pour surveiller l'ensemble du SI</li>
+
+        </ul>
+        <li>Phase de sécurisation</li>
+        <ul>
+            <li>Sécuriser un site wordpress</li>
+        </ul>
+    </ul>
+
+    <h4>Phase d'étude</h4>
+
+    <p>Voici le descriptif du système informatique du CHU Livrac sur lequel nous nous sommes basés pour les
+        constatations
+        avec le schéma : <br> <br><i>Le routeur central est configuré en tant que passerelle NAT. Actuellement le réseau
+            est
+            scindé
+            physiquement en deux sous réseaux : une DMZ regroupant les serveurs. Et un réseau local de stations de
+            travail
+            utilisables par le personnelle hospitalier et des terminaux de contrôle des équipements hospitaliers :
+            assistance
+            respiratoire, … <br><br>
+            Le site web de l’hôpital a subi une refonte. La nouvelle version WordPress est fournie sous la forme d’un
+            Backup
+            Wp
+            Vivid. Le serveur BDD gère à la fois les données WordPress ainsi que les données médicales des patients. Ce
+            backup
+            inclut les données des patients et du personnel. </i> <br> <br>
+
+        Voici le système d'information que nous devions auditer : </p>
+
+    <img [src]="oldsi" alt="SI non sécurisé" (click)="enlargeImage()"> <br>
+
+    <p>Ce système d'information n'étant que fictif, nous n'avons pas eu à utiliser des outils pour auditer celui-ci.
+        Nous
+        avons donc émis les constatations suivantes :</p>
+
+    <ul>
+        <li>Points positifs </li>
+        <ul>
+            <li>Séparation du serveur de bases de données du serveur web</li>
+            <li>Politique de NAT sur le routeur central.</li>
+        </ul>
+        <li>Points négatifs</li>
+        <ul>
+            <li>
+                L’isolation des serveurs par rapports aux stations clientes est mal réalisé et peut être optimisé
+                en utilisant moins de matériel physique par la création de VLAN.
+            </li>
+            <li>
+                Il manque une redondance au niveau des systèmes (serveur web/base de données) ainsi qu'au
+                niveau du réseau. En effet, une panne du routeur central entraînerait une interruption complète,
+                faute d'équipement capable de prendre le relais. Il est donc essentiel d’implémenter des
+                solutions de redondance réseau pour garantir une disponibilité continue.
+            </li>
+        </ul>
+    </ul>
+
+
+    <p>Concernant la phase d'étude, nous avons rédigé un document regroupant toutes les constatations que nous avons
+        trouvées avec mon binôme : <a target="_blank" [href]="docetude">Document d'étude.pdf</a> <br> <br>
+
+        Nous avons également proposé au client l'infrastructure informatique suivante lors de notre présentation du
+        document
+        d'étude : </p>
+
+    <img [src]="newsi" alt="Nouveau SI du CHU Livrac" (click)="enlargeImage2()">
+
+    <h4>Phase de déploiment</h4>
+
+    <p> Concernant la phase de déploiement, je me suis occupé de la mise en place de l'IDS, mon binôme s'étant occupé de
+        la
+        mise en place du pare-feu et du switch. Concernant la solution choisie pour le pare-feu, nous avons opté pour
+        pfSense, une solution open source. Dans ce cadre, j'ai décidé d'installer l'IPS Snort directement sur pfSense,
+        qui
+        permet l'ajout de nombreux plugins, dont Snort. Cela permet à l'IPS d'analyser l'intégralité du trafic
+        transitant
+        par les interfaces du pare-feu. Ce positionnement avantage la sécurisation du SI puisque le routage inter-vlan
+        s'effectue sur pfSense également. Son installation et sa configuration furent simples. Voici une règle que j'ai
+        créée empêchant des attaques par brute force via le protocole ICMP. <br> <br>
+
+        <i>alert icmp any any -> any any (msg:"ICMP Ping Flood detected"; icmp_type:8; threshold:type both, track
+            by_src,
+            count 50, seconds 1; sid:1000001; rev:1;)
+        </i>
+    </p>
+
+
+
+    <h4>Phase de supervision</h4>
+
+
+    <p>Dans cette phase, j'ai donc mis en place le serveur de supervision Zabbix, que j'ai pu découvrir lors de mon
+        stage à
+        la Préfecture de
+        l'Ain, pour sa simplicité d'installation, de configuration et le fait qu'il soit open source. Je n'ai donc pas
+        eu de
+        problèmes particuliers lors de
+        sa configuration et de sa mise en oeuvre dans notre SI. Zabbix s'est révélé efficace lors de la réalisation
+        d'attaque par notre professeur pour
+        tester
+        la robustesse du SI et le fonctionnement du serveur de supervision. En effet, il a su mettre en évidence les
+        augmentations de trafic sur les interfaces ainsi que différentes informations sur l'état du pare-feu durant les
+        attaques (puissance du CPU, nombre de processus en même temps...)
+
+        Voici une photo du tableau de bord que j'ai pu concevoir
+        lors de cette phase : </p>
+
+    <img [src]="zabbix" alt="Tableau de bord de Zabbix" (click)="enlargeImage3()">
+
+    <h4>Phase de sécurisation</h4>
+
+    Concernant cette phase, notre but étaient de sécuriser un site web Wordpress. Nous nous sommes donc partagés cette dernière tâche
+    avec mon binôme. Je me suis ainsi occupé de sécuriser l'accès à la console d'administration de wordpress : 
+    <li>Utilisation de Hide Login pour changer l'url de login de l'interface d'administration du site wordpress.</li> 
+    <li>Changement du mot de passe admin</li>
+    <li>Inventaire des utilisateurs présents </li>
+    <li>Installation d'un plugin "Anti virus"</li>
+
+    <h4>Ce que j'ai appris</h4>
+
+    <li>Auditer un système d'information</li>
+    <li>Sécuriser et superviser un SI</li>
+    <li>Travailler en groupe</li>
+
+</div>
+<div class="overlay" *ngIf="isImageEnlarged" (click)="closeEnlargedImage()">
+    <img class="bigphoto" [src]="oldsi">
+</div>
+<div class="overlay" *ngIf="isImageEnlarged2" (click)="closeEnlargedImage()">
+    <img class="bigphoto" [src]="newsi">
+</div>
+<div class="overlay" *ngIf="isImageEnlarged3" (click)="closeEnlargedImage()">
+    <img class="bigphoto" [src]="zabbix">
+</div>
