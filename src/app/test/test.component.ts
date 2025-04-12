@@ -93,11 +93,11 @@ export class TestComponent {
     },
     {
       titre: "Mes centres d'intérêts",
-      link: "/interest",
+      link: "/centre-interet",
     },
     {
       titre: "Alternance",
-      link: "/enterprise",
+      link: "/entreprise",
     },
     {
       titre: "Vitrine de mes compétences",
@@ -105,12 +105,12 @@ export class TestComponent {
     },
     {
       titre: "Vitrine de mes projets",
-      link: "/interest",
+      link: "/projet-but",
     },
     {
       titre: "Mes réseaux professionnels",
       link: "/liens-divers",
-    }, 
+    },
     {
       titre: "Articles",
       link: "/autre",

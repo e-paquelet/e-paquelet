@@ -24,6 +24,6 @@ a:active {
 * {
     scrollbar-color: grey rgb(238, 238, 238);
     scrollbar-width: thin;
-    scroll-snap-align: both;
+    scroll-snap-align: center;
     scroll-margin-left: 10px;
 }

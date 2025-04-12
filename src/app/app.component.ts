@@ -10,7 +10,6 @@ import { TestComponent } from './test/test.component';
     imports: [
         TestComponent,
         RouterOutlet,
-        HeaderComponent,
         FooterComponent
     ],
     templateUrl: './app.component.html',

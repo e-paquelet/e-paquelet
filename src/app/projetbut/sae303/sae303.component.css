@@ -56,7 +56,7 @@
     color: #15191b;
     font-size: 1rem;
     overflow: hidden;
-    
+
 }
 
 .position-texte {
@@ -78,7 +78,7 @@
 }
 
 #liste {
-    margin-left: 5vw;
+    margin-left: 2em;
 }
 
 a {

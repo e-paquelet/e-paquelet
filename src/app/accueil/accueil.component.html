@@ -9,20 +9,16 @@
         <h2 id="presentation">Qui suis-je ?</h2>
 
         <div class="text-containter">
-            <div class="photo" [style.background-image]="makeImgUrl(profil)"></div>
+            <div class="photo-container">
+                <img [src]="profil" alt="Photo de moi">
+            </div>
             <div class="texte">
                 <p>Etienne, 20 ans, étudiant en troisième année de B.U.T Réseaux et Télécommunications, option
                     Cybersécurité, àl'Université de Franche-Comté à Montbéliard. <br> <br>
                     J'effectue cette dernière année de formation en alternance et je suis accueilli par le <a
                         target="_blank" href="https://www.ain.fr" style="color: blue;"> Conseil Départemental de l'Ain
                     </a>
-                    <!-- <div class="tooltip bottom">
-                    <a target="_blank" href="https://www.ain.fr" style="color: blue;"> Conseil Départemental de l'Ain
-                    </a>
-                    <span class="tooltiptext">
-                        <img [src]="bgImgUrl8" alt="Ici c'est l'Ain !" style="width: 250px; height: auto;">
-                    </span>
-                </div> -->
+
                     à Bourg-en-Bresse au sein de la Direction de la
                     Transition et des Solutions Numériques (DTSN).
                 </p>
@@ -71,29 +67,7 @@
                     <li>Serviable</li>
                     <li>Persévérant</li>
                 </p><br>
-                <div>
-                    <h3>Mes passions</h3>
-                    <div class="grille-passions">
-                        <div class="image-passion" [style.background-image]="makeImgUrl(bgImgUrl3)"></div>
-                        <p>La guitare</p>
-                        <div></div>
-                        <div></div>
-                        <p>Le Métal/Rock</p>
-                        <div class="image-passion" [style.background-image]="makeImgUrl(bgImgUrl4)"></div>
-                        <div class="image-passion" [style.background-image]="makeImgUrl(bgImgUrl5)"></div>
-                        <p>Le tennis</p>
-                        <div></div>
-                        <div></div>
-                        <p>Les jeux vidéos</p>
-                        <div class="image-passion" [style.background-image]="makeImgUrl(bgImgUrl6)"></div>
-                        <div class="image-passion" [style.background-image]="makeImgUrl(bgImgUrl9)"></div>
-                        <p>Les échecs</p>
-                        <div></div>
-                        <div></div>
-                        <p>Le vélo</p>
-                        <div class="image-passion" [style.background-image]="makeImgUrl(bgImgUrl10)"></div>
-                    </div>
-                </div>
+
 
             </div>
         </div>
@@ -126,7 +100,7 @@
                     </button>
                 </div> -->
             </div>
-            
+
         </div>
 
         <div class="overlay1" *ngIf="show" (click)="closeoverlay($event)">
@@ -148,7 +122,14 @@
                 </div>
                 <div class="recommendation-text">
                     <p>
-                        "Depuis trois ans maintenant, j'ai la chance de travailler avec Etienne en classe, mais aussi lors de projets conséquents que nous avons réalisés ensemble. Etienne est une personne compétente et sérieuse dans son travail, il est toujours pleinement impliqué dans ce qu'il fait et toujours soucieux de faire de son mieux. Depuis que je le connais il n'a jamais cessé de produire du travail conséquent et toujours de bonne qualité. De plus, il aime aider les autres et leur expliquer les choses qu'ils ne comprennent pas ne lui a jamais fait peur. En bref, Etienne est une personne qualifiée techniquement, mais aussi humainement, cela a toujours été un plaisir de travailler avec lui."
+                        "Depuis trois ans maintenant, j'ai la chance de travailler avec Etienne en classe, mais aussi
+                        lors de projets conséquents que nous avons réalisés ensemble. Etienne est une personne
+                        compétente et sérieuse dans son travail, il est toujours pleinement impliqué dans ce qu'il fait
+                        et toujours soucieux de faire de son mieux. Depuis que je le connais il n'a jamais cessé de
+                        produire du travail conséquent et toujours de bonne qualité. De plus, il aime aider les autres
+                        et leur expliquer les choses qu'ils ne comprennent pas ne lui a jamais fait peur. En bref,
+                        Etienne est une personne qualifiée techniquement, mais aussi humainement, cela a toujours été un
+                        plaisir de travailler avec lui."
                     </p>
                 </div>
             </div>
