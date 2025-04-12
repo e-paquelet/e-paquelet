@@ -1,21 +1,15 @@
-import { AfterViewInit, Component, HostListener, Type } from '@angular/core';
+import { Component } from '@angular/core';
+
+import { AfterViewInit, HostListener, Type } from '@angular/core';
 import { MenuComponent } from '../menu/menu.component';
 import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
-import { Test1Component } from './test1/test1.component';
+import { NgComponentOutlet } from '@angular/common';
 import { Sae301Component } from '../projetbut/sae301/sae301.component';
 import { MatCardModule } from '@angular/material/card';
 import { RouterLink } from '@angular/router';
-
-
-// type ListeContactItem = {
-//   img: string;
-//   text: string;
-//   link: string;
-//   alt: string;
-// }
 
 
 export interface ListeMenu {
@@ -29,12 +23,19 @@ export interface ListeRS {
 }
 
 @Component({
-  selector: 'app-prog1',
-  imports: [RouterLink, CommonModule, MatIconModule, MatButtonModule, MatDividerModule, MatCardModule],
-  templateUrl: './prog1.component.html',
-  styleUrl: './prog1.component.css'
+  selector: 'app-test',
+  imports: [
+    RouterLink,
+    CommonModule,
+    MatIconModule,
+    MatButtonModule,
+    MatDividerModule,
+    MatCardModule,
+  ],
+  templateUrl: './test.component.html',
+  styleUrl: './test.component.css'
 })
-export class Prog1Component {
+export class TestComponent {
   bgImgUrl = "./assets/img/background.jpg";
   bgImgUrl1 = "./assets/img/profil.JPG";
   bgImgUrl4 = "./assets/img/linkedin.png";
@@ -121,5 +122,4 @@ export class Prog1Component {
 
 
   ];
-
 }

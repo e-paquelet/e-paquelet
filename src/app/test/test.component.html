@@ -1,0 +1,28 @@
+<div class="main-container">
+    <div class="colonne">
+        <div class="nom">
+            <a href="accueil" title="Acceuil" class="profil2">
+                <div class="profil">
+                    <!-- <div class="texteprofil">EP</div> -->
+                    <img [src]="bgImgUrl1">
+                </div>
+                <div class="texte">
+                    <p> Mon Portfolio</p>
+                </div>
+            </a>
+        </div>
+        @for (element of listeMenu; track $index) {
+            <button mat-button [routerLink]="element.link">{{element.titre}}</button>
+        }
+        <div class="image">
+            @for (element of listeRS; track $index) {
+            <a [href]="element.link" target="_blank"><img [src]="element.titre"></a>
+        }
+        </div>
+        <!-- <a href="https://www.flaticon.com/fr/icones-gratuites/departement-it" title="département it icônes">Département it
+            icônes créées par rukanicon - Flaticon</a> -->
+    </div>
+    <div class="content">
+        <ng-content></ng-content>
+    </div>
+</div>

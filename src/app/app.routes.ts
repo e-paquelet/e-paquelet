@@ -4,7 +4,7 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { ProjetbutComponent } from './projetbut/projetbut.component';
 import { ContactComponent } from './contact/contact.component';
 import { NotfoundComponent } from './notfound/notfound.component';
-import { Prog1Component } from './prog1/prog1.component';
+
 import { EnterpriseComponent } from './enterprise/enterprise.component';
 import { MenuComponent } from './menu/menu.component';
 import { RsComponent } from './rs/rs.component';
@@ -12,6 +12,8 @@ import { InterestComponent } from './interest/interest.component';
 import { CardComponent } from '../shared/card/card.component';
 import { DialogComponent } from '../shared/dialog/dialog.component';
 import { AutreComponent } from './autre/autre.component';
+import { TestComponent } from './test/test.component';
+
 
 export const routes: Routes = [
     { path: "", component: AccueilComponent},
@@ -20,7 +22,7 @@ export const routes: Routes = [
     { path: "portfolio", component: PortfolioComponent },    
     { path: "projet-but", component: ProjetbutComponent},
     { path: "contact", component: ContactComponent},
-    { path:"prog1", component: Prog1Component},
+    { path: "test", component: TestComponent},
     { path: "entreprise", component: EnterpriseComponent },
     { path: "liens-divers", component: RsComponent},
     { path: "centre-interet", component: InterestComponent},

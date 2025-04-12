@@ -1,0 +1,242 @@
+<div class="colonne">
+
+    <div class="nom">
+        <a href="accueil" title="Acceuil" class="profil2">
+            <div class="profil">
+                <!-- <div class="texteprofil">EP</div> -->
+                <img [src]="bgImgUrl1">
+            </div>
+            <div class="texte">
+                <p> Portfolio de</p>
+              <p> Etienne Paquelet</p>
+            </div>
+        </a>        
+    </div>
+    @for (element of listeMenu; track $index) {
+    <button mat-button [routerLink]="element.link">{{element.titre}}</button>
+
+
+    }
+    <div class="image">
+        @for (element of listeRS; track $index) {
+
+        <a [href]="element.link" target="_blank"><img [src]="element.titre"></a>
+
+
+
+        }
+    </div>
+
+</div>
+<a href="https://www.flaticon.com/fr/icones-gratuites/departement-it" title="département it icônes">Département it
+    icônes créées par rukanicon - Flaticon</a>
+
+
+css : 
+
+.colonne {
+  background-color: #edf2f5;
+  width: 250px;
+  height: 650px;
+  z-index: 200;
+
+
+
+  button {
+    margin-top: 20px;
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    color: black;
+  }
+
+  .image {
+    img {
+      width: 40px;
+    }
+
+    display: flex;
+    margin-left: 10px;
+    justify-content: space-around;
+    flex-direction: row;
+
+
+  }
+
+}
+
+.nom {
+
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: larger;
+
+  & p {
+    margin-top: 20px;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+
+  .profil2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  img {
+
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .profil {
+    /* border-radius:50%; */
+    width: 70px;
+    height: 70px;
+  
+    &>img {
+      border: 2px solid black;
+    }
+  }
+}
+
+
+
+
+
+.profil {
+  /* border-radius:50%; */
+  width: 70px;
+  height: 70px;
+
+  &>img {
+    border: 2px solid black;
+  }
+}
+
+
+ts : 
+
+.colonne {
+  background-color: #edf2f5;
+  width: 250px;
+  height: 650px;
+  z-index: 200;
+
+
+
+  button {
+    margin-top: 20px;
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    color: black;
+  }
+
+  .image {
+    img {
+      width: 40px;
+    }
+
+    display: flex;
+    margin-left: 10px;
+    justify-content: space-around;
+    flex-direction: row;
+
+
+  }
+
+}
+
+.nom {
+
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: larger;
+
+  & p {
+    margin-top: 20px;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+
+  .profil2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  img {
+
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .profil {
+    /* border-radius:50%; */
+    width: 70px;
+    height: 70px;
+  
+    &>img {
+      border: 2px solid black;
+    }
+  }
+}
+
+
+
+
+
+.profil {
+  /* border-radius:50%; */
+  width: 70px;
+  height: 70px;
+
+  &>img {
+    border: 2px solid black;
+  }
+}
+
+
+
+
+
+import { AfterViewInit, Component, HostListener, Type } from '@angular/core';
+import { MenuComponent } from '../menu/menu.component';
+import { CommonModule } from '@angular/common';
+import { MatIconModule } from '@angular/material/icon';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatButtonModule } from '@angular/material/button';
+import { Test1Component } from './test1/test1.component';
+import { Sae301Component } from '../projetbut/sae301/sae301.component';
+import { MatCardModule } from '@angular/material/card';
+import { RouterLink } from '@angular/router';
+
+
+// type ListeContactItem = {
+//   img: string;
+//   text: string;
+//   link: string;
+//   alt: string;
+// }
+
+
+export interface ListeMenu {
+  titre: string;
+  link: string;
+}
+
+export interface ListeRS {
+  titre: string;
+  link: string;
+}

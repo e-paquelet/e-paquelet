@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Prog1Component } from "../prog1/prog1.component";
 import {MatTooltipModule} from '@angular/material/tooltip';
 
 type ListeContactItem = {
@@ -11,7 +10,9 @@ type ListeContactItem = {
 
 @Component({
     selector: 'app-contact',
-    imports: [MatTooltipModule],
+    imports: [
+      MatTooltipModule
+    ],
     templateUrl: './contact.component.html',
     styleUrl: './contact.component.css'
 })
