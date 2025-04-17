@@ -1,11 +1,10 @@
-<div class="main-container">
+<!-- <div class="main-container">
     <div #colonne class="colonne">
         <div class="button-close" (click)="colonne.classList.toggle('open')"></div>
         <div class="nom">
             <a href="accueil" title="Acceuil" class="profil2">
                 <div class="profil">
-                    <!-- <div class="texteprofil">EP</div> -->
-                    <img [src]="bgImgUrl1">
+                   <img [src]="bgImgUrl1">
                 </div>
                 <div class="texte">
                     <p> Mon Portfolio</p>
@@ -20,8 +19,7 @@
             <a [href]="element.link" target="_blank"><img [src]="element.titre"></a>
             }
         </div>
-        <!-- <a href="https://www.flaticon.com/fr/icones-gratuites/departement-it" title="département it icônes">Département it
-            icônes créées par rukanicon - Flaticon</a> -->
+        
     </div>
     <div class="colonne-mobile">
         <div class="button-open" (click)="colonne.classList.toggle('open')"></div>
@@ -29,4 +27,51 @@
     <div class="content">
         <ng-content></ng-content>
     </div>
+</div> -->
+<app-video class="main" [bgImgUrl]="bgImgUrl" titre="Mes compétences" lienFleche="./portfolio#presentation"></app-video>
+<div id="presentation" style="padding-left: 5vw; padding-bottom: 3vw; text-align: center;">
+    Voici une synthèse de mes compétences développées au cours de ma formation, vous trouverez dans l'onglet projets
+    leur mise en œuvre
+</div>
+
+<div class="example-action-buttons">
+    <button mat-button (click)="accordion().openAll()">Expand All</button>
+    <button mat-button (click)="accordion().closeAll()">Collapse All</button>
+</div>
+<div class="position">
+    
+        <mat-expansion-panel class="expansion">
+            <mat-expansion-panel-header>
+                <mat-panel-title> Formations</mat-panel-title>
+
+            </mat-expansion-panel-header>
+
+            <p class="para">J’ai obtenu le diplôme du Baccalauréat série Générale en 2022 avec la mention ASSEZ BIEN avec pour
+                enseignements
+                de spécialités les
+                Mathématiques et la Physique-Chimie. J’ai également obtenu la mention section européenne (anglais).</p>
+        </mat-expansion-panel> 
+   
+        <mat-expansion-panel class="expansion">
+            <mat-expansion-panel-header>
+                <mat-panel-title> Qualités</mat-panel-title>
+
+            </mat-expansion-panel-header>
+
+            <p>journal</p>
+        </mat-expansion-panel> 
+    
+        <mat-expansion-panel class="expansion">
+            <mat-expansion-panel-header>
+                <mat-panel-title> Formations</mat-panel-title>
+
+            </mat-expansion-panel-header>
+
+            <p>test</p>
+        </mat-expansion-panel>
+
+    
+
+  
+
 </div>

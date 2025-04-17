@@ -13,6 +13,7 @@ import { CardComponent } from '../shared/card/card.component';
 import { DialogComponent } from '../shared/dialog/dialog.component';
 import { AutreComponent } from './autre/autre.component';
 import { TestComponent } from './test/test.component';
+import { Header2Component } from '../shared/header2/header2.component';
 
 
 export const routes: Routes = [
@@ -28,5 +29,6 @@ export const routes: Routes = [
     { path: "centre-interet", component: InterestComponent},
     { path: "card", component: CardComponent},
     { path: "autre", component: AutreComponent},
+    
     { path: "**", component:NotfoundComponent },
 ];

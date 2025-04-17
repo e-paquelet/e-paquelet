@@ -1,0 +1,140 @@
+.colonne {
+    padding: 1em;
+    background-color: #edf2f5;
+    width: auto;
+    height: 100dvh;
+    position: sticky;
+    top: 0;
+
+
+    button {
+        margin-top: 20px;
+        display: flex;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        color: black;
+        width: 220px;
+    }
+
+    .image {
+        img {
+            width: 40px;
+        }
+
+        display: flex;
+        margin-left: 10px;
+        justify-content: space-around;
+        flex-direction: row;
+
+
+    }
+
+}
+
+.nom {
+
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: larger;
+
+    & p {
+        margin-top: 20px;
+        padding: 0;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    .profil2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    img {
+
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    .profil {
+        /* border-radius:50%; */
+        width: 70px;
+        height: 70px;
+
+        &>img {
+            border: 2px solid black;
+        }
+    }
+}
+
+
+
+
+
+.profil {
+    /* border-radius:50%; */
+    width: 70px;
+    height: 70px;
+
+    &>img {
+        border: 2px solid black;
+    }
+}
+
+
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+}
+
+.colonne-mobile {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .colonne {
+        display: none;
+    }
+
+    .colonne.open {
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: 10;
+
+        &>.button-close::before {
+            content: "✕";
+        }
+    }
+
+    .colonne-mobile {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        padding: 1em;
+        background-color: #edf2f5;
+        font-size: large;
+
+        &>.button-open::before {
+            content: "☰";
+
+            /* ✕ */
+        }
+    }
+}
