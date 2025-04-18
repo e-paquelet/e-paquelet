@@ -5,7 +5,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
-import { RouterLink } from '@angular/router';
+
 import {provideNativeDateAdapter} from '@angular/material/core';
 import {MatAccordion, MatExpansionModule} from '@angular/material/expansion';
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -16,21 +16,18 @@ import { VideoComponent } from '../../shared/video/video.component';
 
 
 
-export interface ListeMenu {
-  titre: string;
+export interface ListeIcon {
+  image: string;
   link: string;
 }
 
-export interface ListeRS {
-  titre: string;
-  link: string;
-}
+
 
 @Component({
   selector: 'app-test',
   providers: [provideNativeDateAdapter()],
   imports: [
-    RouterLink,
+    
     VideoComponent,
     CommonModule,
     MatInputModule,
@@ -50,4 +47,21 @@ export class TestComponent {
   accordion = viewChild.required(MatAccordion);
   readonly panelOpenState = signal(false);
   bgImgUrl = "./assets/img/background2.mp4";
+  profil = "./assets/img/accueil/profillogo.JPG";
+  linkedin = "./assets/img/contact/linkedin.png";
+  linkedinlink = "https://www.linkedin.com/in/etienne-paquelet/";
+
+  github = "./assets/img/contact/github.png";
+  githublink = "https://github.com/e-paquelet";
+
+  ListeIcon: ListeIcon[] = [
+      {
+        image: this.linkedin,
+        link: this.linkedinlink,
+      },
+      {
+        image: this.github,
+        link: this.githublink,
+      }
+  ];
 }

@@ -28,50 +28,186 @@
         <ng-content></ng-content>
     </div>
 </div> -->
-<app-video class="main" [bgImgUrl]="bgImgUrl" titre="Mes compétences" lienFleche="./portfolio#presentation"></app-video>
-<div id="presentation" style="padding-left: 5vw; padding-bottom: 3vw; text-align: center;">
-    Voici une synthèse de mes compétences développées au cours de ma formation, vous trouverez dans l'onglet projets
-    leur mise en œuvre
-</div>
+<app-video class="main" [bgImgUrl]="bgImgUrl" titre="Bienvenue dans mon portfolio"
+    lienFleche="./test#presentation"></app-video>
 
-<div class="example-action-buttons">
-    <button mat-button (click)="accordion().openAll()">Expand All</button>
-    <button mat-button (click)="accordion().closeAll()">Collapse All</button>
+
+<h1 id="presentation" style="text-align: center;">À propos de moi</h1>
+<div style="width: 5rem;         
+height: 0.25rem;    
+background-color: #2563eb;
+margin-left: auto;    
+margin-right: auto;"></div>
+
+
+<div class="agencement">
+    <div class="carre">
+        <img class="profil" [src]="profil" alt="Photo de profil">
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: x-large; text-align: center;">Etienne PAQUELET
+        </p>
+        <p style="font-family: Arial, Helvetica, sans-serif; color: #007BFF; font-size: medium; text-align: center;">
+            Technicien Systèmes en
+            alternance</p>
+        <p style="font-family: Arial, Helvetica, sans-serif; color: #003366; font-size: medium; text-align: center;">
+            Conseil Départemental de l'Ain</p>
+        <div class="image">
+            @for (element of ListeIcon; track $index) {
+            <a [href]="element.link" target="_blank"><img [src]="element.image"></a>
+            }
+        </div>
+    </div>
+    <div class="rectangle">
+        <h2 style="margin-left: 20px;">Qui suis-je ?</h2>
+        <p
+            style="font-family: Arial, Helvetica, sans-serif; margin: 20px;line-height: 25px; font-size: medium; text-align: justify;">
+            Etienne, 20 ans, étudiant en troisième année de B.U.T Réseaux et Télécommunications, option
+            Cybersécurité, à l'Université de Franche-Comté à Montbéliard.
+            J'effectue cette dernière année de formation en alternance et je suis accueilli par le Conseil Départemental
+            de l'Ain à Bourg-en-Bresse au sein de la Direction de la Transition et des Solutions Numériques (DTSN). </p>
+        <h2 style="margin-left: 20px;">Mes qualités</h2>
+
+        <ul style="
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 40px;
+    list-style-type: square;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    margin: 20px;
+    padding-left: 40px;
+">
+            <li>Rigoureux</li>
+            <li>Curieux</li>
+            <li>Autonome</li>
+            <li>Fiable</li>
+            <li>Curieux</li>
+            <li>Serviable</li>
+            <li>Persévérant</li>
+        </ul>
+    </div>
 </div>
 <div class="position">
-    
-        <mat-expansion-panel class="expansion">
-            <mat-expansion-panel-header>
-                <mat-panel-title> Formations</mat-panel-title>
 
-            </mat-expansion-panel-header>
+    <mat-expansion-panel class="expansion">
+        <mat-expansion-panel-header>
+            <mat-panel-title> Formations</mat-panel-title>
 
-            <p class="para">J’ai obtenu le diplôme du Baccalauréat série Générale en 2022 avec la mention ASSEZ BIEN avec pour
-                enseignements
-                de spécialités les
-                Mathématiques et la Physique-Chimie. J’ai également obtenu la mention section européenne (anglais).</p>
-        </mat-expansion-panel> 
-   
-        <mat-expansion-panel class="expansion">
-            <mat-expansion-panel-header>
-                <mat-panel-title> Qualités</mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="para">En cours d'obtention de mon BUT Réseaux et Télécommunications en parcours Cybersécurité.</p>
+        <div class="timeline">
+            <div class="timeline-item">
+                <details>
+                    <summary>2022 - 2025 : B.U.T Réseaux et Télécommunications – parcours Cybersécurité</summary>
+                    <p>IUT Nord Franche Comté à Montbéliard - Formation en alternance spécialisée autour de 3
+                        compétences
+                        communes : systèmes et réseaux, télécommunications et programmation.</p>
+                </details>
+            </div>
 
-            </mat-expansion-panel-header>
+            <div class="timeline-item">
+                <details>
+                    <summary>2022 : Baccalauréat Général – spécialités Physique Chimie & Mathématiques</summary>
+                    <p>Lycée Saint Pierre à Bourg en Bresse - obtenu avec les mentions assez bien et section européenne.
+                        Axé sur le domaine scientifique.</p>
+                </details>
+            </div>
+        </div>
+    </mat-expansion-panel>
 
-            <p>journal</p>
-        </mat-expansion-panel> 
-    
-        <mat-expansion-panel class="expansion">
-            <mat-expansion-panel-header>
-                <mat-panel-title> Formations</mat-panel-title>
+    <mat-expansion-panel class="expansion">
+        <mat-expansion-panel-header>
+            <mat-panel-title> Expériences professionnelles</mat-panel-title>
 
-            </mat-expansion-panel-header>
+        </mat-expansion-panel-header>
 
-            <p>test</p>
-        </mat-expansion-panel>
 
-    
+        <div class="experience-timeline">
 
-  
+            <div class="exp-item">
+                <details>
+                    <summary>Depuis septembre 2024 – Alternance : Conseil Départemental de l’Ain</summary>
+                    <p>Direction de la Transition et des Solutions Numériques – Service Systèmes et Réseaux.</p>
+                    <p>Exploitation et participation aux projets d'infrastructures systèmes et réseaux.</p>
+                    <time>02/09/2024 – Aujourd’hui</time>
+                </details>
+            </div>
+
+            <div class="exp-item">
+                <details>
+                    <summary>Stage – Préfecture de l’Ain (BISIC)</summary>
+                    <p>Étude de renouvellement de l’infrastructure informatique.</p>
+                    <p>Stage au Bureau Interministériel des Systèmes d’Information et de Communication.</p>
+                    <time>15/04/2024 – 07/06/2024</time>
+                </details>
+            </div>
+
+            <div class="exp-item">
+                <details>
+                    <summary>Juillet 2024 – Intérim : Ripeur</summary>
+                    <p>Travail en intérim dans la collecte des déchets.</p>
+                    <time>Juillet 2024</time>
+                </details>
+            </div>
+
+            <div class="exp-item">
+                <details>
+                    <summary>Juillet 2023 – DGFIP : Service de la Publicité Foncière et de l'enregistrement</summary>
+                    <p>Service de la Publicité Foncière et de l’Enregistrement – Bourg-en-Bresse.</p>
+                    <p>Archivage, suivi administratif.</p>
+                    <time>Juillet 2023 (1 mois)</time>
+                </details>
+            </div>
+
+            <div class="exp-item">
+                <details>
+                    <summary>Juillet 2022 – Trésorerie Publique Hospitalière</summary>
+                    <p>Découverte de l’environnement administratif, appui à la gestion documentaire.</p>
+                    <time>Juillet 2022</time>
+                </details>
+            </div>
+
+        </div>
+    </mat-expansion-panel>
+
+</div>
+<div class="position">
+
+    <mat-expansion-panel class="expansion">
+        <mat-expansion-panel-header>
+            <mat-panel-title> Projet professionnel</mat-panel-title>
+
+        </mat-expansion-panel-header>
+
+        <p class="para">Après l’obtention du B.U.T Réseaux et Télécommunications, je souhaite continuer de me former en
+            alternance dans une école d’ingénieur. J'aimerais ensuite travailler en tant qu’ingénieur systèmes et
+            réseaux. </p>
+    </mat-expansion-panel>
+</div>
+
+<h1 style="text-align: center;">Témoignages</h1>
+<div style="width: 5rem;         
+height: 0.25rem;    
+background-color: #2563eb;
+margin-left: auto;    
+margin-right: auto;"></div>
+<div style="margin-top: 30px;" class="position">
+    <mat-expansion-panel style="width: 400px">
+        <mat-expansion-panel-header>
+            <mat-panel-title> Julien Vadam – BUT R&T, 3ᵉ année</mat-panel-title>
+
+        </mat-expansion-panel-header>
+
+        <p style="font-style: italic;" class="para">"Depuis trois ans maintenant, j'ai la chance de travailler avec Etienne en classe, mais aussi
+            lors de projets conséquents que nous avons réalisés ensemble. Etienne est une personne
+            compétente et sérieuse dans son travail, il est toujours pleinement impliqué dans ce qu'il fait
+            et toujours soucieux de faire de son mieux. Depuis que je le connais il n'a jamais cessé de
+            produire du travail conséquent et toujours de bonne qualité. De plus, il aime aider les autres
+            et leur expliquer les choses qu'ils ne comprennent pas ne lui a jamais fait peur. En bref,
+            Etienne est une personne qualifiée techniquement, mais aussi humainement, cela a toujours été un
+            plaisir de travailler avec lui."</p>
+    </mat-expansion-panel>
+
+
+
 
 </div>
