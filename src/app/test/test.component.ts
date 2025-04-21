@@ -54,6 +54,8 @@ export class TestComponent {
   github = "./assets/img/contact/github.png";
   githublink = "https://github.com/e-paquelet";
 
+  download = "./assets/img/download.jpg";
+
   ListeIcon: ListeIcon[] = [
       {
         image: this.linkedin,
@@ -64,4 +66,17 @@ export class TestComponent {
         link: this.githublink,
       }
   ];
+
+  opencv() {
+    const filePath = './assets/img/pdf/CV_PAQUELET_Etienne.pdf'; // Chemin du fichier CV dans le dossier assets
+
+    // 1. Ouvrir le fichier dans un nouvel onglet
+    window.open(filePath, '_blank'); // Ouvre le fichier dans un nouvel onglet
+
+    // 2. Démarrer le téléchargement du fichier
+    const link = document.createElement('a');
+    link.setAttribute('href', filePath); // Définit l'URL du fichier
+    link.setAttribute('download', 'CV_PAQUELET_Etienne.pdf'); // Définit le nom du fichier téléchargé
+    link.click(); // Simule un clic pour lancer le téléchargement  
+  }
 }
