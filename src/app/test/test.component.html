@@ -47,15 +47,15 @@ margin-right: auto;"></div>
     padding-left: 40px;
 ">
             <li>Rigoureux</li>
-            <li>Curieux</li>
+            <li>Esprit d'équipe</li>
             <li>Autonome</li>
             <li>Fiable</li>
             <li>Curieux</li>
             <li>Serviable</li>
-            </ul>
-            <p (click)="opencv()" style="margin-left: 20px; color: #2563eb; cursor: pointer;" >Téléchargez mon CV</p>
+        </ul>
+        <p (click)="opencv()" style="margin-left: 20px; color: #2563eb; cursor: pointer;">Téléchargez mon CV</p>
     </div>
-    
+
 </div>
 <div class="position">
 
@@ -66,23 +66,14 @@ margin-right: auto;"></div>
         </mat-expansion-panel-header>
         <p class="para">En cours d'obtention de mon BUT Réseaux et Télécommunications en parcours Cybersécurité.</p>
         <div class="timeline">
+            @for (element of formation; track $index) {
             <div class="timeline-item">
                 <details>
-                    <summary>2022 - 2025 : B.U.T Réseaux et Télécommunications – parcours Cybersécurité</summary>
-                    <p>IUT Nord Franche Comté à Montbéliard - Formation en alternance spécialisée autour de 3
-                        compétences
-                        communes : systèmes et réseaux, télécommunications et programmation. Mes compétences spécifiques
-                        à mon parcours en cybersécurité sont : Sécuriser et Surveiller le SI</p>
+                    <summary>{{element.sommaire}}</summary>
+                    <p>{{element.texte}}</p>
                 </details>
             </div>
-
-            <div class="timeline-item">
-                <details>
-                    <summary>2022 : Baccalauréat Général – spécialités Physique Chimie & Mathématiques</summary>
-                    <p>Lycée Saint Pierre à Bourg en Bresse - obtenu avec les mentions assez bien et section européenne.
-                    </p>
-                </details>
-            </div>
+            }
         </div>
     </mat-expansion-panel>
 
@@ -91,53 +82,17 @@ margin-right: auto;"></div>
             <mat-panel-title> Expériences professionnelles</mat-panel-title>
 
         </mat-expansion-panel-header>
-
-
         <div class="experience-timeline">
-
+            @for (element of exppro; track $index) {
             <div class="exp-item">
                 <details>
-                    <summary>Depuis septembre 2024 – Alternance : Conseil Départemental de l’Ain</summary>
-                    <p>Direction de la Transition et des Solutions Numériques – Service Systèmes et Réseaux.</p>
-                    <p>Exploitation et participation aux projets d'infrastructures systèmes et réseaux.</p>
-                    <time>02/09/2024 – Aujourd’hui</time>
+                    <summary>{{element.sommaire}}</summary>
+                    <p>{{element.poste}}.</p>
+                    <p>{{element.mission}}</p>
+                    <time>{{element.time}}</time>
                 </details>
             </div>
-
-            <div class="exp-item">
-                <details>
-                    <summary>Stage – Préfecture de l’Ain (BISIC)</summary>
-                    <p>Étude de renouvellement de l’infrastructure informatique.</p>
-                    <p>Stage au Bureau Interministériel des Systèmes d’Information et de Communication.</p>
-                    <time>15/04/2024 – 07/06/2024</time>
-                </details>
-            </div>
-
-            <div class="exp-item">
-                <details>
-                    <summary>Juillet 2024 – Intérim : Ripeur</summary>
-                    <p>Travail en intérim dans la collecte des déchets.</p>
-                    <time>Juillet 2024</time>
-                </details>
-            </div>
-
-            <div class="exp-item">
-                <details>
-                    <summary>Juillet 2023 – DGFIP : Service de la Publicité Foncière et de l'enregistrement</summary>
-                    <p>Service de la Publicité Foncière et de l’Enregistrement – Bourg-en-Bresse.</p>
-                    <p>Archivage, suivi administratif.</p>
-                    <time>Juillet 2023 (1 mois)</time>
-                </details>
-            </div>
-
-            <div class="exp-item">
-                <details>
-                    <summary>Juillet 2022 – Trésorerie Publique Hospitalière</summary>
-                    <p>Découverte de l’environnement administratif, appui à la gestion documentaire.</p>
-                    <time>Juillet 2022</time>
-                </details>
-            </div>
-
+            }
         </div>
     </mat-expansion-panel>
 

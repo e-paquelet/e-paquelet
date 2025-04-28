@@ -1,4 +1,4 @@
-.example-action-buttons {
+/* .example-action-buttons {
     padding-bottom: 20px;
 }
 
@@ -9,7 +9,7 @@
 
 .example-headers-align .mat-mdc-form-field+.mat-mdc-form-field {
     margin-left: 8px;
-}
+} */
 
 .expansion {
     width: 400px;
@@ -144,18 +144,6 @@
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   }
 
-  .exp-item summary {
-    font-size: 16px;
-    /* color: #007BFF; */
-    font-weight: bold;
-    cursor: pointer;
-  }
-
-  .exp-item p {
-    margin: 8px 0;
-    font-size: 14px;
-    color: #333;
-  }
 
   .exp-item time {
     font-size: 13px;
