@@ -128,3 +128,14 @@ p {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
+
+@media (max-width: 600px) {
+    .main {
+        display: none;
+    }
+
+    #presentation {
+        padding-top: 2dvh;
+        text-align: justify;
+    }
+}

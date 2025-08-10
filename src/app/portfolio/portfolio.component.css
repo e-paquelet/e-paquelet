@@ -725,3 +725,10 @@ html {
         padding: 10px;
     }
 }
+
+@media (max-width: 600px) {
+  .main {
+    display: none;
+  }
+
+}

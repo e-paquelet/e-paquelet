@@ -42,3 +42,11 @@ img {
     padding: 15px;
     padding-bottom: 0;
 }
+
+
+@media (max-width: 600px) {
+  .main {
+    display: none;
+  }
+
+}

@@ -150,3 +150,10 @@ ul {
 a {
     color: rgb(73, 73, 234);
 }
+
+@media (max-width: 600px) {
+  .main {
+    display: none;
+  }
+
+}
