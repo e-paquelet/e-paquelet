@@ -585,17 +585,32 @@ html {
 a {
     color: rgb(73, 73, 234);
 }
-/* .phoneusing {
+
+#phoneusing {
     display: none;
-} */
+}
+
+.phonetitle {
+    margin: 4 2em;
+    text-align: center;
+}
+
+.phonebar {
+    width: 5rem;
+    height: 0.25rem;
+    background-color: #2563eb;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2dvh;
+}
 
 @media (max-width: 1000px) {
-  .main {
-    display: none;
-  }
+    .main {
+        display: none;
+    }
 
-  .phoneusing {
-    position: absolute;
-  }
+    #phoneusing {
+        display: block;
+    }
 
 }
