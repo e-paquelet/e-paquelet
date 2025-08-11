@@ -25,7 +25,7 @@ export const routes: Routes = [
     { path: "contact", component: ContactComponent},
     { path: "test", component: TestComponent},
     { path: "entreprise", component: EnterpriseComponent },
-    { path: "liens-divers", component: RsComponent},
+    { path: "reseaux-professionnels", component: RsComponent},
     { path: "centre-interet", component: InterestComponent},
     { path: "card", component: CardComponent},
     { path: "autre", component: AutreComponent},

@@ -585,10 +585,17 @@ html {
 a {
     color: rgb(73, 73, 234);
 }
+/* .phoneusing {
+    display: none;
+} */
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   .main {
     display: none;
+  }
+
+  .phoneusing {
+    position: absolute;
   }
 
 }

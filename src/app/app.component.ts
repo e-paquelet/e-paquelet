@@ -12,7 +12,8 @@ import { Header2Component } from "../shared/header2/header2.component";
    
     RouterOutlet,
     FooterComponent,
-    Header2Component
+    Header2Component,
+    
 ],
     templateUrl: './app.component.html',
     styleUrl: './app.component.css'

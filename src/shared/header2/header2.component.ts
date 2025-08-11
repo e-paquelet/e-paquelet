@@ -7,7 +7,16 @@ import { MatCardModule } from '@angular/material/card';
 import { RouterLink } from '@angular/router';
 import { MatMenuModule } from '@angular/material/menu';
 
+import {CdkDrag} from '@angular/cdk/drag-drop';
 
+// import { VideoComponent } from '../../shared/video/video.component';
+
+
+
+export interface ListeMenu2 {
+  titre: string;
+  link: string;
+}
 
 export interface ListeMenu {
   titre: string;
@@ -30,6 +39,7 @@ export interface ListeRS {
     MatCardModule,
     MatButtonModule, 
     MatMenuModule,
+    CdkDrag,
   ],
   templateUrl: './header2.component.html',
   styleUrl: './header2.component.css'
@@ -82,7 +92,7 @@ export class Header2Component {
     },
     {
       titre: "Mes réseaux professionnels",
-      link: "/liens-divers",
+      link: "/reseaux-professionnels",
     },
     {
       titre: "Articles",
@@ -95,4 +105,35 @@ export class Header2Component {
 
 
   ];
+
+  ListeMenu2: ListeMenu2[] = [
+      {
+        titre: "A propos de moi",
+        link: "/accueil",
+      },
+      {
+        titre: "Mes centres d'intérêts",
+        link: "/centre-interet",
+      },
+      {
+        titre: "Mes compétences",
+        link: "/portfolio",
+      },
+  
+      {
+        titre: "Vitrine de mes projets",
+        link: "/projet-but",
+      },
+      {
+        titre: "Mes réseaux professionnels",
+        link: "/reseaux-professionnels",
+      },
+      {
+        titre: "Contact",
+        link: "/contact",
+      },
+  
+    ];
+
+    
 }
