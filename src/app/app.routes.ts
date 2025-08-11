@@ -19,7 +19,7 @@ import { Header2Component } from '../shared/header2/header2.component';
 export const routes: Routes = [
     { path: "", component: TestComponent},
     { path: "menu", component: MenuComponent},
-    { path: "accueil", component: TestComponent },
+    { path: "accueil", component: AccueilComponent },
     { path: "portfolio", component: PortfolioComponent },    
     { path: "projet-but", component: ProjetbutComponent},
     { path: "contact", component: ContactComponent},

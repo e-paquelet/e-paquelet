@@ -4,7 +4,7 @@
         <div class="nom">
             <a href="accueil" title="Acceuil" class="profil2">
                 <div class="profil">
-                   <img [src]="bgImgUrl1">
+                    <img [src]="bgImgUrl1">
                 </div>
                 <div class="texte">
                     <p> Mon Portfolio</p>
@@ -19,7 +19,7 @@
             <a [href]="element.link" target="_blank"><img [src]="element.titre"></a>
             }
         </div>
-        
+
     </div>
     <div class="colonne-mobile">
         <div class="button-open" (click)="colonne.classList.toggle('open')"></div>
@@ -27,4 +27,6 @@
     <div class="content">
         <ng-content></ng-content>
     </div>
+
+    
 </div>

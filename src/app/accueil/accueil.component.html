@@ -1,138 +1,140 @@
-<div>
-    <app-video class="main" [bgImgUrl]="bgImgUrl" titre="Bienvenue dans mon portfolio"
-        lienFleche="./accueil#presentation"></app-video>
-
-    <div class="container">
-        <!-- <div class="titre" id="presentation">
-            <p>Qui suis-je ?</p>
-        </div> -->
-        <h2 id="presentation">Qui suis-je ?</h2>
-
-        <div class="text-containter">
-            <div class="photo-container">
-                <img [src]="profil" alt="Photo de moi">
-            </div>
-            <div class="texte">
-                <p>Etienne, 20 ans, étudiant en troisième année de B.U.T Réseaux et Télécommunications, option
-                    Cybersécurité, àl'Université de Franche-Comté à Montbéliard. <br> <br>
-                    J'effectue cette dernière année de formation en alternance et je suis accueilli par le <a
-                        target="_blank" href="https://www.ain.fr" style="color: blue;"> Conseil Départemental de l'Ain
-                    </a>
-
-                    à Bourg-en-Bresse au sein de la Direction de la
-                    Transition et des Solutions Numériques (DTSN).
-                </p>
-                <h3>Mon Parcours</h3>
-                <p>J’ai obtenu le diplôme du Baccalauréat série Générale en 2022 avec la mention ASSEZ BIEN avec pour
-                    enseignements
-                    de spécialités les
-                    Mathématiques et la Physique-Chimie. J’ai également obtenu la mention section européenne (anglais).
-
-                </p>
-
-                <h3>Mes expériences professionnelles</h3>
-                <p>J’ai effectué deux vacations au sein de la Direction Départementale des Finances Publiques à
-                    Bourg-en-Bresse.
-                    :<br><br>
-                    <li> Juillet 2022 : Trésorerie Publique Hospitalière</li>
-                    <li style="text-align: left;"> Juillet 2023 : Service de la Publicité Foncière et de
-                        l'Enregistrement
-                    </li>
-                    <li>Juillet 2024 : J'ai travaillé en intérim en tant que ripeur</li>
-                    <br>
-                    J’ai également effectué un stage de 8 semaines au sein du Bureau Interministériel des Systèmes
-                    d’Information
-                    et
-                    de
-                    Communication de la
-                    Préfecture de l’Ain au printemps 2024 dans le cadre de ma deuxième année de BUT Réseaux et
-                    Télécommunications.
-                </p>
+<app-video class="main" [bgImgUrl]="bgImgUrl" titre="Bienvenue dans mon portfolio"
+    lienFleche="./test#presentation"></app-video>
 
 
-                <h3>Mon projet professionnel</h3>
-                <p>
-                    Après l’obtention du B.U.T Réseaux et Télécommunications, je souhaite continuer de me former en
-                    alternance
-                    dans une école d’ingénieur. J'aimerais ensuite travailler en tant qu’ingénieur systèmes et réseaux.
-                </p>
-                <br>
-                <h3>Mes qualités</h3>
-
-                <p>
-                    <li>Autonome</li>
-                    <li>Motivé</li>
-                    <li>Fiable</li>
-                    <li>Curieux</li>
-                    <li>Serviable</li>
-                    <li>Persévérant</li>
-                </p><br>
+<h1 id="presentation" style="text-align: center;">À propos de moi</h1>
+<div style="width: 5rem;         
+height: 0.25rem;    
+background-color: #2563eb;
+margin-left: auto;    
+margin-right: auto;"></div>
 
 
-            </div>
-        </div>
-
-        <div class="positionboutoncv">
-            <button class="bouton1" id="admin" (click)="opencv()">
-                <span class="textdownload">Téléchargez mon CV</span>
-                <img class="download" [src]="download" alt="Icône de téléchargement">
-            </button>
-        </div>
-
-        <div>
-            <h2>Témoignages</h2>
-
-            <div class="button-container">
-                <div class="positionboutongauche">
-                    <button class="bouton" id="admin" (click)="openpopup()">
-                        <img class="imagegauche" [src]="logojulien">
-                        <div class="textgauche">
-                            Julien Vadam
-                        </div>
-                    </button>
-                </div>
-                <!-- <div class="positionboutongauche">
-                    <button class="bouton" id="admin" (click)="openpopup()">
-                        <img class="imagegauche" [src]="logojulien">
-                        <div class="textgauche">
-                            Boujemaa Aoubiza
-                        </div>
-                    </button>
-                </div> -->
-            </div>
-
-        </div>
-
-        <div class="overlay1" *ngIf="show" (click)="closeoverlay($event)">
-            <div class="popup-content">
-                <div class="close-popup" (click)="closepopup()">&times;</div>
-                <div class="profil">
-                    <a target="_blank" [href]="linkedinjulien">
-                        <div style="display: flex; flex-direction: row; align-items: center;">
-                            <img class="imagegauche1" [src]="logojulien" alt="Profile Picture of Julien Vadam">
-                            <h5>Julien Vadam</h5>
-                        </div>
-                        <div class="textgauche1">
-                            <p>Étudiant de troisième année en BUT Réseaux et Télécommunications en parcours
-                                Cybersécurité à
-                                l'IUT Nord
-                                Franche-Comté de Montbéliard</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="recommendation-text">
-                    <p>
-                        "Depuis trois ans maintenant, j'ai la chance de travailler avec Etienne en classe, mais aussi
-                        lors de projets conséquents que nous avons réalisés ensemble. Etienne est une personne
-                        compétente et sérieuse dans son travail, il est toujours pleinement impliqué dans ce qu'il fait
-                        et toujours soucieux de faire de son mieux. Depuis que je le connais il n'a jamais cessé de
-                        produire du travail conséquent et toujours de bonne qualité. De plus, il aime aider les autres
-                        et leur expliquer les choses qu'ils ne comprennent pas ne lui a jamais fait peur. En bref,
-                        Etienne est une personne qualifiée techniquement, mais aussi humainement, cela a toujours été un
-                        plaisir de travailler avec lui."
-                    </p>
-                </div>
-            </div>
+<div class="agencement">
+    <div class="carre">
+        <img class="profil" [src]="profil" alt="Photo de profil">
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: x-large; text-align: center;">Etienne PAQUELET
+        </p>
+        <p style="font-family: Arial, Helvetica, sans-serif; color: #007BFF; font-size: medium; text-align: center;">
+            Technicien Systèmes en
+            alternance</p>
+        <p style="font-family: Arial, Helvetica, sans-serif; color: #003366; font-size: medium; text-align: center;">
+            Conseil Départemental de l'Ain</p>
+        <div class="image">
+            @for (element of ListeIcon; track $index) {
+            <a [href]="element.link" target="_blank"><img [src]="element.image"></a>
+            }
         </div>
     </div>
+    <div class="rectangle">
+        <h2 style="margin-left: 20px;">Qui suis-je ?</h2>
+        <p
+            style="font-family: Arial, Helvetica, sans-serif; margin: 20px;line-height: 25px; font-size: medium; text-align: justify;">
+            Etienne, 20 ans, étudiant en troisième année de B.U.T Réseaux et Télécommunications, option
+            Cybersécurité, à l'Université de Franche-Comté à Montbéliard.
+            J'effectue cette dernière année de formation en alternance et je suis accueilli par le Conseil Départemental
+            de l'Ain à Bourg-en-Bresse au sein de la Direction de la Transition et des Solutions Numériques (DTSN). </p>
+        <h2 style="margin-left: 20px;">Mes qualités</h2>
+
+        <ul style="
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 40px;
+    list-style-type: square;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    margin: 20px;
+    padding-left: 40px;
+">
+            <li>Rigoureux</li>
+            <li>Esprit d'équipe</li>
+            <li>Autonome</li>
+            <li>Fiable</li>
+            <li>Curieux</li>
+            <li>Serviable</li>
+        </ul>
+        <p (click)="opencv()" style="margin-left: 20px; color: #2563eb; cursor: pointer;">Téléchargez mon CV</p>
+    </div>
+
+</div>
+<div class="position">
+
+    <mat-expansion-panel class="expansion">
+        <mat-expansion-panel-header>
+            <mat-panel-title> Formations</mat-panel-title>
+
+        </mat-expansion-panel-header>
+        <p class="para">En cours d'obtention de mon BUT Réseaux et Télécommunications en parcours Cybersécurité.</p>
+        <div class="timeline">
+            @for (element of formation; track $index) {
+            <div class="timeline-item">
+                <details>
+                    <summary>{{element.sommaire}}</summary>
+                    <p>{{element.texte}}</p>
+                </details>
+            </div>
+            }
+        </div>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel class="expansion">
+        <mat-expansion-panel-header>
+            <mat-panel-title> Expériences professionnelles</mat-panel-title>
+
+        </mat-expansion-panel-header>
+        <div class="experience-timeline">
+            @for (element of exppro; track $index) {
+            <div class="exp-item">
+                <details>
+                    <summary>{{element.sommaire}}</summary>
+                    <p>{{element.poste}}.</p>
+                    <p>{{element.mission}}</p>
+                    <time>{{element.time}}</time>
+                </details>
+            </div>
+            }
+        </div>
+    </mat-expansion-panel>
+
+</div>
+<div class="position">
+
+    <mat-expansion-panel class="expansion">
+        <mat-expansion-panel-header>
+            <mat-panel-title> Projet professionnel</mat-panel-title>
+
+        </mat-expansion-panel-header>
+
+        <p class="para">Après l’obtention du B.U.T Réseaux et Télécommunications, je souhaite continuer de me former en
+            alternance dans une école d’ingénieur. J'aimerais ensuite travailler en tant qu’ingénieur systèmes et
+            réseaux. </p>
+    </mat-expansion-panel>
+</div>
+
+<h1 style="text-align: center;">Témoignages</h1>
+<div style="width: 5rem;         
+height: 0.25rem;    
+background-color: #2563eb;
+margin-left: auto;    
+margin-right: auto;"></div>
+<div style="margin-top: 30px;" class="position">
+    <mat-expansion-panel style="width: 500px">
+        <mat-expansion-panel-header>
+            <mat-panel-title> Julien Vadam – BUT R&T, 3ᵉ année</mat-panel-title>
+
+        </mat-expansion-panel-header>
+
+        <p style="font-style: italic;" class="para">"Depuis trois ans maintenant, j'ai la chance de travailler avec
+            Etienne en classe, mais aussi
+            lors de projets conséquents que nous avons réalisés ensemble. Etienne est une personne
+            compétente et sérieuse dans son travail, il est toujours pleinement impliqué dans ce qu'il fait
+            et toujours soucieux de faire de son mieux. Depuis que je le connais il n'a jamais cessé de
+            produire du travail conséquent et toujours de bonne qualité. De plus, il aime aider les autres
+            et leur expliquer les choses qu'ils ne comprennent pas ne lui a jamais fait peur. En bref,
+            Etienne est une personne qualifiée techniquement, mais aussi humainement, cela a toujours été un
+            plaisir de travailler avec lui."<br>
+            <br><a href="https://www.linkedin.com/in/julien-v-57ab442aa/" style="color: #2563eb;" target="_blank">Julien
+                Vadam - Etudiant de BUT R&T en 3° année</a>
+        </p>
+    </mat-expansion-panel>
 </div>

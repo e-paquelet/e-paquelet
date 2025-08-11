@@ -5,6 +5,8 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { RouterLink } from '@angular/router';
+import { MatMenuModule } from '@angular/material/menu';
+
 
 
 export interface ListeMenu {
@@ -26,6 +28,8 @@ export interface ListeRS {
     MatButtonModule,
     MatDividerModule,
     MatCardModule,
+    MatButtonModule, 
+    MatMenuModule,
   ],
   templateUrl: './header2.component.html',
   styleUrl: './header2.component.css'
@@ -64,10 +68,10 @@ export class Header2Component {
       titre: "Mes centres d'intérêts",
       link: "/centre-interet",
     },
-    {
-      titre: "Alternance",
-      link: "/entreprise",
-    },
+    // {
+    //   titre: "Alternance",
+    //   link: "/entreprise",
+    // },
     {
       titre: "Vitrine de mes compétences",
       link: "/portfolio",
