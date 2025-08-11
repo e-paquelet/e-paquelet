@@ -4,7 +4,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    
+
 }
 
 mat-form-field {
@@ -20,7 +20,7 @@ mat-form-field {
     gap: 2px;
     /* margin-top: 50px; */
     padding: 20px;
-    
+
 }
 
 .image-container {
@@ -32,12 +32,12 @@ mat-form-field {
 .image-container:hover {
     .text-overlay {
         background: rgba(0, 0, 0, 0.7);
-        color: white;        
+        color: white;
     }
 
     .text-overlay:hover {
-        background: rgba(255, 255, 255, 0.8);      
-        color: black;        
+        background: rgba(255, 255, 255, 0.8);
+        color: black;
     }
 }
 
@@ -65,7 +65,7 @@ img:hover {
     padding: 5px 10px;
     transition: all 0.5s ease-in-out;
     border-radius: 5px;
-    
+
     position: absolute;
     translate: -50% -100%;
     top: 50%;
@@ -79,9 +79,31 @@ img:hover {
 
 }
 
-@media (max-width: 1000px) {
-  .main {
-    display: none;
-  }
 
+#phoneusing {
+    display: none;
+}
+
+.phonetitle {
+    margin: 4 2em;
+    text-align: center;
+}
+
+.phonebar {
+    width: 5rem;
+    height: 0.25rem;
+    background-color: #2563eb;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2dvh;
+}
+
+@media (max-width: 1000px) {
+    .main {
+        display: none;
+    }
+
+    #phoneusing {
+        display: block;
+    }
 }
