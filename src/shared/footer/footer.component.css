@@ -1,9 +1,19 @@
-.footer {
-    width: 100vw;
-    background-color: #04206910;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 120px;
-    /* margin-top: 2em; */
+@media (min-width: 1000px) {
+
+    .footer {
+        width: 100vw;
+        background-color: #04206910;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 120px;
+        /* margin-top: 2em; */
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .footer {
+        display: none;
+    }
 }

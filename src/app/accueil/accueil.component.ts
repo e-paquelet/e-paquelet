@@ -1,7 +1,7 @@
 import { Component, viewChild, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { VideoComponent } from '../../shared/video/video.component';
-import {MatAccordion, MatExpansionModule} from '@angular/material/expansion';
+import { MatAccordion, MatExpansionModule } from '@angular/material/expansion';
 
 
 export interface ListeIcon {
@@ -24,13 +24,13 @@ export interface exppro {
 
 
 @Component({
-    selector: 'app-accueil',
-    imports: [CommonModule, VideoComponent, MatExpansionModule,],
-    templateUrl: './accueil.component.html',
-    styleUrl: './accueil.component.css'
+  selector: 'app-accueil',
+  imports: [CommonModule, VideoComponent, MatExpansionModule,],
+  templateUrl: './accueil.component.html',
+  styleUrl: './accueil.component.css'
 })
 export class AccueilComponent {
-accordion = viewChild.required(MatAccordion);
+  accordion = viewChild.required(MatAccordion);
   readonly panelOpenState = signal(false);
   bgImgUrl = "./assets/img/background2.mp4";
   profil = "./assets/img/accueil/profillogo.JPG";
@@ -89,14 +89,14 @@ accordion = viewChild.required(MatAccordion);
   ]
 
   ListeIcon: ListeIcon[] = [
-      {
-        image: this.linkedin,
-        link: this.linkedinlink,
-      },
-      {
-        image: this.github,
-        link: this.githublink,
-      }
+    {
+      image: this.linkedin,
+      link: this.linkedinlink,
+    },
+    {
+      image: this.github,
+      link: this.githublink,
+    }
   ];
 
   opencv() {
@@ -110,6 +110,16 @@ accordion = viewChild.required(MatAccordion);
     link.setAttribute('href', filePath); // Définit l'URL du fichier
     link.setAttribute('download', 'CV_PAQUELET_Etienne.pdf'); // Définit le nom du fichier téléchargé
     link.click(); // Simule un clic pour lancer le téléchargement  
+  }
+
+  isimagenlarged = false;
+
+  enlargedimage() {
+    this.isimagenlarged = true;
+  }
+
+  closeenlargedimage() {
+    this.isimagenlarged = false;
   }
 }
 

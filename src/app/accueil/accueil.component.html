@@ -3,23 +3,19 @@
 
 
 <h1 id="presentation" style="text-align: center;">À propos de moi</h1>
-<div style="width: 5rem;         
-height: 0.25rem;    
-background-color: #2563eb;
-margin-left: auto;    
-margin-right: auto;"></div>
-
+<div class="barre" style="margin-bottom: 2em;"></div>
 
 <div class="agencement">
     <div class="carre">
-        <img class="profil" [src]="profil" alt="Photo de profil">
-        <p style="font-family: Arial, Helvetica, sans-serif; font-size: x-large; text-align: center;">Etienne PAQUELET
+        <div class="positionnementprofil">
+            <img class="photoprofil" [src]="profil" alt="Photo de profil" (click)="enlargedimage()">
+        </div>
+        <p style="font-size: x-large; text-align: center;">Etienne PAQUELET
+            <br><br> <span style="color: #007BFF; font-size: medium; text-align: center;"> Alternant ingénieur systèmes
+                et Réseaux </span> <br> <br> <span
+                style="color: #003366; font-size: medium; text-align: center;">Conseil Départemental de l'Ain </span>
         </p>
-        <p style="font-family: Arial, Helvetica, sans-serif; color: #007BFF; font-size: medium; text-align: center;">
-            Technicien Systèmes en
-            alternance</p>
-        <p style="font-family: Arial, Helvetica, sans-serif; color: #003366; font-size: medium; text-align: center;">
-            Conseil Départemental de l'Ain</p>
+
         <div class="image">
             @for (element of ListeIcon; track $index) {
             <a [href]="element.link" target="_blank"><img [src]="element.image"></a>
@@ -27,25 +23,28 @@ margin-right: auto;"></div>
         </div>
     </div>
     <div class="rectangle">
-        <h2 style="margin-left: 20px;">Qui suis-je ?</h2>
-        <p
-            style="font-family: Arial, Helvetica, sans-serif; margin: 20px;line-height: 25px; font-size: medium; text-align: justify;">
-            Etienne, 20 ans, étudiant en troisième année de B.U.T Réseaux et Télécommunications, option
-            Cybersécurité, à l'Université de Franche-Comté à Montbéliard.
-            J'effectue cette dernière année de formation en alternance et je suis accueilli par le Conseil Départemental
+        <h2>Qui suis-je ?</h2>
+        <p style=" margin: 20px;line-height: 25px; font-size: medium; text-align: justify;">
+            Etienne, 21 ans, étudiant en première année de formation Ingénieur informatique et réseaux en apprentissage
+            à l'IMT Mines Alès.
+            J'effectue cette formation en alternance et je suis accueilli par le Conseil Départemental
             de l'Ain à Bourg-en-Bresse au sein de la Direction de la Transition et des Solutions Numériques (DTSN). </p>
+        <h2 class="quality">Mes qualités</h2>
+        <ul class="quality">
+            <li class="quality">Rigoureux</li>
+            <li class="quality">Esprit d'équipe</li>
+            <li class="quality">Autonome</li>
+            <li class="quality">Fiable</li>
+            <li class="quality">Curieux</li>
+            <li class="quality">Serviable</li>
+        </ul>
+        <p class="quality" (click)="opencv()" style="margin-left: 20px; color: #2563eb; cursor: pointer;">Téléchargez
+            mon CV</p>
+    </div>
+    <div class="rectangle2">
         <h2 style="margin-left: 20px;">Mes qualités</h2>
 
-        <ul style="
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px 40px;
-    list-style-type: square;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
-    margin: 20px;
-    padding-left: 40px;
-">
+        <ul>
             <li>Rigoureux</li>
             <li>Esprit d'équipe</li>
             <li>Autonome</li>
@@ -53,6 +52,7 @@ margin-right: auto;"></div>
             <li>Curieux</li>
             <li>Serviable</li>
         </ul>
+        
         <p (click)="opencv()" style="margin-left: 20px; color: #2563eb; cursor: pointer;">Téléchargez mon CV</p>
     </div>
 
@@ -96,8 +96,7 @@ margin-right: auto;"></div>
         </div>
     </mat-expansion-panel>
 
-</div>
-<div class="position">
+
 
     <mat-expansion-panel class="expansion">
         <mat-expansion-panel-header>
@@ -105,23 +104,17 @@ margin-right: auto;"></div>
 
         </mat-expansion-panel-header>
 
-        <p class="para">Après l’obtention du B.U.T Réseaux et Télécommunications, je souhaite continuer de me former en
-            alternance dans une école d’ingénieur. J'aimerais ensuite travailler en tant qu’ingénieur systèmes et
-            réseaux. </p>
+        <p class="para">Mon projet professionnel est de travailler plus tard en tant qu'ingénieur systèmes et réseaux
+            une fois mon diplôme d'ingénieur obtenu. </p>
     </mat-expansion-panel>
 </div>
 
 <h1 style="text-align: center;">Témoignages</h1>
-<div style="width: 5rem;         
-height: 0.25rem;    
-background-color: #2563eb;
-margin-left: auto;    
-margin-right: auto;"></div>
+<div class="barre"></div>
 <div style="margin-top: 30px;" class="position">
     <mat-expansion-panel style="width: 500px">
         <mat-expansion-panel-header>
             <mat-panel-title> Julien Vadam – BUT R&T, 3ᵉ année</mat-panel-title>
-
         </mat-expansion-panel-header>
 
         <p style="font-style: italic;" class="para">"Depuis trois ans maintenant, j'ai la chance de travailler avec
@@ -137,4 +130,8 @@ margin-right: auto;"></div>
                 Vadam - Etudiant de BUT R&T en 3° année</a>
         </p>
     </mat-expansion-panel>
+</div>
+
+<div class="imageenlarged-overlay" *ngIf="isimagenlarged" (click)="closeenlargedimage()">
+    <img class="photoenlarged" [src]="profil" alt="Photo de profil">
 </div>
