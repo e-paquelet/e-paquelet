@@ -1,9 +1,44 @@
+<app-video class="main" [bgImgUrl]="video" titre="Mes compétences" lienFleche="./portfolio#presentation"></app-video>
 
-<button class="dragbutton" [matMenuTriggerFor]="menu" mat-button cdkDrag>Menu</button>
+<h1 id="phoneusing" class="phonetitle">Mes compétences</h1>
+<div id="phoneusing" class="phonebar"></div>
 
-<mat-menu #menu>
-    @for (element of ListeMenu2; track $index) {
-    <button mat-menu-item [routerLink]="element.link"> {{element.titre}}</button>
-}
-    
-</mat-menu>
+
+<div id="presentation" style="padding-left: 5vw; padding-bottom: 3vw; text-align: center;">
+    Voici une synthèse de mes compétences développées au cours de ma formation, vous trouverez dans l'onglet projets
+    leur mise en œuvre
+</div>
+
+
+<div class="competence-contenant">
+    <div class="content">
+        <img [src]="windows">
+        <h2>Administrer les réseaux et l'internet</h2>
+        <div class="position-button">
+            <button class="button" (click)="togglePanel()">virtualisation</button>
+            <button class="button" (click)="togglePanel()">Administration système</button>
+            <button class="button" (click)="togglePanel()">Administration réseau</button>
+        </div>
+
+    </div>
+
+    <div class="side-panel" [@fadeSlide]="panelState">
+        <h3>Informations</h3>
+        <p>Voici le texte qui s’affiche dans le panneau.</p>
+    </div>
+    <div class="content">
+        <img [src]="windows">
+        <h2>Administrer les réseaux et l'internet</h2>
+        <div class="position-button">
+            <button class="button" (click)="togglePanel()">virtualisation</button>
+            <button class="button" (click)="togglePanel()">Administration système</button>
+            <button class="button" (click)="togglePanel()">Administration réseau</button>
+        </div>
+
+    </div>
+
+    <div class="side-panel" [@fadeSlide]="panelState">
+        <h3>Informations</h3>
+        <p>Voici le texte qui s’affiche dans le panneau.</p>
+    </div>
+</div>
