@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
@@ -6,8 +6,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { RouterLink } from '@angular/router';
 import { MatMenuModule } from '@angular/material/menu';
-
-import {CdkDrag} from '@angular/cdk/drag-drop';
+import { LanguageService } from '../../services/language.service';
+import { CdkDrag } from '@angular/cdk/drag-drop';
 
 // import { VideoComponent } from '../../shared/video/video.component';
 
@@ -15,6 +15,11 @@ import {CdkDrag} from '@angular/cdk/drag-drop';
 
 export interface ListeMenu2 {
   titre: string;
+  link: string;
+}
+
+export interface ListeFLAG {
+  action: () => void;
   link: string;
 }
 
@@ -37,7 +42,7 @@ export interface ListeRS {
     MatButtonModule,
     MatDividerModule,
     MatCardModule,
-    MatButtonModule, 
+    MatButtonModule,
     MatMenuModule,
     CdkDrag,
   ],
@@ -45,10 +50,13 @@ export interface ListeRS {
   styleUrl: './header2.component.css'
 })
 export class Header2Component {
-
+  tr = inject(LanguageService);
+  public translation = inject(LanguageService);
   bgImgUrl1 = "./assets/img/profil.JPG";
   linkedin = "./assets/img/contact/linkedin.png";
   linkedinlink = "https://www.linkedin.com/in/etienne-paquelet/";
+  flag_en = "./assets/img/autre/flag_anglais.jpg";
+  flag_fr = "./assets/img/autre/flag_france.jpg";
 
   github = "./assets/img/contact/github.png";
   githublink = "https://github.com/e-paquelet";
@@ -56,7 +64,18 @@ export class Header2Component {
   makeImgUrl(str: string): string {
     return "url('" + str + "')"
   }
-
+  get listeFLAG(): ListeFLAG[] {
+    return [
+      {
+        action: () => this.tr.changeLanguage("en"),
+        link: this.flag_en,
+      },
+      {
+        action: () => this.tr.changeLanguage("fr"),
+        link: this.flag_fr,
+      },
+    ];
+  }
   listeRS: ListeRS[] = [
     {
       titre: this.linkedin,
@@ -69,71 +88,76 @@ export class Header2Component {
 
   ];
 
-  listeMenu: ListeMenu[] = [
-    {
-      titre: "A propos de moi",
-      link: "/accueil"
-    },
-    {
-      titre: "Mes centres d'intérêts",
-      link: "/centre-interet",
-    },
-    // {
-    //   titre: "Alternance",
-    //   link: "/entreprise",
-    // },
-    {
-      titre: "Vitrine de mes compétences",
-      link: "/portfolio",
-    },
-    {
-      titre: "Vitrine de mes projets",
-      link: "/projet-but",
-    },
-    {
-      titre: "Mes réseaux professionnels",
-      link: "/reseaux-professionnels",
-    },
-    {
-      titre: "Articles",
-      link: "/autre",
-    },
-    {
-      titre: "Contacts",
-      link: "/contact",
-    },
-
-
-  ];
-
-  ListeMenu2: ListeMenu2[] = [
+  get listeMenu(): ListeMenu[] {
+    return [
       {
-        titre: "A propos de moi",
-        link: "/accueil",
+        titre: this.translation.t("HEADER2-APROPOS"),
+        link: "/accueil"
       },
       {
-        titre: "Mes centres d'intérêts",
+        titre: this.translation.translate("HEADER2-INTERET"),
         link: "/centre-interet",
       },
+      // {
+      //   titre: "Alternance",
+      //   link: "/entreprise",
+      // },
       {
-        titre: "Mes compétences",
+        titre: this.translation.translate("HEADER2-COMPETENCE"),
         link: "/portfolio",
       },
-  
       {
-        titre: "Vitrine de mes projets",
+        titre: this.translation.translate("HEADER2-PROJET"),
         link: "/projet-but",
       },
       {
-        titre: "Mes réseaux professionnels",
+        titre: this.translation.translate("HEADER2-RS"),
+        link: "/reseaux-professionnels",
+      },
+      // {
+      //   titre: "Articles",
+      //   link: "/autre",
+      // },
+      {
+        titre: this.translation.translate("HEADER2-CONTACT"),
+        link: "/contact",
+      },
+
+
+    ];
+  }
+
+  get ListeMenu2(): ListeMenu2[] {
+    return [
+      {
+        titre: this.translation.t("HEADER2-APROPOS"),
+        link: "/accueil",
+      },
+      {
+        titre: this.translation.translate("HEADER2-INTERET"),
+        link: "/centre-interet",
+      },
+      {
+        titre: this.translation.translate("HEADER2-COMPETENCE"),
+        link: "/portfolio",
+      },
+
+      {
+        titre: this.translation.translate("HEADER2-PROJET"),
+        link: "/projet-but",
+      },
+      {
+        titre: this.translation.translate("HEADER2-RS"),
         link: "/reseaux-professionnels",
       },
       {
-        titre: "Contact",
+        titre: this.translation.translate("HEADER2-CONTACT"),
         link: "/contact",
       },
-  
-    ];
 
-    
+
+    ];
+  }
+
+
 }

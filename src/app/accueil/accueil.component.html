@@ -1,8 +1,8 @@
-<app-video class="main" [bgImgUrl]="bgImgUrl" titre="Bienvenue dans mon portfolio"
+<app-video class="main" [bgImgUrl]="bgImgUrl" [titre]="translation.translate('ACCUEIL-WELCOME')"
     lienFleche="./test#presentation"></app-video>
 
 
-<h1 id="presentation" style="text-align: center;">À propos de moi</h1>
+<h1 id="presentation" style="text-align: center;">{{translation.translate("ACCUEIL-ABOUT_ME")}}</h1>
 <div class="barre" style="margin-bottom: 2em;"></div>
 
 <div class="agencement">
@@ -11,9 +11,10 @@
             <img class="photoprofil" [src]="profil" alt="Photo de profil" (click)="enlargedimage()">
         </div>
         <p style="font-size: x-large; text-align: center;">Etienne PAQUELET
-            <br><br> <span style="color: #007BFF; font-size: medium; text-align: center;"> Alternant ingénieur systèmes
-                et Réseaux </span> <br> <br> <span
-                style="color: #003366; font-size: medium; text-align: center;">Conseil Départemental de l'Ain </span>
+            <br><br> <span
+                style="color: #007BFF; font-size: medium; text-align: center;">{{translation.translate("ACCUEIL-POSTE")}}
+            </span> <br> <br> <span style="color: #003366; font-size: medium; text-align: center;">Conseil
+                Départemental de l'Ain </span>
         </p>
 
         <div class="image">
@@ -23,48 +24,55 @@
         </div>
     </div>
     <div class="rectangle">
-        <h2>Qui suis-je ?</h2>
+        <h2>{{translation.translate("ACCUEIL-WHOAMI")}}</h2>
         <p style=" margin: 20px;line-height: 25px; font-size: medium; text-align: justify;">
-            Etienne, 21 ans, étudiant en première année de formation Ingénieur informatique et réseaux en apprentissage
-            à l'IMT Mines Alès.
-            J'effectue cette formation en alternance et je suis accueilli par le Conseil Départemental
-            de l'Ain à Bourg-en-Bresse au sein de la Direction de la Transition et des Solutions Numériques (DTSN). </p>
-        <h2 class="quality">Mes qualités</h2>
+            {{translation.translate("ACCUEIL-WHOAMI_TEXT")}}</p>
+        <h2 class="quality">{{translation.translate("ACCUEIL-MY_QUALITY")}}</h2>
         <ul class="quality">
-            <li class="quality">Rigoureux</li>
-            <li class="quality">Esprit d'équipe</li>
-            <li class="quality">Autonome</li>
-            <li class="quality">Fiable</li>
-            <li class="quality">Curieux</li>
-            <li class="quality">Serviable</li>
+            <li class="quality">{{translation.translate("ACCUEIL-RIGOUREUX")}} </li>
+            <li class="quality"> {{translation.translate("ACCUEIL-TEAM_SPIRIT")}}</li>
+            <li class="quality"> {{translation.translate("ACCUEIL-AUTONOME")}}</li>
+            <li class="quality">{{translation.translate("ACCUEIL-FIABLE")}}</li>
+            <li class="quality">{{translation.translate("ACCUEIL-CURIEUX")}}</li>
+            <li class="quality">{{translation.translate("ACCUEIL-SERVIABLE")}}</li>
+            <li class="quality">{{translation.translate("ACCUEIL-MOTIVE")}}</li>
         </ul>
-        <p class="quality" (click)="opencv()" style="margin-left: 20px; color: #2563eb; cursor: pointer;">Téléchargez
-            mon CV</p>
+
+        <p class="quality" (click)="opencv()" style="margin-left: 20px; color: #2563eb; cursor: pointer;">
+            {{translation.translate("ACCUEIL-DOWNLOAD")}}</p>
+
+
     </div>
     <div class="rectangle2">
-        <h2 style="margin-left: 20px;">Mes qualités</h2>
+        <h2 style="margin-left: 20px;">{{translation.translate("ACCUEIL-MY_QUALITY")}}</h2>
 
         <ul>
-            <li>Rigoureux</li>
-            <li>Esprit d'équipe</li>
-            <li>Autonome</li>
-            <li>Fiable</li>
-            <li>Curieux</li>
-            <li>Serviable</li>
+            <li>{{translation.translate("ACCUEIL-RIGOUREUX")}}</li>
+            <li>{{translation.translate("ACCUEIL-TEAM_SPIRIT")}} </li>
+            <li>{{translation.translate("ACCUEIL-AUTONOME")}} </li>
+            <li>{{translation.translate("ACCUEIL-FIABLE")}}</li>
+            <li>{{translation.translate("ACCUEIL-CURIEUX")}}</li>
+            <li>{{translation.translate("ACCUEIL-SERVIABLE")}}</li>
+            <li>{{translation.translate("ACCUEIL-MOTIVE")}}</li>
         </ul>
-        
-        <p (click)="opencv()" style="margin-left: 20px; color: #2563eb; cursor: pointer;">Téléchargez mon CV</p>
+
+
+
+<p class="" (click)="opencv()" style="margin-left: 20px; color: #2563eb; cursor: pointer;">
+        {{translation.translate("ACCUEIL-DOWNLOAD")}}</p>
     </div>
+   
 
 </div>
 <div class="position">
 
     <mat-expansion-panel class="expansion">
         <mat-expansion-panel-header>
-            <mat-panel-title> Formations</mat-panel-title>
+            <mat-panel-title>{{translation.translate("ACCUEIL-FORMATION")}} </mat-panel-title>
 
         </mat-expansion-panel-header>
-        <p class="para">En cours d'obtention de mon BUT Réseaux et Télécommunications en parcours Cybersécurité.</p>
+        <p class="para"> {{translation.translate("ACCUEIL-FORMATION_SUB_TEXTE")}}
+        </p>
         <div class="timeline">
             @for (element of formation; track $index) {
             <div class="timeline-item">
@@ -79,7 +87,7 @@
 
     <mat-expansion-panel class="expansion">
         <mat-expansion-panel-header>
-            <mat-panel-title> Expériences professionnelles</mat-panel-title>
+            <mat-panel-title>{{this.translation.translate("ACCUEIL-EXP_PRO_TITRE")}} </mat-panel-title>
 
         </mat-expansion-panel-header>
         <div class="experience-timeline">
@@ -87,7 +95,7 @@
             <div class="exp-item">
                 <details>
                     <summary>{{element.sommaire}}</summary>
-                    <p>{{element.poste}}.</p>
+                    <p style="font-style: italic;">{{element.poste}}.</p>
                     <p>{{element.mission}}</p>
                     <time>{{element.time}}</time>
                 </details>
@@ -100,34 +108,25 @@
 
     <mat-expansion-panel class="expansion">
         <mat-expansion-panel-header>
-            <mat-panel-title> Projet professionnel</mat-panel-title>
+            <mat-panel-title> {{translation.translate("ACCUEIL-PROJETPRO_TITRE")}}</mat-panel-title>
 
         </mat-expansion-panel-header>
 
-        <p class="para">Mon projet professionnel est de travailler plus tard en tant qu'ingénieur systèmes et réseaux
-            une fois mon diplôme d'ingénieur obtenu. </p>
+        <p class="para">{{translation.translate("ACCUEIL-PROJETPRO")}} </p>
     </mat-expansion-panel>
 </div>
 
-<h1 style="text-align: center;">Témoignages</h1>
+<h1 style="text-align: center;">{{translation.translate("TEMOIGNAGE_TITRE")}} </h1>
 <div class="barre"></div>
 <div style="margin-top: 30px;" class="position">
     <mat-expansion-panel style="width: 500px">
         <mat-expansion-panel-header>
-            <mat-panel-title> Julien Vadam – BUT R&T, 3ᵉ année</mat-panel-title>
+            <mat-panel-title style="text-align: center;">{{translation.translate("TEMOIGNAGE_NAME")}}</mat-panel-title>
         </mat-expansion-panel-header>
 
-        <p style="font-style: italic;" class="para">"Depuis trois ans maintenant, j'ai la chance de travailler avec
-            Etienne en classe, mais aussi
-            lors de projets conséquents que nous avons réalisés ensemble. Etienne est une personne
-            compétente et sérieuse dans son travail, il est toujours pleinement impliqué dans ce qu'il fait
-            et toujours soucieux de faire de son mieux. Depuis que je le connais il n'a jamais cessé de
-            produire du travail conséquent et toujours de bonne qualité. De plus, il aime aider les autres
-            et leur expliquer les choses qu'ils ne comprennent pas ne lui a jamais fait peur. En bref,
-            Etienne est une personne qualifiée techniquement, mais aussi humainement, cela a toujours été un
-            plaisir de travailler avec lui."<br>
-            <br><a href="https://www.linkedin.com/in/julien-v-57ab442aa/" style="color: #2563eb;" target="_blank">Julien
-                Vadam - Etudiant de BUT R&T en 3° année</a>
+        <p style="font-style: italic;" class="para">"{{translation.translate("TEMOIGNAGE_TEXTE")}}"<br>
+            <br><a href="https://www.linkedin.com/in/julien-v-57ab442aa/" style="color: #2563eb;"
+                target="_blank">{{translation.translate("TEMOIGNAGE_SIGNATURE")}}</a>
         </p>
     </mat-expansion-panel>
 </div>

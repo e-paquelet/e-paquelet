@@ -205,7 +205,9 @@
     padding-left: 40px;
   }
 
-
+  .quality1 {
+    display: none;
+  }
 
 }
 

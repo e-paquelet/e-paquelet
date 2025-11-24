@@ -16,7 +16,7 @@
                     <img [src]="bgImgUrl1">
                 </div>
                 <div class="texte">
-                    <p> Mon Portfolio</p>
+                    <p>{{translation.translate("HEADER2-TITRE")}}</p>
                 </div>
             </a>
         </div>
@@ -28,10 +28,16 @@
             <a [href]="element.link" target="_blank"><img [src]="element.titre"></a>
             }
         </div>
+        <div style="margin-top: 50px;" class="image">
+            @for (element of listeFLAG; track $index) {
+            <img style="cursor: pointer;" (click)="element.action()" [src]="element.link">
+            }
+        </div>
 
     </div>
     <div class="colonne-mobile">
         <div class="button-open" (click)="colonne.classList.toggle('open')"></div>
+         
     </div>
     <div class="content">
         <ng-content></ng-content>
