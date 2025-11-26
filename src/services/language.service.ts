@@ -210,6 +210,70 @@ export const TRANSLATION_KEY = [
   "PORTFOLIO-CERTIF-TEXTE-DEUX",
   "PORTFOLIO-CERTIF-TEXTE-TROIS",
   "PORTFOLIO-CERTIF-TAG1",
+  "PROJETBUT-TITRE",
+  "PROJETBUT-PRESENTATION-UN",
+  "PROJETBUT-PRESENTATION-UE-UN",
+  "PROJETBUT-PRESENTATION-UE-DEUX",
+  "PROJETBUT-PRESENTATION-UE-TROIS",
+  "PROJETBUT-PRESENTATION-DEUX",
+  "PROJETBUT-CYBERSECURITE",
+  "PROJETBUT-IOT",
+  "PROJETBUT-PILPRO",
+  "PROJETBUT-PRESENTATION-TROIS",
+  "PROJETBUT-PRESENTATION-UE-QUATRE",
+  "PROJETBUT-PRESENTATION-UE-CINQ",
+  "PROJETBUT-PRESENTATION-QUATRE",
+  "PROJETBUT-PRESENTATION-CINQ",
+  "PROJETBUT-PRESENTATION-SIX",
+  "PROJETBUT-COMPTEUR-CYBER",
+  "PROJETBUT-COMPTEUR-ADMIN",
+  "PROJETBUT-COMPTEUR-DEV",
+  "PROJETBUT-COMPTEUR-TELECOM",
+  "PROJETBUT-COMPTEUR-GP",
+  "PROJETBUT-CHOIX-SPE",
+  "PROJETBUT-LABEL-BACKGROUND-TEXTE",
+  "PROJETBUT-CHOIX-LABEL-UN",
+  "PROJETBUT-CHOIX-LABEL-DEUX",
+  "PROJETBUT-CHOIX-LABEL-TROIS",
+  "PROJETBUT-CHOIX-LABEL-QUATRE",
+  "PROJETBUT-CHOIX-LABEL-CINQ",
+  "PROJETBUT-TITRE-SAE301",
+  "PROJETBUT-DESCRIPTION-SAE301",
+  "PROJETBUT-TITRE-SAE302",
+  "PROJETBUT-DESCRIPTION-SAE302",
+  "PROJETBUT-TITRE-SAE303",
+  "PROJETBUT-DESCRIPTION-SAE303",
+  "PROJETBUT-TITRE-SAE501",
+  "PROJETBUT-DESCRIPTION-SAE501",
+  "PROJETBUT-TITRE-SAE4-CYB-01",
+  "PROJETBUT-DESCRIPTION-SAE4-CYB-01",
+  "PROJETBUT-TITRE-SAE5-CYB-03",
+  "PROJETBUT-DESCRIPTION-SAE5-CYB-03",
+  "PROJETBUT-TITRE-SAE502",
+  "PROJETBUT-DESCRIPTION-SAE502",
+  "PROJETBUT-TITRE-SAE301-ATTACHE",
+  "PROJETBUT-TITRE-SAE302-ATTACHE",
+  "PROJETBUT-TITRE-SAE303-ATTACHE",
+  "PROJETBUT-TITRE-SAE501-ATTACHE",
+  "PROJETBUT-TITRE-SAE501-ATTACHE",
+  "PROJETBUT-TITRE-SAE4-CYB-01-ATTACHE",
+  "PROJETBUT-TITRE-SAE5-CYB-03-ATTACHE",
+  "PROJETBUT-TITRE-SAE502-ATTACHE",
+  "PROJETBUT-TAG-SECURISER",
+  "PROJETBUT-TAG-ADMIN",
+  "PROJETBUT-TAG-SURVEILLER",
+  "PROJETBUT-TAG-SYSTEM-INFO",
+  "PROJETBUT-TAG-CREER-OUTIL",
+  "PROJETBUT-TAG-PILOT",
+  "PROJETBUT-TAG-HOP",
+  "PROJETBUT-TAG-CONNECTER",
+  "PROJETBUT-TAG-TRANS",
+  "PROJETBUT-TAG-TELE",
+  "PROJETBUT-TAG-SYS-AN",
+  "PROJETBUT-TAG-APP",
+  "PROJETBUT-TAG-MAIL",
+  "BTN-CLOSE",
+
 
 ] as const;
 
@@ -547,50 +611,50 @@ export class LanguageService {
     //compétence 3 : Programmer
     //titre
     this.translation_fr.set("PORTFOLIO-TITRE-COMPETENCE-TROIS", this.portfolio_titre_competence_trois_fr);
-    this.translation_en.set("PORTFOLIO-TITRE-COMPETENCE-TROIS",this.portfolio_titre_competence_trois_en);
+    this.translation_en.set("PORTFOLIO-TITRE-COMPETENCE-TROIS", this.portfolio_titre_competence_trois_en);
     //colonne tag
-    this.translation_fr.set("PORTFOLIO-COMPETENCE-TROIS-TAG1",this.portfolio_competence_trois_tag1_fr);
-    this.translation_en.set("PORTFOLIO-COMPETENCE-TROIS-TAG1",this.portfolio_competence_trois_tag1_en);
-    this.translation_fr.set("PORTFOLIO-COMPETENCE-TROIS-TAG2",this.portfolio_competence_trois_tag2_fr);
-    this.translation_en.set("PORTFOLIO-COMPETENCE-TROIS-TAG2",this.portfolio_competence_trois_tag2_en);
-    this.translation_fr.set("PORTFOLIO-COMPETENCE-TROIS-TAG3",this.portfolio_competence_trois_tag3_fr);
-    this.translation_en.set("PORTFOLIO-COMPETENCE-TROIS-TAG3",this.portfolio_competence_trois_tag3_en);
-    this.translation_fr.set("PORTFOLIO-COMPETENCE-TROIS-TAG4",this.portfolio_competence_trois_tag4_fr);
-    this.translation_en.set("PORTFOLIO-COMPETENCE-TROIS-TAG4",this.portfolio_competence_trois_tag4_en);
+    this.translation_fr.set("PORTFOLIO-COMPETENCE-TROIS-TAG1", this.portfolio_competence_trois_tag1_fr);
+    this.translation_en.set("PORTFOLIO-COMPETENCE-TROIS-TAG1", this.portfolio_competence_trois_tag1_en);
+    this.translation_fr.set("PORTFOLIO-COMPETENCE-TROIS-TAG2", this.portfolio_competence_trois_tag2_fr);
+    this.translation_en.set("PORTFOLIO-COMPETENCE-TROIS-TAG2", this.portfolio_competence_trois_tag2_en);
+    this.translation_fr.set("PORTFOLIO-COMPETENCE-TROIS-TAG3", this.portfolio_competence_trois_tag3_fr);
+    this.translation_en.set("PORTFOLIO-COMPETENCE-TROIS-TAG3", this.portfolio_competence_trois_tag3_en);
+    this.translation_fr.set("PORTFOLIO-COMPETENCE-TROIS-TAG4", this.portfolio_competence_trois_tag4_fr);
+    this.translation_en.set("PORTFOLIO-COMPETENCE-TROIS-TAG4", this.portfolio_competence_trois_tag4_en);
     //titre première sous partie
-    this.translation_fr.set("PORTFOLIO-TITRE-COMPETENCE-TROIS-SOUS-COMPETENCE-UN",this.portfolio_titre_competence_trois_sous_competence_un_fr);
-    this.translation_en.set("PORTFOLIO-TITRE-COMPETENCE-TROIS-SOUS-COMPETENCE-UN",this.portfolio_titre_competence_trois_sous_competence_un_en);
-    
+    this.translation_fr.set("PORTFOLIO-TITRE-COMPETENCE-TROIS-SOUS-COMPETENCE-UN", this.portfolio_titre_competence_trois_sous_competence_un_fr);
+    this.translation_en.set("PORTFOLIO-TITRE-COMPETENCE-TROIS-SOUS-COMPETENCE-UN", this.portfolio_titre_competence_trois_sous_competence_un_en);
+
     //colonne gauche première sous partie
-    this.translation_fr.set("PORTFOLIO-TITRE-UN-COMPETENCE-TROIS-SOUS-COMPETENCE-UN",this.portfolio_titre_un_competence_trois_sous_competence_un_fr);
-    this.translation_en.set("PORTFOLIO-TITRE-UN-COMPETENCE-TROIS-SOUS-COMPETENCE-UN",this.portfolio_titre_un_competence_trois_sous_competence_un_en);
-    this.translation_fr.set("PORTFOLIO-TITRE-DEUX-COMPETENCE-TROIS-SOUS-COMPETENCE-UN",this.portfolio_titre_deux_competence_trois_sous_competence_un_fr);
-    this.translation_en.set("PORTFOLIO-TITRE-DEUX-COMPETENCE-TROIS-SOUS-COMPETENCE-UN",this.portfolio_titre_deux_competence_trois_sous_competence_un_en);
-    this.translation_fr.set("PORTFOLIO-TITRE-TROIS-COMPETENCE-TROIS-SOUS-COMPETENCE-UN",this.portfolio_titre_trois_competence_trois_sous_competence_un_fr);
-    this.translation_en.set("PORTFOLIO-TITRE-TROIS-COMPETENCE-TROIS-SOUS-COMPETENCE-UN",this.portfolio_titre_trois_competence_trois_sous_competence_un_en);
-    this.translation_fr.set("PORTFOLIO-TITRE-QUATRE-COMPETENCE-TROIS-SOUS-COMPETENCE-UN",this.portfolio_titre_quatre_competence_trois_sous_competence_un_fr);
-    this.translation_en.set("PORTFOLIO-TITRE-QUATRE-COMPETENCE-TROIS-SOUS-COMPETENCE-UN",this.portfolio_titre_quatre_competence_trois_sous_competence_un_en);
+    this.translation_fr.set("PORTFOLIO-TITRE-UN-COMPETENCE-TROIS-SOUS-COMPETENCE-UN", this.portfolio_titre_un_competence_trois_sous_competence_un_fr);
+    this.translation_en.set("PORTFOLIO-TITRE-UN-COMPETENCE-TROIS-SOUS-COMPETENCE-UN", this.portfolio_titre_un_competence_trois_sous_competence_un_en);
+    this.translation_fr.set("PORTFOLIO-TITRE-DEUX-COMPETENCE-TROIS-SOUS-COMPETENCE-UN", this.portfolio_titre_deux_competence_trois_sous_competence_un_fr);
+    this.translation_en.set("PORTFOLIO-TITRE-DEUX-COMPETENCE-TROIS-SOUS-COMPETENCE-UN", this.portfolio_titre_deux_competence_trois_sous_competence_un_en);
+    this.translation_fr.set("PORTFOLIO-TITRE-TROIS-COMPETENCE-TROIS-SOUS-COMPETENCE-UN", this.portfolio_titre_trois_competence_trois_sous_competence_un_fr);
+    this.translation_en.set("PORTFOLIO-TITRE-TROIS-COMPETENCE-TROIS-SOUS-COMPETENCE-UN", this.portfolio_titre_trois_competence_trois_sous_competence_un_en);
+    this.translation_fr.set("PORTFOLIO-TITRE-QUATRE-COMPETENCE-TROIS-SOUS-COMPETENCE-UN", this.portfolio_titre_quatre_competence_trois_sous_competence_un_fr);
+    this.translation_en.set("PORTFOLIO-TITRE-QUATRE-COMPETENCE-TROIS-SOUS-COMPETENCE-UN", this.portfolio_titre_quatre_competence_trois_sous_competence_un_en);
     //colonne droite première sous partie
-    this.translation_fr.set("PORTFOLIO-TEXTE-UN-COMPETENCE-TROIS-SOUS-COMPETENCE-UN",this.portfolio_texte_un_competence_trois_sous_competence_un_fr);
-    this.translation_en.set("PORTFOLIO-TEXTE-UN-COMPETENCE-TROIS-SOUS-COMPETENCE-UN",this.portfolio_texte_un_competence_trois_sous_competence_un_en);
-    this.translation_fr.set("PORTFOLIO-TEXTE-DEUX-COMPETENCE-TROIS-SOUS-COMPETENCE-UN",this.portfolio_texte_deux_competence_trois_sous_competence_un_fr);
-    this.translation_en.set("PORTFOLIO-TEXTE-DEUX-COMPETENCE-TROIS-SOUS-COMPETENCE-UN",this.portfolio_texte_deux_competence_trois_sous_competence_un_en);
-    this.translation_fr.set("PORTFOLIO-TEXTE-TROIS-COMPETENCE-TROIS-SOUS-COMPETENCE-UN",this.portfolio_texte_trois_competence_trois_sous_competence_un_fr);
-    this.translation_en.set("PORTFOLIO-TEXTE-TROIS-COMPETENCE-TROIS-SOUS-COMPETENCE-UN",this.portfolio_texte_trois_competence_trois_sous_competence_un_en);
-    this.translation_fr.set("PORTFOLIO-TEXTE-QUATRE-COMPETENCE-TROIS-SOUS-COMPETENCE-UN",this.portfolio_texte_quatre_competence_trois_sous_competence_un_fr);
-    this.translation_en.set("PORTFOLIO-TEXTE-QUATRE-COMPETENCE-TROIS-SOUS-COMPETENCE-UN",this.portfolio_texte_quatre_competence_trois_sous_competence_un_en);
+    this.translation_fr.set("PORTFOLIO-TEXTE-UN-COMPETENCE-TROIS-SOUS-COMPETENCE-UN", this.portfolio_texte_un_competence_trois_sous_competence_un_fr);
+    this.translation_en.set("PORTFOLIO-TEXTE-UN-COMPETENCE-TROIS-SOUS-COMPETENCE-UN", this.portfolio_texte_un_competence_trois_sous_competence_un_en);
+    this.translation_fr.set("PORTFOLIO-TEXTE-DEUX-COMPETENCE-TROIS-SOUS-COMPETENCE-UN", this.portfolio_texte_deux_competence_trois_sous_competence_un_fr);
+    this.translation_en.set("PORTFOLIO-TEXTE-DEUX-COMPETENCE-TROIS-SOUS-COMPETENCE-UN", this.portfolio_texte_deux_competence_trois_sous_competence_un_en);
+    this.translation_fr.set("PORTFOLIO-TEXTE-TROIS-COMPETENCE-TROIS-SOUS-COMPETENCE-UN", this.portfolio_texte_trois_competence_trois_sous_competence_un_fr);
+    this.translation_en.set("PORTFOLIO-TEXTE-TROIS-COMPETENCE-TROIS-SOUS-COMPETENCE-UN", this.portfolio_texte_trois_competence_trois_sous_competence_un_en);
+    this.translation_fr.set("PORTFOLIO-TEXTE-QUATRE-COMPETENCE-TROIS-SOUS-COMPETENCE-UN", this.portfolio_texte_quatre_competence_trois_sous_competence_un_fr);
+    this.translation_en.set("PORTFOLIO-TEXTE-QUATRE-COMPETENCE-TROIS-SOUS-COMPETENCE-UN", this.portfolio_texte_quatre_competence_trois_sous_competence_un_en);
     //titre deuxième sous partie
-    this.translation_fr.set("PORTFOLIO-TITRE-COMPETENCE-TROIS-SOUS-COMPETENCE-DEUX",this.portfolio_titre_competence_trois_sous_competence_deux_fr);
-    this.translation_en.set("PORTFOLIO-TITRE-COMPETENCE-TROIS-SOUS-COMPETENCE-DEUX",this.portfolio_titre_competence_trois_sous_competence_deux_en);
+    this.translation_fr.set("PORTFOLIO-TITRE-COMPETENCE-TROIS-SOUS-COMPETENCE-DEUX", this.portfolio_titre_competence_trois_sous_competence_deux_fr);
+    this.translation_en.set("PORTFOLIO-TITRE-COMPETENCE-TROIS-SOUS-COMPETENCE-DEUX", this.portfolio_titre_competence_trois_sous_competence_deux_en);
     //colonne gauche deuxième sous partie
-    this.translation_fr.set("PORTFOLIO-TITRE-UN-COMPETENCE-TROIS-SOUS-COMPETENCE-DEUX",this.portfolio_titre_un_competence_trois_sous_competence_deux_fr);
-    this.translation_en.set("PORTFOLIO-TITRE-UN-COMPETENCE-TROIS-SOUS-COMPETENCE-DEUX",this.portfolio_titre_un_competence_trois_sous_competence_deux_en);
+    this.translation_fr.set("PORTFOLIO-TITRE-UN-COMPETENCE-TROIS-SOUS-COMPETENCE-DEUX", this.portfolio_titre_un_competence_trois_sous_competence_deux_fr);
+    this.translation_en.set("PORTFOLIO-TITRE-UN-COMPETENCE-TROIS-SOUS-COMPETENCE-DEUX", this.portfolio_titre_un_competence_trois_sous_competence_deux_en);
     //colonne droite deuxième sous partie
-    this.translation_fr.set("PORTFOLIO-TEXTE-UN-COMPETENCE-TROIS-SOUS-COMPETENCE-DEUX",this.portfolio_texte_un_competence_trois_sous_competence_deux_fr);
-    this.translation_en.set("PORTFOLIO-TEXTE-UN-COMPETENCE-TROIS-SOUS-COMPETENCE-DEUX",this.portfolio_texte_un_competence_trois_sous_competence_deux_en);
-    this.translation_fr.set("PORTFOLIO-TEXTE-DEUX-COMPETENCE-TROIS-SOUS-COMPETENCE-DEUX",this.portfolio_texte_deux_competence_trois_sous_competence_deux_fr);
-    this.translation_en.set("PORTFOLIO-TEXTE-DEUX-COMPETENCE-TROIS-SOUS-COMPETENCE-DEUX",this.portfolio_texte_deux_competence_trois_sous_competence_deux_en);
-    
+    this.translation_fr.set("PORTFOLIO-TEXTE-UN-COMPETENCE-TROIS-SOUS-COMPETENCE-DEUX", this.portfolio_texte_un_competence_trois_sous_competence_deux_fr);
+    this.translation_en.set("PORTFOLIO-TEXTE-UN-COMPETENCE-TROIS-SOUS-COMPETENCE-DEUX", this.portfolio_texte_un_competence_trois_sous_competence_deux_en);
+    this.translation_fr.set("PORTFOLIO-TEXTE-DEUX-COMPETENCE-TROIS-SOUS-COMPETENCE-DEUX", this.portfolio_texte_deux_competence_trois_sous_competence_deux_fr);
+    this.translation_en.set("PORTFOLIO-TEXTE-DEUX-COMPETENCE-TROIS-SOUS-COMPETENCE-DEUX", this.portfolio_texte_deux_competence_trois_sous_competence_deux_en);
+
     // --- Compétence Quatre sécuriser ---
     //titre
     this.translation_fr.set("PORTFOLIO-TITRE-COMPETENCE-QUATRE", this.portfolio_titre_competence_quatre_fr);
@@ -668,23 +732,144 @@ export class LanguageService {
     this.translation_en.set("PORTFOLIO-TEXTE-NEUF-COMPETENCE-CINQ-SOUS-COMPETENCE-UN", this.portfolio_texte_neuf_competence_cinq_sous_competence_un_en);
     //certification
     this.translation_fr.set("PORTFOLIO-CERTIF-TITRE", this.portfolio_certif_titre_fr);
-    this.translation_en.set("PORTFOLIO-CERTIF-TITRE",this.portfolio_certif_titre_en);
+    this.translation_en.set("PORTFOLIO-CERTIF-TITRE", this.portfolio_certif_titre_en);
     this.translation_fr.set("PORTFOLIO-CERTIF-TAG1", "CCNA");
-    this.translation_en.set("PORTFOLIO-CERTIF-TAG1","CCNA");
-    this.translation_fr.set("PORTFOLIO-CERTIF-SOUS-TITRE-UN",this.portfolio_certif_sous_titre_un_fr);
-    this.translation_en.set("PORTFOLIO-CERTIF-SOUS-TITRE-UN",this.portfolio_certif_sous_titre_un_en);
-    this.translation_fr.set("PORTFOLIO-CERTIF-SOUS-TITRE-DEUX",this.portfolio_certif_sous_titre_deux_fr);
-    this.translation_en.set("PORTFOLIO-CERTIF-SOUS-TITRE-DEUX",this.portfolio_certif_sous_titre_deux_en);
-    this.translation_fr.set("PORTFOLIO-CERTIF-SOUS-TITRE-TROIS",this.portfolio_certif_sous_titre_trois_fr);
-    this.translation_en.set("PORTFOLIO-CERTIF-SOUS-TITRE-TROIS",this.portfolio_certif_sous_titre_trois_en);
-    this.translation_fr.set("PORTFOLIO-CERTIF-TEXTE-UN",this.portfolio_certif_texte_un_fr);
-    this.translation_en.set("PORTFOLIO-CERTIF-TEXTE-UN",this.portfolio_certif_texte_un_en);
-    this.translation_fr.set("PORTFOLIO-CERTIF-TEXTE-DEUX",this.portfolio_certif_texte_deux_fr);
-    this.translation_en.set("PORTFOLIO-CERTIF-TEXTE-DEUX",this.portfolio_certif_texte_deux_en);
-    this.translation_fr.set("PORTFOLIO-CERTIF-TEXTE-TROIS",this.portfolio_certif_texte_trois_fr);
-    this.translation_en.set("PORTFOLIO-CERTIF-TEXTE-TROIS",this.portfolio_certif_texte_trois_en);
-    
-
+    this.translation_en.set("PORTFOLIO-CERTIF-TAG1", "CCNA");
+    this.translation_fr.set("PORTFOLIO-CERTIF-SOUS-TITRE-UN", this.portfolio_certif_sous_titre_un_fr);
+    this.translation_en.set("PORTFOLIO-CERTIF-SOUS-TITRE-UN", this.portfolio_certif_sous_titre_un_en);
+    this.translation_fr.set("PORTFOLIO-CERTIF-SOUS-TITRE-DEUX", this.portfolio_certif_sous_titre_deux_fr);
+    this.translation_en.set("PORTFOLIO-CERTIF-SOUS-TITRE-DEUX", this.portfolio_certif_sous_titre_deux_en);
+    this.translation_fr.set("PORTFOLIO-CERTIF-SOUS-TITRE-TROIS", this.portfolio_certif_sous_titre_trois_fr);
+    this.translation_en.set("PORTFOLIO-CERTIF-SOUS-TITRE-TROIS", this.portfolio_certif_sous_titre_trois_en);
+    this.translation_fr.set("PORTFOLIO-CERTIF-TEXTE-UN", this.portfolio_certif_texte_un_fr);
+    this.translation_en.set("PORTFOLIO-CERTIF-TEXTE-UN", this.portfolio_certif_texte_un_en);
+    this.translation_fr.set("PORTFOLIO-CERTIF-TEXTE-DEUX", this.portfolio_certif_texte_deux_fr);
+    this.translation_en.set("PORTFOLIO-CERTIF-TEXTE-DEUX", this.portfolio_certif_texte_deux_en);
+    this.translation_fr.set("PORTFOLIO-CERTIF-TEXTE-TROIS", this.portfolio_certif_texte_trois_fr);
+    this.translation_en.set("PORTFOLIO-CERTIF-TEXTE-TROIS", this.portfolio_certif_texte_trois_en);
+    //projetbut
+    this.translation_fr.set("PROJETBUT-TITRE", this.projetbut_titre_fr);
+    this.translation_en.set("PROJETBUT-TITRE", this.projetbut_titre_en);
+    this.translation_fr.set("PROJETBUT-PRESENTATION-UN", this.projetbut_presentation_un_fr);
+    this.translation_en.set("PROJETBUT-PRESENTATION-UN", this.projetbut_presentation_un_en);
+    this.translation_fr.set("PROJETBUT-PRESENTATION-UE-UN", this.projetbut_presentation_ue_un_fr);
+    this.translation_en.set("PROJETBUT-PRESENTATION-UE-UN", this.projetbut_presentation_ue_un_en);
+    this.translation_fr.set("PROJETBUT-PRESENTATION-UE-DEUX", this.projetbut_presentation_ue_deux_fr);
+    this.translation_en.set("PROJETBUT-PRESENTATION-UE-DEUX", this.projetbut_presentation_ue_deux_en);
+    this.translation_fr.set("PROJETBUT-PRESENTATION-UE-TROIS", this.projetbut_presentation_ue_trois_fr);
+    this.translation_en.set("PROJETBUT-PRESENTATION-UE-TROIS", this.projetbut_presentation_ue_trois_en);
+    this.translation_fr.set("PROJETBUT-PRESENTATION-DEUX", this.projetbut_presentation_deux_fr);
+    this.translation_en.set("PROJETBUT-PRESENTATION-DEUX", this.projetbut_presentation_deux_en);
+    this.translation_fr.set("PROJETBUT-CYBERSECURITE", this.projetbut_cybersecurite_fr);
+    this.translation_en.set("PROJETBUT-CYBERSECURITE", this.projetbut_cybersecurite_en);
+    this.translation_fr.set("PROJETBUT-IOT", this.projetbut_iot_fr);
+    this.translation_en.set("PROJETBUT-IOT", this.projetbut_iot_en);
+    this.translation_fr.set("PROJETBUT-PILPRO", this.projetbut_pilpro_fr);
+    this.translation_en.set("PROJETBUT-PILPRO", this.projetbut_pilpro_en);
+    this.translation_fr.set("PROJETBUT-PRESENTATION-TROIS", this.projet_but_presentation_trois_fr);
+    this.translation_en.set("PROJETBUT-PRESENTATION-TROIS", this.projet_but_presentation_trois_en);
+    this.translation_fr.set("PROJETBUT-PRESENTATION-UE-QUATRE", this.projetbut_presentation_ue_quatre_fr);
+    this.translation_en.set("PROJETBUT-PRESENTATION-UE-QUATRE", this.projetbut_presentation_ue_quatre_en);
+    this.translation_fr.set("PROJETBUT-PRESENTATION-UE-CINQ", this.projetbut_presentation_ue_cinq_fr);
+    this.translation_en.set("PROJETBUT-PRESENTATION-UE-CINQ", this.projetbut_presentation_ue_cinq_en);
+    this.translation_fr.set("PROJETBUT-PRESENTATION-QUATRE", this.projetbut_presentation_quatre_fr);
+    this.translation_en.set("PROJETBUT-PRESENTATION-QUATRE", this.projetbut_presentation_quatre_en);
+    this.translation_fr.set("PROJETBUT-PRESENTATION-CINQ", this.projetbut_presentation_cinq_fr),
+    this.translation_en.set("PROJETBUT-PRESENTATION-CINQ", this.projetbut_presentation_cinq_en);
+    this.translation_fr.set("PROJETBUT-PRESENTATION-SIX", this.projetbut_presentation_six_fr);
+    this.translation_en.set("PROJETBUT-PRESENTATION-SIX", this.projetbut_presentation_six_en);
+    this.translation_fr.set("PROJETBUT-COMPTEUR-CYBER", this.projetbut_compteur_cyber_fr);
+    this.translation_en.set("PROJETBUT-COMPTEUR-CYBER", this.projetbut_compteur_cyber_en);
+     this.translation_fr.set("PROJETBUT-COMPTEUR-ADMIN", this.projetbut_compteur_admin_fr);
+    this.translation_en.set("PROJETBUT-COMPTEUR-ADMIN", this.projetbut_compteur_admin_en);
+    this.translation_fr.set("PROJETBUT-COMPTEUR-DEV", this.projetbut_compteur_dev_fr);
+    this.translation_en.set("PROJETBUT-COMPTEUR-DEV", this.projetbut_compteur_dev_en);
+    this.translation_fr.set("PROJETBUT-COMPTEUR-TELECOM", this.projetbut_compteur_telecom_fr);
+    this.translation_en.set("PROJETBUT-COMPTEUR-TELECOM", this.projetbut_compteur_telecom_en);
+    this.translation_fr.set("PROJETBUT-COMPTEUR-GP", this.projetbut_compteur_gp_fr);
+    this.translation_en.set("PROJETBUT-COMPTEUR-GP", this.projetbut_compteur_gp_en);
+    this.translation_fr.set("PROJETBUT-CHOIX-SPE", this.projetbut_choix_spe_fr);
+    this.translation_en.set("PROJETBUT-CHOIX-SPE", this.projetbut_choix_spe_en);
+    this.translation_fr.set("PROJETBUT-LABEL-BACKGROUND-TEXTE", this.projetbut_label_background_texte_fr);
+    this.translation_en.set("PROJETBUT-LABEL-BACKGROUND-TEXTE", this.projetbut_label_background_texte_en);
+    this.translation_fr.set("PROJETBUT-CHOIX-LABEL-UN", this.projetbut_choix_label_un_fr);
+    this.translation_en.set("PROJETBUT-CHOIX-LABEL-UN", this.projetbut_choix_label_un_en);
+    this.translation_fr.set("PROJETBUT-CHOIX-LABEL-DEUX", this.projetbut_choix_label_deux_fr);
+    this.translation_en.set("PROJETBUT-CHOIX-LABEL-DEUX", this.projetbut_choix_label_deux_en);
+    this.translation_fr.set("PROJETBUT-CHOIX-LABEL-TROIS", this.projetbut_choix_label_trois_fr);
+    this.translation_en.set("PROJETBUT-CHOIX-LABEL-TROIS", this.projetbut_choix_label_trois_en);
+    this.translation_fr.set("PROJETBUT-CHOIX-LABEL-QUATRE", this.projetbut_choix_label_quatre_fr);
+    this.translation_en.set("PROJETBUT-CHOIX-LABEL-QUATRE", this.projetbut_choix_label_quatre_en);
+    this.translation_fr.set("PROJETBUT-CHOIX-LABEL-CINQ", this.projetbut_choix_label_cinq_fr);
+    this.translation_en.set("PROJETBUT-CHOIX-LABEL-CINQ", this.projetbut_choix_label_cinq_en);
+    this.translation_fr.set("PROJETBUT-TITRE-SAE301", this.projetbut_titre_sae301_fr);
+    this.translation_en.set("PROJETBUT-TITRE-SAE301", this.projetbut_titre_sae301_en);
+    this.translation_fr.set("PROJETBUT-DESCRIPTION-SAE301", this.projetbut_description_sae301_fr);
+    this.translation_en.set("PROJETBUT-DESCRIPTION-SAE301", this.projetbut_description_sae301_en);
+    this.translation_fr.set("PROJETBUT-TITRE-SAE302", this.projetbut_titre_sae302_fr);
+    this.translation_en.set("PROJETBUT-TITRE-SAE302", this.projetbut_titre_sae302_en);
+    this.translation_fr.set("PROJETBUT-DESCRIPTION-SAE302", this.projetbut_description_sae302_fr);
+    this.translation_en.set("PROJETBUT-DESCRIPTION-SAE302", this.projetbut_description_sae302_en);
+    this.translation_fr.set("PROJETBUT-TITRE-SAE303", this.projetbut_titre_sae303_fr);
+    this.translation_en.set("PROJETBUT-TITRE-SAE303", this.projetbut_titre_sae303_en);
+    this.translation_fr.set("PROJETBUT-DESCRIPTION-SAE303", this.projetbut_description_sae303_fr);
+    this.translation_en.set("PROJETBUT-DESCRIPTION-SAE303", this.projetbut_description_sae303_en);
+    this.translation_fr.set("PROJETBUT-TITRE-SAE501", this.projetbut_titre_sae501_fr);
+    this.translation_en.set("PROJETBUT-TITRE-SAE501", this.projetbut_titre_sae501_en);
+    this.translation_fr.set("PROJETBUT-DESCRIPTION-SAE501", this.projetbut_description_sae501_fr);
+    this.translation_en.set("PROJETBUT-DESCRIPTION-SAE501", this.projetbut_description_sae501_en);
+    this.translation_fr.set("PROJETBUT-TITRE-SAE4-CYB-01", this.projetbut_titre_sae4_cyb_01_fr);
+    this.translation_en.set("PROJETBUT-TITRE-SAE4-CYB-01", this.projetbut_titre_sae4_cyb_01_en);
+    this.translation_fr.set("PROJETBUT-DESCRIPTION-SAE4-CYB-01", this.projetbut_description_sae4_cyb_01_fr);
+    this.translation_en.set("PROJETBUT-DESCRIPTION-SAE4-CYB-01", this.projetbut_description_sae4_cyb_01_en);
+    this.translation_fr.set("PROJETBUT-TITRE-SAE5-CYB-03", this.projetbut_titre_sae5_cyb_03_fr);
+    this.translation_en.set("PROJETBUT-TITRE-SAE5-CYB-03", this.projetbut_titre_sae5_cyb_03_en);
+    this.translation_fr.set("PROJETBUT-DESCRIPTION-SAE5-CYB-03", this.projetbut_description_sae5_cyb_03_fr);
+    this.translation_en.set("PROJETBUT-DESCRIPTION-SAE5-CYB-03", this.projetbut_description_sae5_cyb_03_en);
+    this.translation_fr.set("PROJETBUT-TITRE-SAE502", this.projetbut_titre_sae502_fr);
+    this.translation_en.set("PROJETBUT-TITRE-SAE502", this.projetbut_titre_sae502_en);
+    this.translation_fr.set("PROJETBUT-DESCRIPTION-SAE502", this.projetbut_description_sae502_fr);
+    this.translation_en.set("PROJETBUT-DESCRIPTION-SAE502", this.projetbut_description_sae502_en);
+    this.translation_fr.set("PROJETBUT-TITRE-SAE301-ATTACHE", "SAE301 - Mettre en oeuvre un système de transmission");
+    this.translation_en.set("PROJETBUT-TITRE-SAE301-ATTACHE", "SAE301 - Implementing a transmission system");
+    this.translation_fr.set("PROJETBUT-TITRE-SAE302-ATTACHE", "SAE302 - Développer des applications communicantes");
+    this.translation_en.set("PROJETBUT-TITRE-SAE302-ATTACHE", "SAE302 - Developing communicating applications");
+    this.translation_fr.set("PROJETBUT-TITRE-SAE303-ATTACHE", "SAE303 - Concevoir un réseau multi-sites sécurisé");
+    this.translation_en.set("PROJETBUT-TITRE-SAE303-ATTACHE", "SAE303 - Designing a secure multi-site network");
+    this.translation_fr.set("PROJETBUT-TITRE-SAE502-ATTACHE", "SAE502 - Piloter un projet informatique");
+    this.translation_en.set("PROJETBUT-TITRE-SAE502-ATTACHE", "SAE502 - Managing an IT project");
+    this.translation_fr.set("PROJETBUT-TITRE-SAE5-CYB-03-ATTACHE", "SAE5-CYB-03 - Sécurisation et supervision avancée");
+    this.translation_en.set("PROJETBUT-TITRE-SAE5-CYB-03-ATTACHE", "SAE5-CYB-03 - Advanced securing and monitoring");
+    this.translation_fr.set("PROJETBUT-TITRE-SAE4-CYB-01-ATTACHE", "SAE4-CYB-01 - Sécuriser un système d'information");
+    this.translation_en.set("PROJETBUT-TITRE-SAE4-CYB-01-ATTACHE", "SAE4-CYB-01 - Securing an Information System");
+    this.translation_fr.set("PROJETBUT-TAG-ADMIN", "Administrer les réseaux et les systèmes");
+    this.translation_en.set("PROJETBUT-TAG-ADMIN", "Systems and networks administrations");
+    this.translation_fr.set("PROJETBUT-TAG-SURVEILLER", "Surveiller");
+    this.translation_en.set("PROJETBUT-TAG-SURVEILLER", "Monitore");
+    this.translation_fr.set("PROJETBUT-TAG-SECURISER", "Sécuriser");
+    this.translation_en.set("PROJETBUT-TAG-SECURISER", "Secure");
+    this.translation_fr.set("PROJETBUT-TAG-CREER-OUTIL", "Créer des outils et des applications pour les R&T");
+    this.translation_en.set("PROJETBUT-TAG-CREER-OUTIL", "Web development and programming");
+    this.translation_fr.set("PROJETBUT-TAG-PILOT", "Pilotage de Projet");
+    this.translation_en.set("PROJETBUT-TAG-PILOT", "Project management");
+    this.translation_fr.set("PROJETBUT-TAG-HOP", "Hôpital de campagne");
+    this.translation_en.set("PROJETBUT-TAG-HOP", "Field hospital")
+    this.translation_fr.set("PROJETBUT-TAG-SYSTEM-INFO", "Système d'Information");
+    this.translation_en.set("PROJETBUT-TAG-SYSTEM-INFO", "Information System");
+    this.translation_fr.set("PROJETBUT-TAG-CONNECTER", "Connecter les usagers et les entreprises");
+    this.translation_en.set("PROJETBUT-TAG-CONNECTER", "Connect companies and users");
+    this.translation_fr.set("PROJETBUT-TAG-TRANS", "Transmission vidéo");
+    this.translation_en.set("PROJETBUT-TAG-TRANS", "Video transmission");
+    this.translation_fr.set("PROJETBUT-TAG-TELE", "Télécommunications");
+    this.translation_en.set("PROJETBUT-TAG-TELE", "Telecommunications");
+    this.translation_fr.set("PROJETBUT-TAG-SYS-AN", "Systèmes d'analyses de débits");
+    this.translation_en.set("PROJETBUT-TAG-SYS-AN", "Flow analysis systems");
+    this.translation_fr.set("PROJETBUT-TAG-APP", "Application de type réseau socal");
+    this.translation_en.set("PROJETBUT-TAG-APP", "Social media based application");
+    this.translation_fr.set("PROJETBUT-TAG-MAIL", "Serveur mail");
+    this.translation_en.set("PROJETBUT-TAG-MAIL", "Mail Server");
+    this.translation_fr.set("BTN-CLOSE", "Fermer");
+    this.translation_en.set("BTN-CLOSE", "Close");
     this.checkAllKeys();
   }
 
@@ -1214,6 +1399,112 @@ of the project.`;
   portfolio_certif_texte_un_en = `Introduction to Networks`;
   portfolio_certif_texte_deux_en = `Switching, Routing, Wireless Essentials`;
   portfolio_certif_texte_trois_en = `Enterprise-Networking-Security-Automation`;
+
+  projetbut_titre_fr = `Mes projets effectués en BUT`;
+  projetbut_presentation_un_fr = `La formation du BUT Réseaux et Télécommunications se dispense en 6 semestres. Pour obtenir le BUT,
+    il faut acquérir 180 ECTS en validant toutes les UEs (Unité d'Enseignement). Les deux premiers semestres
+    sont composés de 3 UEs tandis que les 4 semestres qui suivent ont, par choix de parcours, 5 UEs. Voici les 3 UEs
+    communes à tous les parcours
+    :`;
+  projetbut_presentation_ue_un_fr = `UE1 : Administrer les réseaux et internet`;
+  projetbut_presentation_ue_deux_fr = `UE2 : Connecter les entreprises et les usagers`;
+  projetbut_presentation_ue_trois_fr = `UE3 : Créer des outils et applications informatiques pour les R&T`;
+  projetbut_presentation_deux_fr = `Dès la
+    deuxième année, nous avons eu la possibilité de choisir un parcours parmi les suivants :`;
+  projetbut_cybersecurite_fr = `Cybersécurité`;
+  projetbut_iot_fr = `Internet des Objets et Mobilité (IoM)`;
+  projetbut_pilpro_fr = `Pilotage de Projet Réseaux (PilPro)`;
+  projet_but_presentation_trois_fr = `Ces parcours rajoutent 2 UEs chacuns à chaque semestre. J'ai choisi le parcours Cybersécurité et les deux
+    UEs spécifiques qui se rajoutent sont donc :`;
+  projetbut_presentation_ue_quatre_fr = `UE4 : Surveiller`;
+  projetbut_presentation_ue_cinq_fr = `UE5 : Sécuriser`;
+  projetbut_presentation_quatre_fr = `Je vais donc vous présenter quelques SAEs que j'ai effectuées durant mes deux premières années de ma
+    scolarité
+    au BUT. Une SAE, Situation d'Evaluation et d'Apprentissage, est unprojet dont le sujet englobe l'ensemble des
+    connaissances
+    reçues par les ressources enseignées dans son UE. IL y a une SAE minimum par UE. Une SAE se déroule généralement sur
+    une
+    semaine mais la durée peut varier en fonction de l'intensité et de la difficulté du projet. Pour les SAEs de
+    deuxième année,
+    elles se sont toutes déroulées sur une semaine entière.`;
+  projetbut_presentation_cinq_fr = `Pour préciser les modalités de réalisation de ces SAE, Elles se sont effectuées seules ou en groupe de 2,
+    3, 4
+    ou 5. Deux d'entre elles étaient spécialisées en cybersécurité`;
+  projetbut_presentation_six_fr = `Utilisez le bouton ci-dessous pour explorer nos projets en fonction de leur UE (catégorie). Voici les
+    catégories disponibles :`;
+  projetbut_compteur_cyber_fr = `Cybersécurité: 2 projets`;
+  projetbut_compteur_admin_fr = `Administration système et réseau : 2 projets`;
+  projetbut_compteur_dev_fr = `Développement d'application : 1 projet`;
+  projetbut_compteur_telecom_fr = `Télécommunication : 1 projet`;
+  projetbut_compteur_gp_fr = `Gestion de projet : 1 projet`;
+  projetbut_choix_spe_fr = `Choisissez une spécialité et découvrez les projets associés !`;
+  projetbut_label_background_texte_fr = `Mes projets en :`;
+  projetbut_choix_label_un_fr = `Administration système et réseau`;
+  projetbut_choix_label_deux_fr = `Cybersécurité `;
+  projetbut_choix_label_trois_fr = `Développement d'application`;
+  projetbut_choix_label_quatre_fr = `Télécommunication`;
+  projetbut_choix_label_cinq_fr = `Piloter un projet technique`;
+  projetbut_titre_sae301_fr = `SAE301`;
+  projetbut_description_sae301_fr = `Mettre en oeuvre un systèmes de transmission`;
+  projetbut_titre_sae302_fr = `SAE302`;
+  projetbut_description_sae302_fr = `Développer des applications communicantes`;
+  projetbut_titre_sae303_fr = `SAE303`;
+  projetbut_description_sae303_fr = `Concevoir un réseau multi-sites sécurisé`;
+  projetbut_titre_sae501_fr = `SAE501`;
+  projetbut_description_sae501_fr = `Concevoir une solution technique`;
+  projetbut_titre_sae4_cyb_01_fr = `SAE4-Cyber-01`;
+  projetbut_description_sae4_cyb_01_fr = `Sécuriser un système d'information`;
+  projetbut_titre_sae5_cyb_03_fr = `SAE5-Cyber-03`;
+  projetbut_description_sae5_cyb_03_fr = `Sécurisation et supervision avancée`;
+  projetbut_titre_sae502_fr = `SAE502`;
+  projetbut_description_sae502_fr = `Piloter un projet informatique`;
+  //anglais 
+  projetbut_titre_en = `Showcase of my projects`;
+  projetbut_presentation_un_en = `The Bachelor of Science (BS) in Networks and Telecommunications programme is delivered over six semesters. To obtain this BS,
+    students must acquire 180 ECTS credits by passing all teaching units (UEs). The first two semesters
+    consist of three teaching units, while the following four semesters consist of five teaching units, depending on the course chosen. Here are the three teaching units
+    common to all courses`;
+  projetbut_presentation_ue_un_en = `UE1: Network and Systems Administration`;
+  projetbut_presentation_ue_deux_en = `UE2: Connecting Companies and Users`;
+  projetbut_presentation_ue_trois_en = `UE3: Web development and programming`;
+  projetbut_presentation_deux_en = `From the second year onwards, we had the opportunity to choose a pathway among the following:`;
+  projetbut_cybersecurite_en = `Cybersecurity`;
+  projetbut_iot_en = `Internet of Things and Mobility (IoM)`;
+  projetbut_pilpro_en = `Network Project Management (PilPro)`;
+  projet_but_presentation_trois_en = `These pathways add 2 UEs each semester. I chose the Cybersecurity pathway, so the two additional specific UEs are:`;
+  projetbut_presentation_ue_quatre_en = `UE4: Monitoring`;
+  projetbut_presentation_ue_cinq_en = `UE5: Securing`;
+  projetbut_presentation_quatre_en = `I will now present some SAEs that I completed during my first two years at BUT. A SAE, Evaluation and Learning Situation, is a project whose topic covers all the knowledge taught in its UE. There is at least one SAE per UE. A SAE usually lasts one week, but the duration may vary depending on the intensity and difficulty of the project. For second-year SAEs, all of them were conducted over a full week.`;
+  projetbut_presentation_cinq_en = `To clarify the working conditions of these SAEs: they were carried out individually or in groups of 2, 3, 4, or 5. Two of them were specialised in cybersecurity.`;
+  projetbut_presentation_six_en = `Use the button below to explore our projects according to their UE (category). The available categories are:`;
+  projetbut_compteur_cyber_en = `Cybersecurity: 2 projects`;
+  projetbut_compteur_admin_en = `System and Network Administration: 2 projects`;
+  projetbut_compteur_dev_en = `Application Development: 1 project`;
+  projetbut_compteur_telecom_en = `Telecommunications: 1 project`;
+  projetbut_compteur_gp_en = `Project Management: 1 project`;
+  projetbut_choix_spe_en = `Choose a specialisation and discover the associated projects!`;
+  projetbut_label_background_texte_en = `My projects in:`;
+  projetbut_choix_label_un_en = `System and Network Administration`;
+  projetbut_choix_label_deux_en = `Cybersecurity`;
+  projetbut_choix_label_trois_en = `Application Development`;
+  projetbut_choix_label_quatre_en = `Telecommunications`;
+  projetbut_choix_label_cinq_en = `Technical Project Management`;
+  projetbut_titre_sae301_en = `SAE301`;
+  projetbut_description_sae301_en = `Implementing a Transmission System`;
+  projetbut_titre_sae302_en = `SAE302`;
+  projetbut_description_sae302_en = `Developing Communicating Applications`;
+  projetbut_titre_sae303_en = `SAE303`;
+  projetbut_description_sae303_en = `Designing a Secure Multi-Site Network`;
+  projetbut_titre_sae501_en = `SAE501`;
+  projetbut_description_sae501_en = `Designing a Technical Solution`;
+  projetbut_titre_sae4_cyb_01_en = `SAE4-Cyber-01`;
+  projetbut_description_sae4_cyb_01_en = `Securing an Information System`;
+  projetbut_titre_sae5_cyb_03_en = `SAE5-Cyber-03`;
+  projetbut_description_sae5_cyb_03_en = `Advanced Security and Monitoring`;
+  projetbut_titre_sae502_en = `SAE502`;
+  projetbut_description_sae502_en = `Managing an IT Project`;
+
+
 
 
 }

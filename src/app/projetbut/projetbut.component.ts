@@ -1,4 +1,4 @@
-import { Component, Type } from '@angular/core';
+import { Component, inject, Type } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
@@ -17,6 +17,7 @@ import { Sae503Component } from './sae503/sae503.component';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { LanguageService } from '../../services/language.service';
 
 
 @Component({
@@ -41,73 +42,74 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     styleUrl: './projetbut.component.css'
 })
 export class ProjetbutComponent {
+    public translation = inject(LanguageService);
     constructor(
         private dialog: MatDialog //on peut ouvrir un dialog sur ce composant
     ) { }
 
     openDialog(content: "sae301" | "sae302" | "sae303" | "sae401" | "sae501" | "sae502" | "sae503") {
         let compo: Type<any> = Sae301Component;
-        let titre = "SAE 301 - Mettre en oeuvre un système de transmission";
+        let titre = this.translation.translate("PROJETBUT-TITRE-SAE301-ATTACHE");
         let note = "12,5/20";
-        let tag1 = "Connecter les usagers";
-        let tag2 = "Transmission vidéos";
-        let tag3 = "Télécommunications";
-        let tag4 = "Systèmes d'analyses de débits";
+        let tag1 = this.translation.translate("PROJETBUT-TAG-CONNECTER");
+        let tag2 = this.translation.translate("PROJETBUT-TAG-TRANS");
+        let tag3 = this.translation.translate("PROJETBUT-TAG-TELE");
+        let tag4 = this.translation.translate("PROJETBUT-TAG-SYS-AN");
         switch (content) {
             default:
             case "sae301":
                 break;
             case "sae302":
                 compo = Sae302Component;
-                titre = "SAE 302 - Développer des applications communicantes";
+                titre = this.translation.translate("PROJETBUT-TITRE-SAE302-ATTACHE");
                 note = "16,25/20";
-                tag1 = "Créer des outils et applications pour les R&T ";
+                tag1 = this.translation.translate("PROJETBUT-TAG-CREER-OUTIL");
                 tag2 = "Java";
-                tag3 = "Applications de type réseau social";
+                tag3 = this.translation.translate("PROJETBUT-TAG-APP");
                 tag4 = "GUI";
                 break;
             case "sae303":
                 compo = Sae303Component;
-                titre = "SAE 303 - Concevoir un réseau multi-sites sécurisé";
+                titre = this.translation.translate("PROJETBUT-TITRE-SAE303-ATTACHE");
                 note = "14,51/20";
-                tag1 = "Administrer les systèmes et les réseaux";
+                tag1 = this.translation.translate("PROJETBUT-TAG-ADMIN");
                 tag2 = "Active Directory";
-                tag3 = "Serveur Mail";
+                tag3 = this.translation.translate("PROJETBUT-TAG-MAIL");
                 tag4 = "Windows - Linux";
                 break;
             case "sae401":
                 compo = Sae401Component;
-                titre = "SAE4-Cyber-01 - Sécuriser un système d'information";
+                titre = this.translation.translate("PROJETBUT-TITRE-SAE4-CYB-01-ATTACHE");
                 note = "16,5/20";
-                tag1 = "Sécuriser";
-                tag2 = "Surveiller";
-                tag3 = "Systèmes d'information";
+                tag1 = this.translation.translate("PROJETBUT-TAG-SECURISER");
+                tag2 = this.translation.translate("PROJETBUT-TAG-SURVEILLER");
+                tag3 = this.translation.translate("PROJETBUT-TAG-SYSTEM-INFO");
                 tag4 = "Stormshield";
                 break;
             case "sae501":
                 compo = Sae501Component;
-                titre = "SAE501 - Concevoir une solution technique";
+                titre = this.translation.translate("PROJETBUT-TITRE-SAE501-ATTACHE");
                 note = "18,06/20";
-                tag1 = "Administrer les systèmes et réseaux";
-                tag2 = "Sécuriser";
+                tag1 = this.translation.translate("PROJETBUT-TAG-ADMIN");
+                tag2 = this.translation.translate("PROJETBUT-TAG-SECURISER");
                 tag3 = "Windows/Linux";
                 tag4 = "OSPF/BGP/VRF";
                 break;
             case "sae502":
                 compo = Sae502Component;
-                titre = "SAE502 - Piloter un projet informatique";
+                titre = this.translation.translate("PROJETBUT-TITRE-SAE502-ATTACHE");
                 note = "17/20";
-                tag1 = "Administrer les systèmes et les réseaux";
-                tag2 = "Créer des outils et applications pour les R&T";
-                tag3 = "Pilotage de projet";
-                tag4 = "Hôpital de campagne";
+                tag1 = this.translation.translate("PROJETBUT-TAG-ADMIN");
+                tag2 = this.translation.translate("PROJETBUT-TAG-CREER-OUTIL");
+                tag3 = this.translation.translate("PROJETBUT-TAG-PILOT");
+                tag4 = this.translation.translate("PROJETBUT-TAG-HOP");
                 break;
             case "sae503":
                 compo = Sae503Component;
-                titre = "SAE5-Cyber-03 - Sécurisation et supervision avancée";
+                titre = this.translation.translate("PROJETBUT-TITRE-SAE5-CYB-03-ATTACHE");
                 note = "16/20";
-                tag1 = "Sécuriser";
-                tag2 = "Surveiller";
+                tag1 = this.translation.translate("PROJETBUT-TAG-SECURISER");
+                tag2 = this.translation.translate("PROJETBUT-TAG-SURVEILLER");
                 tag3 = "pfSense";
                 tag4 = "Snort";
                 break;
@@ -116,10 +118,10 @@ export class ProjetbutComponent {
         const dialodRef = this.dialog.open<DialogComponent, DialogDataType, number>(DialogComponent, {
             //on va ouvrir un dialog de type dialog container
             data: { //quand on ouvre le dialog
-                btnNotOk: "Fermer", //les données qu'on veut mettre dedans
+                btnNotOk: this.translation.translate("BTN-CLOSE"), //les données qu'on veut mettre dedans
                 title: titre, 
                 component: compo,
-                note: note, 
+                // note: note, 
                 tag1: tag1,
                 tag2: tag2,
                 tag3: tag3,

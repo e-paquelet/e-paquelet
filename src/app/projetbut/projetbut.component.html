@@ -2,12 +2,12 @@
     <h1>Mes projets effectués au BUT</h1>
 
 </div> -->
-<app-video class="main" [bgImgUrl]="bgImgUrl" titre="Mes projets effectués en BUT"
+<app-video class="main" [bgImgUrl]="bgImgUrl" [titre]="translation.translate('PROJETBUT-TITRE')"
     lienFleche="./projet-but#presentation"></app-video>
     
     <div id="presentation"></div>
 
-    <h1 id="phoneusing" class="phonetitle">Mes projets effectués en BUT</h1>
+    <h1 id="phoneusing" class="phonetitle">{{translation.translate("PROJETBUT-TITRE")}} </h1>
     <div id="phoneusing" class="phonebar"></div>
 
 
@@ -16,67 +16,49 @@
 <!-- <p> Avant de présenter les projets que j'ai effectué au cours de ma scolarité au BUT Réseaux et Télécommunications, je
     vais tout d'abord
     présenter le fonctionnement de mon BUT.</p> -->
-<p class="ue"> La formation du BUT Réseaux et Télécommunications se dispense en 6 semestres. Pour obtenir le BUT,
-    il faut acquérir 180 ECTS en validant toutes les UEs (Unité d'Enseignement). Les deux premiers semestres
-    sont composés de 3 UEs tandis que les 4 semestres qui suivent ont, par choix de parcours, 5 UEs. Voici les 3 UEs
-    communes à tous les parcours
+<p class="ue">{{translation.translate("PROJETBUT-PRESENTATION-UN")}}
     :</p>
 <ol>
-    <li>UE1 : Administrer les réseaux et internet</li>
-    <li>UE2 : Connecter les entreprises et les usagers</li>
-    <li>UE3 : Créer des outils et applications informatiques pour les R&T</li>
+    <li>{{translation.translate("PROJETBUT-PRESENTATION-UE-UN")}}</li>
+    <li>{{translation.translate("PROJETBUT-PRESENTATION-UE-DEUX")}}</li>
+    <li>{{translation.translate("PROJETBUT-PRESENTATION-UE-TROIS")}}</li>
 </ol>
 
-<p class="ue">Dès la
-    deuxième année, nous avons eu la possibilité de choisir un parcours parmi les suivants :</p>
+<p class="ue">{{translation.translate("PROJETBUT-PRESENTATION-DEUX")}}</p>
 <ol>
-    <li>Cybersécurité</li>
-    <li>Internet des Objets et Mobilité (IoM)</li>
-    <li>Pilotage de Projet Réseaux (PilPro)</li>
+    <li>{{translation.translate("PROJETBUT-CYBERSECURITE")}}</li>
+    <li>{{translation.translate("PROJETBUT-IOT")}}</li>
+    <li>{{translation.translate("PROJETBUT-PILPRO")}}</li>
 </ol>
-<p class="ue">Ces parcours rajoutent 2 UEs chacuns à chaque semestre. J'ai choisi le parcours Cybersécurité et les deux
-    UEs spécifiques qui se rajoutent sont donc : </p>
+<p class="ue">{{translation.translate("PROJETBUT-PRESENTATION-TROIS")}} </p>
 
 <ol>
-    <li>UE4 : Surveiller</li>
-    <li>UE5 : Sécuriser</li>
+    <li>{{translation.translate("PROJETBUT-PRESENTATION-UE-QUATRE")}}</li>
+    <li>{{translation.translate("PROJETBUT-PRESENTATION-UE-CINQ")}}</li>
 </ol>
 
 
-<p class="ue">Je vais donc vous présenter quelques SAEs que j'ai effectuées durant mes deux premières années de ma
-    scolarité
-    au BUT. Une SAE, Situation d'Evaluation et d'Apprentissage, est unprojet dont le sujet englobe l'ensemble des
-    connaissances
-    reçues par les ressources enseignées dans son UE. IL y a une SAE minimum par UE. Une SAE se déroule généralement sur
-    une
-    semaine mais la durée peut varier en fonction de l'intensité et de la difficulté du projet. Pour les SAEs de
-    deuxième année,
-    elles se sont toutes déroulées sur une semaine entière.
-</p>
-<p class="ue">Pour préciser les modalités de réalisation de ces SAE, Elles se sont effectuées seules ou en groupe de 2,
-    3, 4
-    ou 5. Deux d'entre elles étaient spécialisées en cybersécurité.</p>
-<p class="ue">Utilisez le bouton ci-dessous pour explorer nos projets en fonction de leur UE (catégorie). Voici les
-    catégories disponibles :</p>
+<p class="ue">{{translation.translate("PROJETBUT-PRESENTATION-QUATRE")}}
+<br> <br>{{translation.translate("PROJETBUT-PRESENTATION-CINQ")}}<br><br> {{translation.translate("PROJETBUT-PRESENTATION-SIX")}}</p>
 <ol>
-    <li>Cybersécurité: 2 projets</li>
-    <li>Administration système et réseau : 2 projets</li>
-    <li>Développement d'application : 1 projet</li>
-    <li>Télécommunication : 1 projet</li>
-    <li>Gestion de projet : 1 projet</li>
+    <li>{{translation.translate("PROJETBUT-COMPTEUR-CYBER")}}</li>
+    <li>{{translation.translate("PROJETBUT-COMPTEUR-ADMIN")}}</li>
+    <li>{{translation.translate("PROJETBUT-COMPTEUR-DEV")}}</li>
+    <li>{{translation.translate("PROJETBUT-COMPTEUR-TELECOM")}}</li>
+    <li>{{translation.translate("PROJETBUT-COMPTEUR-GP")}}</li>
 </ol>
 
-<p class="ue">Choisissez une spécialité et découvrez les projets associés !</p>
+<p class="ue">{{translation.translate("PROJETBUT-CHOIX-SPE")}}</p>
 
 <div class="bouton">
     <mat-form-field style="width: 300px;">
-        <mat-label>Mes projets en :</mat-label>
+        <mat-label>{{translation.translate("PROJETBUT-LABEL-BACKGROUND-TEXTE")}}</mat-label>
         <mat-select #fontSize id="selection" value="professionel" [(value)]="valueSelected"><mat-option id="adminsysres"
-                value="adminsysres">Administration système et réseau </mat-option>
-            <mat-option id="cybersécurité" value="cyber">Cybersécurité </mat-option>
-            <mat-option id="devapp" value="devapp">Développement d'application</mat-option>
-            <mat-option id="télécom" value="télécom">Télécommunication</mat-option>
-            <mat-option id="gp" value="gp">Piloter un projet technique</mat-option>
+                value="adminsysres">{{translation.translate("PROJETBUT-CHOIX-LABEL-UN")}} </mat-option>
+            <mat-option id="cybersécurité" value="cyber">{{translation.translate("PROJETBUT-CHOIX-LABEL-DEUX")}} </mat-option>
+            <mat-option id="devapp" value="devapp">{{translation.translate("PROJETBUT-CHOIX-LABEL-TROIS")}}</mat-option>
+            <mat-option id="télécom" value="télécom">{{translation.translate("PROJETBUT-CHOIX-LABEL-QUATRE")}}</mat-option>
+            <mat-option id="gp" value="gp">{{translation.translate("PROJETBUT-CHOIX-LABEL-CINQ")}}</mat-option>
         </mat-select>
     </mat-form-field>
 </div>
@@ -95,8 +77,8 @@
     <div class="main-container">
         <div class="container" (click)="openDialog('sae301')">
             <div class="bandeau">
-                <p>SAE301</p>
-                <p>Mettre en oeuvre un systèmes de transmission</p>
+                <p>{{translation.translate("PROJETBUT-TITRE-SAE301")}}</p>
+                <p>{{translation.translate("PROJETBUT-DESCRIPTION-SAE301")}}</p>
             </div>
         </div>
     </div>
@@ -105,8 +87,8 @@
     <div class="main-container">
         <div matTooltip="Picture designed by Freepik" class="container1" (click)="openDialog('sae302')">
             <div class="bandeau">
-                <p>SAE302</p>
-                <p>Développer des applications communicantes</p>
+                <p>{{translation.translate("PROJETBUT-TITRE-SAE302")}}</p>
+                <p>{{translation.translate("PROJETBUT-DESCRIPTION-SAE302")}}</p>
             </div>
         </div>
     </div>
@@ -117,8 +99,8 @@
         <div class="container2" (click)="openDialog('sae303')">
 
             <div class="bandeau">
-                <p>SAE303</p>
-                <p>Concevoir un réseau multi-sites sécurisé</p>
+                <p>{{translation.translate("PROJETBUT-TITRE-SAE303")}}</p>
+                <p>{{translation.translate("PROJETBUT-DESCRIPTION-SAE303")}}</p>
             </div>
 
         </div>
@@ -127,8 +109,8 @@
     <div class="main-container">
         <div class="container4" (click)="openDialog('sae501')">
             <div class="bandeau">
-                <p>SAE501</p>
-                <p>Concevoir une solution technique</p>
+                <p>{{translation.translate("PROJETBUT-TITRE-SAE501")}}</p>
+                <p>{{translation.translate("PROJETBUT-DESCRIPTION-SAE501")}}</p>
             </div>
         </div>
     </div>
@@ -139,8 +121,8 @@
     <div class="main-container">
         <div class="container3" (click)="openDialog('sae401')">
             <div class="bandeau">
-                <p>SAE4-Cyber-01</p>
-                <p>Sécuriser un système d'information</p>
+                <p>{{translation.translate("PROJETBUT-TITRE-SAE4-CYB-01")}}</p>
+                <p>{{translation.translate("PROJETBUT-DESCRIPTION-SAE4-CYB-01")}}</p>
             </div>
         </div>
     </div>
@@ -148,8 +130,8 @@
     <div class="main-container">
         <div class="container6" (click)="openDialog('sae503')">
             <div class="bandeau">
-                <p>SAE5-Cyber-03</p>
-                <p>Sécurisation et supervision avancée</p>
+                <p>{{translation.translate("PROJETBUT-TITRE-SAE5-CYB-03")}}</p>
+                <p>{{translation.translate("PROJETBUT-DESCRIPTION-SAE5-CYB-03")}}</p>
             </div>
         </div>
 
@@ -160,8 +142,8 @@
     <div class="main-container">
         <div class="container5" (click)="openDialog('sae502')">
             <div class="bandeau">
-                <p>SAE502</p>
-                <p>Piloter un projet informatique</p>
+                <p>{{translation.translate("PROJETBUT-TITRE-SAE502")}}</p>
+                <p>{{translation.translate("PROJETBUT-DESCRIPTION-SAE502")}}</p>
             </div>
         </div>
     </div>
@@ -186,547 +168,3 @@
 
 
 
-<!-- </div> -->
-<!-- <div class="positionboutoncyber">
-
-        <button class="bouton" matTooltip="Mes compétences en Administration Systèmes" (click)="openpopup()">
-            <img class="imagegauche" [src]="bgImgUrl2">
-            <div class="textgauche">
-                Administration Système
-            </div>
-        </button>
-
-
-
-    </div>
-</div> -->
-
-<!-- <div class="overlay" *ngIf="show" (click)="closeoverlay($event)">
-    <div class="popup-content">
-        <div class="close-popup" (click)="closepopup()">
-            &times;
-        </div>
-        <h3>SAE 301 - Mettre en oeuvre un système de transmission</h3>
-
-        <div class="position-texte">
-            <div class="texte3">
-                <p class="overlay1">Cette SAE concernait l'ensemble des étudiants en formation initiale et a été
-                    réalisée par groupe de 2 ou 3
-                    étudiants. Cette SAE était relié à l'UE &laquo; Connecter &raquo;. J'ai été en binôme dans cette
-                    SAE. Ce projet se décomposait en plusieurs parties : </p>
-                <div id="liste" class="overlay1">
-                    <li>Partie 1: Plateforme d'apprentissage: Raspberry pi, machine virtuelle</li>
-                    <li>Partie 2: Débit d'une source d'information</li>
-                    <li>Partie 3: Systèmes d'analyse de débit (iperf, Munin)</li>
-                    <li>Partie 4: Application: Transmission vidéo: Serveur vidéo à débit adaptatif DASH</li>
-                    <li>Partie 4: Application: Transmission sécurisée: Serveur VPN Wireguard, Openvpn</li>
-                    <li>Partie 4: Application: Transmission multimédia: Serveur NAS OMV</li>
-                </div>
-                <p class="overlay1">
-                    Les objectifs de cette SAE étaient les suivants :</p>
-                <div id="liste" class="overlay1">
-                    <li>Mesurer le débit d'une source d'information en utilisant différents outils et sur différents
-                        types de transmissions.</li>
-                    <li>Initier à la mise en place de services réseau en lien avec les transmissions
-                    </li>
-                    <li>Sensibiliser à la qualité de des transmissions
-                    </li>
-                    <li>faire des interprétations comme un technicien dans le domaine des Réseaux et Télécommunications.
-                    </li>
-                    <li>Développer notre autonomie
-                    </li>
-                </div>
-
-                <p class="overlay1">Le matériel utilisé au cours de cette SAE comprend :</p>
-                <div id="liste" class="overlay1">
-                    <li>Un Raspberry Pi 4, doté de son alimentation, d'une carte micro-SD et d'un
-                        câble Ethernet pour la mise en réseau.</li>
-                    <li>Un PC de l'IUT équipé de VirtualBox, permettant d'exécuter des machines
-                        virtuelles.</li>
-                    <li>L'un de nos propres PC, utilisé en remplacement d'un ordinateur de l'IUT qui
-                        ne prenait pas en charge les machines virtuelles faisait l’hôte de l’autre VM
-                        nécessaire.</li>
-                </div>
-                <p class="overlay1"> Voici l'infrastructure réseaux que nous avions mis en place</p>
-                <img class="archisae301" [src]="archisae301" (click)="enlargeImage1()">
-
-                <p class="overlay1">Afin d'être efficace et de ne pas perdre de temps dans la réalisation du projet,
-                    nous nous sommes répartit les tâches et j'ai été assignés aux tâches suivantes : Partie 3 : Systèmes
-                    d'analyse de débit (Iperf, Munin). J'ai également réalisé la partie 4 dédié au Serveur vidéo à
-                    débit adaptatif DASH et au Serveur VPN Wireguard et Openvpn </p>
-
-                <p class="overlay1">La première étape consistait à mettre en place l'infrastructure réseau évoquée
-                    précédemment
-                    ainsi que de rassembler des données sur les composants du Raspberry Pi tels que la carte réseau, le
-                    type du Rapsberry pi, le débit des informations... Cette partie a été réalisée par mon binôme.
-                 
-                    <br><br>Une fois les deux première parties réalisées par mon camarade, j'ai réalisé la partie 3 :
-                    Système d'analyse de débit.
-                </p>
-                <div style="text-align: center; font-weight: bold;">Partie 3 : Système d'analyse de débit : Munin</div>
-                <br>
-                <p class="overlay1">
-
-                    Le but de cette partie était d'utiliser le logiciel Munin afin de relever le débit des cartes
-                    réseaux.
-                    <br><br>Munin est un système complet de monitoring (ou métrologie) de machine. Il permet
-                    de générer une série de graphes à partir des informations envoyées par les autres
-                    machines : utilisation de la mémoire vive, « load average », utilisation du processeur,
-                    réeaux...
-                    <br><br> Une fois l'installation et la configuration réalisé, nous avons pu voir que le logiciel
-                    était
-                    fonctionnel et relevait le trafic sur la carte réseau du Raspberry-pi distant. <br><br>Voici la page
-                    web
-                    de Munin où nous avons pu relever le trafic passant par la carte réseau du Raspberry Pi
-                </p>
-
-                <img class="munin" [src]="bgImgUrl4">
-
-                <p class="overlay1">Un des problèmes que nous avons rencontré lors de l'installation de cet outil est
-                    l'intervalle de mise à jour des graphique qui était de 5 minutes. Afin de réduire ce temps, nous
-                    avons utilisé Fast Common Gateway Interface (FCGI) afin de mettre les données à jour en temps et en
-                    heure.</p>
-                <br><br>
-
-                <p class="overlay1">
-                    La deuxième partie que j'ai réalisé dans cette SAE fut la partie 4 : <br>
-                </p>
-                <div style="text-align: center; font-weight: bold;">Partie 4 : Application a une transmission
-                    multimédia :
-                    Serveur DASH</div> <br>
-                <p class="overlay1">
-                    Dans cette partie, l’objectif était de produire un résultat similaire à YouTube à propos du
-                    changement de résolution : lorsqu’on clique sur YouTube sur la résolution a 720p, la
-                    qualité vidéo change et la fluidité de celle-ci également. Nous nous sommes basé sur
-                    notre VM déjà installée avec 4 processeurs. <br><br>Afin de réaliser ceci, nous avons téléchargé 2
-                    vidéos Youtube en 1080p. Puis, nous
-                    avons utilisé l’utilitaire ffmpeg afin de segmenter ces vidéos en différents segment de
-                    différentes qualités chacun afin de pouvoir la changer plus tard. <br><br>ffmpeg est une collection
-                    de logiciels
-                    libres destinés au traitement de flux audio ou vidéo. Cette bibliothèque est utilisée par de
-                    nombreux autres logiciels ou services comme VLC, iTunes ou YouTube <br><br>
-                    Après avoir fragmenté la vidéo en trois résolutions différentes, nous avons utilisé l’utilitaire
-                    MP4Box pour créer des segments adaptés à chaque résolution. Ainsi, la vidéo peut s'ajuster
-                    automatiquement à la résolution la plus appropriée en fonction du débit disponible sur l’appareil de
-                    l'utilisateur, assurant une lecture optimisée et sans interruption.
-                </p>
-
-                <div style="text-align: center; font-weight: bold;">Partie 4 : Application a une transmission
-                    sécurisé :
-                    Serveur VPN</div> <br>
-
-                <p class="overlay1">Dans cette partie, j'ai eu la charge de mettre en place un tunnel VPN. Le principe
-                    d'un tunnel VPN
-                    est d'encapsuler des données puis de les chiffrer pour empêcher des personnes externes
-                    d'accéder aux échanges. Je n'ai mis en place qu'un seul serveur VPN : Wireguard, et
-                    j'ai commencé à configurer un deuxième serveur VPN, OpenVPN. Cependant celui-ci na pas fonctionné,
-                    surement dû à des erreurs de configurations. Le temps impartis au projet étant écoulé, je n'ai pas
-                    eu le temps de modifier la configuration pour que celui-ci soit fonctionnel. On peut voir dans la
-                    capture wireshark suivante que le ping passe à travers l'interface du VPN wireguard nouvellement
-                    créée. </p>
-
-                <img class="vpn" [src]="bgImgUrl5">
-
-                <div style="text-align: center; font-weight: bold;">Ce que j'ai appris durant ce projet</div> <br>
-                <div id="liste" class="overlay1">
-                    <li>Comment mettre en place la résolution automatique des vidéos</li>
-                    <li>Comment mettre en oeuvre un VPN</li>
-                    <li>Renforcer mon aptitude à travailler en équipe</li>
-
-                    <li>Résoudre des problèmes en totale autonomie tout en étant sous pression </li>
-                </div>
-
-                <p class="overlay1">Pour en savoir plus sur ce projet, n'hésitez pas à jeter un &oelig;il à notre
-                    rapport : <a target="_blank" [href]="cr_sae_301">cr_sae_301.pdf</a>
-                </p>
-            </div>
-        </div>
-    </div>
-</div> -->
-
-<!-- <div class="overlay" *ngIf="show1" (click)="closeoverlay($event)">
-    <div class="popup-content">
-        <div class="close-popup" (click)="closepopup1()">
-            &times;
-        </div>
-
-        <h3>SAE 302 - Développer des applications communicantes</h3>
-
-        <div class="position-texte">
-            <div class="texte3">
-                <p class="overlay1">Cette SAE concernait l'ensemble des étudiants en formation initiale et a été
-                    réalisée par groupe de 3
-                    étudiants. La SAE 302 « Développer des applications communicantes » à débuté le
-                    lundi 11 décembre 2023 et s’est terminé le 15 décembre 2023.L'objectif de se projet est le suivant :
-                </p>
-
-                <div id="liste" class="overlay1">
-                    <li>Créer une application de type "réseau social" en java utilisant des fonctions de communication
-                        pour créer un protocole applicatif au dessus de la pile TCP/IP</li>
-                </div>
-                <p class="overlay1">Pour réaliser ce projet, nous avons commencé par définir les différentes
-                    fonctionnalités que notre application devrait avoir :
-
-                </p>
-                <div id="liste" class="overlay1">
-                    <li>Inscription</li>
-                    <li>Connexion</li>
-                    <li>Demande d'amis</li>
-                    <li>Envois de message en temps réel</li>
-                </div>
-                <p class="overlay1">Il y avait également des contraintes à respecter : </p>
-                <div id="liste" class="overlay1">
-                    <li>100 utilisateurs maximum</li>
-                    <li>10 amis par utilisateur</li>
-                    <li>les messages sont stockés en RAM</li>
-                </div>
-                <p class="overlay1"> Nous avons ensuite définis les différentes tâches entre les membres du groupe et
-                    j'ai ainsi
-                    principalement réalisé les tâches
-                    suivantes : </p>
-
-                <div id="liste" class="overlay1">
-                    <li>Conception de l'architecture</li>
-                    <li>Requête inscription</li>
-                    <li>Requête connexion</li>
-
-
-                </div>
-                <p class="overlay1"> J'ai eu la tâche de définir l'architecture réseau que nous avons mis en place et
-                    l'architecture de l'application au niveau de la pile TCP/IP. J'ai ainsi choisi d'utiliser le
-                    protocole de communication UDP entre le serveur et le client pour plusieurs raisons : </p>
-                <div id="liste" class="overlay1">
-                    <li>simplicité de la syntaxe</li>
-                    <li>rapidité de l'envoi et de la réception des sockets.</li>
-                </div>
-                <p class="overlay1">Notre application (client et serveur) étant stocké sur un seul ordinateur, nous
-                    avons fait le choix de l'architecture suivante : </p>
-                <img class="archi" [src]="archi"> <br><br>
-
-                Nous avons également réalisé une vidéo de démonstration de l'application : <br><br><br>
-
-                <video class="video_sae_302" controls>
-                    <source [src]="video_sae_302" type="video/mp4" />
-                    Your browser does not support the video tag
-                </video>
-
-                <br><br><br>
-                <div style="text-align: center; font-weight: bold;">Ce que j'ai appris durant ce projet</div> <br>
-
-                <div id="liste" class="overlay1">
-                    <li>Utilisation du protocole UDP dans un cas concret</li>
-                    <li>Création d'une application sous java</li>
-                    <li>Renforcer mon aptitude à travailler en équipe</li>
-                    <li>être rigoureux dans le codage d'une application </li>
-                    <li>Résoudre des problèmes en totale autonomie tout en étant sous pression </li>
-                </div>
-                <p class="overlay1">Pour en savoir plus sur ce projet, n'hésitez pas à jeter un &oelig;il à notre
-                    rapport : <a target="_blank" [href]="cr_sae_302">cr_sae_302.pdf</a>
-                </p>
-            </div>
-        </div>
-    </div>
-
-</div> -->
-
-<!-- <div class="overlay" *ngIf="show2" (click)="closeoverlay($event)">
-    <div class="popup-content">
-        <div class="close-popup" (click)="closepopup2()">
-            &times;
-        </div>
-        <h3>SAE 303 - Concevoir un réseau multi-sites sécurisé</h3>
-
-        <div class="position-texte">
-            <div class="texte3">
-                <p class="overlay1">Cette SAE concernait l'ensemble des étudiants en formation initiale et a été
-                    réalisée par groupe de 4 ou 5 étudiants dont 2 étudiants en parcours cyber minimum. Dans notre cas,
-                    nous étions 5 et notre groupe était composé de 3 étudiants en parcours cybersécurité et 2 étudiants
-                    en parcours IoM. Cette SAE a durée 1 semaine<br> <br>L'objectif de cette SAE était de concevoir un
-                    réseau entier d'une
-                    entreprise
-                    fictive nommée Beerok, avec tous les services nécessaires à son fonctionnement. <br><br> Voici
-                    l'architecture réseau que nous devions mettre en place : </p>
-
-                <img class="archisae303" [src]="archisae303" (click)="enlargeImage()">
-                <br><br>
-                <p class="overlay1">Voici le matériel dont nous avions à disposition pour réaliser cette SAE : </p>
-
-                <div id="liste" class="overlay1">
-                    <li>3 routeurs</li>
-                    <li>3 switchs</li>
-                    <li>un hyperviseur sous proxmox dédié</li>
-                    <li>4 PCs de l'IUT</li>
-                    <li>3 téléphones</li>
-                    <li>2 bornes wifi</li>
-                    <li>1 tablette</li>
-                </div>
-
-                <p class="overlay1">L'organisation de cette SAE (Situation d'Apprentissage et d'Évaluation) s'est
-                    déroulée de la manière suivante : nous devions rendre différents jalons, qui représentaient des
-                    points d'étape, à des moments précis de la semaine. La date de chaque jalon variait en fonction de
-                    la difficulté de la tâche, et c'est surtout la durée de réalisation des jalons qui différait en
-                    conséquence. <br><br> Nous avons donc commencé par la planification et l'attribution des tâches pour
-                    lesquelles nous avons utilisé l'outil de gestion de projet Trello. Nous avons ensuite réalisé le
-                    plan d'adressage IP. </p>
-
-                    <p class="overlay1">Voici notre plan IP : <a target="_blank" [href]="adressage_ip">adressage_ip.pdf</a>
-                    </p>
-
-                <p class="overlay1">Nous avons ensuite entamé la phase de déploiement où nous avons mis en place
-                    l'infrastructure. <br>
-                    J'ai ainsi commencé par m'occuper des tâches qui m'ont été assignés : </p>
-                <div id="liste" class="overlay1">
-                    <li> Création des VM (Machines Virtuelles) sous Proxmox qui hébergeront les services. Active
-                        Directory</li>
-                    <li>Installation, préparation et configuration des serveurs Windows : Mise en place de l'adressage
-                        IP, des noms d'hôtes, en conformité avec le cahier des charges.</li>
-                </div>
-                <p class="overlay1">Ayant régulièrement travaillé sur les proxmox de l'université où ont été stocké nos
-                    serveurs de la SAE, je n'ai pas eu de problème concernant cette partie. J'ai ensuite mis en place
-                    les services demandés :
-                </p>
-                <div id="liste" class="overlay1">
-                    <li>Active Directory</li>
-                    <li>DNS</li>
-                    <li>Terminal Server</li>
-                    <li>Serveur mail</li>
-                    <li>Nextcloud</li>
-                    <li>RADIUS</li>
-                </div>
-                <p class="overlay1">La mise en place des services a été relativement rapide, à l'exception de
-                    l'installation et de la configuration du serveur NextCloud, qui ont posé plusieurs difficultés. Avec
-                    un de mes camarades, j'ai
-                    d'abord tenté de l'installer via Snap, comme recommandé dans notre documentation, mais cette méthode
-                    échouait systématiquement en cours d'installation. J'ai ensuite essayé d'installer NextCloud avec
-                    Flatpak et Flathub, mais cette fois-ci, une erreur de compatibilité est apparue : la version de PHP
-                    de notre environnement était obsolète. Flathub est une plateforme communautaire qui héberge des
-                    applications open source pour des environnements de bureau comme GNOME, KDE etc... Il permet
-                    l'installation de ces applications par l'utilitaire &laquo; flatpak &raquo;.Après plusieurs
-                    tentatives de mise à jour, j’ai constaté que
-                    notre système ne supportait pas PHP 8.1, requis pour NextCloud, et ai dû opter pour une version
-                    antérieure compatible. Par la suite, un autre problème est apparu pour l’authentification LDAP avec
-                    Active Directory : le plugin PHP requis pour cette fonctionnalité n’était pas disponible dans la
-                    version de PHP que nous utilisions. <br><br><br>A ce stade, le coeur de réseaux réalisé par un mes
-                    camarades n'était pas encore opérationnel, ce qui m'a donné l'opportunité de configurer le réseau
-                    sur les sites distants. J'ai ainsi configuré les solutions suivantes sur les équipements réseaux des
-                    sites distants : </p>
-
-                <div class="overlay1">
-                    <li>Router on a Stick (Roas)</li>
-                    <li>DHCP</li>
-                </div>
-
-                <p class="overlay1">La solution "Router on a Stick" permet d'utiliser une seule interface
-                    du switch et du routeur pour faire communiquer plusieurs VLAN. Ainsi, le réseau d’un
-                    magasin comprenant 5 VLANs, cette solution est donc idéale afin de faire communiquer ces
-                    VLANs entre eux à travers le magasin. Voici un schéma représentant la solution du Router on a Stick
-                    : </p>
-
-                <img class="roas" [src]="roas" (click)="enlargeImage2()">
-
-                <br>
-                <p class="overlay1">J'ai ensuite configuré le DHCP sur chaque routeur des sites distants afin de
-                    distribuer des adresses IP automatiquement à chaque client de chaque VLAN. <br><br>Nous avions
-                    également eu une partie réservé aux étudiants de parcours cybersécurité, dont je fais partie, où
-                    nous devions réaliser un audit de sécurité de nos réseaux.
-                    Nous avons ainsi utilisé l'outil Nessus afin d'auditer le réseau et y découvrir les différentes
-                    failles potentielles. <br><br> Voici le résultat d'un scan sur le réseau : <a target="_blank"
-                        [href]="scan_reseau">scan_reseaux.pdf</a>
-                </p>
-
-
-                <div style="text-align: center; font-weight: bold;">Ce que j'ai appris durant ce projet</div> <br>
-
-                <div class="overlay1">
-                    <li>Mettre en place un réseau informatique semi-complexe et sécurisé dans un temps restreint</li>
-                    <br>
-                    <li>Approfondir mes connaissances sur la gestion des applications critiques : En rencontrant des
-                        difficultés persistantes avec l'installation de NextCloud, j'ai dû approfondir mes recherches et
-                        tester différentes méthodes d'installation (Snap, Flatpak et APT) pour parvenir à une
-                        solution fonctionnelle. J'ai ainsi compris l'importance d'utiliser différentes méthodes
-                        d'installation
-                        d'un service et de renforcer ma capacité à adapter une méthode aux contraintes
-                        d’un système spécifique. </li> <br>
-                    <li>Résoudre des problèmes en totale autonomie tout en étant sous pression</li> <br>
-                    <li>Développer une résilience face aux problèmes techniques : La nécessité de dépasser les blocages,
-                        même en y travaillant tard dans des conditions exigeantes, m'a aidé à développer une résilience
-                        et une détermination face aux défis techniques. J'ai ainsi appris à maintenir la rigueur et la
-                        persévérance nécessaires pour résoudre des problèmes critiques dans des délais restreints. </li>
-                    <br>
-                    <li>Renforcer mon aptitude à travailler en équipe </li> <br>
-                    <li>Améliorer ma gestion de temps sous pression tout en restant solidaire : En avançant sur mes
-                        tâches tout en soutenant mes coéquipiers, j'ai acquis une meilleure maîtrise de la gestion de
-                        mon propre travail dans un espace temps réduit. Assurer l’avancement de mes missions sans
-                        retarder le groupe m'a montré l'importance de l'autonomie tout en contribuant au succès de
-                        l'équipe.</li>
-                </div>
-                <p class="overlay1">Pour en savoir plus sur ce projet, n'hésitez pas à jeter un &oelig;il à notre
-                    rapport : <a target="_blank" [href]="cr_sae_303">cr_sae_303.pdf</a>
-                </p>
-            </div>
-        </div>
-    </div>
-
-</div> -->
-
-<!-- <div class="overlay" *ngIf="show3" (click)="closeoverlay($event)">
-    <div class="popup-content">
-        <div class="close-popup" (click)="closepopup3()">
-            &times;
-        </div>
-        <h3>SAE4-Cyber-01 - Sécuriser un système d'information</h3>
-
-        <div class="position-texte">
-            <div class="texte3">
-                <p class="overlay1">Cette SAE concernait l'ensemble des étudiants en parcours cybersécurité et s'est
-                    déroulé sur 3 semaines. Cette SAE a été réalisé par groupe de 4 étudiants. Le but de ce projet était
-                    de mettre en place l'architecture suivante ainsi que de la sécuriser via différentes tâches :
-                </p>
-
-                <img class="archisae401" [src]="archisae401" (click)="enlargeImage3()">
-
-                <p class="overlay1">Comme énoncé précédemment, nous devions sécuriser cette infrastructure par la
-                    réalisation de différentes tâche :</p>
-
-                <div id="liste" class="overlay1">
-                    <li>1 : Mise en place d'une infrastructure sécurisé </li>
-                    <li>2 : Installation et configuration d'un firewall Stormshield</li>
-                    <li>3 : Installation et configuration d’un serveur HTTP/HTTPS et d’un serveur FTP/FTPS </li>
-                    <li>4 : Authentification transparente par certificat SSL</li>
-                    <li>5 : Mettre en place un IDS</li>
-                    <li>6 : Attaque sur le wifi</li>
-                    <li>7 : Utilisation de scanners de vulnérabilité</li>
-                    <li>8 : Attaque Man in the Middle</li>
-                    <li>9 : Contre-mesures pour le Man in the Middle</li>
-                    <li>10 : Supervision du réseau</li>
-                    <li>11 : Mise en place d'une architecture Single Sign On</li>
-                    <li>12 : Mise en place d'un VPN SSL pour client distant</li>
-                    <li>13 : Mise en place d'un VPN IPSEC site à site</li>
-
-                </div>
-
-                <p class="overlay1">Pour cette SAE, notre groupe s'est organisé de la manière suivante : chacun de nous
-                    a réalisé un challenge seul, et nous avons travaillé en binômes au sein du groupe pour réaliser deux
-                    autres challenges. j'ai ainsi réalisé la tâche 7 : &laquo; Utilisation de scanners de vulnérabilité
-                    &raquo; seul et j'ai réalisé les tâches 2 et 7 ( &laquo; Installation et configuration d'un firewall
-                    Stormshield &raquo; et &laquo; Authentification transparente par certificat SSL &raquo; ) en binôme
-                </p>
-
-                <div style="text-align: center; font-weight: bold;"> Tâche 2 : Installation et configuration d'un
-                    firewall Stormshield</div> <br>
-
-                <p class="overlay1">Le but de cette tâche était de configurer un firewall Stormshield. Une firewall est
-                    un équipement réseau permettant de sécuriser un réseau informatique en agissant comme un point de
-                    contrôle obligatoire
-                    entre le réseau interne et le réseau externe. Par ce positionnement dans le réseau, il peut
-                    ainsi mettre en oeuvre différents mécanismes permettant de sécuriser le réseau interne comme le
-                    filtrage, NAT, la gestion des certificats, le controle d'accès, la détection et la prévention
-                    d'intrusion, etc... <br> Mon binôme et moi avons mis en place une politique de filtrage et de NAT.
-                    Le NAT est un
-                    mécanisme qui permet de remplacer une adresse IP interne par l'adresse IP publique du pare-feu ou du
-                    routeur. Nous avons également effectué une translation au niveau des ports, appelée PAT. Concernant
-                    la politique de filtrage mise en place, nous avons interdit tout accès au réseau interne depuis
-                    l'extérieur et avons seulement autorisé les connexions entrantes sur les ports web (HTTP puis HTTPS)
-                    et le port FTP (21).
-                </p>
-
-                <p class="overlay1">Pour en savoir plus sur cette tâche, n'hésitez pas à jeter un &oelig;il à notre
-                    rapport : <a target="_blank" [href]="cr_sae401_tache_2">cr_sae401_tache_2.pdf</a>
-                </p>
-
-                <div style="text-align: center; font-weight: bold;"> Tâche 4 : Authentification transparente par
-                    certificat SSL</div> <br>
-
-                <p class="overlay1">L'objectif de cette tâche était de configurer une authentification transparente par
-                    certificat SSL. Cette méthode repose sur l'utilisation de certificats numériques pour authentifier
-                    les utilisateurs de manière automatique, sans nécessiter la saisie de mot de passe. Le certificat
-                    est alors installé sur le PC de l'utilisateur et il est validé par l'instance qui a émis le
-                    certificat, donnant alors une autorisation d'accéder aux ressources du réseau. Nous avons donc
-                    configuré une autorité de certification racine (CA root) ainsi qu'un annuaire LDAP. Nous avons
-                    également mis à jour la politique de filtrage afin de définir une règle d'authentification réseau
-                    pour que les utilisateurs non authentifiés soient redirigés vers un portail captif.
-                </p>
-                <p class="overlay1">Pour en savoir plus sur cette tâche, n'hésitez pas à jeter un &oelig;il à notre
-                    rapport : <a target="_blank" [href]="cr_sae401_tache_4">cr_sae401_tache_4.pdf</a>
-                </p>
-
-                <p class="overlay1">La troisième tâche consistait à analyser les vulnérabilités du système
-                    d'information. J'ai effectué cette tâche seul. Une vulnérabilité dans un système d'information est
-                    une faille permettant à un attaquant de l'exploiter dans un but malveillant. Je devais réaliser un
-                    scan depuis le réseau interne puis depuis le réseau externe afin de comparer les différences entre
-                    les scans. À cette fin, j'ai utilisé différents scanners, chacun spécialisé dans la détection d'un
-                    type de faille spécifique. Les scanners que j'ai utilisés sont les suivants :
-                </p>
-
-                <div id="liste" class="overlay1">
-                    <li>Nikto : Recherche de faille web</li>
-                    <li>Nuclei : Recherche de faille web mais également les failles de l'hôte</li>
-                    <li>Codename SCNR : Scan détaillé de l'hôte ciblé</li>
-                    <li>Legion : Scan les services et les ports des hôtes</li>
-
-                </div>
-
-                <p class="overlay1">Une fois les scans effectués, j'ai pu comparer les résultats entre ceux réalisés
-                    depuis le réseau externe et ceux effectués depuis le réseau interne. J'ai ainsi pu émettre les
-                    raisons pour lesquelles les scans externes ont fourni moins d'informations. Lors de la soutenance,
-                    j'ai présenté une faille que j'ai découvert via le scanner Nuclei, nommée Ghostcat (CVE-2020-1938).
-                    Le but de cette faille est d'usurper l'identité d'un serveur Apache tomcat afin de récupérer des
-                    fichiers de configurations du vrai serveur Apache tomcat ou de créer une porte dérobée en injectant
-                    du code dans les fichiers de configurations récupérés via l'AJP (Apache Jserv Protocol : protocole
-                    de communication du serveur Apache Tomcat) </p>
-
-                <p class="overlay1">Pour en savoir plus sur cette tâche, n'hésitez pas à jeter un &oelig;il à notre
-                    rapport : <a target="_blank" [href]="cr_sae401_tache_7">cr_sae401_tache_7.pdf</a>
-                </p>
-
-                <div style="text-align: center; font-weight: bold;">Ce que j'ai appris durant ce projet</div> <br>
-                <div id="liste" class="overlay1">
-                    <li>Sécuriser un système d'information</li>
-                    <li>Analyser les risques et les vulnérabilités d'un système d'information </li>
-                    <li>Travailler en autonomie</li>
-                    <li>Travailler en équipe</li>
-
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-</div> -->
-
-<!-- <div class="enlarged-image-overlay" *ngIf="isImageEnlarged" (click)="closeEnlargedImage()">
-    <img class="enlarged-image" [src]="archisae303">
-</div>
-
-<div class="enlarged-image-overlay" *ngIf="isImageEnlarged1" (click)="closeEnlargedImage()">
-    <img class="enlarged-image" [src]="archisae301">
-</div>
-
-<div class="enlarged-image-overlay" *ngIf="isImageEnlarged2" (click)="closeEnlargedImage()">
-    <img class="enlarged-image" [src]="roas">
-</div>
-
-<div class="enlarged-image-overlay" *ngIf="isImageEnlarged3" (click)="closeEnlargedImage()">
-    <img class="enlarged-image" [src]="archisae401">
-</div> -->
-
-
-<!-- <div class="overlay" *ngIf="show1" (click)="closeoverlay($event)"> structure de base d'un overlay
-    <div class="popup-content">
-        <div class="close-popup" (click)="closepopup1()">
-            &times;
-        </div>
-         <h3>SAE 302 - Développer des applications communicantes</h3>
-
-        <div class="position-texte">
-            <div class="texte3">
-                <p class="overlay1">test</p>
-            </div>
-        </div>
-    </div>
-
-</div> -->
-
-
-
-<!-- <input type="image" id="image" alt="Login" [style.background-image]="makeImgUrl(bgImgurl2)" /> -->
