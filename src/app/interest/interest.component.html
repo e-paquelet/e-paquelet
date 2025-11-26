@@ -1,18 +1,18 @@
-<app-video class="main" [bgImgUrl]="bgImgUrl" titre="Mes centres d'intérêts"
+<app-video class="main" [bgImgUrl]="bgImgUrl" [titre]="translation.translate('INTERET-TITRE')"
   lienFleche="./centre-interet#presentation"></app-video>
 
-  <h1 id="phoneusing" class="phonetitle">Mes centres d'intérêts</h1>
+  <h1 id="phoneusing" class="phonetitle">{{translation.translate("INTERET-TITRE")}} </h1>
     <div id="phoneusing" class="phonebar"></div>
 
-<p id="presentation" class="paragraphe">Afin de vous faire découvrir plus en détail mes centres d’intérêts, cette page met en lumière les activités, hobbies et domaines qui me passionnent, qu’ils soient professionnels ou personnels. </p>
+<p id="presentation" class="paragraphe">{{translation.translate("INTERET-PRESENTATION")}} </p>
 
 
 <div class="bouton">
   <mat-form-field>
-    <mat-label>Mes centres d'intérêts</mat-label>
+    <mat-label>{{translation.translate("INTERET-TITRE")}} </mat-label>
     <mat-select #fontSize id="selection" value="professionel" [(value)]="valueSelected">
-      <mat-option id="professionel" value="professionel">Professionels</mat-option>
-      <mat-option id="personnel" value="personnel">Personnels</mat-option>
+      <mat-option id="professionel" value="professionel">{{translation.translate("INTERET-MATOPTION1")}} </mat-option>
+      <mat-option id="personnel" value="personnel">{{translation.translate("INTERET-MATOPTION2")}} </mat-option>
     </mat-select>
   </mat-form-field>
 </div>

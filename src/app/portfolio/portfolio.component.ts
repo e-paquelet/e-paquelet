@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { CommonModule } from '@angular/common';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatButtonModule } from '@angular/material/button';
 import { VideoComponent } from '../../shared/video/video.component';
+import { LanguageService } from '../../services/language.service';
 
 type Button = {
   img: string,
@@ -14,16 +15,17 @@ type Button = {
 }
 
 @Component({
-    selector: 'app-portfolio',
-    imports: [MatProgressBarModule, 
-      CommonModule, 
-      MatTooltipModule,
-      MatButtonModule, 
-      VideoComponent],
-    templateUrl: './portfolio.component.html',
-    styleUrl: './portfolio.component.css'
+  selector: 'app-portfolio',
+  imports: [MatProgressBarModule,
+    CommonModule,
+    MatTooltipModule,
+    MatButtonModule,
+    VideoComponent],
+  templateUrl: './portfolio.component.html',
+  styleUrl: './portfolio.component.css'
 })
 export class PortfolioComponent {
+  public translation = inject(LanguageService);
   // bgImgUrl = "./assets/img/background.jpg";
   bgImgUrl = "./assets/img/background2.mp4";
   bgImgUrl2 = "./assets/img/competence/os.jpg";
@@ -40,53 +42,55 @@ export class PortfolioComponent {
   show3 = false;
   show4 = false;
   show5 = false;
-  show6=false;
-  show15=false;
+  show6 = false;
+  show15 = false;
 
-  buttons: Button[] = [
-    {
-      text: "Administrer les réseaux et Internet",
-      tooltip: "Mes compétences en Administration Systèmes et réseaux",
-      tags: ["Windows ", "Linux"],
-      fct: () => {this.openpopup()},
-      img: this.bgImgUrl2,
-    },
-    {
-      text: "Connecter les entreprises et usagers",
-      tooltip: "Mes compétences en Télécommunication",
-      tags: ["Wifi ", "4G", "Réseaux Fibre/cuivre", "ToiP"],
-      fct: () => {this.openpopup1()},
-      img: this.bgImgUrl3,
-    },
-    {
-      text: "Créer des outils et applications informatiques pour les R&T",
-      tooltip: "Mes compétences en programmation",
-      tags: ["Web ", "Programmation IHM", "Scripting", "Bases de données"],
-      fct: () => {this.openpopup2()},
-      img: this.bgImgUrl7,
-    },
-    {
-      text: "Sécuriser",
-      tooltip: "Mes compétences en cybersécurité",
-      tags: ["Pare-feux ", "IDS"],
-      fct: () => {this.openpopup3()},
-      img: this.bgImgUrl8,
-    },
-    {
-      text: "Surveiller",
-      tooltip: "Mes compétences en cybersécurité",
-      tags: ["Pare-feux", "IDS"],
-      fct: () => {this.openpopup4()},
-      img: this.bgImgUrl8,
-    },
-    {
-      text: "Certifications",
-      tooltip: "Mes certifications",
-      tags: ["CCNA",],
-      fct: () => {this.openpopup5()},
-      img: this.bgImgUrl9,
-    },
-  ]
+  get buttons(): Button[] {
+    return [
+      {
+        text: this.translation.translate("PORTFOLIO-TITRE-COMPETENCE-UN"),
+        tooltip: "Mes compétences en Administration Systèmes et réseaux",
+        tags: [this.translation.translate("PORTFOLIO-COMPETENCE-UN-TAG1"), this.translation.translate("PORTFOLIO-COMPETENCE-UN-TAG2")],
+        fct: () => { this.openpopup() },
+        img: this.bgImgUrl2,
+      },
+      {
+        text: this.translation.translate("PORTFOLIO-TITRE-COMPETENCE-DEUX"),
+        tooltip: "Mes compétences en Télécommunication",
+        tags: [this.translation.translate("PORTFOLIO-COMPETENCE-DEUX-TAG1"), this.translation.translate("PORTFOLIO-COMPETENCE-DEUX-TAG2"), this.translation.translate("PORTFOLIO-COMPETENCE-DEUX-TAG3"), this.translation.translate("PORTFOLIO-COMPETENCE-DEUX-TAG4")],
+        fct: () => { this.openpopup1() },
+        img: this.bgImgUrl3,
+      },
+      {
+        text: this.translation.translate("PORTFOLIO-TITRE-COMPETENCE-TROIS"),
+        tooltip: "Mes compétences en programmation",
+        tags: [this.translation.translate("PORTFOLIO-COMPETENCE-TROIS-TAG1"), this.translation.translate("PORTFOLIO-COMPETENCE-TROIS-TAG2"), this.translation.translate("PORTFOLIO-COMPETENCE-TROIS-TAG3"), this.translation.translate("PORTFOLIO-COMPETENCE-TROIS-TAG4")],
+        fct: () => { this.openpopup2() },
+        img: this.bgImgUrl7,
+      },
+      {
+        text: this.translation.translate("PORTFOLIO-TITRE-COMPETENCE-QUATRE"),
+        tooltip: "Mes compétences en cybersécurité",
+        tags: [this.translation.translate("PORTFOLIO-COMPETENCE-QUATRE-TAG1"), this.translation.translate("PORTFOLIO-COMPETENCE-QUATRE-TAG2")],
+        fct: () => { this.openpopup3() },
+        img: this.bgImgUrl8,
+      },
+      {
+        text: this.translation.translate("PORTFOLIO-TITRE-COMPETENCE-CINQ"),
+        tooltip: "Mes compétences en cybersécurité",
+        tags: [this.translation.translate("PORTFOLIO-COMPETENCE-CINQ-TAG1"), this.translation.translate("PORTFOLIO-COMPETENCE-CINQ-TAG2")],
+        fct: () => { this.openpopup4() },
+        img: this.bgImgUrl8,
+      },
+      {
+        text: this.translation.translate("PORTFOLIO-CERTIF-TITRE"),
+        tooltip: "Mes certifications",
+        tags: ["CCNA",],
+        fct: () => { this.openpopup5() },
+        img: this.bgImgUrl9,
+      },
+    ]
+  }
 
   openpopup() {
 
@@ -105,7 +109,7 @@ export class PortfolioComponent {
     this.show15 = false;
   }
 
-  
+
   openpopup1() {
 
     this.show1 = true;
@@ -182,10 +186,10 @@ export class PortfolioComponent {
       this.show15 = false;
     }
   }
-  
 
 
-  
+
+
   makeImgUrl(str: string): string {
     return "url('" + str + "')"
   }

@@ -9,23 +9,22 @@
             <div class="img-bx">
                 <!-- <img src="https://i.postimg.cc/dQ7zWbS5/img-4.jpg" alt="img" /> -->
                 <img id="imgProfil" [src]="profil" alt="">
-                <p style="visibility:collapse;">Tapez "etienne"</p>
+                <p style="visibility:collapse;">Write (Not really recommender, that's a funny picture ;) "etienne"</p>
             </div>
             <div class="content">
                 <div class="detail">
-                    <h2>Etienne PAQUELET<br /><span>Etudiant en 3° année de <br />BUT Réseaux et
-                            Télécommunications</span></h2>
+                    <h2>Etienne PAQUELET<br /><span> {{translation.translate("CONTACT-FIRST-PART")}} <br />{{translation.translate("CONTACT-SECOND-PART")}} <br>{{translation.translate("CONTACT-THIRD-PART")}} </span></h2>
                     <ul class="sci">
                         <li>
-                            <a matTooltip="Mon profil LinkedIn" href="https://www.linkedin.com/in/etienne-paquelet/" target="_blank"><img
+                            <a [matTooltip]="translation.translate('CONTACT-FIRST-TOOLTIP')" href="https://www.linkedin.com/in/etienne-paquelet/" target="_blank"><img
                                     class="image" [src]="bgImgUrl3"></a>
                         </li>
 
                         <li>
-                            <a matTooltip="Mon mail" href="mailto:etienne.paquelet.01@gmail.com"><img class="image" [src]="bgImgUrl4"></a>
+                            <a [matTooltip]="translation.translate('CONTACT-SECOND-TOOLIP')" href="mailto:etienne.paquelet.01@gmail.com"><img class="image" [src]="bgImgUrl4"></a>
                         </li>
                         <li> 
-                            <a matTooltip="Mon CV" target="_blank" [href]="cv"><img class="image" [src]="CV"></a>
+                            <a [matTooltip]="translation.translate('CONTACT-THIRD-TOOLTIP')" target="_blank" (click)="opencv()"><img class="image" [src]="CV"></a>
                         </li>
 
                     </ul>

@@ -154,6 +154,10 @@ export class Header2Component {
         titre: this.translation.translate("HEADER2-CONTACT"),
         link: "/contact",
       },
+      // {
+      //   titre: "Tap to change to French",
+      //   link:  this.translation.changeLanguage('en'),
+      // },
 
 
     ];

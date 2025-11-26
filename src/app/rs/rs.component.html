@@ -1,78 +1,60 @@
-<app-video class="main" [bgImgUrl]="bgImgUrl" titre="Liens divers" lienFleche="./liens-divers#presentation"></app-video>
+<app-video class="main" [bgImgUrl]="bgImgUrl" [titre]="translation.translate('RS-TITRE')" lienFleche="./liens-divers#presentation"></app-video>
 
-<h1 id="phoneusing" class="phonetitle">Mes réseaux professionnels</h1>
-    <div id="phoneusing" class="phonebar"></div>
+<h1 id="phoneusing" class="phonetitle">{{translation.translate("RS-TITRE")}}</h1>
+<div id="phoneusing" class="phonebar"></div>
 
 
 <div id="presentation" class="container-main">
     <div class="container">
         <img [src]="github" alt="Logo GitHub">
         <div class="text-overlay">
-            <p>GitHub est une plateforme de gestion de code et de collaboration largement utilisée
-                par les développeurs et les équipes pour héberger, versionner et partager leurs projets. Elle permet le
-                dépôt et le stockage de projets sous forme de repositories (ou répertoires), facilitant ainsi la gestion
-                des versions et la collaboration sur le code source.<br> <br>
-                Principalement utilisée pour le développement d'applications et de logiciels, GitHub prend en charge le
-                système de contrôle de version Git, qui permet de suivre l'historique des modifications apportées au
-                code.<br><br>Parmi ses fonctionnalités clés :</p>
+            <p> {{translation.translate("RS-GITHUB-TEXTE")}} <br><br>{{translation.translate("RS-GITHUB-FIRST-TEXTE")}}
+                <br><br> {{translation.translate("RS-GITHUB-SECOND-TEXTE")}} </p>
             <ul>
                 <li>
-                    <p>Collaboration : Possibilité de travailler à plusieurs sur un même projet via les pull requests et
-                        les branches.</p>
+                    <p>{{translation.translate("RS-GITHUB-COLLAB")}} </p>
                 </li>
                 <li>
-                    <p>Suivi des modifications : Chaque changement est historisé, permettant de revenir à des versions
-                        antérieures du projet.</p>
+                    <p>{{translation.translate("RS-GITHUB-SUIVI")}}</p>
                 </li>
                 <li>
-                    <p>Gestion des projets : Outils intégrés comme les issues, projets et wikis pour organiser le
-                        travail et suivre l'avancement.</p>
+                    <p>{{translation.translate("RS-GITHUB-GESTION")}} </p>
                 </li>
                 <li>
-                    <p>Open-source et privé : GitHub héberge aussi bien des projets open-source que des projets privés.
+                    <p>{{translation.translate("RS-GITHUB-OPEN-SOURCE")}}
                     </p>
                 </li>
             </ul>
-            <p>Vous trouverez dans le lien suivant mes différents répertoires où sont exposés les différents projets que
-                j'ai réalisés au BUT Réseaux et Télécommunications de Montbéliard.</p>
+            <p>{{translation.translate("RS-GITHUB-LAST-TEXTE")}} </p>
         </div>
         <a target="_blank" href="https://github.com/e-paquelet">
-            <button>Retrouvez mes projets sur GitHub</button>
+            <button>{{translation.translate("RS-GITHUB-BUTTON")}} </button>
         </a>
     </div>
     <div class="container">
         <img [src]="linkedin" alt="Logo LinkedIn">
         <div class="text-overlay">
-            <p> <br><br>LinkedIn est un réseau social professionnel largement utilisé dans le monde entier, conçu pour
-                favoriser
-                le
-                développement de relations professionnelles, le partage d'expertises et la mise en valeur des
-                compétences.<br><br>
-                Cette plateforme permet aux individus de créer un profil détaillé mettant en avant leur parcours
-                académique,
-                leurs expériences professionnelles, leurs compétences et leurs réalisations. Les membres peuvent élargir
-                leur réseau en se connectant avec des collègues, des recruteurs, des partenaires commerciaux et des
-                experts
-                de divers secteurs d'activité.<br><br>LinkedIn est également un outil puissant pour :</p>
+            <p><br>{{translation.translate("RS-LINKEDIN-TEXTE")}} <br><br>
+                {{translation.translate("RS-LINKEDIN-FIRST-TEXTE")}}
+                <br><br>{{translation.translate("RS-LINKEDIN-SECOND-TEXTE")}}
+            </p>
             <ul>
                 <li>
-                    <p>Rechercher des opportunités d'emploi : Offres publiées par des entreprises et recrutement direct
-                        via la plateforme.</p>
+                    <p> {{translation.translate("RS-LINKEDIN-RECHERCHE")}}</p>
                 </li>
                 <li>
-                    <p>Développer une image de marque personnelle : Publication d'articles, partage de projets et
-                        interactions avec des publications d'autres professionnels.</p>
+                    <p>{{translation.translate("RS-LINKEDIN-DEV")}} </p>
                 </li>
 
                 <li>
-                    <p>Collaborer et échanger : Participation à des groupes de discussion et forums thématiques.</p>
+                    <p>{{translation.translate("RS-LINKEDIN-COLLAB")}} </p>
                 </li>
 
             </ul>
-            <p>Vous y trouverez dans le lien suivant mon profil LinkedIn :</p>
+            <p>{{translation.translate("RS-LINKEDIN-LAST-TEXTE")}} </p>
         </div>
         <a target="_blank" href="https://www.linkedin.com/in/etienne-paquelet/">
-            <button>Retrouvez mon profil sur LinkedIn</button>
+            <button>{{translation.translate("RS-LINKEDIN-BUTTON")}} </button>
         </a>
     </div>
 </div>

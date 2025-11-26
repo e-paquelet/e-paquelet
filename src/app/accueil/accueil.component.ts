@@ -125,7 +125,7 @@ export class AccueilComponent {
     }
   ];
 
-  opencv() {
+   opencv() {
     if (this.translation.choosenLanguage() === "fr") {
       const filePath = './assets/img/pdf/CV_PAQUELET_Etienne.pdf'; // Chemin du fichier CV dans le dossier assets
       // 1. Ouvrir le fichier dans un nouvel onglet

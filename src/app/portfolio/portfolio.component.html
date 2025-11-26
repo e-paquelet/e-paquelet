@@ -1,13 +1,12 @@
-<app-video class="main" [bgImgUrl]="bgImgUrl" titre="Mes compétences"
+<app-video class="main" [bgImgUrl]="bgImgUrl" [titre]="this.translation.translate('PORTFOLIO-TITRE')"
     lienFleche="./portfolio#presentation"></app-video>
 
-    <h1 id="phoneusing" class="phonetitle">Mes compétences</h1>
+    <h1 id="phoneusing" class="phonetitle">{{this.translation.translate("PORTFOLIO-TITRE")}} </h1>
     <div id="phoneusing" class="phonebar"></div>
 
 
 <div id="presentation" style="padding-left: 5vw; padding-bottom: 3vw; text-align: center;">
-    Voici une synthèse de mes compétences développées au cours de ma formation, vous trouverez dans l'onglet projets
-    leur mise en œuvre
+    {{this.translation.translate("PORTFOLIO-PRESENTATION")}}
 </div>
 <div class="overlay" *ngIf="show" (click)="closeoverlay($event)"> <!-- Admininistrer les réseaux et l'Internet-->
     <div class="popup-content">
@@ -15,7 +14,7 @@
             &times;
         </div>
         <div class="titre">
-            <p class="title">Administrer les réseaux et Internet</p>
+            <p class="title">{{this.translation.translate("PORTFOLIO-TITRE-COMPETENCE-UN")}} </p>
             <div class="progress-container2">
                 <div class="progress-bar width-73">
                     73%
@@ -24,7 +23,7 @@
         </div>
         <br><br>
         <div class="OS">
-            <p>Administration Système</p>
+            <p>{{this.translation.translate("PORTFOLIO-TITRE-COMPETENCE-UN")}} </p>
             <div class="progress-container">
                 <div class="progress-bar width-80">
                     80%
@@ -33,107 +32,110 @@
             <table>
                 <tr>
                     <td>
-                        <li>Windows Server (2019/2022)</li>
+                        <li>{{translation.translate("PORTFOLIO-TITRE-UN-COMPETENCE-UN-SOUS-COMPETENCE-UN")}}</li>
                     </td>
                     <td class="spacer">
-                        <li>Active Directory, GPO, DHCP, DNS, Partages réseaux, DFS</li>
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-UN-COMPETENCE-UN-SOUS-COMPETENCE-UN")}}</li>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <li>Windows Client (10)</li>
+                        <li>{{translation.translate("PORTFOLIO-TITRE-DEUX-COMPETENCE-UN-SOUS-COMPETENCE-UN")}}</li>
                     </td>
                     <td class="spacer">
-                        <li>Installation, Configuration, Utilisation</li>
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-DEUX-COMPETENCE-UN-SOUS-COMPETENCE-UN")}}</li>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <li>Linux</li>
+                        <li>{{translation.translate("PORTFOLIO-TITRE-TROIS-COMPETENCE-UN-SOUS-COMPETENCE-UN")}}</li>
                     </td>
                     <td class="spacer">
-                        <li>DNS, Samba, ftp, tftp, ssh, Apache 2, DHCP</li>
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-TROIS-COMPETENCE-UN-SOUS-COMPETENCE-UN")}}</li>
                     </td>
                 </tr>
             </table>
         </div>
         <br><br>
         <div class="OS">
-            <p>Réseaux</p>
+            <p>{{translation.translate("PORTFOLIO-TITRE-COMPETENCE-UN-SOUS-COMPETENCE-DEUX")}}</p>
             <div class="progress-container">
                 <div class="progress-bar width-75">75%</div>
             </div>
             <table>
                 <tr>
                     <td>
-                        <li>Switchs</li>
+                        <li>{{translation.translate("PORTFOLIO-TITRE-UN-COMPETENCE-UN-SOUS-COMPETENCE-DEUX")}}</li>
                     </td>
                     <td class="spacer">
-                        <li>Configuration de Switch et de routeurs physiques et virtuels.</li>
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-UN-COMPETENCE-UN-SOUS-COMPETENCE-DEUX")}} </li>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <li>Routeurs</li>
+                        <li>{{translation.translate("PORTFOLIO-TITRE-DEUX-COMPETENCE-UN-SOUS-COMPETENCE-DEUX")}}</li>
                     </td>
                     <td class="spacer">
-                        <li>Routage statique (RIPv1, RIPv2)</li>
-                    </td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td class="spacer">
-                        <li>Routage dynamique (OSPF, BGP, MPLS)</li>
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-DEUX-COMPETENCE-UN-SOUS-COMPETENCE-DEUX")}}</li>
                     </td>
                 </tr>
                 <tr>
                     <td> </td>
                     <td class="spacer">
-                        <li>Routage Inter-Vlan</li>
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-TROIS-COMPETENCE-UN-SOUS-COMPETENCE-DEUX")}}</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td> </td>
+                    <td class="spacer">
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-QUATRE-COMPETENCE-UN-SOUS-COMPETENCE-DEUX")}}</li>
                     </td>
                 </tr>
                 <tr>
                     <td></td>
                     <td class="spacer">
-                        <li> Gestion de VLAN</li>
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-CINQ-COMPETENCE-UN-SOUS-COMPETENCE-DEUX")}} </li>
                     </td>
                 </tr>
             </table>
         </div>
         <br><br>
         <div class="OS">
-            <p>Virtualisation</p>
+            <p>{{this.translation.translate("PORTFOLIO-TITRE-COMPETENCE-UN-SOUS-COMPETENCE-TROIS")}}</p>
             <div class="progress-container">
                 <div class="progress-bar width-65">65%</div>
             </div>
             <table>
                 <tr>
                     <td>
-                        <li>GNS3</li>
+                        <li>{{translation.translate("PORTFOLIO-TITRE-UN-COMPETENCE-UN-SOUS-COMPETENCE-TROIS")}}</li>
                     </td>
                     <td class="spacer">
-                        <li>Création de réseaux d'entreprises complets (GNS3/Packet Tracer)</li>
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-UN-COMPETENCE-UN-SOUS-COMPETENCE-TROIS")}}</li>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <li>VirtualBox</li>
+                        <li>{{translation.translate("PORTFOLIO-TITRE-DEUX-COMPETENCE-UN-SOUS-COMPETENCE-TROIS")}} </li>
                     </td>
                     <td class="spacer">
-                        <li>Installation, Configuration, Utilisation de VirtualBox</li>
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-DEUX-COMPETENCE-UN-SOUS-COMPETENCE-TROIS")}} </li>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <li>Hyper-V</li>
+                        <li>{{translation.translate("PORTFOLIO-TITRE-TROIS-COMPETENCE-UN-SOUS-COMPETENCE-TROIS")}} </li>
                     </td>
                     <td class="spacer">
-                        <li>Installation, Configuration : réplication et utilisation</li>
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-TROIS-COMPETENCE-UN-SOUS-COMPETENCE-TROIS")}} </li>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <li>Packet Tracer</li>
+                        <li>{{translation.translate("PORTFOLIO-TITRE-QUATRE-COMPETENCE-UN-SOUS-COMPETENCE-TROIS")}} </li>
+                    </td>
+                    <td class="spacer">
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-QUATRE-COMPETENCE-UN-SOUS-COMPETENCE-TROIS")}} </li>
                     </td>
                 </tr>
             </table>
@@ -146,7 +148,7 @@
             &times;
         </div>
         <div class="titre">
-            <p class="title">Connecter les entreprises et usagers</p>
+            <p class="title">{{translation.translate("PORTFOLIO-TITRE-COMPETENCE-DEUX")}} </p>
             <div class="progress-container2">
                 <div class="progress-bar width-50">
                     50%
@@ -154,26 +156,26 @@
             </div>
         </div>
         <div class="OS">
-            <p>Télécommunications</p>
+            <p>{{translation.translate("PORTFOLIO-TITRE-COMPETENCE-DEUX-SOUS-COMPETENCE-UN")}}</p>
             <div class="progress-container">
                 <div class="progress-bar width-50">50%</div>
             </div>
             <table>
                 <tr>
                     <td>
-                        <li>Téléphonie sur IP</li>
+                        <li>{{translation.translate("PORTFOLIO-TITRE-UN-COMPETENCE-DEUX-SOUS-COMPETENCE-UN")}} </li>
                     </td>
                     <td class="spacer">
-                        <li>Mise en place de réseaux téléphoniques </li>
-                        <li>Asterisk : configuration et utilisation</li>
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-UN-COMPETENCE-DEUX-SOUS-COMPETENCE-UN")}} </li>
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-DEUX-COMPETENCE-DEUX-SOUS-COMPETENCE-UN")}}</li>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <li>Réseaux cellulaires</li>
+                        <li>{{translation.translate("PORTFOLIO-TITRE-DEUX-COMPETENCE-DEUX-SOUS-COMPETENCE-UN")}}</li>
                     </td>
                     <td class="spacer">
-                        <li>Compréhension des réseaux internet (1G, GSM, UMTS, 4G LTE, 5G, Réseaux fibre/cuivre)
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-TROIS-COMPETENCE-DEUX-SOUS-COMPETENCE-UN")}}
                         </li>
                     </td>
                 </tr>
@@ -190,35 +192,32 @@
         font-weight: bold;
         color: #333;
         margin-bottom: 20px;
-        text-align: center;" class="titre">Certifications</div>
+        text-align: center;" class="titre">{{translation.translate("PORTFOLIO-CERTIF-TITRE")}}</div>
         <div class="OS2">
             <div class="table">
                 <table>
                     <tr>
                         <td>
-                            <li>CCNAv7</li>
+                            <li>{{translation.translate("PORTFOLIO-CERTIF-SOUS-TITRE-UN")}}</li>
                         </td>
                         <td class="spacer2">
-                            <li>Introduction aux
-                                réseaux</li>
+                            <li>{{translation.translate("PORTFOLIO-CERTIF-TEXTE-UN")}}</li>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <li>CCNAv7</li>
+                            <li>{{translation.translate("PORTFOLIO-CERTIF-SOUS-TITRE-DEUX")}}</li>
                         </td>
                         <td class="spacer2">
-                            <li>Notions de base
-                                sur la commutation, le routage et le sans fil</li>
+                            <li>{{translation.translate("PORTFOLIO-CERTIF-TEXTE-DEUX")}}</li>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <li>CCNAv7</li>
+                            <li>{{translation.translate("PORTFOLIO-CERTIF-SOUS-TITRE-TROIS")}}</li>
                         </td>
                         <td class="spacer2">
-                            <li>Mise en réseau,
-                                sécurité et automatisation des entreprises</li>
+                            <li>{{translation.translate("PORTFOLIO-CERTIF-TEXTE-TROIS")}}</li>
                         </td>
                     </tr>
                 </table>
@@ -232,7 +231,7 @@
             &times;
         </div>
         <div class="titre">
-            <p class="title">Sécuriser</p>
+            <p class="title">{{translation.translate("PORTFOLIO-TITRE-COMPETENCE-QUATRE-SOUS-COMPETENCE-UN")}}</p>
             <div class="progress-container2">
                 <div class="progress-bar width-60">
                     60%
@@ -240,70 +239,70 @@
             </div>
         </div>
         <div class="OS">
-            <p>Sécuriser</p>
+            <p>{{translation.translate("PORTFOLIO-TITRE-COMPETENCE-QUATRE-SOUS-COMPETENCE-UN")}}</p>
             <div class="progress-container">
                 <div class="progress-bar width-60">60%</div>
             </div>
             <table>
                 <tr>
                     <td>
-                        <li>Firewall (StormShield)</li>
+                        <li>{{translation.translate("PORTFOLIO-TITRE-UN-COMPETENCE-QUATRE-SOUS-COMPETENCE-UN")}}</li>
                     </td>
                     <td class="spacer">
-                        <li>Filtrage et NAT</li>
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-UN-COMPETENCE-QUATRE-SOUS-COMPETENCE-UN")}}</li>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <li>Pentesting</li>
+                        <li>{{translation.translate("PORTFOLIO-TITRE-DEUX-COMPETENCE-QUATRE-SOUS-COMPETENCE-UN")}}</li>
                     </td>
                     <td class="spacer">
-                        <li>Gestion d'ACL</li>
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-DEUX-COMPETENCE-QUATRE-SOUS-COMPETENCE-UN")}}</li>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <li>Supervision Réseaux</li>
+                        <li>{{translation.translate("PORTFOLIO-TITRE-TROIS-COMPETENCE-QUATRE-SOUS-COMPETENCE-UN")}}</li>
                     </td>
                     <td class="spacer">
-                        <li>Création d'autorité de certification</li>
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-TROIS-COMPETENCE-QUATRE-SOUS-COMPETENCE-UN")}}</li>
                     </td>
                 </tr>
                 <tr>
                     <td> </td>
                     <td class="spacer">
-                        <li>Authentification : implicite (Certificat SSL) et explicite (portail captif : LDAP, Radius)
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-QUATRE-COMPETENCE-QUATRE-SOUS-COMPETENCE-UN")}}
                         </li>
                     </td>
                 </tr>
                 <tr>
                     <td> </td>
                     <td class="spacer">
-                        <li>Proxy HTTP/HTTPS</li>
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-CINQ-COMPETENCE-QUATRE-SOUS-COMPETENCE-UN")}}</li>
                     </td>
                 </tr>
                 <tr>
                     <td> </td>
                     <td class="spacer">
-                        <li>IDS/IPS</li>
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-SIX-COMPETENCE-QUATRE-SOUS-COMPETENCE-UN")}}</li>
                     </td>
                 </tr>
                 <tr>
                     <td> </td>
                     <td class="spacer">
-                        <li>Root-Me, Over The Wire : Bandit</li>
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-SEPT-COMPETENCE-QUATRE-SOUS-COMPETENCE-UN")}}</li>
                     </td>
                 </tr>
                 <tr>
                     <td> </td>
                     <td class="spacer">
-                        <li>SNMP : supervision de la MiB</li>
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-HUIT-COMPETENCE-QUATRE-SOUS-COMPETENCE-UN")}}</li>
                     </td>
                 </tr>
                 <tr>
                     <td> </td>
                     <td class="spacer">
-                        <li>Zabbix : supervision réseaux</li>
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-NEUF-COMPETENCE-QUATRE-SOUS-COMPETENCE-UN")}}</li>
                     </td>
                 </tr>
             </table>
@@ -336,7 +335,7 @@
         </div> -->
     </div>
 </div>
-<div class="overlay" *ngIf="show6" (click)="closeoverlay($event)"> <!-- ///-->
+<!-- <div class="overlay" *ngIf="show6" (click)="closeoverlay($event)"> 
     <div class="popup-content">
         <div class="close-popup" (click)="closepopup4()">
             &times;
@@ -367,14 +366,14 @@
             </table>
         </div>
     </div>
-</div>
+</div> -->
 <div class="overlay" *ngIf="show2" (click)="closeoverlay($event)"> <!-- Créer des outils et applications pour les R&T-->
     <div class="popup-content">
         <div class="close-popup" (click)="closepopup()">
             &times;
         </div>
         <div class="titre">
-            <p class="title">Créer des outils et applications pour les R&T</p>
+            <p class="title">{{translation.translate("PORTFOLIO-TITRE-COMPETENCE-TROIS")}}</p>
             <div class="progress-container2">
                 <div class="progress-bar width-52-5">
                     52,5%
@@ -382,64 +381,64 @@
             </div>
         </div>
         <div class="OS">
-            <p>Scripting & Développement</p>
+            <p>{{translation.translate("PORTFOLIO-TITRE-COMPETENCE-TROIS-SOUS-COMPETENCE-UN")}}</p>
             <div class="progress-container">
                 <div class="progress-bar width-65">65%</div>
             </div>
             <table>
                 <tr>
                     <td>
-                        <li>PowerShell/Shell</li>
+                        <li>{{translation.translate("PORTFOLIO-TITRE-UN-COMPETENCE-TROIS-SOUS-COMPETENCE-UN")}}</li>
                     </td>
                     <td class="spacer">
-                        <li>Création de script pour l'administration système</li>
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-UN-COMPETENCE-TROIS-SOUS-COMPETENCE-UN")}}</li>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <li>HTML/CSS/JavaScript/Angular/PHP</li>
+                        <li>{{translation.translate("PORTFOLIO-TITRE-DEUX-COMPETENCE-TROIS-SOUS-COMPETENCE-UN")}}</li>
                     </td>
                     <td class="spacer">
-                        <li>Création de site web statique/dynamique</li>
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-DEUX-COMPETENCE-TROIS-SOUS-COMPETENCE-UN")}}</li>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <li>C++</li>
+                        <li>{{translation.translate("PORTFOLIO-TITRE-TROIS-COMPETENCE-TROIS-SOUS-COMPETENCE-UN")}}</li>
                     </td>
                     <td class="spacer">
-                        <li>Connaissances basiques (Condition, Tableaux, Boucles)</li>
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-TROIS-COMPETENCE-TROIS-SOUS-COMPETENCE-UN")}}</li>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <li>Java</li>
+                        <li>{{translation.translate("PORTFOLIO-TITRE-QUATRE-COMPETENCE-TROIS-SOUS-COMPETENCE-UN")}}</li>
                     </td>
                     <td class="spacer">
-                        <li>Création d'une application basique de chat.</li>
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-QUATRE-COMPETENCE-TROIS-SOUS-COMPETENCE-UN")}}</li>
                     </td>
                 </tr>
             </table>
         </div>
         <br><br>
         <div class="OS">
-            <p>Bases de Données</p>
+            <p>{{translation.translate("PORTFOLIO-TITRE-COMPETENCE-TROIS-SOUS-COMPETENCE-DEUX")}}</p>
             <div class="progress-container">
                 <div class="progress-bar width-40">40%</div>
             </div>
             <table>
                 <tr>
                     <td>
-                        <li>SQL</li>
+                        <li>{{translation.translate("PORTFOLIO-TITRE-UN-COMPETENCE-TROIS-SOUS-COMPETENCE-DEUX")}}</li>
                     </td>
                     <td class="spacer">
-                        <li>Création et modélisation de bases de données</li>
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-UN-COMPETENCE-TROIS-SOUS-COMPETENCE-DEUX")}}</li>
                     </td>
                 </tr>
                 <tr>
                     <td> </td>
                     <td class="spacer">
-                        <li>Réalisation de requêtes SQL simples</li>
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-DEUX-COMPETENCE-TROIS-SOUS-COMPETENCE-DEUX")}}</li>
                     </td>
                 </tr>
                 <tr>
@@ -456,7 +455,7 @@
             &times;
         </div>
         <div class="titre">
-            <p class="title">Surveiller</p>
+            <p class="title">{{translation.translate("PORTFOLIO-TITRE-COMPETENCE-CINQ-SOUS-COMPETENCE-UN")}}</p>
             <div class="progress-container2">
                 <div class="progress-bar width-60">
                     60%
@@ -464,70 +463,70 @@
             </div>
         </div>
         <div class="OS">
-            <p>Surveiller</p>
+            <p>{{translation.translate("PORTFOLIO-TITRE-COMPETENCE-CINQ-SOUS-COMPETENCE-UN")}}</p>
             <div class="progress-container">
                 <div class="progress-bar width-60">60%</div>
             </div>
             <table>
                 <tr>
                     <td>
-                        <li>Firewall (StormShield)</li>
+                        <li>{{translation.translate("PORTFOLIO-TITRE-UN-COMPETENCE-CINQ-SOUS-COMPETENCE-UN")}}</li>
                     </td>
                     <td class="spacer">
-                        <li>Filtrage et NAT</li>
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-UN-COMPETENCE-CINQ-SOUS-COMPETENCE-UN")}}</li>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <li>Pentesting</li>
+                        <li>{{translation.translate("PORTFOLIO-TITRE-DEUX-COMPETENCE-CINQ-SOUS-COMPETENCE-UN")}}</li>
                     </td>
                     <td class="spacer">
-                        <li>Gestion d'ACL</li>
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-DEUX-COMPETENCE-CINQ-SOUS-COMPETENCE-UN")}}</li>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <li>Supervision Réseaux</li>
+                        <li>{{translation.translate("PORTFOLIO-TITRE-TROIS-COMPETENCE-CINQ-SOUS-COMPETENCE-UN")}}</li>
                     </td>
                     <td class="spacer">
-                        <li>Création d'autorité de certification</li>
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-TROIS-COMPETENCE-CINQ-SOUS-COMPETENCE-UN")}}</li>
                     </td>
                 </tr>
                 <tr>
                     <td> </td>
                     <td class="spacer">
-                        <li>Authentification : implicite (Certificat SSL) et explicite (portail captif : LDAP, Radius)
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-QUATRE-COMPETENCE-CINQ-SOUS-COMPETENCE-UN")}}
                         </li>
                     </td>
                 </tr>
                 <tr>
                     <td> </td>
                     <td class="spacer">
-                        <li>Proxy HTTP/HTTPS</li>
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-CINQ-COMPETENCE-CINQ-SOUS-COMPETENCE-UN")}}</li>
                     </td>
                 </tr>
                 <tr>
                     <td> </td>
                     <td class="spacer">
-                        <li>IDS/IPS</li>
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-SIX-COMPETENCE-CINQ-SOUS-COMPETENCE-UN")}}</li>
                     </td>
                 </tr>
                 <tr>
                     <td> </td>
                     <td class="spacer">
-                        <li>Root-Me, Over The Wire : Bandit</li>
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-SEPT-COMPETENCE-CINQ-SOUS-COMPETENCE-UN")}}</li>
                     </td>
                 </tr>
                 <tr>
                     <td> </td>
                     <td class="spacer">
-                        <li>SNMP : supervision de la MiB</li>
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-HUIT-COMPETENCE-CINQ-SOUS-COMPETENCE-UN")}}</li>
                     </td>
                 </tr>
                 <tr>
                     <td> </td>
                     <td class="spacer">
-                        <li>Zabbix : supervision réseaux</li>
+                        <li>{{translation.translate("PORTFOLIO-TEXTE-NEUF-COMPETENCE-CINQ-SOUS-COMPETENCE-UN")}}</li>
                     </td>
                 </tr>
             </table>

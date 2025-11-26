@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
-import {MatTooltipModule} from '@angular/material/tooltip';
-
+import { Component, inject } from '@angular/core';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { LanguageService } from '../../services/language.service';
+import { AccueilComponent } from '../accueil/accueil.component';
 type ListeContactItem = {
   img: string;
   text: string;
@@ -9,15 +10,18 @@ type ListeContactItem = {
 }
 
 @Component({
-    selector: 'app-contact',
-    imports: [
-      MatTooltipModule
-    ],
-    templateUrl: './contact.component.html',
-    styleUrl: './contact.component.css'
+  selector: 'app-contact',
+  imports: [
+    MatTooltipModule,
+
+  ],
+  templateUrl: './contact.component.html',
+  styleUrl: './contact.component.css'
 })
 export class ContactComponent {
+  public translation = inject(LanguageService)
   // bgImgUrl = "./assets/img/background.jpg";
+
   profil = "./assets/img/accueil/profillogo.JPG";
   bgImgUrl3 = "./assets/img/contact/linkedin.png";
   bgImgUrl4 = "./assets/img/contact/mail.png";
@@ -62,7 +66,31 @@ export class ContactComponent {
     return "url('" + str + "')"
   }
 
-  // redirection1() {
-  //   document.location.href = "https://www.linkedin.com/in/etienne-paquelet/"
-  // }
+  opencv() {
+    if (this.translation.choosenLanguage() === "fr") {
+      const filePath = './assets/img/pdf/CV_PAQUELET_Etienne.pdf'; // Chemin du fichier CV dans le dossier assets
+      // 1. Ouvrir le fichier dans un nouvel onglet
+      window.open(filePath, '_blank'); // Ouvre le fichier dans un nouvel onglet
+
+      // 2. Démarrer le téléchargement du fichier
+      const link = document.createElement('a');
+      link.setAttribute('href', filePath); // Définit l'URL du fichier
+      link.setAttribute('download', 'CV_PAQUELET_Etienne.pdf'); // Définit le nom du fichier téléchargé
+      link.click(); // Simule un clic pour lancer le téléchargement 
+    } else {
+      const filePath = './assets/img/pdfen/CV_PAQUELET_Etienne.pdf'; // Chemin du fichier CV dans le dossier assets
+      // 1. Ouvrir le fichier dans un nouvel onglet
+      window.open(filePath, '_blank'); // Ouvre le fichier dans un nouvel onglet
+
+      // 2. Démarrer le téléchargement du fichier
+      const link = document.createElement('a');
+      link.setAttribute('href', filePath); // Définit l'URL du fichier
+      link.setAttribute('download', 'CV_PAQUELET_Etienne.pdf'); // Définit le nom du fichier téléchargé
+      link.click(); // Simule un clic pour lancer le téléchargement 
+    }
+
+    // redirection1() {
+    //   document.location.href = "https://www.linkedin.com/in/etienne-paquelet/"
+    // }
+  }
 }
