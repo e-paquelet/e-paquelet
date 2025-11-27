@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { NgIf } from '@angular/common';
+import { LanguageService } from '../../../services/language.service';
 
 @Component({
     selector: 'app-sae301',
@@ -8,6 +9,7 @@ import { NgIf } from '@angular/common';
     styleUrl: './sae301.component.css'
 })
 export class Sae301Component {
+  public translation = inject(LanguageService);
   archisae301 = "./assets/img/sae301/infreseaux.png";
   image_munin = "./assets/img/sae301/munin.jpg";
   image_vpn = "./assets/img/sae301/vpn.jpg";

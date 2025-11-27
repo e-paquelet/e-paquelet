@@ -1,55 +1,44 @@
 <div class="position-texte">
     <div class="texte">
-        <p class="overlay1">Cette SAE concernait l'ensemble des étudiants en formation initiale et a été
-            réalisée par groupe de 3
-            étudiants. La SAE 302 « Développer des applications communicantes » à débuté le
-            lundi 11 décembre 2023 et s’est terminé le 15 décembre 2023.L'objectif de se projet est le suivant :
+        <p class="overlay1">{{translation.translate("SAE302-PRESENTATION")}}
         </p>
 
         <div id="liste" class="overlay1">
-            <li>Créer une application de type "réseau social" en java utilisant des fonctions de communication
-                pour créer un protocole applicatif au dessus de la pile TCP/IP</li>
+            <li>{{translation.translate("SAE302-OBJECTIF")}} </li>
         </div>
-        <p class="overlay1">Pour réaliser ce projet, nous avons commencé par définir les différentes
-            fonctionnalités que notre application devrait avoir :
+        <p class="overlay1">{{translation.translate("SAE302-DEF-FONCT")}}
 
         </p>
         <div id="liste" class="overlay1">
-            <li>Inscription</li>
-            <li>Connexion</li>
-            <li>Demande d'amis</li>
-            <li>Envois de message en temps réel</li>
+            <li>{{translation.translate("SAE302-FONCT1")}}</li>
+            <li>{{translation.translate("SAE302-FONCT2")}}</li>
+            <li>{{translation.translate("SAE302-FONCT3")}}</li>
+            <li>{{translation.translate("SAE302-FONCT4")}}</li>
         </div>
-        <p class="overlay1">Il y avait également des contraintes à respecter : </p>
+        <p class="overlay1">{{translation.translate("SAE302-CONTRAINTE")}}</p>
         <div id="liste" class="overlay1">
-            <li>100 utilisateurs maximum</li>
-            <li>10 amis par utilisateur</li>
-            <li>les messages sont stockés en RAM</li>
+            <li>{{translation.translate("SAE302-CONT1")}}</li>
+            <li>{{translation.translate("SAE302-CONT2")}}</li>
+            <li>{{translation.translate("SAE302-CONT3")}}</li>
         </div>
-        <p class="overlay1"> Nous avons ensuite définis les différentes tâches entre les membres du groupe et
-            j'ai ainsi
-            principalement réalisé les tâches
-            suivantes : </p>
+        <p class="overlay1"> {{translation.translate("SAE302-TACHE")}} </p>
 
         <div id="liste" class="overlay1">
-            <li>Conception de l'architecture</li>
-            <li>Requête inscription</li>
-            <li>Requête connexion</li>
+            <li>{{translation.translate("SAE302-TACHE1")}}</li>
+            <li>{{translation.translate("SAE302-TACHE2")}}</li>
+            <li>{{translation.translate("SAE302-TACHE3")}}</li>
 
 
         </div>
-        <p class="overlay1"> J'ai eu la tâche de définir l'architecture réseau que nous avons mis en place et
-            l'architecture de l'application au niveau de la pile TCP/IP. J'ai ainsi choisi d'utiliser le
-            protocole de communication UDP entre le serveur et le client pour plusieurs raisons : </p>
+        <p class="overlay1"> {{translation.translate("SAE302-MATACHE")}}</p>
         <div id="liste" class="overlay1">
-            <li>simplicité de la syntaxe</li>
-            <li>rapidité de l'envoi et de la réception des sockets.</li>
+            <li>{{translation.translate("SAE302-RAISON1")}}</li>
+            <li>{{translation.translate("SAE302-RAISON2")}}</li>
         </div>
-        <p class="overlay1">Notre application (client et serveur) étant stocké sur un seul ordinateur, nous
-            avons fait le choix de l'architecture suivante : </p>
+        <p class="overlay1">{{translation.translate("SAE302-ARCHI")}} </p>
         <img class="archi" [src]="archi"> <br><br>
 
-        Nous avons également réalisé une vidéo de démonstration de l'application : <br><br><br>
+      {{translation.translate("SAE302-VIDEO")}} <br><br><br>
 
         <video class="video_sae_302" controls>
             <source [src]="video_sae_302" type="video/mp4" />
@@ -57,17 +46,16 @@
         </video>
 
         <br><br><br>
-        <div style="text-align: center; font-weight: bold;">Ce que j'ai appris durant ce projet</div> <br>
+        <div style="text-align: center; font-weight: bold;">{{translation.translate("SAE302-TITRE-RETEX")}}</div> <br>
 
         <div id="liste" class="overlay1">
-            <li>Utilisation du protocole UDP dans un cas concret</li>
-            <li>Création d'une application sous java</li>
-            <li>Renforcer mon aptitude à travailler en équipe</li>
-            <li>être rigoureux dans le codage d'une application </li>
-            <li>Résoudre des problèmes en totale autonomie tout en étant sous pression </li>
+            <li>{{translation.translate("SAE302-RETEX1")}}</li>
+            <li>{{translation.translate("SAE302-RETEX2")}}</li>
+            <li>{{translation.translate("SAE302-RETEX3")}}</li>
+            <li>{{translation.translate("SAE302-RETEX4")}} </li>
+            <li>{{translation.translate("SAE302-RETEX5")}}</li>
         </div>
-        <p class="overlay1">Pour en savoir plus sur ce projet, n'hésitez pas à jeter un &oelig;il à notre
-            rapport : <a target="_blank" [href]="cr_sae_302">cr_sae_302.pdf</a>
+        <p class="overlay1">{{translation.translate("SAE302-LIEN-GITHUB")}} <a target="_blank" [href]="cr_sae_302">cr_sae_302.pdf</a>
         </p>
     </div>
 </div>

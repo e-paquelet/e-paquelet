@@ -273,6 +273,76 @@ export const TRANSLATION_KEY = [
   "PROJETBUT-TAG-APP",
   "PROJETBUT-TAG-MAIL",
   "BTN-CLOSE",
+  "SAE301-PRESENTATION",
+  "SAE301-P1",
+  "SAE301-P2",
+  "SAE301-P3",
+  "SAE301-P4-A",
+  "SAE301-P4-B",
+  "SAE301-P4-C",
+  "SAE301-OBJECTIF",
+  "SAE301-OBJ1",
+  "SAE301-OBJ2",
+  "SAE301-OBJ3",
+  "SAE301-OBJ4",
+  "SAE301-OBJ5",
+  "SAE301-PRESENTATION-MATOS",
+  "SAE301-MATOS1",
+  "SAE301-MATOS2",
+  "SAE301-MATOS3",
+  "SAE301-PRESENTATION-INFRA-RES",
+  "SAE301-PRESENTATION-TACHE",
+  "SAE301-ETAPE1",
+  "SAE301-ETAPE2",
+  "SAE301-PARTIE3-TITRE",
+  "SAE301-PARTIE3-OBJ1",
+  "SAE301-PARTIE3-OBJ2",
+  "SAE301-PARTIE3-OBJ3",
+  "SAE301-PARTIE3-OBJ4",
+  "SAE301-PRBLM1",
+  "SAE301-DEUXIEME-PARTIE",
+  "SAE301-PARTIE4-A-TITRE",
+  "SAE301-PARTIE4-A-OBJ1",
+  "SAE301-PARTIE4-A-OBJ2",
+  "SAE301-PARTIE4-A-OBJ3",
+  "SAE301-PARTIE4-A-OBJ4",
+  "SAE301-PARTIE4-B-TITRE",
+  "SAE301-PARTIE4-B-PRES",
+  "SAE301-TITRE-RETEX",
+  "SAE301-RETEX1",
+  "SAE301-RETEX2",
+  "SAE301-RETEX3",
+  "SAE301-RETEX4",
+  "SAE301-LIEN-GITHUB",
+  "SAE302-PRESENTATION",
+  "SAE302-OBJECTIF",
+  "SAE302-DEF-FONCT",
+  "SAE302-FONCT1",
+  "SAE302-FONCT2",
+  "SAE302-FONCT3",
+  "SAE302-FONCT4",
+  "SAE302-CONTRAINTE",
+  "SAE302-CONT1",
+  "SAE302-CONT2",
+  "SAE302-CONT3",
+  "SAE302-TACHE",
+  "SAE302-TACHE1",
+  "SAE302-TACHE2",
+  "SAE302-TACHE3",
+  "SAE302-MATACHE",
+  "SAE302-RAISON1",
+  "SAE302-RAISON2",
+  "SAE302-ARCHI",
+  "SAE302-VIDEO",
+  "SAE302-TITRE-RETEX",
+  "SAE302-RETEX1",
+  "SAE302-RETEX2",
+  "SAE302-RETEX3",
+  "SAE302-RETEX4",
+  "SAE302-RETEX5",
+  "SAE302-LIEN-GITHUB",
+
+
 
 
 ] as const;
@@ -775,12 +845,12 @@ export class LanguageService {
     this.translation_fr.set("PROJETBUT-PRESENTATION-QUATRE", this.projetbut_presentation_quatre_fr);
     this.translation_en.set("PROJETBUT-PRESENTATION-QUATRE", this.projetbut_presentation_quatre_en);
     this.translation_fr.set("PROJETBUT-PRESENTATION-CINQ", this.projetbut_presentation_cinq_fr),
-    this.translation_en.set("PROJETBUT-PRESENTATION-CINQ", this.projetbut_presentation_cinq_en);
+      this.translation_en.set("PROJETBUT-PRESENTATION-CINQ", this.projetbut_presentation_cinq_en);
     this.translation_fr.set("PROJETBUT-PRESENTATION-SIX", this.projetbut_presentation_six_fr);
     this.translation_en.set("PROJETBUT-PRESENTATION-SIX", this.projetbut_presentation_six_en);
     this.translation_fr.set("PROJETBUT-COMPTEUR-CYBER", this.projetbut_compteur_cyber_fr);
     this.translation_en.set("PROJETBUT-COMPTEUR-CYBER", this.projetbut_compteur_cyber_en);
-     this.translation_fr.set("PROJETBUT-COMPTEUR-ADMIN", this.projetbut_compteur_admin_fr);
+    this.translation_fr.set("PROJETBUT-COMPTEUR-ADMIN", this.projetbut_compteur_admin_fr);
     this.translation_en.set("PROJETBUT-COMPTEUR-ADMIN", this.projetbut_compteur_admin_en);
     this.translation_fr.set("PROJETBUT-COMPTEUR-DEV", this.projetbut_compteur_dev_fr);
     this.translation_en.set("PROJETBUT-COMPTEUR-DEV", this.projetbut_compteur_dev_en);
@@ -870,6 +940,149 @@ export class LanguageService {
     this.translation_en.set("PROJETBUT-TAG-MAIL", "Mail Server");
     this.translation_fr.set("BTN-CLOSE", "Fermer");
     this.translation_en.set("BTN-CLOSE", "Close");
+    //sae301 fr
+    this.translation_fr.set("SAE301-PRESENTATION", this.sae301_presentation_fr);
+    this.translation_fr.set("SAE301-P1", this.sae301_p1_fr);
+    this.translation_fr.set("SAE301-P2", this.sae301_p2_fr);
+    this.translation_fr.set("SAE301-P3", this.sae301_p3_fr);
+    this.translation_fr.set("SAE301-P4-A", this.sae301_p4_a_fr);
+    this.translation_fr.set("SAE301-P4-B", this.sae301_p4_b_fr);
+    this.translation_fr.set("SAE301-P4-C", this.sae301_p4_c_fr);
+    this.translation_fr.set("SAE301-OBJECTIF", this.sae301_objectif_fr);
+    this.translation_fr.set("SAE301-OBJ1", this.sae301_obj1_fr);
+    this.translation_fr.set("SAE301-OBJ2", this.sae301_obj2_fr);
+    this.translation_fr.set("SAE301-OBJ3", this.sae301_obj3_fr);
+    this.translation_fr.set("SAE301-OBJ4", this.sae301_obj4_fr);
+    this.translation_fr.set("SAE301-OBJ5", this.sae301_obj5_fr);
+    this.translation_fr.set("SAE301-PRESENTATION-MATOS", this.sae301_presentation_matos_fr);
+    this.translation_fr.set("SAE301-MATOS1", this.sae301_matos1_fr);
+    this.translation_fr.set("SAE301-MATOS2", this.sae301_matos2_fr);
+    this.translation_fr.set("SAE301-MATOS3", this.sae301_matos3_fr);
+    this.translation_fr.set("SAE301-PRESENTATION-INFRA-RES", this.sae301_presentation_infra_res_fr);
+    this.translation_fr.set("SAE301-PRESENTATION-TACHE", this.sae301_presentation_tache_fr);
+    this.translation_fr.set("SAE301-ETAPE1", this.sae301_etape1_fr);
+    this.translation_fr.set("SAE301-ETAPE2", this.sae301_etape2_fr);
+    this.translation_fr.set("SAE301-PARTIE3-TITRE", this.sae301_partie3_titre_fr);
+    this.translation_fr.set("SAE301-PARTIE3-OBJ1", this.sae301_partie3_obj1_fr);
+    this.translation_fr.set("SAE301-PARTIE3-OBJ2", this.sae301_partie3_obj2_fr);
+    this.translation_fr.set("SAE301-PARTIE3-OBJ3", this.sae301_partie3_obj3_fr);
+    this.translation_fr.set("SAE301-PARTIE3-OBJ4", this.sae301_partie3_obj4_fr);
+    this.translation_fr.set("SAE301-PRBLM1", this.sae301_prblm1_fr);
+    this.translation_fr.set("SAE301-DEUXIEME-PARTIE", this.sae301_deuxieme_partie_fr);
+    this.translation_fr.set("SAE301-PARTIE4-A-TITRE", this.sae301_partie4_a_titre_fr);
+    this.translation_fr.set("SAE301-PARTIE4-A-OBJ1", this.sae301_partie4_a_obj1_fr);
+    this.translation_fr.set("SAE301-PARTIE4-A-OBJ2", this.sae301_partie4_a_obj2_fr);
+    this.translation_fr.set("SAE301-PARTIE4-A-OBJ3", this.sae301_partie4_a_obj3_fr);
+    this.translation_fr.set("SAE301-PARTIE4-A-OBJ4", this.sae301_partie4_a_obj4_fr);
+    this.translation_fr.set("SAE301-PARTIE4-B-TITRE", this.sae301_partie4_b_titre_fr);
+    this.translation_fr.set("SAE301-PARTIE4-B-PRES", this.sae301_partie4_b_pres_fr);
+    this.translation_fr.set("SAE301-TITRE-RETEX", this.sae301_titre_retex_fr);
+    this.translation_fr.set("SAE301-RETEX1", this.sae301_retex1_fr);
+    this.translation_fr.set("SAE301-RETEX2", this.sae301_retex2_fr);
+    this.translation_fr.set("SAE301-RETEX3", this.sae301_retex3_fr);
+    this.translation_fr.set("SAE301-RETEX4", this.sae301_retex4_fr);
+    this.translation_fr.set("SAE301-LIEN-GITHUB", this.sae301_lien_github_fr);
+    //sae301 en
+
+    this.translation_en.set("SAE301-PRESENTATION", this.sae301_presentation_en);
+    this.translation_en.set("SAE301-P1", this.sae301_p1_en);
+    this.translation_en.set("SAE301-P2", this.sae301_p2_en);
+    this.translation_en.set("SAE301-P3", this.sae301_p3_en);
+    this.translation_en.set("SAE301-P4-A", this.sae301_p4_a_en);
+    this.translation_en.set("SAE301-P4-B", this.sae301_p4_b_en);
+    this.translation_en.set("SAE301-P4-C", this.sae301_p4_c_en);
+    this.translation_en.set("SAE301-OBJECTIF", this.sae301_objectif_en);
+    this.translation_en.set("SAE301-OBJ1", this.sae301_obj1_en);
+    this.translation_en.set("SAE301-OBJ2", this.sae301_obj2_en);
+    this.translation_en.set("SAE301-OBJ3", this.sae301_obj3_en);
+    this.translation_en.set("SAE301-OBJ4", this.sae301_obj4_en);
+    this.translation_en.set("SAE301-OBJ5", this.sae301_obj5_en);
+    this.translation_en.set("SAE301-PRESENTATION-MATOS", this.sae301_presentation_matos_en);
+    this.translation_en.set("SAE301-MATOS1", this.sae301_matos1_en);
+    this.translation_en.set("SAE301-MATOS2", this.sae301_matos2_en);
+    this.translation_en.set("SAE301-MATOS3", this.sae301_matos3_en);
+    this.translation_en.set("SAE301-PRESENTATION-INFRA-RES", this.sae301_presentation_infra_res_en);
+    this.translation_en.set("SAE301-PRESENTATION-TACHE", this.sae301_presentation_tache_en);
+    this.translation_en.set("SAE301-ETAPE1", this.sae301_etape1_en);
+    this.translation_en.set("SAE301-ETAPE2", this.sae301_etape2_en);
+    this.translation_en.set("SAE301-PARTIE3-TITRE", this.sae301_partie3_titre_en);
+    this.translation_en.set("SAE301-PARTIE3-OBJ1", this.sae301_partie3_obj1_en);
+    this.translation_en.set("SAE301-PARTIE3-OBJ2", this.sae301_partie3_obj2_en);
+    this.translation_en.set("SAE301-PARTIE3-OBJ3", this.sae301_partie3_obj3_en);
+    this.translation_en.set("SAE301-PARTIE3-OBJ4", this.sae301_partie3_obj4_en);
+    this.translation_en.set("SAE301-PRBLM1", this.sae301_prblm1_en);
+    this.translation_en.set("SAE301-DEUXIEME-PARTIE", this.sae301_deuxieme_partie_en);
+    this.translation_en.set("SAE301-PARTIE4-A-TITRE", this.sae301_partie4_a_titre_en);
+    this.translation_en.set("SAE301-PARTIE4-A-OBJ1", this.sae301_partie4_a_obj1_en);
+    this.translation_en.set("SAE301-PARTIE4-A-OBJ2", this.sae301_partie4_a_obj2_en);
+    this.translation_en.set("SAE301-PARTIE4-A-OBJ3", this.sae301_partie4_a_obj3_en);
+    this.translation_en.set("SAE301-PARTIE4-A-OBJ4", this.sae301_partie4_a_obj4_en);
+    this.translation_en.set("SAE301-PARTIE4-B-TITRE", this.sae301_partie4_b_titre_en);
+    this.translation_en.set("SAE301-PARTIE4-B-PRES", this.sae301_partie4_b_pres_en);
+    this.translation_en.set("SAE301-TITRE-RETEX", this.sae301_titre_retex_en);
+    this.translation_en.set("SAE301-RETEX1", this.sae301_retex1_en);
+    this.translation_en.set("SAE301-RETEX2", this.sae301_retex2_en);
+    this.translation_en.set("SAE301-RETEX3", this.sae301_retex3_en);
+    this.translation_en.set("SAE301-RETEX4", this.sae301_retex4_en);
+    this.translation_en.set("SAE301-LIEN-GITHUB", this.sae301_lien_github_en);
+    this.translation_fr.set("SAE302-PRESENTATION", this.sae302_presentation_fr);
+    this.translation_fr.set("SAE302-PRESENTATION", this.sae302_presentation_fr);
+    this.translation_en.set("SAE302-PRESENTATION", this.sae302_presentation_en);
+    this.translation_fr.set("SAE302-OBJECTIF", this.sae302_objectif_fr);
+    this.translation_en.set("SAE302-OBJECTIF", this.sae302_objectif_en);
+    this.translation_fr.set("SAE302-DEF-FONCT", this.sae302_def_fonct_fr);
+    this.translation_en.set("SAE302-DEF-FONCT", this.sae302_def_fonct_en);
+    this.translation_fr.set("SAE302-FONCT1", this.sae302_fonct1_fr);
+    this.translation_en.set("SAE302-FONCT1", this.sae302_fonct1_en);
+    this.translation_fr.set("SAE302-FONCT2", this.sae302_fonct2_fr);
+    this.translation_en.set("SAE302-FONCT2", this.sae302_fonct2_en);
+    this.translation_fr.set("SAE302-FONCT3", this.sae302_fonct3_fr);
+    this.translation_en.set("SAE302-FONCT3", this.sae302_fonct3_en);
+    this.translation_fr.set("SAE302-FONCT4", this.sae302_fonct4_fr);
+    this.translation_en.set("SAE302-FONCT4", this.sae302_fonct4_en);
+    this.translation_fr.set("SAE302-CONTRAINTE", this.sae302_contrainte_fr);
+    this.translation_en.set("SAE302-CONTRAINTE", this.sae302_contrainte_en);
+    this.translation_fr.set("SAE302-CONT1", this.sae302_cont1_fr);
+    this.translation_en.set("SAE302-CONT1", this.sae302_cont1_en);
+    this.translation_fr.set("SAE302-CONT2", this.sae302_cont2_fr);
+    this.translation_en.set("SAE302-CONT2", this.sae302_cont2_en);
+    this.translation_fr.set("SAE302-CONT3", this.sae302_cont3_fr);
+    this.translation_en.set("SAE302-CONT3", this.sae302_cont3_en);
+    this.translation_fr.set("SAE302-TACHE", this.sae302_tache_fr);
+    this.translation_en.set("SAE302-TACHE", this.sae302_tache_en);
+    this.translation_fr.set("SAE302-TACHE1", this.sae302_tache1_fr);
+    this.translation_en.set("SAE302-TACHE1", this.sae302_tache1_en);
+    this.translation_fr.set("SAE302-TACHE2", this.sae302_tache2_fr);
+    this.translation_en.set("SAE302-TACHE2", this.sae302_tache2_en);
+    this.translation_fr.set("SAE302-TACHE3", this.sae302_tache3_fr);
+    this.translation_en.set("SAE302-TACHE3", this.sae302_tache3_en);
+    this.translation_fr.set("SAE302-MATACHE", this.sae302_matache_fr);
+    this.translation_en.set("SAE302-MATACHE", this.sae302_matache_en);
+    this.translation_fr.set("SAE302-RAISON1", this.sae302_raison1_fr);
+    this.translation_en.set("SAE302-RAISON1", this.sae302_raison1_en);
+    this.translation_fr.set("SAE302-RAISON2", this.sae302_raison2_fr);
+    this.translation_en.set("SAE302-RAISON2", this.sae302_raison2_en);
+    this.translation_fr.set("SAE302-ARCHI", this.sae302_archi_fr);
+    this.translation_en.set("SAE302-ARCHI", this.sae302_archi_en);
+    this.translation_fr.set("SAE302-VIDEO", this.sae302_video_fr);
+    this.translation_en.set("SAE302-VIDEO", this.sae302_video_en);
+    this.translation_fr.set("SAE302-TITRE-RETEX", this.sae302_titre_retex_fr);
+    this.translation_en.set("SAE302-TITRE-RETEX", this.sae302_titre_retex_en);
+    this.translation_fr.set("SAE302-RETEX1", this.sae302_retex1_fr);
+    this.translation_en.set("SAE302-RETEX1", this.sae302_retex1_en);
+    this.translation_fr.set("SAE302-RETEX2", this.sae302_retex2_fr);
+    this.translation_en.set("SAE302-RETEX2", this.sae302_retex2_en);
+    this.translation_fr.set("SAE302-RETEX3", this.sae302_retex3_fr);
+    this.translation_en.set("SAE302-RETEX3", this.sae302_retex3_en);
+    this.translation_fr.set("SAE302-RETEX4", this.sae302_retex4_fr);
+    this.translation_en.set("SAE302-RETEX4", this.sae302_retex4_en);
+    this.translation_fr.set("SAE302-RETEX5", this.sae302_retex5_fr);
+    this.translation_en.set("SAE302-RETEX5", this.sae302_retex5_en);
+    this.translation_fr.set("SAE302-LIEN-GITHUB", this.sae302_lien_github_fr);
+    this.translation_en.set("SAE302-LIEN-GITHUB", this.sae302_lien_github_en);
+
+
+
     this.checkAllKeys();
   }
 
@@ -1504,7 +1717,217 @@ of the project.`;
   projetbut_titre_sae502_en = `SAE502`;
   projetbut_description_sae502_en = `Managing an IT Project`;
 
+  sae301_presentation_fr = `Cette SAE concernait l'ensemble des étudiants en formation initiale et a été
+            réalisée par groupe de 2 ou 3
+            étudiants. Cette SAE était relié à l'UE "Connecter". J'ai été en binôme dans cette
+            SAE. Ce projet se décomposait en plusieurs parties :`;
+  sae301_p1_fr = `Partie 1: Plateforme d'apprentissage: Raspberry pi, machine virtuelle`;
+  sae301_p2_fr = `Partie 2: Débit d'une source d'information`;
+  sae301_p3_fr = `Partie 3: Systèmes d'analyse de débit (iperf, Munin)`;
+  sae301_p4_a_fr = `Partie 4: Application: Transmission vidéo: Serveur vidéo à débit adaptatif DASH`;
+  sae301_p4_b_fr = `Partie 4: Application: Transmission sécurisée: Serveur VPN Wireguard, OpenVPN`;
+  sae301_p4_c_fr = `Partie 4: Application: Transmission multimédia: Serveur NAS OMV`;
+  sae301_objectif_fr = ` Les objectifs de cette SAE étaient les suivants :`;
+  sae301_obj1_fr = `Mesurer le débit d'une source d'information en utilisant différents outils et sur différents
+                types de transmissions.`;
+  sae301_obj2_fr = `Initier à la mise en place de services réseau en lien avec les transmissions
+            `;
+  sae301_obj3_fr = `Sensibiliser à la qualité de des transmissions`;
+  sae301_obj4_fr = `faire des interprétations comme un technicien dans le domaine des Réseaux et Télécommunications.`;
+  sae301_obj5_fr = `Développer notre autonomie`;
+  sae301_presentation_matos_fr = `Le matériel utilisé au cours de cette SAE comprend :`;
+  sae301_matos1_fr = `Un Raspberry Pi 4, doté de son alimentation, d'une carte micro-SD et d'un
+                câble Ethernet pour la mise en réseau.`;
+  sae301_matos2_fr = `Un PC de l'IUT équipé de VirtualBox, permettant d'exécuter des machines
+                virtuelles.`;
+  sae301_matos3_fr = `L'un de nos propres PC, utilisé en remplacement d'un ordinateur de l'IUT qui
+                ne prenait pas en charge les machines virtuelles faisait l’hôte de l’autre VM
+                nécessaire.`;
+  sae301_presentation_infra_res_fr = `Voici l'infrastructure réseaux que nous avions mis en place`;
+  sae301_presentation_tache_fr = `Afin d'être efficace et de ne pas perdre de temps dans la réalisation du projet,
+            nous nous sommes répartit les tâches et j'ai été assignés aux tâches suivantes : Partie 3 : Systèmes
+            d'analyse de débit (Iperf, Munin). J'ai également réalisé la partie 4 dédié au Serveur vidéo à
+            débit adaptatif DASH et au Serveur VPN Wireguard et OpenVPN `;
+  sae301_etape1_fr = `La première étape consistait à mettre en place l'infrastructure réseau évoquée
+            précédemment
+            ainsi que de rassembler des données sur les composants du Raspberry Pi tels que la carte réseau, le
+            type du Rapsberry pi, le débit des informations... Cette partie a été réalisée par mon binôme.`;
+  sae301_etape2_fr = `Une fois les deux première parties réalisées par mon camarade, j'ai réalisé la partie 3 :
+            Système d'analyse de débit.`;
+  sae301_partie3_titre_fr = `Partie 3 : Système d'analyse de débit : Munin`;
+  sae301_partie3_obj1_fr = ` Le but de cette partie était d'utiliser le logiciel Munin afin de relever le débit des cartes
+            réseaux.`;
+  sae301_partie3_obj2_fr = `Munin est un système complet de monitoring (ou métrologie) de machine. Il permet
+            de générer une série de graphes à partir des informations envoyées par les autres
+            machines : utilisation de la mémoire vive, « load average », utilisation du processeur,
+            réeaux...`;
+  sae301_partie3_obj3_fr = `Une fois l'installation et la configuration réalisé, nous avons pu voir que le logiciel
+            était
+            fonctionnel et relevait le trafic sur la carte réseau du Raspberry-pi distant. `;
+  sae301_partie3_obj4_fr = `Voici la page
+            web
+            de Munin où nous avons pu relever le trafic passant par la carte réseau du Raspberry Pi`;
+  sae301_prblm1_fr = `Un des problèmes que nous avons rencontré lors de l'installation de cet outil est
+            l'intervalle de mise à jour des graphique qui était de 5 minutes. Afin de réduire ce temps, nous
+            avons utilisé Fast Common Gateway Interface (FCGI) afin de mettre les données à jour en temps et en
+            heure.`;
+  sae301_deuxieme_partie_fr = `La deuxième partie que j'ai réalisé dans cette SAE fut la partie 4 : `;
+  sae301_partie4_a_titre_fr = `Partie 4 : Application a une transmission
+            multimédia :
+            Serveur DASH`;
+  sae301_partie4_a_obj1_fr = `Dans cette partie, l’objectif était de produire un résultat similaire à YouTube à propos du
+            changement de résolution : lorsqu’on clique sur YouTube sur la résolution a 720p, la
+            qualité vidéo change et la fluidité de celle-ci également. Nous nous sommes basé sur
+            notre VM déjà installée avec 4 processeurs.`;
+  sae301_partie4_a_obj2_fr = `Afin de réaliser ceci, nous avons téléchargé 2
+            vidéos Youtube en 1080p. Puis, nous
+            avons utilisé l’utilitaire ffmpeg afin de segmenter ces vidéos en différents segment de
+            différentes qualités chacun afin de pouvoir la changer plus tard.`;
+  sae301_partie4_a_obj3_fr = `ffmpeg est une collection
+            de logiciels
+            libres destinés au traitement de flux audio ou vidéo. Cette bibliothèque est utilisée par de
+            nombreux autres logiciels ou services comme VLC, iTunes ou YouTube `;
+  sae301_partie4_a_obj4_fr = `Après avoir fragmenté la vidéo en trois résolutions différentes, nous avons utilisé l’utilitaire
+            MP4Box pour créer des segments adaptés à chaque résolution. Ainsi, la vidéo peut s'ajuster
+            automatiquement à la résolution la plus appropriée en fonction du débit disponible sur l’appareil de
+            l'utilisateur, assurant une lecture optimisée et sans interruption.`;
+  sae301_partie4_b_titre_fr = `Partie 4 : Application a une transmission
+            sécurisé :
+            Serveur VPN`;
+  sae301_partie4_b_pres_fr = `Dans cette partie, j'ai eu la charge de mettre en place un tunnel VPN. Le principe
+            d'un tunnel VPN
+            est d'encapsuler des données puis de les chiffrer pour empêcher des personnes externes
+            d'accéder aux échanges. Je n'ai mis en place qu'un seul serveur VPN : Wireguard, et
+            j'ai commencé à configurer un deuxième serveur VPN, OpenVPN. Cependant celui-ci na pas fonctionné,
+            surement dû à des erreurs de configurations. Le temps impartis au projet étant écoulé, je n'ai pas
+            eu le temps de modifier la configuration pour que celui-ci soit fonctionnel. On peut voir dans la
+            capture wireshark suivante que le ping passe à travers l'interface du VPN wireguard nouvellement
+            créée.`;
+  sae301_titre_retex_fr = `Ce que j'ai appris durant ce projet`;
+  sae301_retex1_fr = `Comment mettre en place la résolution automatique des vidéos`;
+  sae301_retex2_fr = `Comment mettre en oeuvre un VPN`;
+  sae301_retex3_fr = `Renforcer mon aptitude à travailler en équipe`;
+  sae301_retex4_fr = `Résoudre des problèmes en totale autonomie tout en étant sous pression`;
+  sae301_lien_github_fr = `Pour en savoir plus sur ce projet, n'hésitez pas à jeter un &oelig;il à notre
+            rapport :`;
 
+  sae301_presentation_en = `This SAE involved all students in initial training and was carried out in groups of two or three students. This SAE was linked to the Connect companies and users's UE. I worked in pairs on this SAE. The project was divided into several parts:`;
+  sae301_p1_en = `Part 1: Learning platform: Raspberry Pi, virtual machine`;
+  sae301_p2_en = `Part 2: Information source throughput`;
+  sae301_p3_en = `Part 3: Throughput analysis systems (iperf, Munin)`;
+  sae301_p4_a_en = `Part 4: Application: Video transmission: DASH adaptive bitrate video server`;
+  sae301_p4_b_en = `Part 4: Application: Secure transmission: Wireguard VPN server, OpenVPN`;
+  sae301_p4_c_en = `Part 4: Application: Multimedia transmission: OMV NAS server`;
+  sae301_objectif_en = `The objectives of this SAE were as follows:`;
+  sae301_obj1_en = `Measure the throughput of an information source using different tools and different types of transmission.`;
+  sae301_obj2_en = `Introduce the implementation of network services related to transmission.`;
+  sae301_obj3_en = `Raise awareness of transmission quality.`;
+  sae301_obj4_en = `Make interpretations like a technician in the field of Networks and Telecommunications.`;
+  sae301_obj5_en = `Develop our autonomy.`;
+  sae301_presentation_matos_en = `The equipment used during this SAE included:`;
+  sae301_matos1_en = `A Raspberry Pi 4, equipped with its power supply, a micro-SD card and an Ethernet cable for networking.`;
+  sae301_matos2_en = `An IUT PC equipped with VirtualBox, allowing virtual machines to be run.`;
+  sae301_matos3_en = `One of our own PCs, used as a replacement for an IUT computer that did not support virtual machines, hosted the other necessary VM.`;
+  sae301_presentation_infra_res_en = `Here is the network infrastructure we had set up.
+
+`;
+  sae301_presentation_tache_en = `In order to be efficient and not waste time in carrying out the project, we divided up the tasks and I was assigned the following tasks: Part 3: Flow analysis systems (Iperf, Munin). I also completed Part 4, dedicated to the DASH adaptive bitrate video server and the Wireguard and OpenVPN VPN server.
+`;
+  sae301_etape1_en = `The first step was to set up the network infrastructure mentioned above and gather data on the Raspberry Pi components, such as the network card, the type of Raspberry Pi, the data flow, etc. This part was completed by my partner.`;
+  sae301_etape2_en = `Once my partner had completed the first two parts, I worked on part 3: the flow analysis system.`;
+  sae301_partie3_titre_en = `Part 3: Flow analysis system: Munin`;
+  sae301_partie3_obj1_en = `The aim of this part was to use Munin software to measure the flow of the network cards.`;
+  sae301_partie3_obj2_en = `Munin is a comprehensive machine monitoring (or metrology) system. It generates a series of graphs based on information sent by other machines: RAM usage, load average, CPU usage, networks, etc.`;
+  sae301_partie3_obj3_en = `Once installation and configuration were complete, we were able to see that the software was functional and was recording traffic on the remote Raspberry Pi's network card.`;
+  sae301_partie3_obj4_en = `Here is the Munin web page where we were able to record the traffic passing through the Raspberry Pi's network card.`;
+  sae301_prblm1_en = `One of the problems we encountered when installing this tool was the graph update interval, which was 5 minutes. In order to reduce this time, we used Fast Common Gateway Interface (FCGI) to update the data in real time.`;
+  sae301_deuxieme_partie_en = `The second part I completed in this SAE was part 4:`;
+  sae301_partie4_a_titre_en = `Part 4: Multimedia transmission application: DASH server`;
+  sae301_partie4_a_obj1_en = `In this part, the objective was to produce a result similar to YouTube in terms of resolution change: when you click on YouTube at 720p resolution, the video quality changes and so does its fluidity. We based our work on our already installed VM with 4 processors.`;
+  sae301_partie4_a_obj2_en = `To achieve this, we downloaded two YouTube videos in 1080p. Then, we used the ffmpeg utility to segment these videos into different segments of different qualities so that we could change them later.`;
+  sae301_partie4_a_obj3_en = `ffmpeg is a collection of free software for processing audio or video streams. This library is used by many other software programmes and services such as VLC, iTunes and YouTube.`;
+  sae301_partie4_a_obj4_en = `After splitting the video into three different resolutions, we used the MP4Box utility to create segments adapted to each resolution. This allows the video to automatically adjust to the most appropriate resolution based on the available bandwidth on the user's device, ensuring optimised, uninterrupted playback.`;
+  sae301_partie4_b_titre_en = `Part 4: Secure transmission application: VPN server`;
+  sae301_partie4_b_pres_en = `In this part, I was responsible for setting up a VPN tunnel. The principle of a VPN tunnel is to encapsulate data and then encrypt it to prevent external parties from accessing the exchanges. I set up only one VPN server: Wireguard, and I started to configure a second VPN server, OpenVPN. However, this did not work, probably due to configuration errors. As the time allocated to the project had run out, I did not have time to modify the configuration to make it functional. The following Wireshark capture shows that the ping passes through the newly created Wireguard VPN interface.
+`;
+  sae301_titre_retex_en = `What I learned during this project`;
+  sae301_retex1_en = `How to set up automatic video resolution`;
+  sae301_retex2_en = `How to implement a VPN`;
+  sae301_retex3_en = `Strengthening my ability to work in a team`;
+  sae301_retex4_en = `Solving problems independently while under pressure`;
+  sae301_lien_github_en = `To learn more about this project, feel free to take a look at our report: (French only, the report has not been translated yet)`;
+
+  //sae302
+
+
+  sae302_presentation_fr = `Cette SAE concernait l'ensemble des étudiants en formation initiale et a été
+            réalisée par groupe de 3
+            étudiants. La SAE 302 « Développer des applications communicantes » à débuté le
+            lundi 11 décembre 2023 et s’est terminé le 15 décembre 2023.L'objectif de se projet est le suivant :`;
+  sae302_objectif_fr = `Créer une application de type "réseau social" en java utilisant des fonctions de communication
+                pour créer un protocole applicatif au dessus de la pile TCP/IP`;
+  sae302_def_fonct_fr = `Pour réaliser ce projet, nous avons commencé par définir les différentes
+            fonctionnalités que notre application devrait avoir :`;
+  sae302_fonct1_fr = `Inscription`;
+  sae302_fonct2_fr = `Connexion`;
+  sae302_fonct3_fr = `Demande d'amis`;
+  sae302_fonct4_fr = `Envois de message en temps réel`;
+  sae302_contrainte_fr = `Il y avait également des contraintes à respecter : `;
+  sae302_cont1_fr = `100 utilisateurs maximum`;
+  sae302_cont2_fr = `10 amis par utilisateur`;
+  sae302_cont3_fr = `les messages sont stockés en RAM`;
+  sae302_tache_fr = `Nous avons ensuite définis les différentes tâches entre les membres du groupe et
+            j'ai ainsi
+            principalement réalisé les tâches
+            suivantes : `;
+  sae302_tache1_fr = `Conception de l'architecture`;
+  sae302_tache2_fr = `Requête inscription`;
+  sae302_tache3_fr = `Requête connexion`;
+  sae302_matache_fr = `J'ai eu la tâche de définir l'architecture réseau que nous avons mis en place et
+            l'architecture de l'application au niveau de la pile TCP/IP. J'ai ainsi choisi d'utiliser le
+            protocole de communication UDP entre le serveur et le client pour plusieurs raisons : `;
+  sae302_raison1_fr = `simplicité de la syntaxe`;
+  sae302_raison2_fr = `rapidité de l'envoi et de la réception des sockets.`;
+  sae302_archi_fr = `Notre application (client et serveur) étant stocké sur un seul ordinateur, nous
+            avons fait le choix de l'architecture suivante :`;
+  sae302_video_fr = `Nous avons également réalisé une vidéo de démonstration de l'application : `;
+  sae302_titre_retex_fr = `Ce que j'ai appris durant ce projet`;
+  sae302_retex1_fr = `Utilisation du protocole UDP dans un cas concret`;
+  sae302_retex2_fr = `Création d'une application sous java`;
+  sae302_retex3_fr = `Renforcer mon aptitude à travailler en équipe`;
+  sae302_retex4_fr = `être rigoureux dans le codage d'une application`;
+  sae302_retex5_fr = `Résoudre des problèmes en totale autonomie tout en étant sous pression `;
+  sae302_lien_github_fr = `Pour en savoir plus sur ce projet, n'hésitez pas à jeter un &oelig;il à notre
+            rapport : `;
+
+
+  sae302_presentation_en = `This SAE concerned all students in initial training and was carried out in groups of three students. SAE 302, ‘Developing Communication Applications,’ began on Monday, 11 December 2023, and ended on 15 December 2023. The objective of this project is as follows:`;
+  sae302_objectif_en = `Create a ‘social network’ application in Java using communication functions to create an application protocol on top of the TCP/IP stack.`;
+  sae302_def_fonct_en = `To carry out this project, we began by defining the various features that our application should have:`;
+  sae302_fonct1_en = `Registration`;
+  sae302_fonct2_en = `Login`;
+  sae302_fonct3_en = `Friend request`;
+  sae302_fonct4_en = `Live chat`;
+  sae302_contrainte_en = `There were also some constraints to respect`;
+  sae302_cont1_en = `100 maximum users`;
+  sae302_cont2_en = `10 friends per user`;
+  sae302_cont3_en = `Messages are stored in the RAM`;
+  sae302_tache_en = `We then divided the various tasks among the group members, and I mainly carried out the following tasks:`;
+  sae302_tache1_en = `Architecture's conception`;
+  sae302_tache2_en = `Registration's request`;
+  sae302_tache3_en = `Login's request`;
+  sae302_matache_en = `I was tasked with defining the network architecture we implemented and the application architecture at the TCP/IP stack level. I chose to use the UDP communication protocol between the server and the client for several reasons:`;
+  sae302_raison1_en = `Simplicity of syntax`;
+  sae302_raison2_en = `Speed of sending and receiving sockets`;
+  sae302_archi_en = `As our application (client and server) is stored on a single computer, we have opted for the following architecture:`;
+  sae302_video_en = `We have also produced a video demonstration of the application:`;
+  sae302_titre_retex_en = `What i learned during this project`;
+  sae302_retex1_en = `Using the UDP protocol in a specific case`;
+  sae302_retex2_en = `Creating an application in Java`;
+  sae302_retex3_en = `Strengthen my ability to work in a team`;
+  sae302_retex4_en = `be rigorous in coding an application`;
+  sae302_retex5_en = `Solve problems independently while under pressure`;
+  sae302_lien_github_en = `To learn more about this project, feel free to take a look at our report: (French only, the report has not been translated yet)`;
 
 
 }
