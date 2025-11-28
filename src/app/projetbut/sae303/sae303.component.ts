@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { LanguageService } from '../../../services/language.service';
 
 
 @Component({
@@ -9,7 +10,7 @@ import { Component } from '@angular/core';
     styleUrl: './sae303.component.css'
 })
 export class Sae303Component {
-
+  public translation = inject(LanguageService);
   archisae303 = "./assets/img/sae303/archi.PNG";
   roas = "./assets/img/sae303/roas.PNG";
   cr_sae_303 = "./assets/img/sae303/cr_sae_303.pdf";
