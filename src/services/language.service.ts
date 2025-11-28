@@ -383,11 +383,43 @@ export const TRANSLATION_KEY = [
   "SAE303-RETEX5",
   "SAE303-RETEX6",
   "SAE303-LIEN-GITHUB",
-
-
-
-
-
+  "SAE401-PRESENTATION",
+  "SAE401-PRES-TACHE",
+  "SAE401-TACHE1",
+  "SAE401-TACHE2",
+  "SAE401-TACHE3",
+  "SAE401-TACHE4",
+  "SAE401-TACHE5",
+  "SAE401-TACHE6",
+  "SAE401-TACHE7",
+  "SAE401-TACHE8",
+  "SAE401-TACHE9",
+  "SAE401-TACHE10",
+  "SAE401-TACHE11",
+  "SAE401-TACHE12",
+  "SAE401-TACHE13",
+  "SAE401-ORGA",
+  "SAE401-TITRE-TACHE2",
+  "SAE401-OBJ1-TACHE2",
+  "SAE401-OBJ2-TACHE2",
+  "SAE401-LIEN-TACHE2",
+  "SAE401-TACHE4-TITRE",
+  "SAE401-OBJ1-TACHE4",
+  "SAE401-LIEN-TACHE4",
+  "SAE401-TITRE-TACHE7",
+  "SAE401-OBJ1-TACHE7",
+  "SAE401-TACHE7-SCAN1",
+  "SAE401-TACHE7-SCAN2",
+  "SAE401-TACHE7-SCAN3",
+  "SAE401-TACHE7-SCAN4",
+  "SAE401-TACHE7-COMPARER",
+  "SAE401-TACHE7-LIEN",
+  "SAE401-TITRE-RETEX",
+  "SAE401-RETEX1",
+  "SAE401-RETEX2",
+  "SAE401-RETEX3",
+  "SAE401-RETEX4",
+  "SAE401-LIEN-GITHUB",
 
 
 
@@ -1128,90 +1160,166 @@ export class LanguageService {
     this.translation_en.set("SAE302-LIEN-GITHUB", this.sae302_lien_github_en);
     //sae303
     this.translation_en.set("SAE303-PRESENTATION1", this.sae303_presentation1_en);
-this.translation_en.set("SAE303-PRESENTATION2", this.sae303_presentation2_en);
-this.translation_en.set("SAE303-ARCHI", this.sae303_archi_en);
-this.translation_en.set("SAE303-MATOS-LISTE", this.sae303_matos_liste_en);
-this.translation_en.set("SAE303-MATOS1", this.sae303_matos1_en);
-this.translation_en.set("SAE303-MATOS2", this.sae303_matos2_en);
-this.translation_en.set("SAE303-MATOS3", this.sae303_matos3_en);
-this.translation_en.set("SAE303-MATOS4", this.sae303_matos4_en);
-this.translation_en.set("SAE303-MATOS5", this.sae303_matos5_en);
-this.translation_en.set("SAE303-MATOS6", this.sae303_matos6_en);
-this.translation_en.set("SAE303-MATOS7", this.sae303_matos7_en);
-this.translation_en.set("SAE303-VIDEO", this.sae303_video_en);
-this.translation_en.set("SAE303-ORGA1", this.sae303_orga1_en);
-this.translation_en.set("SAE303-ORGA2", this.sae303_orga2_en);
-this.translation_en.set("SAE303-PLAN-IP", this.sae303_plan_ip_en);
-this.translation_en.set("SAE303-PHASEDEP", this.sae303_phasedep_en);
-this.translation_en.set("SAE303-MATACHE", this.sae303_matache_en);
-this.translation_en.set("SAE303-TACHE1", this.sae303_tache1_en);
-this.translation_en.set("SAE303-TACHE2", this.sae303_tache2_en);
-this.translation_en.set("SAE303-PASPRBLM", this.sae303_pasprblm_en);
-this.translation_en.set("SAE303-SERVICE1", this.sae303_service1_en);
-this.translation_en.set("SAE303-SERVICE2", this.sae303_service2_en);
-this.translation_en.set("SAE303-SERVICE3", this.sae303_service3_en);
-this.translation_en.set("SAE303-SERVICE4", this.sae303_service4_en);
-this.translation_en.set("SAE303-SERVICE5", this.sae303_service5_en);
-this.translation_en.set("SAE303-SERVICE6", this.sae303_service6_en);
-this.translation_en.set("SAE303-MISEPLACE1", this.sae303_miseplace1_en);
-this.translation_en.set("SAE303-MISEPLACE2", this.sae303_miseplace2_en);
-this.translation_en.set("SAE303-SOL1", this.sae303_sol1_en);
-this.translation_en.set("SAE303-SOL2", this.sae303_sol2_en);
-this.translation_en.set("SAE303-ROAS", this.sae303_roas_en);
-this.translation_en.set("SAE303-DHCP1", this.sae303_dhcp1_en);
-this.translation_en.set("SAE303-DHCP2", this.sae303_dhcp2_en);
-this.translation_en.set("SAE303-RESULTSCAN", this.sae303_resultscan_en);
-this.translation_en.set("SAE303-TITRE-RETEX", this.sae303_titre_retex_en);
-this.translation_en.set("SAE303-RETEX1", this.sae303_retex1_en);
-this.translation_en.set("SAE303-RETEX2", this.sae303_retex2_en);
-this.translation_en.set("SAE303-RETEX3", this.sae303_retex3_en);
-this.translation_en.set("SAE303-RETEX4", this.sae303_retex4_en);
-this.translation_en.set("SAE303-RETEX5", this.sae303_retex5_en);
-this.translation_en.set("SAE303-RETEX6", this.sae303_retex6_en);
-this.translation_en.set("SAE303-LIEN-GITHUB", this.sae303_lien_github_en);
-this.translation_fr.set("SAE303-PRESENTATION1", this.sae303_presentation1_fr);
-this.translation_fr.set("SAE303-PRESENTATION2", this.sae303_presentation2_fr);
-this.translation_fr.set("SAE303-ARCHI", this.sae303_archi_fr);
-this.translation_fr.set("SAE303-MATOS-LISTE", this.sae303_matos_liste_fr);
-this.translation_fr.set("SAE303-MATOS1", this.sae303_matos1_fr);
-this.translation_fr.set("SAE303-MATOS2", this.sae303_matos2_fr);
-this.translation_fr.set("SAE303-MATOS3", this.sae303_matos3_fr);
-this.translation_fr.set("SAE303-MATOS4", this.sae303_matos4_fr);
-this.translation_fr.set("SAE303-MATOS5", this.sae303_matos5_fr);
-this.translation_fr.set("SAE303-MATOS6", this.sae303_matos6_fr);
-this.translation_fr.set("SAE303-MATOS7", this.sae303_matos7_fr);
-this.translation_fr.set("SAE303-VIDEO", this.sae303_video_fr);
-this.translation_fr.set("SAE303-ORGA1", this.sae303_orga1_fr);
-this.translation_fr.set("SAE303-ORGA2", this.sae303_orga2_fr);
-this.translation_fr.set("SAE303-PLAN-IP", this.sae303_plan_ip_fr);
-this.translation_fr.set("SAE303-PHASEDEP", this.sae303_phasedep_fr);
-this.translation_fr.set("SAE303-MATACHE", this.sae303_matache_fr);
-this.translation_fr.set("SAE303-TACHE1", this.sae303_tache1_fr);
-this.translation_fr.set("SAE303-TACHE2", this.sae303_tache2_fr);
-this.translation_fr.set("SAE303-PASPRBLM", this.sae303_pasprblm_fr);
-this.translation_fr.set("SAE303-SERVICE1", this.sae303_service1_fr);
-this.translation_fr.set("SAE303-SERVICE2", this.sae303_service2_fr);
-this.translation_fr.set("SAE303-SERVICE3", this.sae303_service3_fr);
-this.translation_fr.set("SAE303-SERVICE4", this.sae303_service4_fr);
-this.translation_fr.set("SAE303-SERVICE5", this.sae303_service5_fr);
-this.translation_fr.set("SAE303-SERVICE6", this.sae303_service6_fr);
-this.translation_fr.set("SAE303-MISEPLACE1", this.sae303_miseplace1_fr);
-this.translation_fr.set("SAE303-MISEPLACE2", this.sae303_miseplace2_fr);
-this.translation_fr.set("SAE303-SOL1", this.sae303_sol1_fr);
-this.translation_fr.set("SAE303-SOL2", this.sae303_sol2_fr);
-this.translation_fr.set("SAE303-ROAS", this.sae303_roas_fr);
-this.translation_fr.set("SAE303-DHCP1", this.sae303_dhcp1_fr);
-this.translation_fr.set("SAE303-DHCP2", this.sae303_dhcp2_fr);
-this.translation_fr.set("SAE303-RESULTSCAN", this.sae303_resultscan_fr);
-this.translation_fr.set("SAE303-TITRE-RETEX", this.sae303_titre_retex_fr);
-this.translation_fr.set("SAE303-RETEX1", this.sae303_retex1_fr);
-this.translation_fr.set("SAE303-RETEX2", this.sae303_retex2_fr);
-this.translation_fr.set("SAE303-RETEX3", this.sae303_retex3_fr);
-this.translation_fr.set("SAE303-RETEX4", this.sae303_retex4_fr);
-this.translation_fr.set("SAE303-RETEX5", this.sae303_retex5_fr);
-this.translation_fr.set("SAE303-RETEX6", this.sae303_retex6_fr);
-this.translation_fr.set("SAE303-LIEN-GITHUB", this.sae303_lien_github_fr);
+    this.translation_en.set("SAE303-PRESENTATION2", this.sae303_presentation2_en);
+    this.translation_en.set("SAE303-ARCHI", this.sae303_archi_en);
+    this.translation_en.set("SAE303-MATOS-LISTE", this.sae303_matos_liste_en);
+    this.translation_en.set("SAE303-MATOS1", this.sae303_matos1_en);
+    this.translation_en.set("SAE303-MATOS2", this.sae303_matos2_en);
+    this.translation_en.set("SAE303-MATOS3", this.sae303_matos3_en);
+    this.translation_en.set("SAE303-MATOS4", this.sae303_matos4_en);
+    this.translation_en.set("SAE303-MATOS5", this.sae303_matos5_en);
+    this.translation_en.set("SAE303-MATOS6", this.sae303_matos6_en);
+    this.translation_en.set("SAE303-MATOS7", this.sae303_matos7_en);
+    this.translation_en.set("SAE303-VIDEO", this.sae303_video_en);
+    this.translation_en.set("SAE303-ORGA1", this.sae303_orga1_en);
+    this.translation_en.set("SAE303-ORGA2", this.sae303_orga2_en);
+    this.translation_en.set("SAE303-PLAN-IP", this.sae303_plan_ip_en);
+    this.translation_en.set("SAE303-PHASEDEP", this.sae303_phasedep_en);
+    this.translation_en.set("SAE303-MATACHE", this.sae303_matache_en);
+    this.translation_en.set("SAE303-TACHE1", this.sae303_tache1_en);
+    this.translation_en.set("SAE303-TACHE2", this.sae303_tache2_en);
+    this.translation_en.set("SAE303-PASPRBLM", this.sae303_pasprblm_en);
+    this.translation_en.set("SAE303-SERVICE1", this.sae303_service1_en);
+    this.translation_en.set("SAE303-SERVICE2", this.sae303_service2_en);
+    this.translation_en.set("SAE303-SERVICE3", this.sae303_service3_en);
+    this.translation_en.set("SAE303-SERVICE4", this.sae303_service4_en);
+    this.translation_en.set("SAE303-SERVICE5", this.sae303_service5_en);
+    this.translation_en.set("SAE303-SERVICE6", this.sae303_service6_en);
+    this.translation_en.set("SAE303-MISEPLACE1", this.sae303_miseplace1_en);
+    this.translation_en.set("SAE303-MISEPLACE2", this.sae303_miseplace2_en);
+    this.translation_en.set("SAE303-SOL1", this.sae303_sol1_en);
+    this.translation_en.set("SAE303-SOL2", this.sae303_sol2_en);
+    this.translation_en.set("SAE303-ROAS", this.sae303_roas_en);
+    this.translation_en.set("SAE303-DHCP1", this.sae303_dhcp1_en);
+    this.translation_en.set("SAE303-DHCP2", this.sae303_dhcp2_en);
+    this.translation_en.set("SAE303-RESULTSCAN", this.sae303_resultscan_en);
+    this.translation_en.set("SAE303-TITRE-RETEX", this.sae303_titre_retex_en);
+    this.translation_en.set("SAE303-RETEX1", this.sae303_retex1_en);
+    this.translation_en.set("SAE303-RETEX2", this.sae303_retex2_en);
+    this.translation_en.set("SAE303-RETEX3", this.sae303_retex3_en);
+    this.translation_en.set("SAE303-RETEX4", this.sae303_retex4_en);
+    this.translation_en.set("SAE303-RETEX5", this.sae303_retex5_en);
+    this.translation_en.set("SAE303-RETEX6", this.sae303_retex6_en);
+    this.translation_en.set("SAE303-LIEN-GITHUB", this.sae303_lien_github_en);
+    this.translation_fr.set("SAE303-PRESENTATION1", this.sae303_presentation1_fr);
+    this.translation_fr.set("SAE303-PRESENTATION2", this.sae303_presentation2_fr);
+    this.translation_fr.set("SAE303-ARCHI", this.sae303_archi_fr);
+    this.translation_fr.set("SAE303-MATOS-LISTE", this.sae303_matos_liste_fr);
+    this.translation_fr.set("SAE303-MATOS1", this.sae303_matos1_fr);
+    this.translation_fr.set("SAE303-MATOS2", this.sae303_matos2_fr);
+    this.translation_fr.set("SAE303-MATOS3", this.sae303_matos3_fr);
+    this.translation_fr.set("SAE303-MATOS4", this.sae303_matos4_fr);
+    this.translation_fr.set("SAE303-MATOS5", this.sae303_matos5_fr);
+    this.translation_fr.set("SAE303-MATOS6", this.sae303_matos6_fr);
+    this.translation_fr.set("SAE303-MATOS7", this.sae303_matos7_fr);
+    this.translation_fr.set("SAE303-VIDEO", this.sae303_video_fr);
+    this.translation_fr.set("SAE303-ORGA1", this.sae303_orga1_fr);
+    this.translation_fr.set("SAE303-ORGA2", this.sae303_orga2_fr);
+    this.translation_fr.set("SAE303-PLAN-IP", this.sae303_plan_ip_fr);
+    this.translation_fr.set("SAE303-PHASEDEP", this.sae303_phasedep_fr);
+    this.translation_fr.set("SAE303-MATACHE", this.sae303_matache_fr);
+    this.translation_fr.set("SAE303-TACHE1", this.sae303_tache1_fr);
+    this.translation_fr.set("SAE303-TACHE2", this.sae303_tache2_fr);
+    this.translation_fr.set("SAE303-PASPRBLM", this.sae303_pasprblm_fr);
+    this.translation_fr.set("SAE303-SERVICE1", this.sae303_service1_fr);
+    this.translation_fr.set("SAE303-SERVICE2", this.sae303_service2_fr);
+    this.translation_fr.set("SAE303-SERVICE3", this.sae303_service3_fr);
+    this.translation_fr.set("SAE303-SERVICE4", this.sae303_service4_fr);
+    this.translation_fr.set("SAE303-SERVICE5", this.sae303_service5_fr);
+    this.translation_fr.set("SAE303-SERVICE6", this.sae303_service6_fr);
+    this.translation_fr.set("SAE303-MISEPLACE1", this.sae303_miseplace1_fr);
+    this.translation_fr.set("SAE303-MISEPLACE2", this.sae303_miseplace2_fr);
+    this.translation_fr.set("SAE303-SOL1", this.sae303_sol1_fr);
+    this.translation_fr.set("SAE303-SOL2", this.sae303_sol2_fr);
+    this.translation_fr.set("SAE303-ROAS", this.sae303_roas_fr);
+    this.translation_fr.set("SAE303-DHCP1", this.sae303_dhcp1_fr);
+    this.translation_fr.set("SAE303-DHCP2", this.sae303_dhcp2_fr);
+    this.translation_fr.set("SAE303-RESULTSCAN", this.sae303_resultscan_fr);
+    this.translation_fr.set("SAE303-TITRE-RETEX", this.sae303_titre_retex_fr);
+    this.translation_fr.set("SAE303-RETEX1", this.sae303_retex1_fr);
+    this.translation_fr.set("SAE303-RETEX2", this.sae303_retex2_fr);
+    this.translation_fr.set("SAE303-RETEX3", this.sae303_retex3_fr);
+    this.translation_fr.set("SAE303-RETEX4", this.sae303_retex4_fr);
+    this.translation_fr.set("SAE303-RETEX5", this.sae303_retex5_fr);
+    this.translation_fr.set("SAE303-RETEX6", this.sae303_retex6_fr);
+    this.translation_fr.set("SAE303-LIEN-GITHUB", this.sae303_lien_github_fr);
 
+    //sae401
+
+    // ===== FR =====
+this.translation_fr.set("SAE401-PRESENTATION", this.sae401_presentation_fr);
+this.translation_fr.set("SAE401-PRES-TACHE", this.sae401_pres_tache_fr);
+this.translation_fr.set("SAE401-TACHE1", this.sae401_tache1_fr);
+this.translation_fr.set("SAE401-TACHE2", this.sae401_tache2_fr);
+this.translation_fr.set("SAE401-TACHE3", this.sae401_tache3_fr);
+this.translation_fr.set("SAE401-TACHE4", this.sae401_tache4_fr);
+this.translation_fr.set("SAE401-TACHE5", this.sae401_tache5_fr);
+this.translation_fr.set("SAE401-TACHE6", this.sae401_tache6_fr);
+this.translation_fr.set("SAE401-TACHE7", this.sae401_tache7_fr);
+this.translation_fr.set("SAE401-TACHE8", this.sae401_tache8_fr);
+this.translation_fr.set("SAE401-TACHE9", this.sae401_tache9_fr);
+this.translation_fr.set("SAE401-TACHE10", this.sae401_tache10_fr);
+this.translation_fr.set("SAE401-TACHE11", this.sae401_tache11_fr);
+this.translation_fr.set("SAE401-TACHE12", this.sae401_tache12_fr);
+this.translation_fr.set("SAE401-TACHE13", this.sae401_tache13_fr);
+this.translation_fr.set("SAE401-TITRE-TACHE2", this.sae401_titre_tache2_fr);
+this.translation_fr.set("SAE401-OBJ1-TACHE2", this.sae401_obj1_tache2_fr);
+this.translation_fr.set("SAE401-OBJ2-TACHE2", this.sae401_obj2_tache2_fr);
+this.translation_fr.set("SAE401-LIEN-TACHE2", this.sae401_lien_tache2_fr);
+this.translation_fr.set("SAE401-TACHE4-TITRE", this.sae401_tache4_titre_fr);
+this.translation_fr.set("SAE401-OBJ1-TACHE4", this.sae401_obj1_tache4_fr);
+this.translation_fr.set("SAE401-LIEN-TACHE4", this.sae401_lien_tache4_fr);
+this.translation_fr.set("SAE401-TITRE-TACHE7", this.sae401_titre_tache7_fr);
+this.translation_fr.set("SAE401-OBJ1-TACHE7", this.sae401_obj1_tache7_fr);
+this.translation_fr.set("SAE401-TACHE7-SCAN1", this.sae401_tache7_scan1_fr);
+this.translation_fr.set("SAE401-TACHE7-SCAN2", this.sae401_tache7_scan2_fr);
+this.translation_fr.set("SAE401-TACHE7-SCAN3", this.sae401_tache7_scan3_fr);
+this.translation_fr.set("SAE401-TACHE7-SCAN4", this.sae401_tache7_scan4_fr);
+this.translation_fr.set("SAE401-TACHE7-COMPARER", this.sae401_tache7_comparer_fr);
+this.translation_fr.set("SAE401-TACHE7-LIEN", this.sae401_tache7_lien_fr);
+this.translation_fr.set("SAE401-TITRE-RETEX", this.sae401_titre_retex_fr);
+this.translation_fr.set("SAE401-RETEX1", this.sae401_retex1_fr);
+this.translation_fr.set("SAE401-RETEX2", this.sae401_retex2_fr);
+this.translation_fr.set("SAE401-RETEX3", this.sae401_retex3_fr);
+this.translation_fr.set("SAE401-RETEX4", this.sae401_retex4_fr);
+this.translation_fr.set("SAE401-ORGA", this.sae401_orga_fr);
+// ===== EN =====
+this.translation_en.set("SAE401-PRESENTATION", this.sae401_presentation_en);
+this.translation_en.set("SAE401-PRES-TACHE", this.sae401_pres_tache_en);
+this.translation_en.set("SAE401-TACHE1", this.sae401_tache1_en);
+this.translation_en.set("SAE401-TACHE2", this.sae401_tache2_en);
+this.translation_en.set("SAE401-TACHE3", this.sae401_tache3_en);
+this.translation_en.set("SAE401-TACHE4", this.sae401_tache4_en);
+this.translation_en.set("SAE401-TACHE5", this.sae401_tache5_en);
+this.translation_en.set("SAE401-TACHE6", this.sae401_tache6_en);
+this.translation_en.set("SAE401-TACHE7", this.sae401_tache7_en);
+this.translation_en.set("SAE401-TACHE8", this.sae401_tache8_en);
+this.translation_en.set("SAE401-TACHE9", this.sae401_tache9_en);
+this.translation_en.set("SAE401-TACHE10", this.sae401_tache10_en);
+this.translation_en.set("SAE401-TACHE11", this.sae401_tache11_en);
+this.translation_en.set("SAE401-TACHE12", this.sae401_tache12_en);
+this.translation_en.set("SAE401-TACHE13", this.sae401_tache13_en);
+this.translation_en.set("SAE401-TITRE-TACHE2", this.sae401_titre_tache2_en);
+this.translation_en.set("SAE401-OBJ1-TACHE2", this.sae401_obj1_tache2_en);
+this.translation_en.set("SAE401-OBJ2-TACHE2", this.sae401_obj2_tache2_en);
+this.translation_en.set("SAE401-LIEN-TACHE2", this.sae401_lien_tache2_en);
+this.translation_en.set("SAE401-TACHE4-TITRE", this.sae401_tache4_titre_en);
+this.translation_en.set("SAE401-OBJ1-TACHE4", this.sae401_obj1_tache4_en);
+this.translation_en.set("SAE401-LIEN-TACHE4", this.sae401_lien_tache4_en);
+this.translation_en.set("SAE401-TITRE-TACHE7", this.sae401_titre_tache7_en);
+this.translation_en.set("SAE401-OBJ1-TACHE7", this.sae401_obj1_tache7_en);
+this.translation_en.set("SAE401-TACHE7-SCAN1", this.sae401_tache7_scan1_en);
+this.translation_en.set("SAE401-TACHE7-SCAN2", this.sae401_tache7_scan2_en);
+this.translation_en.set("SAE401-TACHE7-SCAN3", this.sae401_tache7_scan3_en);
+this.translation_en.set("SAE401-TACHE7-SCAN4", this.sae401_tache7_scan4_en);
+this.translation_en.set("SAE401-TACHE7-COMPARER", this.sae401_tache7_comparer_en);
+this.translation_en.set("SAE401-TACHE7-LIEN", this.sae401_tache7_lien_en);
+this.translation_en.set("SAE401-TITRE-RETEX", this.sae401_titre_retex_en);
+this.translation_en.set("SAE401-RETEX1", this.sae401_retex1_en);
+this.translation_en.set("SAE401-RETEX2", this.sae401_retex2_en);
+this.translation_en.set("SAE401-RETEX3", this.sae401_retex3_en);
+this.translation_en.set("SAE401-RETEX4", this.sae401_retex4_en);
+this.translation_en.set("SAE401-ORGA", this.sae401_orga_en);
 
 
     this.checkAllKeys();
@@ -2064,46 +2172,46 @@ of the project.`;
         réalisée par groupe de 4 ou 5 étudiants dont 2 étudiants en parcours cyber minimum. Dans notre cas,
         nous étions 5 et notre groupe était composé de 3 étudiants en parcours cybersécurité et 2 étudiants
         en parcours IoM. Cette SAE a durée 1 semaine`;
-sae303_presentation2_fr = `L'objectif de cette SAE était de concevoir un
+  sae303_presentation2_fr = `L'objectif de cette SAE était de concevoir un
         réseau entier d'une
         entreprise
         fictive nommée Beerok, avec tous les services nécessaires à son fonctionnement. <br><br> Voici
         l'architecture réseau que nous devions mettre en place : `;
-sae303_archi_fr = `Voici
+  sae303_archi_fr = `Voici
         l'architecture réseau que nous devions mettre en place :  `;
-sae303_matos_liste_fr = `Voici le matériel dont nous avions à disposition pour réaliser cette SAE : `;
-sae303_matos1_en = `3 routers`;
-sae303_matos2_en = `3 switches`;
-sae303_matos3_en = `1 Proxmox`;
-sae303_matos4_en = `4 Computers`;
-sae303_matos5_en = `3 Softphones`;
-sae303_matos6_en = `2 Wi-Fi hotspots`;
-sae303_matos7_en = `1 tablet`;
-sae303_video_en = `Before presenting deeper this project, here's a video presentation (French audio, no subtitles available)`;
-sae303_orga1_en = `This Situation d'Evaluation et d'Apprentissage (SAE, it could be translated as Learning and Assesment Situation) was organised as follows:
+  sae303_matos_liste_fr = `Voici le matériel dont nous avions à disposition pour réaliser cette SAE : `;
+  sae303_matos1_en = `3 routers`;
+  sae303_matos2_en = `3 switches`;
+  sae303_matos3_en = `1 Proxmox`;
+  sae303_matos4_en = `4 Computers`;
+  sae303_matos5_en = `3 Softphones`;
+  sae303_matos6_en = `2 Wi-Fi hotspots`;
+  sae303_matos7_en = `1 tablet`;
+  sae303_video_en = `Before presenting deeper this project, here's a video presentation (French audio, no subtitles available)`;
+  sae303_orga1_en = `This Situation d'Evaluation et d'Apprentissage (SAE, it could be translated as Learning and Assesment Situation) was organised as follows:
         we had to submit various milestones, which represented
         progress points, at specific times during the week. The date of each milestone varied depending on
         the difficulty of the task, and it was mainly the time taken to complete the milestones that differed
         as a result. `;
-sae303_orga2_en = `We therefore began by planning and assigning tasks,
+  sae303_orga2_en = `We therefore began by planning and assigning tasks,
         for which we used the Trello project management tool. We then drew up the
         IP addressing system. `;
-sae303_plan_ip_en = `Here's our IP addressing system`;
-sae303_phasedep_en = `Once done, we started the deployment phase during which we set up the infrastructure`;
-sae303_matache_en = `So I started to work on the tasks assigned to me :  `;
-sae303_tache1_en = `Creation of VMs (Virtual Machines) that will host Active Directory services
+  sae303_plan_ip_en = `Here's our IP addressing system`;
+  sae303_phasedep_en = `Once done, we started the deployment phase during which we set up the infrastructure`;
+  sae303_matache_en = `So I started to work on the tasks assigned to me :  `;
+  sae303_tache1_en = `Creation of VMs (Virtual Machines) that will host Active Directory services
             Directory`;
-sae303_tache2_en = `Installation, preparation and configuration of Windows Server : IP, host name, in accordance with the IP addressing system`;
-sae303_pasprblm_en = `Having regularly worked on the Proxmox servers at the university where our
+  sae303_tache2_en = `Installation, preparation and configuration of Windows Server : IP, host name, in accordance with the IP addressing system`;
+  sae303_pasprblm_en = `Having regularly worked on the Proxmox servers at the university where our
         SAE servers were stored, I had no problems with this part. I then set up
         the requested services:`;
-sae303_service1_en = `Active Directory`;
-sae303_service2_en = `DNS`;
-sae303_service3_en = `Terminal Server`;
-sae303_service4_en = `Mail Server`;
-sae303_service5_en = `Nextcloud`;
-sae303_service6_en = `RADIUS Server`;
-sae303_miseplace1_en = `The services were set up relatively quickly, with the exception of
+  sae303_service1_en = `Active Directory`;
+  sae303_service2_en = `DNS`;
+  sae303_service3_en = `Terminal Server`;
+  sae303_service4_en = `Mail Server`;
+  sae303_service5_en = `Nextcloud`;
+  sae303_service6_en = `RADIUS Server`;
+  sae303_miseplace1_en = `The services were set up relatively quickly, with the exception of
         the installation and configuration of the NextCloud server, which posed several difficulties. With
         one of my colleagues, I
         first tried to install it via Snap, as recommended in our documentation, but this method
@@ -2120,89 +2228,89 @@ sae303_miseplace1_en = `The services were set up relatively quickly, with the ex
         installing and configuring the NextCloud server, which posed several difficulties. With
         one of my colleagues, I
         first tried to `;
-sae303_miseplace2_en = `At this stage, the core network set up by one of my colleagues
+  sae303_miseplace2_en = `At this stage, the core network set up by one of my colleagues
 was not yet operational, which gave me the opportunity to configure the network
 at the remote sites. I therefore configured the following solutions on the network equipment at the
 remote sites:`;
-sae303_sol1_en = `Router on a Stick`;
-sae303_sol2_en = `DHCP`;
-sae303_roas_en = `The ‘Router on a Stick’ solution allows a single switch and router interface to be used
+  sae303_sol1_en = `Router on a Stick`;
+  sae303_sol2_en = `DHCP`;
+  sae303_roas_en = `The ‘Router on a Stick’ solution allows a single switch and router interface to be used
         to connect multiple VLANs. For example, in a store network comprising five VLANs, this solution is ideal for connecting these
         VLANs to each other throughout the store. Here is a diagram illustrating the Router on a Stick solution
         :`;
-sae303_dhcp1_en = `I then configured DHCP on each router at the remote sites to
+  sae303_dhcp1_en = `I then configured DHCP on each router at the remote sites to
         automatically distribute IP addresses to each client on each VLAN. `;
-sae303_dhcp2_en = `We also had
+  sae303_dhcp2_en = `We also had
         a section reserved for students studying cybersecurity, which I am one of, where
         we had to carry out a security audit of our networks.
         We used the Nessus tool to audit the network and discover the various
         potential vulnerabilities.`;
-sae303_resultscan_en = `Here are the results of a network scan:`;
-sae303_titre_retex_en = `What I learned during this project`;
-sae303_retex1_en = `Set up a semi-complex, secure IT network within a limited time frame.`;
-sae303_retex2_en = `Learn more about critical application management: When encountering persistent difficulties with the installation of NextCloud, I had to deepen my research and test different installation methods (Snap, Flatpak, and APT) to arrive at a functional solution.
+  sae303_resultscan_en = `Here are the results of a network scan:`;
+  sae303_titre_retex_en = `What I learned during this project`;
+  sae303_retex1_en = `Set up a semi-complex, secure IT network within a limited time frame.`;
+  sae303_retex2_en = `Learn more about critical application management: When encountering persistent difficulties with the installation of NextCloud, I had to deepen my research and test different installation methods (Snap, Flatpak, and APT) to arrive at a functional solution.
 I thus understood the importance of using different methods to install a service and strengthened my ability to adapt a method to the constraints of a specific system.
 I also learned that it is important to be able to adapt to different environments and to be able to work with different types of users.
 I was able to apply my knowledge of system administration to a real-world scenario and to learn from my mistakes. This helped me understand the importance of using different methods
             to install
             a service and strengthened my ability to adapt a method to the constraints
             of a specific system. `;
-sae303_retex3_en = `Solve problems  autonomously while under pressure`;
-sae303_retex4_en = `Developing resilience in the face of technical problems: The need to overcome obstacles,
+  sae303_retex3_en = `Solve problems  autonomously while under pressure`;
+  sae303_retex4_en = `Developing resilience in the face of technical problems: The need to overcome obstacles,
 even when working late under demanding conditions, has helped me develop resilience
 and determination in the face of technical challenges. I have learned to maintain the rigour and
 perseverance necessary to solve critical problems within tight deadlines. `;
-sae303_retex5_en = `Strengthen my ability to work in a team`;
-sae303_retex6_en = `Improving my time management under pressure while remaining supportive: By advancing my tasks while supporting my teammates, I have gained better control over managing my own work in a limited amount of time. Ensuring the progress of my assignments without delaying the group has shown me the importance of autonomy while contributing to the success of the team.
+  sae303_retex5_en = `Strengthen my ability to work in a team`;
+  sae303_retex6_en = `Improving my time management under pressure while remaining supportive: By advancing my tasks while supporting my teammates, I have gained better control over managing my own work in a limited amount of time. Ensuring the progress of my assignments without delaying the group has shown me the importance of autonomy while contributing to the success of the team.
 
 Improving my time management under pressure while remaining supportive: By advancing my tasks while supporting my teammates, I have gained better control over managing my own work in a limited amount of time. Ensuring the progress of my assignments without delaying the group has shown me the importance of autonomy while contributing to the success of the team.`;
-sae303_lien_github_en = `To learn more about this project, feel free to take a look at our report: (French only, the report has not been translated yet) `;
+  sae303_lien_github_en = `To learn more about this project, feel free to take a look at our report: (French only, the report has not been translated yet) `;
 
-sae303_presentation1_en = `This SAE involved all students in initial training and was
+  sae303_presentation1_en = `This SAE involved all students in initial training and was
         carried out by groups of 4 or 5 students, including at least 2 students on the cyber course. In our case,
         there were 5 of us and our group consisted of 3 students on the cybersecurity course and 2 students
         on the IoM course. This SAE lasted 1 week.`;
-sae303_presentation2_en = `The objective of this SAE was to design an
+  sae303_presentation2_en = `The objective of this SAE was to design an
 entire network for a
 fictitious company
 called Beerok, with all the services necessary for its operation. `;
-sae303_archi_en = `Here is
+  sae303_archi_en = `Here is
 the network architecture we had to set up: `;
-sae303_matos_liste_en = `Here is the equipment we had available to carry out this SAE:`;
-sae303_matos1_fr = `3 routeurs`;
-sae303_matos2_fr = `3 switchs`;
-sae303_matos3_fr = `1 Proxmox`;
-sae303_matos4_fr = `4 PCs de l'IUT`;
-sae303_matos5_fr = `3 téléphones`;
-sae303_matos6_fr = `2 bornes Wifi`;
-sae303_matos7_fr = `1 tablette`;
-sae303_video_fr = `Avant de présenter plus en détail ce projet, voici une vidéo de présentation du projet que j'ai réalisé`;
-sae303_orga1_fr = `L'organisation de cette SAE (Situation d'Apprentissage et d'Évaluation) s'est
+  sae303_matos_liste_en = `Here is the equipment we had available to carry out this SAE:`;
+  sae303_matos1_fr = `3 routeurs`;
+  sae303_matos2_fr = `3 switchs`;
+  sae303_matos3_fr = `1 Proxmox`;
+  sae303_matos4_fr = `4 PCs de l'IUT`;
+  sae303_matos5_fr = `3 téléphones`;
+  sae303_matos6_fr = `2 bornes Wifi`;
+  sae303_matos7_fr = `1 tablette`;
+  sae303_video_fr = `Avant de présenter plus en détail ce projet, voici une vidéo de présentation du projet que j'ai réalisé`;
+  sae303_orga1_fr = `L'organisation de cette SAE (Situation d'Apprentissage et d'Évaluation) s'est
         déroulée de la manière suivante : nous devions rendre différents jalons, qui représentaient des
         points d'étape, à des moments précis de la semaine. La date de chaque jalon variait en fonction de
         la difficulté de la tâche, et c'est surtout la durée de réalisation des jalons qui différait en
         conséquence. `;
-sae303_orga2_fr = `Nous avons donc commencé par la planification et l'attribution des tâches pour
+  sae303_orga2_fr = `Nous avons donc commencé par la planification et l'attribution des tâches pour
         lesquelles nous avons utilisé l'outil de gestion de projet Trello. Nous avons ensuite réalisé le
         plan d'adressage IP. `;
-sae303_plan_ip_fr = `Voici notre plan IP`;
-sae303_phasedep_fr = `Nous avons ensuite entamé la phase de déploiement où nous avons mis en place
+  sae303_plan_ip_fr = `Voici notre plan IP`;
+  sae303_phasedep_fr = `Nous avons ensuite entamé la phase de déploiement où nous avons mis en place
         l'infrastructure.`;
-sae303_matache_fr = ` J'ai ainsi commencé par m'occuper des tâches qui m'ont été assignés : `;
-sae303_tache1_fr = `Création des VM (Machines Virtuelles) sous Proxmox qui hébergeront les services. Active
+  sae303_matache_fr = ` J'ai ainsi commencé par m'occuper des tâches qui m'ont été assignés : `;
+  sae303_tache1_fr = `Création des VM (Machines Virtuelles) sous Proxmox qui hébergeront les services. Active
             Directory`;
-sae303_tache2_fr = `Installation, préparation et configuration des serveurs Windows : Mise en place de l'adressage
+  sae303_tache2_fr = `Installation, préparation et configuration des serveurs Windows : Mise en place de l'adressage
             IP, des noms d'hôtes, en conformité avec le cahier des charges.`;
-sae303_pasprblm_fr = `Ayant régulièrement travaillé sur les proxmox de l'université où ont été stocké nos
+  sae303_pasprblm_fr = `Ayant régulièrement travaillé sur les proxmox de l'université où ont été stocké nos
         serveurs de la SAE, je n'ai pas eu de problème concernant cette partie. J'ai ensuite mis en place
         les services demandés :`;
-sae303_service1_fr = `Active Directory`;
-sae303_service2_fr = `DNS`;
-sae303_service3_fr = `Terminal Server`;
-sae303_service4_fr = `Serveur mail`;
-sae303_service5_fr = `Nextcloud`;
-sae303_service6_fr = `RADIUS`;
-sae303_miseplace1_fr = `La mise en place des services a été relativement rapide, à l'exception de
+  sae303_service1_fr = `Active Directory`;
+  sae303_service2_fr = `DNS`;
+  sae303_service3_fr = `Terminal Server`;
+  sae303_service4_fr = `Serveur mail`;
+  sae303_service5_fr = `Nextcloud`;
+  sae303_service6_fr = `RADIUS`;
+  sae303_miseplace1_fr = `La mise en place des services a été relativement rapide, à l'exception de
         l'installation et de la configuration du serveur NextCloud, qui ont posé plusieurs difficultés. Avec
         un de mes camarades, j'ai
         d'abord tenté de l'installer via Snap, comme recommandé dans notre documentation, mais cette méthode
@@ -2216,47 +2324,202 @@ sae303_miseplace1_fr = `La mise en place des services a été relativement rapid
         antérieure compatible. Par la suite, un autre problème est apparu pour l’authentification LDAP avec
         Active Directory : le plugin PHP requis pour cette fonctionnalité n’était pas disponible dans la
         version de PHP que nous utilisions.`;
-sae303_miseplace2_fr = `A ce stade, le coeur de réseaux réalisé par un mes
+  sae303_miseplace2_fr = `A ce stade, le coeur de réseaux réalisé par un mes
         camarades n'était pas encore opérationnel, ce qui m'a donné l'opportunité de configurer le réseau
         sur les sites distants. J'ai ainsi configuré les solutions suivantes sur les équipements réseaux des
         sites distants : `;
-sae303_sol1_fr = `Router on a Stick (RoaS)`;
-sae303_sol2_fr = `DHCP`;
-sae303_roas_fr = `La solution "Router on a Stick" permet d'utiliser une seule interface
+  sae303_sol1_fr = `Router on a Stick (RoaS)`;
+  sae303_sol2_fr = `DHCP`;
+  sae303_roas_fr = `La solution "Router on a Stick" permet d'utiliser une seule interface
         du switch et du routeur pour faire communiquer plusieurs VLAN. Ainsi, le réseau d’un
         magasin comprenant 5 VLANs, cette solution est donc idéale afin de faire communiquer ces
         VLANs entre eux à travers le magasin. Voici un schéma représentant la solution du Router on a Stick
         :`;
-sae303_dhcp1_fr = `J'ai ensuite configuré le DHCP sur chaque routeur des sites distants afin de
+  sae303_dhcp1_fr = `J'ai ensuite configuré le DHCP sur chaque routeur des sites distants afin de
         distribuer des adresses IP automatiquement à chaque client de chaque VLAN. `;
-sae303_dhcp2_fr = `Nous avions
+  sae303_dhcp2_fr = `Nous avions
         également eu une partie réservé aux étudiants de parcours cybersécurité, dont je fais partie, où
         nous devions réaliser un audit de sécurité de nos réseaux.
         Nous avons ainsi utilisé l'outil Nessus afin d'auditer le réseau et y découvrir les différentes
         failles potentielles. `;
-sae303_resultscan_fr = `Voici le résultat d'un scan sur le réseau`;
-sae303_titre_retex_fr = `Ce que j'ai appris durant ce projet`;
-sae303_retex1_fr = `Mettre en place un réseau informatique semi-complexe et sécurisé dans un temps restreint`;
-sae303_retex2_fr = `Approfondir mes connaissances sur la gestion des applications critiques : En rencontrant des
+  sae303_resultscan_fr = `Voici le résultat d'un scan sur le réseau`;
+  sae303_titre_retex_fr = `Ce que j'ai appris durant ce projet`;
+  sae303_retex1_fr = `Mettre en place un réseau informatique semi-complexe et sécurisé dans un temps restreint`;
+  sae303_retex2_fr = `Approfondir mes connaissances sur la gestion des applications critiques : En rencontrant des
             difficultés persistantes avec l'installation de NextCloud, j'ai dû approfondir mes recherches et
             tester différentes méthodes d'installation (Snap, Flatpak et APT) pour parvenir à une
             solution fonctionnelle. J'ai ainsi compris l'importance d'utiliser différentes méthodes
             d'installation
             d'un service et de renforcer ma capacité à adapter une méthode aux contraintes
             d’un système spécifique.`;
-sae303_retex3_fr = `Résoudre des problèmes en totale autonomie tout en étant sous pression`;
-sae303_retex4_fr = `Développer une résilience face aux problèmes techniques : La nécessité de dépasser les blocages,
+  sae303_retex3_fr = `Résoudre des problèmes en totale autonomie tout en étant sous pression`;
+  sae303_retex4_fr = `Développer une résilience face aux problèmes techniques : La nécessité de dépasser les blocages,
             même en y travaillant tard dans des conditions exigeantes, m'a aidé à développer une résilience
             et une détermination face aux défis techniques. J'ai ainsi appris à maintenir la rigueur et la
             persévérance nécessaires pour résoudre des problèmes critiques dans des délais restreints.`;
-sae303_retex5_fr = `Renforcer mon aptitude à travailler en équipe`;
-sae303_retex6_fr = `Améliorer ma gestion de temps sous pression tout en restant solidaire : En avançant sur mes
+  sae303_retex5_fr = `Renforcer mon aptitude à travailler en équipe`;
+  sae303_retex6_fr = `Améliorer ma gestion de temps sous pression tout en restant solidaire : En avançant sur mes
             tâches tout en soutenant mes coéquipiers, j'ai acquis une meilleure maîtrise de la gestion de
             mon propre travail dans un espace temps réduit. Assurer l’avancement de mes missions sans
             retarder le groupe m'a montré l'importance de l'autonomie tout en contribuant au succès de
             l'équipe.`;
-sae303_lien_github_fr = `Pour en savoir plus sur ce projet, n'hésitez pas à jeter un &oelig;il à notre
+  sae303_lien_github_fr = `Pour en savoir plus sur ce projet, n'hésitez pas à jeter un &oelig;il à notre
         rapport :`;
+
+  sae401_presentation_fr = `Cette SAE concernait l'ensemble des étudiants en parcours cybersécurité et s'est
+            déroulé sur 3 semaines. Cette SAE a été réalisé par groupe de 4 étudiants. Le but de ce projet était
+            de mettre en place l'architecture suivante ainsi que de la sécuriser via différentes tâches :`;
+  sae401_pres_tache_fr = `Comme énoncé précédemment, nous devions sécuriser cette infrastructure par la
+            réalisation de différentes tâche :`;
+  sae401_tache1_fr = `Mise en place d'une infrastructure sécurisé `;
+  sae401_tache2_fr = `Installation et configuration d'un firewall Stormshield`;
+  sae401_tache3_fr = `Installation et configuration d’un serveur HTTP/HTTPS et d’un serveur FTP/FTPS `;
+  sae401_tache4_fr = `Authentification transparente par certificat SSL`;
+  sae401_tache5_fr = `Mettre en place un IDS`;
+  sae401_tache6_fr = `Attaque sur le wifi`;
+  sae401_tache7_fr = `Utilisation de scanners de vulnérabilité`;
+  sae401_tache8_fr = `Attaque Man in the Middle`;
+  sae401_tache9_fr = `Contre-mesures pour le Man in the Middle`;
+  sae401_tache10_fr = `Supervision du réseau`;
+  sae401_tache11_fr = `Mise en place d'une architecture Single Sign On`;
+  sae401_tache12_fr = `Mise en place d'un VPN SSL pour client distant`;
+  sae401_tache13_fr = `Mise en place d'un VPN IPSEC site à site`;
+  sae401_orga_fr = `Pour cette SAE, notre groupe s'est organisé de la manière suivante : chacun de nous
+            a réalisé un challenge seul, et nous avons travaillé en binômes au sein du groupe pour réaliser deux
+            autres challenges. j'ai ainsi réalisé la tâche 7 : "Utilisation de scanners de vulnérabilité" seul et j'ai réalisé les tâches 2 et 4 ( "Installation et configuration d'un firewall
+            Stormshield" et "Authentification transparente par certificat SSL" ) en binôme
+      `;
+  sae401_titre_tache2_fr = ` Tâche 2 : Installation et configuration d'un
+            firewall Stormshield`;
+  sae401_obj1_tache2_fr = `Le but de cette tâche était de configurer un firewall Stormshield. Une firewall est
+            un équipement réseau permettant de sécuriser un réseau informatique en agissant comme un point de
+            contrôle obligatoire
+            entre le réseau interne et le réseau externe. Par ce positionnement dans le réseau, il peut
+            ainsi mettre en oeuvre différents mécanismes permettant de sécuriser le réseau interne comme le
+            filtrage, NAT, la gestion des certificats, le controle d'accès, la détection et la prévention
+            d'intrusion, etc...`;
+  sae401_obj2_tache2_fr = `Mon binôme et moi avons mis en place une politique de filtrage et de NAT.
+            Le NAT est un
+            mécanisme qui permet de remplacer une adresse IP interne par l'adresse IP publique du pare-feu ou du
+            routeur. Nous avons également effectué une translation au niveau des ports, appelée PAT. Concernant
+            la politique de filtrage mise en place, nous avons interdit tout accès au réseau interne depuis
+            l'extérieur et avons seulement autorisé les connexions entrantes sur les ports web (HTTP puis HTTPS)
+            et le port FTP (21).`;
+  sae401_lien_tache2_fr = `Pour en savoir plus sur cette tâche, n'hésitez pas à jeter un oeil à notre
+            rapport :`;
+  sae401_tache4_titre_fr = `Tâche 4 : Authentification transparente par
+            certificat SSL`;
+  sae401_obj1_tache4_fr = `L'objectif de cette tâche était de configurer une authentification transparente par
+            certificat SSL. Cette méthode repose sur l'utilisation de certificats numériques pour authentifier
+            les utilisateurs de manière automatique, sans nécessiter la saisie de mot de passe. Le certificat
+            est alors installé sur le PC de l'utilisateur et il est validé par l'instance qui a émis le
+            certificat, donnant alors une autorisation d'accéder aux ressources du réseau. Nous avons donc
+            configuré une autorité de certification racine (CA root) ainsi qu'un annuaire LDAP. Nous avons
+            également mis à jour la politique de filtrage afin de définir une règle d'authentification réseau
+            pour que les utilisateurs non authentifiés soient redirigés vers un portail captif.`;
+  sae401_lien_tache4_fr = `Pour en savoir plus sur cette tâche, n'hésitez pas à jeter un oeil à notre
+            rapport : `;
+  sae401_titre_tache7_fr = `Tâche 7 : Utilisation de scanners de vulnérabilités`;
+  sae401_obj1_tache7_fr = `La troisième tâche consistait à analyser les vulnérabilités du système
+            d'information. J'ai effectué cette tâche seul. Une vulnérabilité dans un système d'information est
+            une faille permettant à un attaquant de l'exploiter dans un but malveillant. Je devais réaliser un
+            scan depuis le réseau interne puis depuis le réseau externe afin de comparer les différences entre
+            les scans. À cette fin, j'ai utilisé différents scanners, chacun spécialisé dans la détection d'un
+            type de faille spécifique. Les scanners que j'ai utilisés sont les suivants :`;
+  sae401_tache7_scan1_fr = `Nikto : Recherche de faille web`;
+  sae401_tache7_scan2_fr = `Nuclei : Recherche de faille web mais également les failles de l'hôte`;
+  sae401_tache7_scan3_fr = `Codename SCNR : Scan détaillé de l'hôte ciblé`;
+  sae401_tache7_scan4_fr = `Legion : Scan les services et les ports des hôtes`;
+  sae401_tache7_comparer_fr = `Une fois les scans effectués, j'ai pu comparer les résultats entre ceux réalisés
+            depuis le réseau externe et ceux effectués depuis le réseau interne. J'ai ainsi pu émettre les
+            raisons pour lesquelles les scans externes ont fourni moins d'informations. Lors de la soutenance,
+            j'ai présenté une faille que j'ai découvert via le scanner Nuclei, nommée Ghostcat (CVE-2020-1938).
+            Le but de cette faille est d'usurper l'identité d'un serveur Apache tomcat afin de récupérer des
+            fichiers de configurations du vrai serveur Apache tomcat ou de créer une porte dérobée en injectant
+            du code dans les fichiers de configurations récupérés via l'AJP (Apache Jserv Protocol : protocole
+            de communication du serveur Apache Tomcat)`;
+  sae401_tache7_lien_fr = `Pour en savoir plus sur cette tâche, n'hésitez pas à jeter un oeil à notre
+            rapport :`;
+  sae401_titre_retex_en = `What I learned during this project`;
+  sae401_retex1_en = `Secure an information system`;
+  sae401_retex2_en = `Analyse the risks and vulnerabilities of an information system`;
+  sae401_retex3_en = `Working autonomously`;
+  sae401_retex4_en = `Working in team`;
+
+  sae401_presentation_en = `This SAE involved all students on the cybersecurity course and took place over three weeks. The SAE was carried out in groups of four students. The aim of this project was to set up the following architecture and secure it through various tasks:`;
+  sae401_pres_tache_en = `As previously stated, we had to secure this infrastructure by
+            carrying out various tasks:`;
+  sae401_tache1_en = `Implementation of a secure infrastructure`;
+  sae401_tache2_en = `Installation and configuration of a Stormshield firewall`;
+  sae401_tache3_en = `Installation and configuration of an HTTP/HTTPS server and an FTP/FTPS server`;
+  sae401_tache4_en = `Transparent authentication via SSL certificate`;
+  sae401_tache5_en = `Set up a IDS`;
+  sae401_tache6_en = `Attack on the Wi-Fi`;
+  sae401_tache7_en = `Using of vulnaribilities scanner`;
+  sae401_tache8_en = `Man In the Middle attack`;
+  sae401_tache9_en = `Counter Measures against the MITM attack`;
+  sae401_tache10_en = `Network supervision`;
+  sae401_tache11_en = `Set up of a Single Sign On architecture`;
+  sae401_tache12_en = `Set up of a SSL VPN for remote clients`;
+  sae401_tache13_en = `Set up of a IPSEC VPN site to site`;
+  sae401_orga_en = `For this SAE, our group organised itself as follows: each of us
+            completed one challenge alone, and we worked in pairs within the group to complete two
+            other challenges. I therefore completed task 7: ‘Using vulnerability scanners’
+            on my own and completed tasks 2 and 4 (‘Installing and configuring a Stormshield firewall’
+            and ‘Transparent authentication using an SSL certificate’) in pairs.`;
+  sae401_titre_tache2_en = `Task 2 : Installation and configuration of a Stormshield firewall`;
+  sae401_obj1_tache2_en = `The aim of this task was to configure a Stormshield firewall. A firewall is
+            a piece of network equipment that secures a computer network by acting as a mandatory control point
+            between the internal network and the external network.
+            By positioning itself in the network, it can Through this positioning in the network, it can
+            implement various mechanisms to secure the internal network, such as
+            filtering, NAT, certificate management, access control, intrusion detection and prevention
+            , etc.`;
+  sae401_obj2_tache2_en = `My partner and I have implemented a filtering and NAT policy.
+NAT is a
+mechanism that allows an internal IP address to be replaced by the public IP address of the firewall or
+router. We also performed port translation, known as PAT. With regard to
+            the filtering policy we implemented, we blocked all access to the internal network from
+            the outside and only authorised incoming connections on web ports (HTTP and HTTPS)
+            and the FTP port (21).`;
+  sae401_lien_tache2_en = `To learn more about this task, feel free to take a look at our report: (French only, the report has not been translated yet) `;
+  sae401_tache4_titre_en = `Task 4 : Transparent authentication via SSL certificate`;
+  sae401_obj1_tache4_en = `The objective of this task was to configure transparent authentication using
+            SSL certificates. This method relies on the use of digital certificates to authenticate
+            users automatically, without requiring them to enter a password. The certificate
+            is then installed on the user's PC and validated by the issuing authority
+            certificate, thereby granting authorisation to access network resources. We therefore
+            configured a root certification authority (CA root) and an LDAP directory. We
+            also updated the filtering policy to define a network authentication rule
+            so that unauthenticated users are redirected to a captive portal.`;
+  sae401_lien_tache4_en = `To learn more about this task, feel free to take a look at our report: (French only, the report has not been translated yet) `;
+  sae401_titre_tache7_en = `Task 7 : Using of vulnerabilities scanners`;
+  sae401_obj1_tache7_en = `The third task was to analyse the vulnerabilities of the information system.
+            I carried out this task alone. A vulnerability in an information system is
+            a flaw that allows an attacker to exploit it for malicious purposes. I had to perform a
+            scan from the internal network and then from the external network in order to compare the differences between
+            the scans. To this end, I used different scanners, each specialised in detecting a
+            specific type of flaw. The scanners I used were as follows:`;
+  sae401_tache7_scan1_en = `Nikto : Web vulnerabilities scanner `;
+  sae401_tache7_scan2_en = `Nuclei : Web vulnerabilities scanner and host scanner`;
+  sae401_tache7_scan3_en = `Codename SCNR : detailed scanner of the targeted host`;
+  sae401_tache7_scan4_en = `Legion : Services and hosts's ports scanner`;
+  sae401_tache7_comparer_en = `Once the scans were complete, I was able to compare the results between those performed
+from the external network and those performed from the internal network. This allowed me to identify the
+reasons why the external scans provided less information. During the defence,
+I presented a vulnerability that I discovered using the Nuclei scanner, called Ghostcat (CVE-2020-1938).
+            The purpose of this vulnerability is to spoof the identity of an Apache Tomcat server in order to retrieve
+            configuration files from the real Apache Tomcat server or to create a backdoor by injecting
+            code into the configuration files retrieved via AJP (Apache Jserv Protocol: Apache Tomcat server communication protocol
+            ). `;
+  sae401_tache7_lien_en = `To learn more about this task, feel free to take a look at our report: (French only, the report has not been translated yet) `;
+  sae401_titre_retex_fr = `Ce que j'ai appris durant ce projet`;
+  sae401_retex1_fr = `Sécuriser un système d'informatio`;
+  sae401_retex2_fr = `Analyser les risques et les vulnérabilités d'un système d'information`;
+  sae401_retex3_fr = `Travailler en autonomie`;
+  sae401_retex4_fr = `Travailler en équipe`;
+
+
 
 
 }
