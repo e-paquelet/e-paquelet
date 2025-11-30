@@ -420,6 +420,86 @@ export const TRANSLATION_KEY = [
   "SAE401-RETEX3",
   "SAE401-RETEX4",
   "SAE401-LIEN-GITHUB",
+  "SAE501-PRESENTATION",
+  "SAE501-OBJ",
+  "SAE501-ARCHI",
+  "SAE501-INCITATION-IMG",
+  "SAE501-TXT-IMG1",
+  "SAE501-TXT-IMG2",
+  "SAE501-TXT-IMG3",
+  "SAE501-TXT-IMG4",
+  "SAE501-TXT-IMG5",
+  "SAE501-TXT-IMG6",
+  "SAE501-MATOS",
+  "SAE501-MATOS1",
+  "SAE501-MATOS2",
+  "SAE501-MATOS3",
+  "SAE501-MATOS4",
+  "SAE501-MATOS5",
+  "SAE501-MATOS6",
+  "SAE501-MATOS7",
+  "SAE501-ORGA1",
+  "SAE501-ORGA2",
+  "SAE501-PLANIP",
+  "SAE501-PHASEDEP",
+  "SAE501-MATACHE",
+  "SAE501-TACHE1",
+  "SAE501-TACHE2",
+  "SAE501-TACHE3",
+  "SAE501-TACHE4",
+  "SAE501-TACHE5",
+  "SAE501-TACHE6",
+  "SAE501-PRES-SERVICE1",
+  "SAE501-PRES-SERVICE2",
+  "SAE501-SERVICE1",
+  "SAE501-SERVICE2",
+  "SAE501-SERVICE3",
+  "SAE501-SERVICE4",
+  "SAE501-SERVICE5",
+  "SAE501-SERVICE6",
+  "SAE501-SERVICE7",
+  "SAE501-SERVICE8",
+  "SAE501-SERVICE9",
+  "SAE501-SERVICE10",
+  "SAE501-SERVICE11",
+  "SAE501-SERVICE12",
+  "SAE501-SERVICE13",
+  "SAE501-SERVICE14",
+  "SAE501-SERVICE15",
+  "SAE501-SERVICE16",
+  "SAE501-SERVICE17",
+  "SAE501-PARTRESEAU",
+  "SAE501-PROT-ROUTAGE",
+  "SAE501-DESCR-VRF",
+  "SAE501-DESCR-VRF2",
+  "SAE501-ACT-SCRIPT1",
+  "SAE501-ACT-SCRIPT2",
+  "SAE501-ACT-SCRIPT3",
+  "SAE501-EEM",
+  "SAE501-EEM-DESCR",
+  "SAE501-LIEN-SCRIPT-EEM",
+  "SAE501-PRBLM-SCRIPT1",
+  "SAE501-PRBLM-SCRIPT2",
+  "SAE501-SCRIPT-PWS-TITRE",
+  "SAE501-PWS1",
+  "SAE501-PWS2",
+  "SAE501-ORGA-SCRIPTGROUP",
+  "SAE501-LIEN-SCRIPT",
+  "SAE501-TITRE-PRBLM",
+  "SAE501-PRBLM1",
+  "SAE501-PRBLM2",
+
+  "SAE501-PRBLM3",
+  "SAE501-TITRE-RETEX",
+  "SAE501-RETEX1",
+  "SAE501-RETEX2",
+  "SAE501-RETEX3",
+  "SAE501-RETEX4",
+  "SAE501-RETEX5",
+  "SAE501-RETEX6",
+  "SAE501-LIEN-GITHUB",
+
+
 
 
 
@@ -985,6 +1065,8 @@ export class LanguageService {
     this.translation_fr.set("PROJETBUT-TITRE-SAE303-ATTACHE", "SAE303 - Concevoir un réseau multi-sites sécurisé");
     this.translation_en.set("PROJETBUT-TITRE-SAE303-ATTACHE", "SAE303 - Designing a secure multi-site network");
     this.translation_fr.set("PROJETBUT-TITRE-SAE502-ATTACHE", "SAE502 - Piloter un projet informatique");
+    this.translation_fr.set("PROJETBUT-TITRE-SAE501-ATTACHE", "SAE501 - Concevoir une solution technique");
+    this.translation_en.set("PROJETBUT-TITRE-SAE501-ATTACHE", "SAE501 - Designing a tachnical solution");
     this.translation_en.set("PROJETBUT-TITRE-SAE502-ATTACHE", "SAE502 - Managing an IT project");
     this.translation_fr.set("PROJETBUT-TITRE-SAE5-CYB-03-ATTACHE", "SAE5-CYB-03 - Sécurisation et supervision avancée");
     this.translation_en.set("PROJETBUT-TITRE-SAE5-CYB-03-ATTACHE", "SAE5-CYB-03 - Advanced securing and monitoring");
@@ -1247,80 +1329,233 @@ export class LanguageService {
     //sae401
 
     // ===== FR =====
-this.translation_fr.set("SAE401-PRESENTATION", this.sae401_presentation_fr);
-this.translation_fr.set("SAE401-PRES-TACHE", this.sae401_pres_tache_fr);
-this.translation_fr.set("SAE401-TACHE1", this.sae401_tache1_fr);
-this.translation_fr.set("SAE401-TACHE2", this.sae401_tache2_fr);
-this.translation_fr.set("SAE401-TACHE3", this.sae401_tache3_fr);
-this.translation_fr.set("SAE401-TACHE4", this.sae401_tache4_fr);
-this.translation_fr.set("SAE401-TACHE5", this.sae401_tache5_fr);
-this.translation_fr.set("SAE401-TACHE6", this.sae401_tache6_fr);
-this.translation_fr.set("SAE401-TACHE7", this.sae401_tache7_fr);
-this.translation_fr.set("SAE401-TACHE8", this.sae401_tache8_fr);
-this.translation_fr.set("SAE401-TACHE9", this.sae401_tache9_fr);
-this.translation_fr.set("SAE401-TACHE10", this.sae401_tache10_fr);
-this.translation_fr.set("SAE401-TACHE11", this.sae401_tache11_fr);
-this.translation_fr.set("SAE401-TACHE12", this.sae401_tache12_fr);
-this.translation_fr.set("SAE401-TACHE13", this.sae401_tache13_fr);
-this.translation_fr.set("SAE401-TITRE-TACHE2", this.sae401_titre_tache2_fr);
-this.translation_fr.set("SAE401-OBJ1-TACHE2", this.sae401_obj1_tache2_fr);
-this.translation_fr.set("SAE401-OBJ2-TACHE2", this.sae401_obj2_tache2_fr);
-this.translation_fr.set("SAE401-LIEN-TACHE2", this.sae401_lien_tache2_fr);
-this.translation_fr.set("SAE401-TACHE4-TITRE", this.sae401_tache4_titre_fr);
-this.translation_fr.set("SAE401-OBJ1-TACHE4", this.sae401_obj1_tache4_fr);
-this.translation_fr.set("SAE401-LIEN-TACHE4", this.sae401_lien_tache4_fr);
-this.translation_fr.set("SAE401-TITRE-TACHE7", this.sae401_titre_tache7_fr);
-this.translation_fr.set("SAE401-OBJ1-TACHE7", this.sae401_obj1_tache7_fr);
-this.translation_fr.set("SAE401-TACHE7-SCAN1", this.sae401_tache7_scan1_fr);
-this.translation_fr.set("SAE401-TACHE7-SCAN2", this.sae401_tache7_scan2_fr);
-this.translation_fr.set("SAE401-TACHE7-SCAN3", this.sae401_tache7_scan3_fr);
-this.translation_fr.set("SAE401-TACHE7-SCAN4", this.sae401_tache7_scan4_fr);
-this.translation_fr.set("SAE401-TACHE7-COMPARER", this.sae401_tache7_comparer_fr);
-this.translation_fr.set("SAE401-TACHE7-LIEN", this.sae401_tache7_lien_fr);
-this.translation_fr.set("SAE401-TITRE-RETEX", this.sae401_titre_retex_fr);
-this.translation_fr.set("SAE401-RETEX1", this.sae401_retex1_fr);
-this.translation_fr.set("SAE401-RETEX2", this.sae401_retex2_fr);
-this.translation_fr.set("SAE401-RETEX3", this.sae401_retex3_fr);
-this.translation_fr.set("SAE401-RETEX4", this.sae401_retex4_fr);
-this.translation_fr.set("SAE401-ORGA", this.sae401_orga_fr);
-// ===== EN =====
-this.translation_en.set("SAE401-PRESENTATION", this.sae401_presentation_en);
-this.translation_en.set("SAE401-PRES-TACHE", this.sae401_pres_tache_en);
-this.translation_en.set("SAE401-TACHE1", this.sae401_tache1_en);
-this.translation_en.set("SAE401-TACHE2", this.sae401_tache2_en);
-this.translation_en.set("SAE401-TACHE3", this.sae401_tache3_en);
-this.translation_en.set("SAE401-TACHE4", this.sae401_tache4_en);
-this.translation_en.set("SAE401-TACHE5", this.sae401_tache5_en);
-this.translation_en.set("SAE401-TACHE6", this.sae401_tache6_en);
-this.translation_en.set("SAE401-TACHE7", this.sae401_tache7_en);
-this.translation_en.set("SAE401-TACHE8", this.sae401_tache8_en);
-this.translation_en.set("SAE401-TACHE9", this.sae401_tache9_en);
-this.translation_en.set("SAE401-TACHE10", this.sae401_tache10_en);
-this.translation_en.set("SAE401-TACHE11", this.sae401_tache11_en);
-this.translation_en.set("SAE401-TACHE12", this.sae401_tache12_en);
-this.translation_en.set("SAE401-TACHE13", this.sae401_tache13_en);
-this.translation_en.set("SAE401-TITRE-TACHE2", this.sae401_titre_tache2_en);
-this.translation_en.set("SAE401-OBJ1-TACHE2", this.sae401_obj1_tache2_en);
-this.translation_en.set("SAE401-OBJ2-TACHE2", this.sae401_obj2_tache2_en);
-this.translation_en.set("SAE401-LIEN-TACHE2", this.sae401_lien_tache2_en);
-this.translation_en.set("SAE401-TACHE4-TITRE", this.sae401_tache4_titre_en);
-this.translation_en.set("SAE401-OBJ1-TACHE4", this.sae401_obj1_tache4_en);
-this.translation_en.set("SAE401-LIEN-TACHE4", this.sae401_lien_tache4_en);
-this.translation_en.set("SAE401-TITRE-TACHE7", this.sae401_titre_tache7_en);
-this.translation_en.set("SAE401-OBJ1-TACHE7", this.sae401_obj1_tache7_en);
-this.translation_en.set("SAE401-TACHE7-SCAN1", this.sae401_tache7_scan1_en);
-this.translation_en.set("SAE401-TACHE7-SCAN2", this.sae401_tache7_scan2_en);
-this.translation_en.set("SAE401-TACHE7-SCAN3", this.sae401_tache7_scan3_en);
-this.translation_en.set("SAE401-TACHE7-SCAN4", this.sae401_tache7_scan4_en);
-this.translation_en.set("SAE401-TACHE7-COMPARER", this.sae401_tache7_comparer_en);
-this.translation_en.set("SAE401-TACHE7-LIEN", this.sae401_tache7_lien_en);
-this.translation_en.set("SAE401-TITRE-RETEX", this.sae401_titre_retex_en);
-this.translation_en.set("SAE401-RETEX1", this.sae401_retex1_en);
-this.translation_en.set("SAE401-RETEX2", this.sae401_retex2_en);
-this.translation_en.set("SAE401-RETEX3", this.sae401_retex3_en);
-this.translation_en.set("SAE401-RETEX4", this.sae401_retex4_en);
-this.translation_en.set("SAE401-ORGA", this.sae401_orga_en);
-
+    this.translation_fr.set("SAE401-PRESENTATION", this.sae401_presentation_fr);
+    this.translation_fr.set("SAE401-PRES-TACHE", this.sae401_pres_tache_fr);
+    this.translation_fr.set("SAE401-TACHE1", this.sae401_tache1_fr);
+    this.translation_fr.set("SAE401-TACHE2", this.sae401_tache2_fr);
+    this.translation_fr.set("SAE401-TACHE3", this.sae401_tache3_fr);
+    this.translation_fr.set("SAE401-TACHE4", this.sae401_tache4_fr);
+    this.translation_fr.set("SAE401-TACHE5", this.sae401_tache5_fr);
+    this.translation_fr.set("SAE401-TACHE6", this.sae401_tache6_fr);
+    this.translation_fr.set("SAE401-TACHE7", this.sae401_tache7_fr);
+    this.translation_fr.set("SAE401-TACHE8", this.sae401_tache8_fr);
+    this.translation_fr.set("SAE401-TACHE9", this.sae401_tache9_fr);
+    this.translation_fr.set("SAE401-TACHE10", this.sae401_tache10_fr);
+    this.translation_fr.set("SAE401-TACHE11", this.sae401_tache11_fr);
+    this.translation_fr.set("SAE401-TACHE12", this.sae401_tache12_fr);
+    this.translation_fr.set("SAE401-TACHE13", this.sae401_tache13_fr);
+    this.translation_fr.set("SAE401-TITRE-TACHE2", this.sae401_titre_tache2_fr);
+    this.translation_fr.set("SAE401-OBJ1-TACHE2", this.sae401_obj1_tache2_fr);
+    this.translation_fr.set("SAE401-OBJ2-TACHE2", this.sae401_obj2_tache2_fr);
+    this.translation_fr.set("SAE401-LIEN-TACHE2", this.sae401_lien_tache2_fr);
+    this.translation_fr.set("SAE401-TACHE4-TITRE", this.sae401_tache4_titre_fr);
+    this.translation_fr.set("SAE401-OBJ1-TACHE4", this.sae401_obj1_tache4_fr);
+    this.translation_fr.set("SAE401-LIEN-TACHE4", this.sae401_lien_tache4_fr);
+    this.translation_fr.set("SAE401-TITRE-TACHE7", this.sae401_titre_tache7_fr);
+    this.translation_fr.set("SAE401-OBJ1-TACHE7", this.sae401_obj1_tache7_fr);
+    this.translation_fr.set("SAE401-TACHE7-SCAN1", this.sae401_tache7_scan1_fr);
+    this.translation_fr.set("SAE401-TACHE7-SCAN2", this.sae401_tache7_scan2_fr);
+    this.translation_fr.set("SAE401-TACHE7-SCAN3", this.sae401_tache7_scan3_fr);
+    this.translation_fr.set("SAE401-TACHE7-SCAN4", this.sae401_tache7_scan4_fr);
+    this.translation_fr.set("SAE401-TACHE7-COMPARER", this.sae401_tache7_comparer_fr);
+    this.translation_fr.set("SAE401-TACHE7-LIEN", this.sae401_tache7_lien_fr);
+    this.translation_fr.set("SAE401-TITRE-RETEX", this.sae401_titre_retex_fr);
+    this.translation_fr.set("SAE401-RETEX1", this.sae401_retex1_fr);
+    this.translation_fr.set("SAE401-RETEX2", this.sae401_retex2_fr);
+    this.translation_fr.set("SAE401-RETEX3", this.sae401_retex3_fr);
+    this.translation_fr.set("SAE401-RETEX4", this.sae401_retex4_fr);
+    this.translation_fr.set("SAE401-ORGA", this.sae401_orga_fr);
+    // ===== EN =====
+    this.translation_en.set("SAE401-PRESENTATION", this.sae401_presentation_en);
+    this.translation_en.set("SAE401-PRES-TACHE", this.sae401_pres_tache_en);
+    this.translation_en.set("SAE401-TACHE1", this.sae401_tache1_en);
+    this.translation_en.set("SAE401-TACHE2", this.sae401_tache2_en);
+    this.translation_en.set("SAE401-TACHE3", this.sae401_tache3_en);
+    this.translation_en.set("SAE401-TACHE4", this.sae401_tache4_en);
+    this.translation_en.set("SAE401-TACHE5", this.sae401_tache5_en);
+    this.translation_en.set("SAE401-TACHE6", this.sae401_tache6_en);
+    this.translation_en.set("SAE401-TACHE7", this.sae401_tache7_en);
+    this.translation_en.set("SAE401-TACHE8", this.sae401_tache8_en);
+    this.translation_en.set("SAE401-TACHE9", this.sae401_tache9_en);
+    this.translation_en.set("SAE401-TACHE10", this.sae401_tache10_en);
+    this.translation_en.set("SAE401-TACHE11", this.sae401_tache11_en);
+    this.translation_en.set("SAE401-TACHE12", this.sae401_tache12_en);
+    this.translation_en.set("SAE401-TACHE13", this.sae401_tache13_en);
+    this.translation_en.set("SAE401-TITRE-TACHE2", this.sae401_titre_tache2_en);
+    this.translation_en.set("SAE401-OBJ1-TACHE2", this.sae401_obj1_tache2_en);
+    this.translation_en.set("SAE401-OBJ2-TACHE2", this.sae401_obj2_tache2_en);
+    this.translation_en.set("SAE401-LIEN-TACHE2", this.sae401_lien_tache2_en);
+    this.translation_en.set("SAE401-TACHE4-TITRE", this.sae401_tache4_titre_en);
+    this.translation_en.set("SAE401-OBJ1-TACHE4", this.sae401_obj1_tache4_en);
+    this.translation_en.set("SAE401-LIEN-TACHE4", this.sae401_lien_tache4_en);
+    this.translation_en.set("SAE401-TITRE-TACHE7", this.sae401_titre_tache7_en);
+    this.translation_en.set("SAE401-OBJ1-TACHE7", this.sae401_obj1_tache7_en);
+    this.translation_en.set("SAE401-TACHE7-SCAN1", this.sae401_tache7_scan1_en);
+    this.translation_en.set("SAE401-TACHE7-SCAN2", this.sae401_tache7_scan2_en);
+    this.translation_en.set("SAE401-TACHE7-SCAN3", this.sae401_tache7_scan3_en);
+    this.translation_en.set("SAE401-TACHE7-SCAN4", this.sae401_tache7_scan4_en);
+    this.translation_en.set("SAE401-TACHE7-COMPARER", this.sae401_tache7_comparer_en);
+    this.translation_en.set("SAE401-TACHE7-LIEN", this.sae401_tache7_lien_en);
+    this.translation_en.set("SAE401-TITRE-RETEX", this.sae401_titre_retex_en);
+    this.translation_en.set("SAE401-RETEX1", this.sae401_retex1_en);
+    this.translation_en.set("SAE401-RETEX2", this.sae401_retex2_en);
+    this.translation_en.set("SAE401-RETEX3", this.sae401_retex3_en);
+    this.translation_en.set("SAE401-RETEX4", this.sae401_retex4_en);
+    this.translation_en.set("SAE401-ORGA", this.sae401_orga_en);
+    this.translation_fr.set("SAE501-PRESENTATION", this.sae501_presentation_fr);
+    this.translation_en.set("SAE501-PRESENTATION", this.sae501_presentation_en);
+    this.translation_fr.set("SAE501-OBJ", this.sae501_obj_fr);
+    this.translation_en.set("SAE501-OBJ", this.sae501_obj_en);
+    this.translation_fr.set("SAE501-ARCHI", this.sae501_archi_fr);
+    this.translation_en.set("SAE501-ARCHI", this.sae501_archi_en);
+    this.translation_fr.set("SAE501-INCITATION-IMG", this.sae501_incitation_img_fr);
+    this.translation_en.set("SAE501-INCITATION-IMG", this.sae501_incitation_img_en);
+    this.translation_fr.set("SAE501-TXT-IMG1", this.sae501_txt_img1_fr);
+    this.translation_en.set("SAE501-TXT-IMG1", this.sae501_txt_img1_en);
+    this.translation_fr.set("SAE501-TXT-IMG2", this.sae501_txt_img2_fr);
+    this.translation_en.set("SAE501-TXT-IMG2", this.sae501_txt_img2_en);
+    this.translation_fr.set("SAE501-TXT-IMG3", this.sae501_txt_img3_fr);
+    this.translation_en.set("SAE501-TXT-IMG3", this.sae501_txt_img3_en);
+    this.translation_fr.set("SAE501-TXT-IMG4", this.sae501_txt_img4_fr);
+    this.translation_en.set("SAE501-TXT-IMG4", this.sae501_txt_img4_en);
+    this.translation_fr.set("SAE501-TXT-IMG5", this.sae501_txt_img5_fr);
+    this.translation_en.set("SAE501-TXT-IMG5", this.sae501_txt_img5_en);
+    this.translation_fr.set("SAE501-TXT-IMG6", this.sae501_txt_img6_fr);
+    this.translation_en.set("SAE501-TXT-IMG6", this.sae501_txt_img6_en);
+    this.translation_fr.set("SAE501-MATOS", this.sae501_matos_fr);
+    this.translation_en.set("SAE501-MATOS", this.sae501_matos_en);
+    this.translation_fr.set("SAE501-MATOS1", this.sae501_matos1_fr);
+    this.translation_en.set("SAE501-MATOS1", this.sae501_matos1_en);
+    this.translation_fr.set("SAE501-MATOS2", this.sae501_matos2_fr);
+    this.translation_en.set("SAE501-MATOS2", this.sae501_matos2_en);
+    this.translation_fr.set("SAE501-MATOS3", this.sae501_matos3_fr);
+    this.translation_en.set("SAE501-MATOS3", this.sae501_matos3_en);
+    this.translation_fr.set("SAE501-MATOS4", this.sae501_matos4_fr);
+    this.translation_en.set("SAE501-MATOS4", this.sae501_matos4_en);
+    this.translation_fr.set("SAE501-MATOS5", this.sae501_matos5_fr);
+    this.translation_en.set("SAE501-MATOS5", this.sae501_matos5_en);
+    this.translation_fr.set("SAE501-MATOS6", this.sae501_matos6_fr);
+    this.translation_en.set("SAE501-MATOS6", this.sae501_matos6_en);
+    this.translation_fr.set("SAE501-MATOS7", this.sae501_matos7_fr);
+    this.translation_en.set("SAE501-MATOS7", this.sae501_matos7_en);
+    this.translation_fr.set("SAE501-ORGA1", this.sae501_orga1_fr);
+    this.translation_en.set("SAE501-ORGA1", this.sae501_orga1_en);
+    this.translation_fr.set("SAE501-ORGA2", this.sae501_orga2_fr);
+    this.translation_en.set("SAE501-ORGA2", this.sae501_orga2_en);
+    this.translation_fr.set("SAE501-PLANIP", this.sae501_planip_fr);
+    this.translation_en.set("SAE501-PLANIP", this.sae501_planip_en);
+    this.translation_fr.set("SAE501-PHASEDEP", this.sae501_phasedep_fr);
+    this.translation_en.set("SAE501-PHASEDEP", this.sae501_phasedep_en);
+    this.translation_fr.set("SAE501-MATACHE", this.sae501_matache_fr);
+    this.translation_en.set("SAE501-MATACHE", this.sae501_matache_en);
+    this.translation_fr.set("SAE501-TACHE1", this.sae501_tache1_fr);
+    this.translation_en.set("SAE501-TACHE1", this.sae501_tache1_en);
+    this.translation_fr.set("SAE501-TACHE2", this.sae501_tache2_fr);
+    this.translation_en.set("SAE501-TACHE2", this.sae501_tache2_en);
+    this.translation_fr.set("SAE501-TACHE3", this.sae501_tache3_fr);
+    this.translation_en.set("SAE501-TACHE3", this.sae501_tache3_en);
+    this.translation_fr.set("SAE501-TACHE4", this.sae501_tache4_fr);
+    this.translation_en.set("SAE501-TACHE4", this.sae501_tache4_en);
+    this.translation_fr.set("SAE501-TACHE5", this.sae501_tache5_fr);
+    this.translation_en.set("SAE501-TACHE5", this.sae501_tache5_en);
+    this.translation_fr.set("SAE501-TACHE6", this.sae501_tache6_fr);
+    this.translation_en.set("SAE501-TACHE6", this.sae501_tache6_en);
+    this.translation_fr.set("SAE501-PRES-SERVICE1", this.sae501_pres_service1_fr);
+    this.translation_en.set("SAE501-PRES-SERVICE1", this.sae501_pres_service1_en);
+    this.translation_fr.set("SAE501-PRES-SERVICE2", this.sae501_pres_service2_fr);
+    this.translation_en.set("SAE501-PRES-SERVICE2", this.sae501_pres_service2_en);
+    this.translation_fr.set("SAE501-SERVICE1", this.sae501_service1_fr);
+    this.translation_en.set("SAE501-SERVICE1", this.sae501_service1_en);
+    this.translation_fr.set("SAE501-SERVICE2", this.sae501_service2_fr);
+    this.translation_en.set("SAE501-SERVICE2", this.sae501_service2_en);
+    this.translation_fr.set("SAE501-SERVICE3", this.sae501_service3_fr);
+    this.translation_en.set("SAE501-SERVICE3", this.sae501_service3_en);
+    this.translation_fr.set("SAE501-SERVICE4", this.sae501_service4_fr);
+    this.translation_en.set("SAE501-SERVICE4", this.sae501_service4_en);
+    this.translation_fr.set("SAE501-SERVICE5", this.sae501_service5_fr);
+    this.translation_en.set("SAE501-SERVICE5", this.sae501_service5_en);
+    this.translation_fr.set("SAE501-SERVICE6", this.sae501_service6_fr);
+    this.translation_en.set("SAE501-SERVICE6", this.sae501_service6_en);
+    this.translation_fr.set("SAE501-SERVICE7", this.sae501_service7_fr);
+    this.translation_en.set("SAE501-SERVICE7", this.sae501_service7_en);
+    this.translation_fr.set("SAE501-SERVICE8", this.sae501_service8_fr);
+    this.translation_en.set("SAE501-SERVICE8", this.sae501_service8_en);
+    this.translation_fr.set("SAE501-SERVICE9", this.sae501_service9_fr);
+    this.translation_en.set("SAE501-SERVICE9", this.sae501_service9_en);
+    this.translation_fr.set("SAE501-SERVICE10", this.sae501_service10_fr);
+    this.translation_en.set("SAE501-SERVICE10", this.sae501_service10_en);
+    this.translation_fr.set("SAE501-SERVICE11", this.sae501_service11_fr);
+    this.translation_en.set("SAE501-SERVICE11", this.sae501_service11_en);
+    this.translation_fr.set("SAE501-SERVICE12", this.sae501_service12_fr);
+    this.translation_en.set("SAE501-SERVICE12", this.sae501_service12_en);
+    this.translation_fr.set("SAE501-SERVICE13", this.sae501_service13_fr);
+    this.translation_en.set("SAE501-SERVICE13", this.sae501_service13_en);
+    this.translation_fr.set("SAE501-SERVICE14", this.sae501_service14_fr);
+    this.translation_en.set("SAE501-SERVICE14", this.sae501_service14_en);
+    this.translation_fr.set("SAE501-SERVICE15", this.sae501_service15_fr);
+    this.translation_en.set("SAE501-SERVICE15", this.sae501_service15_en);
+    this.translation_fr.set("SAE501-SERVICE16", this.sae501_service16_fr);
+    this.translation_en.set("SAE501-SERVICE16", this.sae501_service16_en);
+    this.translation_fr.set("SAE501-SERVICE17", this.sae501_service17_fr);
+    this.translation_en.set("SAE501-SERVICE17", this.sae501_service17_en);
+    this.translation_fr.set("SAE501-PARTRESEAU", this.sae501_partreseau_fr);
+    this.translation_en.set("SAE501-PARTRESEAU", this.sae501_partreseau_en);
+    this.translation_fr.set("SAE501-PROT-ROUTAGE", this.sae501_prot_routage_fr);
+    this.translation_en.set("SAE501-PROT-ROUTAGE", this.sae501_prot_routage_en);
+    this.translation_fr.set("SAE501-DESCR-VRF", this.sae501_descr_vrf_fr);
+    this.translation_en.set("SAE501-DESCR-VRF", this.sae501_descr_vrf_en);
+     this.translation_fr.set("SAE501-DESCR-VRF2", this.sae501_descr_vrf2_fr);
+    this.translation_en.set("SAE501-DESCR-VRF2", this.sae501_descr_vrf2_en);
+    this.translation_fr.set("SAE501-ACT-SCRIPT1", this.sae501_act_script1_fr);
+    this.translation_en.set("SAE501-ACT-SCRIPT1", this.sae501_act_script1_en);
+    this.translation_fr.set("SAE501-ACT-SCRIPT2", this.sae501_act_script2_fr);
+    this.translation_en.set("SAE501-ACT-SCRIPT2", this.sae501_act_script2_en);
+    this.translation_fr.set("SAE501-ACT-SCRIPT3", this.sae501_act_script3_fr);
+    this.translation_en.set("SAE501-ACT-SCRIPT3", this.sae501_act_script3_en);
+    this.translation_fr.set("SAE501-EEM", this.sae501_eem_fr);
+    this.translation_en.set("SAE501-EEM", this.sae501_eem_en);
+    this.translation_fr.set("SAE501-EEM-DESCR", this.sae501_eem_descr_fr);
+    this.translation_en.set("SAE501-EEM-DESCR", this.sae501_eem_descr_en);
+    this.translation_fr.set("SAE501-LIEN-SCRIPT-EEM", this.sae501_lien_script_eem_fr);
+    this.translation_en.set("SAE501-LIEN-SCRIPT-EEM", this.sae501_lien_script_eem_en);
+    this.translation_fr.set("SAE501-PRBLM-SCRIPT1", this.sae501_prblm_script1_fr);
+    this.translation_en.set("SAE501-PRBLM-SCRIPT1", this.sae501_prblm_script1_en);
+    this.translation_fr.set("SAE501-PRBLM-SCRIPT2", this.sae501_prblm_script2_fr);
+    this.translation_en.set("SAE501-PRBLM-SCRIPT2", this.sae501_prblm_script2_en);
+    this.translation_fr.set("SAE501-SCRIPT-PWS-TITRE", this.sae501_script_pws_titre_fr);
+    this.translation_en.set("SAE501-SCRIPT-PWS-TITRE", this.sae501_script_pws_titre_en);
+    this.translation_fr.set("SAE501-PWS1", this.sae501_pws1_fr);
+    this.translation_en.set("SAE501-PWS1", this.sae501_pws1_en);
+    this.translation_fr.set("SAE501-PWS2", this.sae501_pws2_fr);
+    this.translation_en.set("SAE501-PWS2", this.sae501_pws2_en);
+    this.translation_fr.set("SAE501-ORGA-SCRIPTGROUP", this.sae501_orga_scriptgroup_fr);
+    this.translation_en.set("SAE501-ORGA-SCRIPTGROUP", this.sae501_orga_scriptgroup_en);
+    this.translation_fr.set("SAE501-LIEN-SCRIPT", this.sae501_lien_script_fr);
+    this.translation_en.set("SAE501-LIEN-SCRIPT", this.sae501_lien_script_en);
+    this.translation_fr.set("SAE501-TITRE-PRBLM", this.sae501_titre_prblm_fr);
+    this.translation_en.set("SAE501-TITRE-PRBLM", this.sae501_titre_prblm_en);
+    this.translation_fr.set("SAE501-PRBLM1", this.sae501_prblm1_fr);
+    this.translation_en.set("SAE501-PRBLM1", this.sae501_prblm1_en);
+    this.translation_fr.set("SAE501-PRBLM2", this.sae501_prblm2_fr);
+    this.translation_en.set("SAE501-PRBLM2", this.sae501_prblm2_en);
+    this.translation_fr.set("SAE501-PRBLM3", this.sae501_prblm3_fr);
+    this.translation_en.set("SAE501-PRBLM3", this.sae501_prblm3_en);
+    this.translation_fr.set("SAE501-TITRE-RETEX", this.sae501_titre_retex_fr);
+    this.translation_en.set("SAE501-TITRE-RETEX", this.sae501_titre_retex_en);
+    this.translation_fr.set("SAE501-RETEX1", this.sae501_retex1_fr);
+    this.translation_en.set("SAE501-RETEX1", this.sae501_retex1_en);
+    this.translation_fr.set("SAE501-RETEX2", this.sae501_retex2_fr);
+    this.translation_en.set("SAE501-RETEX2", this.sae501_retex2_en);
+    this.translation_fr.set("SAE501-RETEX3", this.sae501_retex3_fr);
+    this.translation_en.set("SAE501-RETEX3", this.sae501_retex3_en);
+    this.translation_fr.set("SAE501-RETEX4", this.sae501_retex4_fr);
+    this.translation_en.set("SAE501-RETEX4", this.sae501_retex4_en);
+    this.translation_fr.set("SAE501-RETEX5", this.sae501_retex5_fr);
+    this.translation_en.set("SAE501-RETEX5", this.sae501_retex5_en);
+    this.translation_fr.set("SAE501-RETEX6", this.sae501_retex6_fr);
+    this.translation_en.set("SAE501-RETEX6", this.sae501_retex6_en);
+    this.translation_fr.set("SAE501-LIEN-GITHUB", this.sae501_lien_github_fr);
+    this.translation_en.set("SAE501-LIEN-GITHUB", this.sae501_lien_github_en);
 
     this.checkAllKeys();
   }
@@ -2519,6 +2754,281 @@ I presented a vulnerability that I discovered using the Nuclei scanner, called G
   sae401_retex3_fr = `Travailler en autonomie`;
   sae401_retex4_fr = `Travailler en équipe`;
 
+
+
+  sae501_presentation_fr = `Cette SAE impliquait l’ensemble des étudiants et a été réalisée par groupes de 4 ou 5, comprenant
+        au minimum 2 étudiants du parcours cybersécurité. Dans mon cas, dû au fait que le nombre d'étudiant dans la
+        promo ne permettait pas de faire exclusivement des groupes de 4, j'ai réalisé la SAE en binôme. Etant en
+        parcours cybersécurité, je me suis naturellement occupé de la sécurisation de l'infrastructure. Mon binôme était
+        en parcours IoM, il s'est occupé de l'installation et de la configuration du WiFi. Cette SAE s’est déroulée sur
+        une durée d’une semaine et
+        trois jours.`;
+  sae501_obj_fr = ` L’objectif de cette SAE était de réaliser une infrastructure basée sur les
+        WorldSkills, un concours international. Le mot d’ordre était « Fonctionnel ». Cette infrastructure était composé
+        de 3 sites : Remote, HQ, Internet.`;
+  sae501_archi_fr = ` Voici
+        l'architecture réseau que nous devions mettre en place : `;
+  sae501_incitation_img_fr = `N'hésitez pas à cliquez sur l'image pour l'agrandir.`;
+  sae501_txt_img1_fr = `schéma physique simplifié`;
+  sae501_txt_img2_fr = `Schéma physique détaillé`;
+  sae501_txt_img3_fr = `Schéma logiuqe de la couche 3`;
+  sae501_txt_img4_fr = `Schéma logique de la couche 2`;
+  sae501_txt_img5_fr = `Schéma détaillé du routage`;
+  sae501_txt_img6_fr = `Schéma DNS`;
+  sae501_matos_fr = `Voici le matériel dont nous avions à disposition pour réaliser cette SAE : `;
+  sae501_matos1_fr = `3 routeurs`;
+  sae501_matos2_fr = `6 switchs`;
+  sae501_matos3_fr = `Une baie de brassage contenant 1 serveur sous ESXi`;
+  sae501_matos4_fr = `2 hyperviseurs sour Proxmox dédié`;
+  sae501_matos5_fr = `2 PCs de l'IUT`;
+  sae501_matos6_fr = `2 bornes Wi-Fi`;
+  sae501_matos7_fr = `1 tablette`;
+  sae501_orga1_fr = `L'organisation de cette SAE (Situation d'Apprentissage et d'Évaluation) s'est
+        déroulée de la manière suivante : nous devions rendre différents jalons, qui représentaient des
+        points d'étape, tout au long de la semaine. La date de certains jalon variait en fonction de
+        la difficulté de la tâche, sa priorité dans l'ensemble des tâches à réaliser (Par exemple, le réseau devait être
+        opérationnel avant tout, et par conséquent, les jalons concernant l'installation de services Windows ont été
+        réalisé après les jalons qui concernaient la mise en place du réseau.). C'est donc en fonction de ces priorités
+        que la durée de réalisation des jalons a différé, certains nécessitant plus de temps en raison de leur
+        complexité ou de leur importance dans la progression globale du projet.`;
+  sae501_orga2_fr = `Nous avons donc commencé par la
+        planification et l'attribution des tâches pour
+        lesquelles nous avons utilisé l'outil de gestion de projet Trello. Nous avons ensuite réalisé le
+        plan d'adressage IP.`;
+  sae501_planip_fr = `Voici notre plan IP`;
+  sae501_phasedep_fr = `Nous avons ensuite entamé la phase de déploiement où nous avons mis en place
+        l'infrastructure.`;
+  sae501_matache_fr = ` J'ai ainsi commencé par réaliser les tâches qui m'ont été assignés : `;
+  sae501_tache1_fr = ` Simulation du routage sous GNS3`;
+  sae501_tache2_fr = `Installation, préparation et configuration des routeurs : Mise en place de l'adressage
+            IP, des noms d'hôtes, en conformité avec le cahier des charges.`;
+  sae501_tache3_fr = `Mise en place du routage sur les équipements réseaux`;
+  sae501_tache4_fr = `Installation et configuration de l'ESXi`;
+  sae501_tache5_fr = `Mise en place de la majorité des services Windows et Linux. Bien que mon coéquipier devait initialement en
+            prendre une partie, il n'a malheureusement pas pu s'en charger en raison d'un problème personnel.`;
+  sae501_tache6_fr = `Sécurisation de l'infrastructure`;
+  sae501_pres_service1_fr = `Ayant régulièrement travaillé sur les proxmox de l'université où ont été stocké les
+        serveurs de la partie Internet et Remote de la SAE, je n'ai pas eu de problème concernant cette partie.
+        Concernant l'ESXi, j'ai eu l'occasion de travailler sur cet hyperviseur lors de mes périodes d'entreprises.
+        Concernant l'ESXi, j'ai eu l'occasion de travailler sur cet hyperviseur lors de mes périodes en entreprise. Je
+        n'ai donc pas rencontré de difficulté particulière à prendre en main cet environnement, même si je n'avais
+        encore jamais manipulé la configuration réseau d'un ESXi, grâce à mes expériences précédentes. `;
+  sae501_pres_service2_fr = ` Voici
+        les services demandés lors de cette SAE :`;
+  sae501_service1_fr = `Active Directory (Domaine racine)`;
+  sae501_service2_fr = `Active Directory (Domaine enfant - Site remote)`;
+  sae501_service3_fr = `GPO`;
+  sae501_service4_fr = `Scripts (Ajout d'utilisateurs auto - Ajout d'utilisateurs dans un groupe global auto)`;
+  sae501_service5_fr = `DNS (master)`;
+  sae501_service6_fr = `DNS (failover)`;
+  sae501_service7_fr = `DHCP`;
+  sae501_service8_fr = `RAID`;
+  sae501_service9_fr = `Serveurs de fichiers`;
+  sae501_service10_fr = `ADCS`;
+  sae501_service11_fr = `pfSense`;
+  sae501_service12_fr = `Terminal Server`;
+  sae501_service13_fr = `Serveur mail`;
+  sae501_service14_fr = `DFS`;
+  sae501_service15_fr = `Partages réseaux`;
+  sae501_service16_fr = `FTP/FTPS`;
+  sae501_service17_fr = `Serveur Web`;
+  sae501_partreseau_fr = `La partie réseau a été scindée en deux volets : la configuration des switches (routage inter-VLAN) et celle des
+        routeurs.
+        Voici les protocoles que mon binôme, en charge de cette partie, a mis en place concernant la partie switches :`;
+  sae501_prot_routage_fr = `Voici les protocoles de routage que j'ai mis en place sur les routeurs :`;
+  sae501_descr_vrf_fr = `Le VRF (Virtual Routing and Forwarding) est un protocole de routage qui permet de virtualiser les tables de
+        routage sur un seul routeur physique. Ainsi, ce routeur peut gérer à la fois du routage OSPF et du routage BGP,
+        sans que leurs tables de routage respectives n’interfèrent entre elles.`;
+  sae501_descr_vrf2_fr = `L'EMM, Embedded Event Manager, est une sorte de language de script propre à cisco. Ce language permet
+        d'automatiser des actions sur les routeurs comme par exemple : `;
+  sae501_act_script1_fr = `Lorsqu'une interface tombe en panne, la rallumer automatiquement,`;
+  sae501_act_script2_fr = `Modifier la table de routage,`;
+  sae501_act_script3_fr = `Changer la priorité HSRP.`;
+  sae501_eem_fr = `Il était demandé de réaliser un script avec l'EEM sur CORESW1 pour faire face à la situation suivante : `;
+  sae501_eem_descr_fr = `Si EDGE1 ne répond pas, abaisser sa priorité HSRP afin que le switch de couche 3 CORESW2 devienne la
+            passerelle par
+            défaut vers l'extérieur.`;
+  sae501_lien_script_eem_fr = `J'ai donc réalisé le script suivant :`;
+  sae501_prblm_script1_fr = `Cependant, bien que j’ai vérifié le script avec l’intervenant supervisant le
+        projet ainsi qu’avec mon
+        professeur, je n’ai pas réussi à le faire fonctionner. Cela pourrait être dû à la version de l’IOS Cisco du
+        routeur en question ou à une incompatibilité non identifiée ou une erreur dans le script.`;
+  sae501_prblm_script2_fr = `La majorité des serveurs virtuels étant stockés sur une baie (sur l'ESXi) non connectée à internet, j'ai ainsi
+        implanté une solution de télétravail permettant la prise en main à distance de l'ESXi et de ses VMs :
+        En passant par les Proxmox accessibles via Internet, nous avons mis en place plusieurs machines permettant
+        d'accéder aux ESXi, ce qui nous a permis de gérer les serveurs ESXi à distance. Cette solution a offert la
+        possibilité de poursuivre notre travail depuis chez nous, même après la fermeture des salles universitaires.`;
+  sae501_script_pws_titre_fr = ` En complément du script d'automatisation sur Cisco, il a été demandé de réaliser 2 scripts powershell :`;
+  sae501_pws1_fr = `User provisionning : Ajout d'utilisateur en nombre (1000 utilisateurs à ajouter)`;
+  sae501_pws2_fr = `Group provisionning : A chaque création d'utilisateur, celui-ci devait être ajouté à un groupe global.`;
+  sae501_orga_scriptgroup_fr = `Je me suis ainsi occupé de créer le script permettant l'ajout automatique d'utilisateur nouvellement créé dans
+        un groupe global.
+        Afin que la compréhension du script soit facilité, voici le squelette du script et le script :`;
+  sae501_lien_script_fr = `squelette.PNG`;
+  sae501_titre_prblm_fr = `Problèmes rencontrés`;
+  sae501_prblm1_fr = `La première difficulté que j'ai rencontré a été la simulation du routage. En effet, la configuration sur un
+        logiciel
+        d’émulation de réseaux (GNS3) du routage s’est effectuée sans problème puis a cessé d’être
+        opérationnelle sans savoir pourquoi. Ce problème a causé une faible perte de temps dans la mise en place sur le
+        matériel physique, mais cette simulation s'est révélée utile puisqu'elle nous a évité certains problèmes
+        rencontrés dans la simulation.`;
+  sae501_prblm2_fr = `La deuxième problème auquel nous avons fait face a été la mise en place et le déploiement des certificats au
+        niveau du réseaux et des services. Nous n'avons pas réussi à résoudre ce problème dans le délais impartit.`;
+
+  sae501_prblm3_fr = ` La troisième difficulté que nous avons rencontrée concernait la connexion à l'Active Directory depuis le serveur
+        web HQWEBSRV, situé dans la DMZ. Nous ne parvenions pas à établir cette connexion. La solution a été d’ajouter
+        une règle de filtrage autorisant le trafic entre l’Active Directory et le serveur web HQWEBSRV, permettant ainsi
+        le bon fonctionnement des services de bureau à distance.`;
+  sae501_titre_retex_fr = `Ce que j'ai appris durant ce projet`;
+  sae501_retex1_fr = `Mettre en place un réseau informatique complexe et sécurisé dans un temps restreint`;
+  sae501_retex2_fr = `Approfondir mes connaissances sur la mise en place du réseau avec la pile OSPF/BGP/VRF`;
+  sae501_retex3_fr = `Résoudre des problèmes en totale autonomie tout en étant sous pression`;
+  sae501_retex4_fr = `Développer une résilience face aux problèmes techniques : La nécessité de dépasser les blocages,
+            même en y travaillant tard dans des conditions exigeantes, m'a aidé à développer une résilience
+            et une détermination face aux défis techniques. J'ai ainsi appris à maintenir la rigueur et la
+            persévérance nécessaires pour résoudre des problèmes critiques dans des délais restreints.`;
+  sae501_retex5_fr = `Renforcer mon aptitude à travailler en équipe`;
+  sae501_retex6_fr = `Améliorer ma gestion de temps sous pression tout en restant solidaire : En avançant sur mes
+            tâches tout en soutenant mon coéquipier, j'ai acquis une meilleure maîtrise de la gestion de
+            mon propre travail dans un espace temps réduit. Assurer l’avancement de mes missions sans
+            retarder le groupe m'a montré l'importance de l'autonomie tout en contribuant au succès de
+            l'équipe.`;
+  sae501_lien_github_fr = `Pour en savoir plus sur ce projet, n'hésitez pas à jeter un &oelig;il à notre
+        rapport :`;
+
+
+
+  sae501_presentation_en = `This SAE involved all students and was carried out in groups of four or five, including
+at least two students from the cybersecurity programme. In my case, due to the fact that the number of students in the
+class did not allow for groups of four, I carried out the SAE in pairs. Being in the
+        cybersecurity programme, I naturally took care of securing the infrastructure. My partner was
+        in the IoM programme and took care of installing and configuring the WiFi. This SAE took place over
+        a period of one week and
+        three days.`;
+  sae501_obj_en = `The objective of this SAE was to build an infrastructure based on
+        WorldSkills, an international competition. The keyword was ‘functional’. This infrastructure consisted of
+        three sites: Remote, HQ, and Internet.`;
+  sae501_archi_en = `Here is the network architecture we had to set up`;
+  sae501_incitation_img_en = `Don't hesitate to clic on the pictures to enlarge them`;
+  sae501_txt_img1_en = `Simplified physical scheme`;
+  sae501_txt_img2_en = `Detailed physical scheme`;
+  sae501_txt_img3_en = `Layer 3 logical scheme`;
+  sae501_txt_img4_en = `Layer 2 logical scheme`;
+  sae501_txt_img5_en = `Detailed routing scheme`;
+  sae501_txt_img6_en = `DNS scheme`;
+  sae501_matos_en = `Here is the equipment we had available to carry out this SAE :  `;
+  sae501_matos1_en = `3 routers`;
+  sae501_matos2_en = `6 switches`;
+  sae501_matos3_en = `1 brew bay with an ESXi server`;
+  sae501_matos4_en = `2 hypervisors with Proxmox`;
+  sae501_matos5_en = `2 computers`;
+  sae501_matos6_en = `2 hotspots`;
+  sae501_matos7_en = `1 tablet`;
+  sae501_orga1_en = `The organisation of this SAE (Learning and Assessment Situation) took place
+        as follows: we had to meet various milestones, which represented
+        milestones throughout the week. The date of some milestones varied depending on
+        the difficulty of the task and its priority among all the tasks to be completed (for example, the network had to be
+        operational first, and therefore the milestones concerning the installation of Windows services were
+        completed after the milestones concerning the implementation of the network). It was therefore based on these priorities
+        that the time required to complete the milestones differed, with some requiring more time due to their
+        complexity or importance in the overall progress of the project.`;
+  sae501_orga2_en = `We therefore began by
+planning and assigning tasks,
+using the Trello project management tool. We then drew up the
+IP addressing plan. `;
+  sae501_planip_en = `Here is our IP addressing system`;
+  sae501_phasedep_en = `We once started our deployment phase where we set up the infrastructure`;
+  sae501_matache_en = `So here are the tasks I have been assigned for`;
+  sae501_tache1_en = `Routing simulation under GNS3`;
+  sae501_tache2_en = `Insallation, preparation and configuration of routers : IP, hostname in accordance with the specifications`;
+  sae501_tache3_en = `Routing set up on the network equipment`;
+  sae501_tache4_en = `Installation and configuration of the ESXi`;
+  sae501_tache5_en = `Implementation of most Windows and Linux services. Although my teammate was initially supposed to take on part of this,
+            unfortunately he was unable to do so due to a personal issue.`;
+  sae501_tache6_en = `Securing the infrastructure`;
+  sae501_pres_service1_en = `Having regularly worked on the Proxmox servers at the university where the
+        SAE's Internet and Remote servers were stored, I had no problems with this part.
+        As for ESXi, I had the opportunity to work on this hypervisor during my internships.
+        As for ESXi, I had the opportunity to work on this hypervisor during my work placements. I
+        therefore had no particular difficulty in getting to grips with this environment, even though I had
+        never handled the network configuration of an ESXi before, thanks to my previous experience.`;
+  sae501_pres_service2_en = `Here are
+the services requested during this SAE:`;
+  sae501_service1_en = `Active Directory - Root domain`;
+  sae501_service2_en = `Active Directory - Child domain - Remote site`;
+  sae501_service3_en = `GPO`;
+  sae501_service4_en = `Scripts (Automatic AD User approvisionning - Automatic local group approvisionning with users)`;
+  sae501_service5_en = `DNS (Master)`;
+  sae501_service6_en = `DNS - (Failover)`;
+  sae501_service7_en = `DHCP`;
+  sae501_service8_en = `RAID`;
+  sae501_service9_en = `Files server`;
+  sae501_service10_en = `ADCS`;
+  sae501_service11_en = `pfSEnse`;
+  sae501_service12_en = `Terminal Server`;
+  sae501_service13_en = `Mail Server`;
+  sae501_service14_en = `DFS`;
+  sae501_service15_en = `Network share`;
+  sae501_service16_en = `FTP/FTPS`;
+  sae501_service17_en = `Web Server`;
+  sae501_partreseau_en = `The network section was divided into two parts: switch configuration (inter-VLAN routing) and router configuration.
+        Here are the protocols that my partner, who was in charge of this section, implemented for the switches:
+        *   Configure the switches to allow traffic between all VLANs.`;
+  sae501_prot_routage_en = `Here are the routing protocols that I set up`;
+  sae501_descr_vrf_en = `VRF (Virtual Routing and Forwarding) is a routing protocol that allows routing tables to be virtualised
+        on a single physical router. This means that the router can manage both OSPF and BGP routing,
+        without their respective routing tables interfering with each other. `;
+  sae501_descr_vrf2_en = ` EMM, Embedded Event Manager, is a type of scripting language specific to Cisco. This language allows
+actions on routers to be automated, such as: `;
+  sae501_act_script1_en = `When an interface fails, automatically restart it.`;
+  sae501_act_script2_en = `Modify routing table`;
+  sae501_act_script3_en = `Change HRSP priority`;
+  sae501_eem_en = `It was also asked to create a script with the Embedded Event Manager (EEM) on CORESW1 in order to face the following situation`;
+  sae501_eem_descr_en = `EDGE1 is not responding, lower its HSRP priority so that the CORESW2 Layer 3 switch becomes the
+default gateway
+to the external network.`;
+  sae501_lien_script_eem_en = `Here's the script I created : `;
+  sae501_prblm_script1_en = ` However, although I checked the script with the project supervisor
+        and my
+        teacher, I was unable to get it to work. This could be due to the Cisco IOS version of the
+        router in question, or an unidentified incompatibility or error in the script.`;
+  sae501_prblm_script2_en = ` Since most of the virtual servers are stored on a rack (on ESXi) that is not connected to the internet, I have
+        implemented a teleworking solution that allows remote control of the ESXi and its VMs:
+        Using Proxmox accessible via the internet, we set up several machines that allow
+        access to the ESXi, which enabled us to manage the ESXi servers remotely. This solution allowed us to
+        continue our work from home, even after the university rooms were closed.`;
+  sae501_script_pws_titre_en = `In addition to the automation script on Cisco, two PowerShell scripts were requested: `;
+  sae501_pws1_en = `User provisionning : Adding mass users into Active Directory (1000 Users)`;
+  sae501_pws2_en = `Group provisionning : At each user creation, the user ias automatically added to a default group `;
+  sae501_orga_scriptgroup_en = ` I therefore took care of creating the script that automatically adds newly created users to
+        a global group.
+        To make the script easier to understand, here is the script outline and the script itself:`;
+  sae501_lien_script_en = `script_diagram.PNG`;
+  sae501_titre_prblm_en = `Problems encountered`;
+  sae501_prblm1_en = `The first difficulty I encountered was simulating the routing. The configuration on a
+        network emulation software
+        (GNS3) worked fine at first, but then stopped working
+        for no apparent reason. This issue caused a slight delay in setting up the
+        physical hardware, but the simulation proved useful as it helped us avoid certain problems
+        encountered in this simulation. `;
+  sae501_prblm2_en = ` The second problem we faced was the implementation and deployment of certificates at the
+network and service levels. We were unable to resolve this issue within the allotted time frame.`;
+
+  sae501_prblm3_en = `The third difficulty we encountered concerned the connection to Active Directory from the HQWEBSRV web server, located in the DMZ.
+        We were unable to establish this connection. The solution was to add
+        a filtering rule authorising traffic between Active Directory and the HQWEBSRV web server, thereby enabling
+        the remote desktop services to function properly.`;
+  sae501_titre_retex_en = `What I learned during this project`;
+  sae501_retex1_en = `Setting up a complex and secure computer network within a limited time frame`;
+  sae501_retex2_en = `Approfondir mes connaissances sur la mise en place du réseau avec la pile OSPF/BGP/VRF `;
+  sae501_retex3_en = `Résoudre des problèmes en totale autonomie tout en étant sous pression`;
+  sae501_retex4_en = `Développer une résilience face aux problèmes techniques : La nécessité de dépasser les blocages,
+            même en y travaillant tard dans des conditions exigeantes, m'a aidé à développer une résilience
+            et une détermination face aux défis techniques. J'ai ainsi appris à maintenir la rigueur et la
+            persévérance nécessaires pour résoudre des problèmes critiques dans des délais restreints.`;
+  sae501_retex5_en = `Renforcer mon aptitude à travailler en équipe`;
+  sae501_retex6_en = `Improving my time management under pressure while remaining supportive: By advancing my tasks while supporting my teammate, I gained better control over managing my own work in a limited amount of time. Ensuring the progress of my tasks without delaying the group showed me the importance of autonomy while contributing to the team's success.`;
+  sae501_lien_github_en = `o learn more about this project, feel free to take a look at our report: (French only, the report has not been translated yet)`;
 
 
 

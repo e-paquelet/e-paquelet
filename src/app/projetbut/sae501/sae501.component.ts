@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { LanguageService } from '../../../services/language.service';
 
 export interface ListeImage {
     img: string;
@@ -14,6 +15,8 @@ export interface ListeImage {
     styleUrl: './sae501.component.css'
 })
 export class Sae501Component {
+
+    public translation = inject(LanguageService);
    
     adressage_ip = "./assets/img/sae501/Adressage IP.xlsx";
     cr_sae_501 = "./assets/img/sae501/cr_sae_501.pdf";
@@ -72,32 +75,32 @@ export class Sae501Component {
 
         {
             img: this.physicalscheme_simplified,
-            text: "schéma physique simplifié",
+            text: this.translation.translate("SAE501-TXT-IMG1"),
             fct: () => { this.enlargeImage() },
         },
         {
             img: this.physicalscheme_detailled,
-            text: "Schéma physique détaillé",
+            text:  this.translation.translate("SAE501-TXT-IMG2"),
             fct: () => { this.enlargeImage1() },
         },
         {
             img: this.l3scheme,
-            text: "Schéma logique de la couche 3",
+            text:  this.translation.translate("SAE501-TXT-IMG3"),
             fct: () => { this.enlargeImage2() },
         },
         {
             img: this.l2scheme,
-            text: "Schéma logique de la couche 2",
+            text:  this.translation.translate("SAE501-TXT-IMG4"),
             fct: () => { this.enlargeImage3() },
         },
         {
             img: this.routingscheme,
-            text: "Schéma détaillé du routage",
+            text:  this.translation.translate("SAE501-TXT-IMG5"),
             fct: () => { this.enlargeImage4() },
         },
         {
             img: this.dnsscheme,
-            text: "Schéma DNS",
+            text:  this.translation.translate("SAE501-TXT-IMG6"),
             fct: () => { this.enlargeImage5() },
         },
 
