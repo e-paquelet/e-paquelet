@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { NgIf } from '@angular/common';
+import { LanguageService } from '../../../services/language.service';
 
 @Component({
     selector: 'app-sae502',
@@ -8,6 +9,8 @@ import { NgIf } from '@angular/common';
     styleUrl: './sae502.component.css'
 })
 export class Sae502Component {
+
+    public translation = inject(LanguageService);
     infra = "./assets/img/sae502/infra.png";
     infrav2 = "./assets/img/sae502/infrav2.png";
     trello = "./assets/img/sae502/trello.PNG";

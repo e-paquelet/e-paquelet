@@ -488,7 +488,6 @@ export const TRANSLATION_KEY = [
   "SAE501-TITRE-PRBLM",
   "SAE501-PRBLM1",
   "SAE501-PRBLM2",
-
   "SAE501-PRBLM3",
   "SAE501-TITRE-RETEX",
   "SAE501-RETEX1",
@@ -498,6 +497,55 @@ export const TRANSLATION_KEY = [
   "SAE501-RETEX5",
   "SAE501-RETEX6",
   "SAE501-LIEN-GITHUB",
+  "SAE502-PRESENTATION",
+  "SAE502-OBJECTIF",
+  "SAE502-REALISE",
+  "SAE502-ORGA",
+  "SAE502-PHASE-CONC",
+  "SAE502-PRESE-PHASE-CONC",
+  "SAE502-TACHE1",
+  "SAE502-TACHE2",
+  "SAE502-TACHE3",
+  "SAE502-TACHE4",
+  "SAE502-TACHE5",
+  "SAE502-TACHE6",
+  "SAE502-TACHE7",
+  "SAE502-PRES-CDC",
+  "SAE502-LIEN-CDC",
+  "SAE502-INFRA",
+  "SAE502-SERVICE1",
+  "SAE502-SERVICE2",
+  "SAE502-SERVICE3",
+  "SAE502-SERVICE4",
+  "SAE502-SERVICE5",
+  "SAE502-SERVICE6",
+  "SAE502-SERVICE7",
+  "SAE502-SERVICE8",
+  "SAE502-SERVICE9",
+  "SAE502-SERVICE10",
+  "SAE502-SERVICE11",
+  "SAE502-SERVICE12",
+  "SAE502-SERVICE13",
+  "SAE502-NEW-ARCHI",
+  "SAE502-NEW-NEW-ARCHI",
+  "SAE502-PHASEDEP",
+  "SAE502-MATACHE",
+  "SAE502-TACHE1-DEP",
+  "SAE502-TACHE2-DEP",
+  "SAE502-TACHE3-DEP",
+  "SAE502-TACHE4-DEP",
+  "SAE502-TACHE5-DEP",
+  "SAE502-TACHE6-DEP",
+  "SAE502-PRBLM-PHASEDEP",
+  "SAE502-INSTA",
+  "SAE502-PHASETEST",
+  "SAE502-DESCR-PHASETEST",
+  "SAE502-TITRE-RETEX",
+  "SAE502-RETEX1",
+  "SAE502-RETEX2",
+  "SAE502-RETEX3",
+
+
 
 
 
@@ -1504,7 +1552,7 @@ export class LanguageService {
     this.translation_en.set("SAE501-PROT-ROUTAGE", this.sae501_prot_routage_en);
     this.translation_fr.set("SAE501-DESCR-VRF", this.sae501_descr_vrf_fr);
     this.translation_en.set("SAE501-DESCR-VRF", this.sae501_descr_vrf_en);
-     this.translation_fr.set("SAE501-DESCR-VRF2", this.sae501_descr_vrf2_fr);
+    this.translation_fr.set("SAE501-DESCR-VRF2", this.sae501_descr_vrf2_fr);
     this.translation_en.set("SAE501-DESCR-VRF2", this.sae501_descr_vrf2_en);
     this.translation_fr.set("SAE501-ACT-SCRIPT1", this.sae501_act_script1_fr);
     this.translation_en.set("SAE501-ACT-SCRIPT1", this.sae501_act_script1_en);
@@ -1556,6 +1604,100 @@ export class LanguageService {
     this.translation_en.set("SAE501-RETEX6", this.sae501_retex6_en);
     this.translation_fr.set("SAE501-LIEN-GITHUB", this.sae501_lien_github_fr);
     this.translation_en.set("SAE501-LIEN-GITHUB", this.sae501_lien_github_en);
+    this.translation_fr.set("SAE502-PRESENTATION", this.sae502_presentation_fr);
+    this.translation_en.set("SAE502-PRESENTATION", this.sae502_presentation_en);
+    this.translation_fr.set("SAE502-OBJECTIF", this.sae502_objectif_fr);
+    this.translation_en.set("SAE502-OBJECTIF", this.sae502_objectif_en);
+    this.translation_fr.set("SAE502-REALISE", this.sae502_realise_fr);
+    this.translation_en.set("SAE502-REALISE", this.sae502_realise_en);
+    this.translation_fr.set("SAE502-ORGA", this.sae502_orga_fr);
+    this.translation_en.set("SAE502-ORGA", this.sae502_orga_en);
+    this.translation_fr.set("SAE502-PHASE-CONC", this.sae502_phase_conc_fr);
+    this.translation_en.set("SAE502-PHASE-CONC", this.sae502_phase_conc_en);
+    this.translation_fr.set("SAE502-PRESE-PHASE-CONC", this.sae502_prese_phase_conc_fr);
+    this.translation_en.set("SAE502-PRESE-PHASE-CONC", this.sae502_prese_phase_conc_en);
+    this.translation_fr.set("SAE502-TACHE1", this.sae502_tache1_fr);
+    this.translation_en.set("SAE502-TACHE1", this.sae502_tache1_en);
+    this.translation_fr.set("SAE502-TACHE2", this.sae502_tache2_fr);
+    this.translation_en.set("SAE502-TACHE2", this.sae502_tache2_en);
+    this.translation_fr.set("SAE502-TACHE3", this.sae502_tache3_fr);
+    this.translation_en.set("SAE502-TACHE3", this.sae502_tache3_en);
+    this.translation_fr.set("SAE502-TACHE4", this.sae502_tache4_fr);
+    this.translation_en.set("SAE502-TACHE4", this.sae502_tache4_en);
+    this.translation_fr.set("SAE502-TACHE5", this.sae502_tache5_fr);
+    this.translation_en.set("SAE502-TACHE5", this.sae502_tache5_en);
+    this.translation_fr.set("SAE502-TACHE6", this.sae502_tache6_fr);
+    this.translation_en.set("SAE502-TACHE6", this.sae502_tache6_en);
+    this.translation_fr.set("SAE502-TACHE7", this.sae502_tache7_fr);
+    this.translation_en.set("SAE502-TACHE7", this.sae502_tache7_en);
+    this.translation_fr.set("SAE502-PRES-CDC", this.sae502_pres_cdc_fr);
+    this.translation_en.set("SAE502-PRES-CDC", this.sae502_pres_cdc_en);
+    this.translation_fr.set("SAE502-LIEN-CDC", this.sae502_lien_cdc_fr);
+    this.translation_en.set("SAE502-LIEN-CDC", this.sae502_lien_cdc_en);
+    this.translation_fr.set("SAE502-INFRA", this.sae502_infra_fr);
+    this.translation_en.set("SAE502-INFRA", this.sae502_infra_en);
+    this.translation_fr.set("SAE502-SERVICE1", this.sae502_service1_fr);
+    this.translation_en.set("SAE502-SERVICE1", this.sae502_service1_en);
+    this.translation_fr.set("SAE502-SERVICE2", this.sae502_service2_fr);
+    this.translation_en.set("SAE502-SERVICE2", this.sae502_service2_en);
+    this.translation_fr.set("SAE502-SERVICE3", this.sae502_service3_fr);
+    this.translation_en.set("SAE502-SERVICE3", this.sae502_service3_en);
+    this.translation_fr.set("SAE502-SERVICE4", this.sae502_service4_fr);
+    this.translation_en.set("SAE502-SERVICE4", this.sae502_service4_en);
+    this.translation_fr.set("SAE502-SERVICE5", this.sae502_service5_fr);
+    this.translation_en.set("SAE502-SERVICE5", this.sae502_service5_en);
+    this.translation_fr.set("SAE502-SERVICE6", this.sae502_service6_fr);
+    this.translation_en.set("SAE502-SERVICE6", this.sae502_service6_en);
+    this.translation_fr.set("SAE502-SERVICE7", this.sae502_service7_fr);
+    this.translation_en.set("SAE502-SERVICE7", this.sae502_service7_en);
+    this.translation_fr.set("SAE502-SERVICE8", this.sae502_service8_fr);
+    this.translation_en.set("SAE502-SERVICE8", this.sae502_service8_en);
+    this.translation_fr.set("SAE502-SERVICE9", this.sae502_service9_fr);
+    this.translation_en.set("SAE502-SERVICE9", this.sae502_service9_en);
+    this.translation_fr.set("SAE502-SERVICE10", this.sae502_service10_fr);
+    this.translation_en.set("SAE502-SERVICE10", this.sae502_service10_en);
+    this.translation_fr.set("SAE502-SERVICE11", this.sae502_service11_fr);
+    this.translation_en.set("SAE502-SERVICE11", this.sae502_service11_en);
+    this.translation_fr.set("SAE502-SERVICE12", this.sae502_service12_fr);
+    this.translation_en.set("SAE502-SERVICE12", this.sae502_service12_en);
+    this.translation_fr.set("SAE502-SERVICE13", this.sae502_service13_fr);
+    this.translation_en.set("SAE502-SERVICE13", this.sae502_service13_en);
+    this.translation_fr.set("SAE502-NEW-ARCHI", this.sae502_new_archi_fr);
+    this.translation_en.set("SAE502-NEW-ARCHI", this.sae502_new_archi_en);
+    this.translation_fr.set("SAE502-NEW-NEW-ARCHI", this.sae502_new_new_archi_fr);
+    this.translation_en.set("SAE502-NEW-NEW-ARCHI", this.sae502_new_new_archi_en);
+    this.translation_fr.set("SAE502-PHASEDEP", this.sae502_phasedep_fr);
+    this.translation_en.set("SAE502-PHASEDEP", this.sae502_phasedep_en);
+    this.translation_fr.set("SAE502-MATACHE", this.sae502_matache_fr);
+    this.translation_en.set("SAE502-MATACHE", this.sae502_matache_en);
+    this.translation_fr.set("SAE502-TACHE1-DEP", this.sae502_tache1_dep_fr);
+    this.translation_en.set("SAE502-TACHE1-DEP", this.sae502_tache1_dep_en);
+    this.translation_fr.set("SAE502-TACHE2-DEP", this.sae502_tache2_dep_fr);
+    this.translation_en.set("SAE502-TACHE2-DEP", this.sae502_tache2_dep_en);
+    this.translation_fr.set("SAE502-TACHE3-DEP", this.sae502_tache3_dep_fr);
+    this.translation_en.set("SAE502-TACHE3-DEP", this.sae502_tache3_dep_en);
+    this.translation_fr.set("SAE502-TACHE4-DEP", this.sae502_tache4_dep_fr);
+    this.translation_en.set("SAE502-TACHE4-DEP", this.sae502_tache4_dep_en);
+    this.translation_fr.set("SAE502-TACHE5-DEP", this.sae502_tache5_dep_fr);
+    this.translation_en.set("SAE502-TACHE5-DEP", this.sae502_tache5_dep_en);
+    this.translation_fr.set("SAE502-TACHE6-DEP", this.sae502_tache6_dep_fr);
+    this.translation_en.set("SAE502-TACHE6-DEP", this.sae502_tache6_dep_en);
+    this.translation_fr.set("SAE502-PRBLM-PHASEDEP", this.sae502_prblm_phasedep_fr);
+    this.translation_en.set("SAE502-PRBLM-PHASEDEP", this.sae502_prblm_phasedep_en);
+    this.translation_fr.set("SAE502-INSTA", this.sae502_insta_fr);
+    this.translation_en.set("SAE502-INSTA", this.sae502_insta_en);
+    this.translation_fr.set("SAE502-PHASETEST", this.sae502_phasetest_fr);
+    this.translation_en.set("SAE502-PHASETEST", this.sae502_phasetest_en);
+    this.translation_fr.set("SAE502-DESCR-PHASETEST", this.sae502_descr_phasetest_fr);
+    this.translation_en.set("SAE502-DESCR-PHASETEST", this.sae502_descr_phasetest_en);
+    this.translation_fr.set("SAE502-TITRE-RETEX", this.sae502_titre_retex_fr);
+    this.translation_en.set("SAE502-TITRE-RETEX", this.sae502_titre_retex_en);
+    this.translation_fr.set("SAE502-RETEX1", this.sae502_retex1_fr);
+    this.translation_en.set("SAE502-RETEX1", this.sae502_retex1_en);
+    this.translation_fr.set("SAE502-RETEX2", this.sae502_retex2_fr);
+    this.translation_en.set("SAE502-RETEX2", this.sae502_retex2_en);
+    this.translation_fr.set("SAE502-RETEX3", this.sae502_retex3_fr);
+    this.translation_en.set("SAE502-RETEX3", this.sae502_retex3_en);
 
     this.checkAllKeys();
   }
@@ -3029,6 +3171,170 @@ network and service levels. We were unable to resolve this issue within the allo
   sae501_retex5_en = `Renforcer mon aptitude à travailler en équipe`;
   sae501_retex6_en = `Improving my time management under pressure while remaining supportive: By advancing my tasks while supporting my teammate, I gained better control over managing my own work in a limited amount of time. Ensuring the progress of my tasks without delaying the group showed me the importance of autonomy while contributing to the team's success.`;
   sae501_lien_github_en = `o learn more about this project, feel free to take a look at our report: (French only, the report has not been translated yet)`;
+
+  sae502_presentation_fr = `Cette SAE concernait l'ensemble des étudiants de la promotion et a été réalisée par groupe de 4 ou 5 étudiants.
+        Le groupe devait
+        être composé de deux étudiants en parcours cybersécurité, 1 étudiant en parcours Internet des Objets, et un
+        étudiant en parcours Pilotage de projets réseaux.
+        `;
+  sae502_objectif_fr = `L'objectif de ce projet était de concevoir l'infrastructure informatique d'un hôpital de campagne devant
+        être déployé rapidement dans le cas d'une crise sanitaire.`;
+  sae502_realise_fr = `Ce projet a été entièrement réalisé de
+        manière
+        autonome, en suivant une approche complète depuis la conception jusqu'à la mise en œuvre. Il comprenait les
+        étapes suivantes : création d'un cahier des charges détaillé, gestion des tâches, du temps et de leur
+        attribution via Trello, définition et mise en place d'une architecture sécurisée, choix des solutions
+        techniques, déploiement de l'infrastructure, ainsi que les phases de test et validation.`;
+  sae502_orga_fr = `   Afin de réaliser ce projet en totale autonomie, nous avons utilisé Trello pour la gestion des tâches et du temps
+        de réalisation des tâches. Trello est
+        un outil permettant l'utilisation de la méthode de gestion de projet AGILE, que nous avons utilisée durant ce
+        projet. Voici un aperçu de notre tableau trello :`;
+  sae502_phase_conc_fr = `Phase de conception`;
+  sae502_prese_phase_conc_fr = `Durant cette phase, mes camarades et moi-même avons tout d'abord défini un cahier des charges ainsi que les
+        schémas de la future infrastructure. Dans le cahier des charges, nous avons identifiés et définis les besoins
+        suivants :`;
+  sae502_tache1_fr = `Gestion des dossiers patients`;
+  sae502_tache2_fr = `Gestion des rendez-vous`;
+  sae502_tache3_fr = `Prescriptions électroniques`;
+  sae502_tache4_fr = `Communication interne`;
+  sae502_tache5_fr = `Suivi post-consultation`;
+  sae502_tache6_fr = `Infrastructure connectée`;
+  sae502_tache7_fr = `Redondance`;
+  sae502_pres_cdc_fr = `Voici le cahier des charges que nous avons rédigés. Le but de cette SAE étant d'être le plus réaliste
+        possible, une estimation financière a été réalisée par notre camarade en parcours Pilotage de Projets Réseaux et
+        des noms d'acteurs réels apparaissent dans celui-ci. Néanmoins, il demeure que ce cahier des charges reste dans
+        le cadre d'un projet et tous les noms d'entreprises, de collectivités apparaissant dans celui-ci ne
+        correspondent pas nécessairement à des noms d'entreprises et de collectivités réelles. `;
+  sae502_lien_cdc_fr = `Notre cahier des charges`;
+  sae502_infra_fr = ` Nous avons ensuite définis l'infrastructure informatique à mettre en place en fonction des besoins. Ainsi, les
+        serveurs suivants ont été mis en place :`;
+  sae502_service1_fr = `Active Directory`;
+  sae502_service2_fr = `Terminal Server`;
+  sae502_service3_fr = `DNS`;
+  sae502_service4_fr = `Veeam`;
+  sae502_service5_fr = `NextCloud`;
+  sae502_service6_fr = `Zabbix`;
+  sae502_service7_fr = `Serveur mail`;
+  sae502_service8_fr = `Serveur de fichier`;
+  sae502_service9_fr = `Radius`;
+  sae502_service10_fr = `FreePBX ( Serveur de téléphonie)`;
+  sae502_service11_fr = `OpenEMR (Logiciel de gestion hospitalière)`;
+  sae502_service12_fr = `Serveur MQTT (IoT)`;
+  sae502_service13_fr = `GLPI (Gestion de parc information)`;
+  sae502_new_archi_fr = `Au niveau de l'infrastructure, nous avons premièrement tenté de
+        mettre en place l'infrastructure suivante,
+        composée de deux pare-feux ainsi que d'un coeur de réseau :`;
+  sae502_new_new_archi_fr = ` Cependant, en raison de contraintes indépendantes de notre volonté, nous avons du repenser notre
+        infrastructure réseau pour simplifier celle-ci tout en garantissant sa sécurité et sa simplicité de mise en
+        place. Voici l'infrastructure informatique finale que nous avons mis en place :`;
+  sae502_phasedep_fr = `Phase de déploiement`;
+  sae502_matache_fr = `Durant cette phase, j'ai été en charge des logiciels et serveurs suivants :`;
+  sae502_tache1_dep_fr = `Mise en place de l'Active Directory et du DNS`;
+  sae502_tache2_dep_fr = `Mise en place du logiciel de supervision Zabbix`;
+  sae502_tache3_dep_fr = `Mise en place du logiciel de gestion de parc informatique GLPI`;
+  sae502_tache4_dep_fr = `Mise en place du logiciel de sauvegarde Veeam`;
+  sae502_tache5_dep_fr = `Mise en place du logiciel de gestion hospitalière OpenEMR`;
+  sae502_tache6_dep_fr = `Mise en place du serveur cloud Nextcloud`;
+  sae502_prblm_phasedep_fr = `Je n'ai rencontré aucune difficulté particulière pour la mise en place des serveurs et logiciels, à l'exception
+        du logiciel de gestion hospitalière. J'ai exploré différentes approches pour son installation. Dans un premier
+        temps, j'ai tenté une installation sur un PC physique sous Windows. Bien que l'installation ait réussi, des
+        dysfonctionnements lors des requêtes sont apparus en raison d'une insuffisance de mémoire vive allouée à la base
+        de données intégrée. `;
+  sae502_insta_fr = ` J'ai donc opté pour une installation sur une machine virtuelle, permettant d'augmenter les ressources
+        disponibles. Cependant, de nombreux problèmes persistaient, principalement en raison de la compatibilité limitée
+        avec Windows 10, malgré les indications de la documentation. Finalement, j'ai installé le logiciel sous Linux,
+        où l'installation s'est déroulée sans aucune difficulté.`;
+  sae502_phasetest_fr = `Phase de test`;
+  sae502_descr_phasetest_fr = `Concernant cette phase, je n'ai pas grand chose à écrire, les tests ayant été réalisés sans rencontrer de
+        problèmes significatifs ni nécessiter de modifications majeures de l'infrastructure. Il y a eu quelques petits
+        soucis cependant concernant les tests de certains logiciels (Veeam, Zabbix) n'arrivant pas à communiquer avec
+        les agents, et ce dû au fait qu'il y avait des règles trop restrictives au niveau des pare-feux.`;
+  sae502_titre_retex_fr = `Ce que j'ai appris`;
+  sae502_retex1_fr = `Travailler avec des étudiants avec lesquels je n'avais jamais travaillé en groupe auparavant`;
+  sae502_retex2_fr = `Concevoir un cahier des charges`;
+  sae502_retex3_fr = `Gérer un projet en partant d'une simple problématique : "Concevoir le système d'information d'un hôpital de campagne".`;
+
+
+  sae502_presentation_en = `This SAE involved all students in the year group and was carried out in groups of four or five students.
+The group had to
+be composed of two students studying cybersecurity, one student studying the Internet of Things, and one
+student studying network project management.`;
+  sae502_objectif_en = `The objective of this project was to design the IT infrastructure for a field hospital that could
+        be deployed rapidly in the event of a health crisis. `;
+  sae502_realise_en = `This project was carried out entirely
+        independently, following a comprehensive approach from design to implementation. It included the
+        following steps: creation of detailed specifications, task management, time management and task
+        assignment via Trello, definition and implementation of a secure architecture, choice of technical solutions
+        , deployment of the infrastructure, as well as testing and validation phases.`;
+  sae502_orga_en = `In order to carry out this project completely independently, we used Trello to manage tasks and the time
+taken to complete them. Trello is
+a tool that enables the use of the AGILE project management method, which we used during this
+project. Here is an overview of our Trello board:`;
+  sae502_phase_conc_en = `Design phase`;
+  sae502_prese_phase_conc_en = `During this phase, my colleagues and I first defined a set of specifications and the
+        diagrams for the future infrastructure. In the specifications, we identified and defined the following requirements
+        :`;
+  sae502_tache1_en = `Patient record management`;
+  sae502_tache2_en = `Appointment management`;
+  sae502_tache3_en = `Electronic prescription`;
+  sae502_tache4_en = `Internal communication`;
+  sae502_tache5_en = `Post-consultation care`;
+  sae502_tache6_en = `Connected infrastructure`;
+  sae502_tache7_en = `Redundancy`;
+  sae502_pres_cdc_en = ` Here are the specifications we have written. As the aim of this SAE is to be as realistic as possible
+        , a financial estimate has been carried out by our colleague on the Network Project Management course, and
+        the names of real players appear in it. Nevertheless, these specifications remain within
+        the scope of a project, and the names of companies and local authorities appearing in them do not
+        necessarily correspond to the names of real companies and local authorities. `;
+  sae502_lien_cdc_en = `Our specifications`;
+  sae502_infra_en = ` We then defined the IT infrastructure to be implemented based on requirements. As a result, the
+following servers were set up:`;
+  sae502_service1_en = `Active Directory`;
+  sae502_service2_en = `Terminal Server`;
+  sae502_service3_en = `DNS`;
+  sae502_service4_en = `Veeam`;
+  sae502_service5_en = `NextCloud`;
+  sae502_service6_en = `Zabbix`;
+  sae502_service7_en = `MailServer`;
+  sae502_service8_en = `File Server`;
+  sae502_service9_en = `Radius`;
+  sae502_service10_en = `OpenEMR (Hospital management software)`;
+  sae502_service11_en = `FreePBX (Telephony server)`;
+  sae502_service12_en = `MQTT Server (IoT)`;
+  sae502_service13_en = `GLPI (IT asset management)`;
+  sae502_new_archi_en = `In terms of infrastructure, we first attempted to
+        set up the following infrastructure,
+        consisting of two firewalls and a network core: `;
+  sae502_new_new_archi_en = ` Cependant, en raison de contraintes indépendantes de notre volonté, nous avons du repenser notre
+        infrastructure réseau pour simplifier celle-ci tout en garantissant sa sécurité et sa simplicité de mise en
+        place. Voici l'infrastructure informatique finale que nous avons mis en place :`;
+  sae502_phasedep_en = `Deployment phase`;
+  sae502_matache_en = `During this phase, I was responsible for the following software and servers:`;
+  sae502_tache1_dep_en = `Implementation of Active Directory and DNS`;
+  sae502_tache2_dep_en = `Mise en place du logiciel de supervision Zabbix`;
+  sae502_tache3_dep_en = `Mise en place du logiciel de gestion de parc informatique GLPI`;
+  sae502_tache4_dep_en = `Mise en place du logiciel de sauvegarde Veeam`;
+  sae502_tache5_dep_en = `Mise en place du logiciel de gestion hospitalière OpenEMR`;
+  sae502_tache6_dep_en = `Mise en place du serveur cloud Nextcloud`;
+  sae502_prblm_phasedep_en = `Je n'ai rencontré aucune difficulté particulière pour la mise en place des serveurs et logiciels, à l'exception
+        du logiciel de gestion hospitalière. J'ai exploré différentes approches pour son installation. Dans un premier
+        temps, j'ai tenté une installation sur un PC physique sous Windows. Bien que l'installation ait réussi, des
+        dysfonctionnements lors des requêtes sont apparus en raison d'une insuffisance de mémoire vive allouée à la base
+        de données intégrée.`;
+  sae502_insta_en = `J'ai donc opté pour une installation sur une machine virtuelle, permettant d'augmenter les ressources
+        disponibles. Cependant, de nombreux problèmes persistaient, principalement en raison de la compatibilité limitée
+        avec Windows 10, malgré les indications de la documentation. Finalement, j'ai installé le logiciel sous Linux,
+        où l'installation s'est déroulée sans aucune difficulté.`;
+  sae502_phasetest_en = `Test phase`;
+  sae502_descr_phasetest_en = `I don't have much to write about this phase, as the tests were carried out without encountering any
+significant problems or requiring any major changes to the infrastructure. There were a few minor
+        issues, however, with testing certain software (Veeam, Zabbix) that was unable to communicate with
+        the agents due to overly restrictive firewall rules. `;
+  sae502_titre_retex_en = `What I learned during this project`;
+  sae502_retex1_en = `Working with students with whom I had never worked with before`;
+  sae502_retex2_en = `Designing specifications`;
+  sae502_retex3_en = `Managing a project based on a simple problem: ‘Designing an information system for a field hospital’.`;
+
 
 
 
