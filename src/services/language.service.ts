@@ -485,7 +485,7 @@ export const TRANSLATION_KEY = [
   "SAE501-PWS2",
   "SAE501-ORGA-SCRIPTGROUP",
   "SAE501-LIEN-SCRIPT",
-  "SAE501-TITRE-PRBLM", 
+  "SAE501-TITRE-PRBLM",
   "SAE501-PRBLM1",
   "SAE501-PRBLM2",
   "SAE501-PRBLM3",
@@ -544,6 +544,47 @@ export const TRANSLATION_KEY = [
   "SAE502-RETEX1",
   "SAE502-RETEX2",
   "SAE502-RETEX3",
+  "SAE503-PRESENTATION",
+  "SAE503-OBJECTIF",
+  "SAE503-PHASETUD",
+  "SAE503-ETUDE1",
+  "SAE503-ETUDE2",
+  "SAE503-ETUDE3",
+  "SAE503-ETUDE4",
+  "SAE503-PHASEDEP",
+  "SAE503-DEP1",
+  "SAE503-PHASESUP",
+  "SAE503-SUP1",
+  "SAE503-PHASESECU",
+  "SAE503-SECU1",
+  "SAE503-PHASETU-DESCR",
+  "SAE503-PHASETU-DESCR1",
+  "SAE503-PHASETU-DESCR2",
+  "SAE503-SCHEMA",
+  "SAE503-SI-FICTIF",
+  "SAE503-POINT+",
+  "SAE503-POINT+1",
+  "SAE503-POINT+2",
+  "SAE503-POINTNEGA", ,
+  "SAE503-POINTNEGA1",
+  "SAE503-POINTNEGA2",
+  "SAE503-PHASETU-RAP",
+  "SAE503-NEW-ARCHI",
+  "SAE503-ORGA-DEP",
+  "SAE503-REGLE-IDS",
+  "SAE503-ORGA-SUP",
+  "SAE503-OBJ-SECU",
+  "SAE503-SECU1",
+  "SAE503-SECU2",
+  "SAE503-SECU3",
+  "SAE503-SECU4",
+  "SAE503-SECU5",
+  "SAE503-TITRE-RETEX",
+  "SAE503-RETEX1",
+  "SAE503-RETEX2",
+
+
+
 
 
 
@@ -1698,7 +1739,80 @@ export class LanguageService {
     this.translation_en.set("SAE502-RETEX2", this.sae502_retex2_en);
     this.translation_fr.set("SAE502-RETEX3", this.sae502_retex3_fr);
     this.translation_en.set("SAE502-RETEX3", this.sae502_retex3_en);
-
+    this.translation_fr.set("SAE503-PRESENTATION", this.sae503_presentation_fr);
+    this.translation_en.set("SAE503-PRESENTATION", this.sae503_presentation_en);
+    this.translation_fr.set("SAE503-OBJECTIF", this.sae503_objectif_fr);
+    this.translation_en.set("SAE503-OBJECTIF", this.sae503_objectif_en);
+    this.translation_fr.set("SAE503-PHASETUD", this.sae503_phasetud_fr);
+    this.translation_en.set("SAE503-PHASETUD", this.sae503_phasetud_en);
+    this.translation_fr.set("SAE503-ETUDE1", this.sae503_etude1_fr);
+    this.translation_en.set("SAE503-ETUDE1", this.sae503_etude1_en);
+    this.translation_fr.set("SAE503-ETUDE2", this.sae503_etude2_fr);
+    this.translation_en.set("SAE503-ETUDE2", this.sae503_etude2_en);
+    this.translation_fr.set("SAE503-ETUDE3", this.sae502_etude3_fr);
+    this.translation_en.set("SAE503-ETUDE3", this.sae502_etude3_en);
+    this.translation_fr.set("SAE503-ETUDE4", this.sae502_etude4_fr);
+    this.translation_en.set("SAE503-ETUDE4", this.sae502_etude4_en);
+    this.translation_fr.set("SAE503-PHASEDEP", this.sae503_phasedep_fr);
+    this.translation_en.set("SAE503-PHASEDEP", this.sae503_phasedep_en);
+    this.translation_fr.set("SAE503-DEP1", this.sae503_dep1_fr);
+    this.translation_en.set("SAE503-DEP1", this.sae503_dep1_en);
+    this.translation_fr.set("SAE503-PHASESUP", this.sae502_phasesup_fr);
+    this.translation_en.set("SAE503-PHASESUP", this.sae502_phasesup_en);
+    this.translation_fr.set("SAE503-SUP1", this.sae503_sup1_fr);
+    this.translation_en.set("SAE503-SUP1", this.sae503_sup1_en);
+    this.translation_fr.set("SAE503-PHASESECU", this.sae503_phasesecu_fr);
+    this.translation_en.set("SAE503-PHASESECU", this.sae503_phasesecu_en);
+    this.translation_fr.set("SAE503-SECU1", this.sae503_secu1_fr);
+    this.translation_en.set("SAE503-SECU1", this.sae503_secu1_en);
+    this.translation_fr.set("SAE503-PHASETU-DESCR", this.sae502_phasetu_descr_fr);
+    this.translation_en.set("SAE503-PHASETU-DESCR", this.sae502_phasetu_descr_en);
+    this.translation_fr.set("SAE503-PHASETU-DESCR1", this.sae503_phasetu_descr1_fr);
+    this.translation_en.set("SAE503-PHASETU-DESCR1", this.sae503_phasetu_descr1_en);
+    this.translation_fr.set("SAE503-PHASETU-DESCR2", this.sae503_phasetu_descr2_fr);
+    this.translation_en.set("SAE503-PHASETU-DESCR2", this.sae503_phasetu_descr2_en);
+    this.translation_fr.set("SAE503-SCHEMA", this.sae503_schema_fr);
+    this.translation_en.set("SAE503-SCHEMA", this.sae503_schema_en);
+    this.translation_fr.set("SAE503-SI-FICTIF", this.sae503_si_fictif_fr);
+    this.translation_en.set("SAE503-SI-FICTIF", this.sae503_si_fictif_en);
+    this.translation_fr.set("SAE503-POINT+", this.sae503_point_po_fr);
+    this.translation_en.set("SAE503-POINT+", this.sae503_point_po_en);
+    this.translation_fr.set("SAE503-POINT+1", this.sae503_point_po1_fr);
+    this.translation_en.set("SAE503-POINT+1", this.sae503_point_po1_en);
+    this.translation_fr.set("SAE503-POINT+2", this.sae503_point_po2_fr);
+    this.translation_en.set("SAE503-POINT+2", this.sae503_point_po2_en);
+    this.translation_fr.set("SAE503-POINTNEGA", this.sae503_pointnega_fr);
+    this.translation_en.set("SAE503-POINTNEGA", this.sae503_pointnega_en);
+    this.translation_fr.set("SAE503-POINTNEGA1", this.sae503_pointnega1_fr);
+    this.translation_en.set("SAE503-POINTNEGA1", this.sae503_pointnega1_en);
+    this.translation_fr.set("SAE503-POINTNEGA2", this.sae503_pointnega2_fr);
+    this.translation_en.set("SAE503-POINTNEGA2", this.sae503_pointnega2_en);
+    this.translation_fr.set("SAE503-PHASETU-RAP", this.sae503_phasetu_rap_fr);
+    this.translation_en.set("SAE503-PHASETU-RAP", this.sae503_phasetu_rap_en);
+    this.translation_fr.set("SAE503-NEW-ARCHI", this.sae503_new_archi_fr);
+    this.translation_en.set("SAE503-NEW-ARCHI", this.sae503_new_archi_en);
+    this.translation_fr.set("SAE503-ORGA-DEP", this.sae503_orga_dep_fr);
+    this.translation_en.set("SAE503-ORGA-DEP", this.sae503_orga_dep_en);
+    this.translation_fr.set("SAE503-REGLE-IDS", this.sae503_regle_ids_fr);
+    this.translation_en.set("SAE503-REGLE-IDS", this.sae503_regle_ids_en);
+    this.translation_fr.set("SAE503-ORGA-SUP", this.sae503_orga_sup_fr);
+    this.translation_en.set("SAE503-ORGA-SUP", this.sae503_orga_sup_en);
+    this.translation_fr.set("SAE503-OBJ-SECU", this.sae503_obj_secu_fr);
+    this.translation_en.set("SAE503-OBJ-SECU", this.sae503_obj_secu_en);
+    this.translation_fr.set("SAE503-SECU2", this.sae503_secu2_fr);
+    this.translation_en.set("SAE503-SECU2", this.sae503_secu2_en);
+    this.translation_fr.set("SAE503-SECU3", this.sae503_secu3_fr);
+    this.translation_en.set("SAE503-SECU3", this.sae503_secu3_en);
+    this.translation_fr.set("SAE503-SECU4", this.sae503_secu4_fr);
+    this.translation_en.set("SAE503-SECU4", this.sae503_secu4_en);
+    this.translation_fr.set("SAE503-SECU5", this.sae503_secu5_fr);
+    this.translation_en.set("SAE503-SECU5", this.sae503_secu5_en);
+    this.translation_fr.set("SAE503-TITRE-RETEX", this.sae503_titre_retex_fr);
+    this.translation_en.set("SAE503-TITRE-RETEX", this.sae503_titre_retex_en);
+    this.translation_fr.set("SAE503-RETEX1", this.sae503_retex1_fr);
+    this.translation_en.set("SAE503-RETEX1", this.sae503_retex1_en);
+    this.translation_fr.set("SAE503-RETEX2", this.sae503_retex2_fr);
+    this.translation_en.set("SAE503-RETEX2", this.sae503_retex2_en);
     this.checkAllKeys();
   }
 
@@ -3052,12 +3166,12 @@ class did not allow for groups of four, I carried out the SAE in pairs. Being in
         three sites: Remote, HQ, and Internet.`;
   sae501_archi_en = `Here is the network architecture we had to set up`;
   sae501_incitation_img_en = `Don't hesitate to clic on the pictures to enlarge them`;
-  sae501_txt_img1_en = `Simplified physical scheme`;
-  sae501_txt_img2_en = `Detailed physical scheme`;
-  sae501_txt_img3_en = `Layer 3 logical scheme`;
-  sae501_txt_img4_en = `Layer 2 logical scheme`;
-  sae501_txt_img5_en = `Detailed routing scheme`;
-  sae501_txt_img6_en = `DNS scheme`;
+  sae501_txt_img1_en = `Simplified physical diagram`;
+  sae501_txt_img2_en = `Detailed physical diagram`;
+  sae501_txt_img3_en = `Layer 3 logical diagram`;
+  sae501_txt_img4_en = `Layer 2 logical diagram`;
+  sae501_txt_img5_en = `Detailed routing diagram`;
+  sae501_txt_img6_en = `DNS diagram`;
   sae501_matos_en = `Here is the equipment we had available to carry out this SAE :  `;
   sae501_matos1_en = `3 routers`;
   sae501_matos2_en = `6 switches`;
@@ -3334,6 +3448,193 @@ significant problems or requiring any major changes to the infrastructure. There
   sae502_retex1_en = `Working with students with whom I had never worked with before`;
   sae502_retex2_en = `Designing specifications`;
   sae502_retex3_en = `Managing a project based on a simple problem: ‘Designing an information system for a field hospital’.`;
+
+  sae503_presentation_fr = `Cette SAE concernait l'ensemble des étudiants de la promotion en parcours cybersécurité et a été réalisée en
+        binôme.`;
+  sae503_objectif_fr = `L'objectif de ce projet était de recréer le système informatique du CHU Livrac tout en assurant sa
+        sécurité. Ainsi, ce projet s'est déroulé en 4 phases et comportait certaines consignes non négociables
+        concernant la sécurisation du site web :`;
+  sae503_phasetud_fr = `Phase d'Etude`;
+  sae503_etude1_fr = `Analyse du système d'information actuel du CHU Livrac`;
+  sae503_etude2_fr = `Etablir des solutions d'IPS/IDS du marché et en extraire une liste de 3 solutions`;
+  sae502_etude3_fr = `Comparer ces 3 solutions retenues`;
+  sae502_etude4_fr = `Sélectionner une solution et défendre celle-ci lors d'une présentation de notre solution aux décideurs.`;
+  sae503_phasedep_fr = `Phase de déploiement`;
+  sae503_dep1_fr = `Installer et configurer l'infrastructure informatique (matérielle et logicielle) choisie`;
+  sae502_phasesup_fr = `Phase de supervision`;
+  sae503_sup1_fr = `Mise en place d'un outil de supervision pour surveiller l'ensemble du SI`;
+  sae503_phasesecu_fr = `Phase de sécurisation`;
+  sae503_secu1_fr = `Sécuriser un site Wordpress`;
+  sae502_phasetu_descr_fr = `Voici le descriptif du système informatique du CHU Livrac sur lequel nous nous sommes basés pour les
+        constatations
+        avec le schéma :`;
+  sae503_phasetu_descr1_fr = `Le routeur central est configuré en tant que passerelle NAT. Actuellement le réseau
+            est
+            scindé
+            physiquement en deux sous réseaux : une DMZ regroupant les serveurs. Et un réseau local de stations de
+            travail
+            utilisables par le personnelle hospitalier et des terminaux de contrôle des équipements hospitaliers :
+            assistance
+            respiratoire, … `;
+  sae503_phasetu_descr2_fr = ` Le site web de l’hôpital a subi une refonte. La nouvelle version WordPress est fournie sous la forme d’un
+            Backup
+            Wp
+            Vivid. Le serveur BDD gère à la fois les données WordPress ainsi que les données médicales des patients. Ce
+            backup
+            inclut les données des patients et du personnel. `;
+  sae503_schema_fr = ` Voici le système d'information que nous devions auditer :`;
+  sae503_si_fictif_fr = `Ce système d'information n'étant que fictif, nous n'avons pas eu à utiliser des outils pour auditer celui-ci.
+        Nous
+        avons donc émis les constatations suivantes :`;
+  sae503_point_po_fr = `Points positifs`;
+  sae503_point_po1_fr = `Séparation du serveur de bases de données du serveur web`;
+  sae503_point_po2_fr = `Politique de NAT sur le routeur central.`;
+  sae503_pointnega_fr = `Points négatifs`;
+  sae503_pointnega1_fr = ` L’isolation des serveurs par rapports aux stations clientes est mal réalisé et peut être optimisé
+                en utilisant moins de matériel physique par la création de VLAN.`;
+  sae503_pointnega2_fr = `  Il manque une redondance au niveau des systèmes (serveur web/base de données) ainsi qu'au
+                niveau du réseau. En effet, une panne du routeur central entraînerait une interruption complète,
+                faute d'équipement capable de prendre le relais. Il est donc essentiel d’implémenter des
+                solutions de redondance réseau pour garantir une disponibilité continue.`;
+  sae503_phasetu_rap_fr = `Concernant la phase d'étude, nous avons rédigé un document regroupant toutes les constatations que nous avons
+        trouvées avec mon binôme : `;
+  sae503_new_archi_fr = ` Nous avons également proposé au client l'infrastructure informatique suivante lors de notre présentation du
+        document
+        d'étude : `;
+  sae503_orga_dep_fr = `Concernant la phase de déploiement, je me suis occupé de la mise en place de l'IDS, mon binôme s'étant occupé de
+        la
+        mise en place du pare-feu et du switch. Concernant la solution choisie pour le pare-feu, nous avons opté pour
+        pfSense, une solution open source. Dans ce cadre, j'ai décidé d'installer l'IPS Snort directement sur pfSense,
+        qui
+        permet l'ajout de nombreux plugins, dont Snort. Cela permet à l'IPS d'analyser l'intégralité du trafic
+        transitant
+        par les interfaces du pare-feu. Ce positionnement avantage la sécurisation du SI puisque le routage inter-vlan
+        s'effectue sur pfSense également. Son installation et sa configuration furent simples. Voici une règle que j'ai
+        créée empêchant des attaques par brute force via le protocole ICMP. `;
+  sae503_regle_ids_fr = `alert icmp any any -> any any (msg:"ICMP Ping Flood detected"; icmp_type:8; threshold:type both, track
+            by_src,
+            count 50, seconds 1; sid:1000001; rev:1;)`;
+  sae503_orga_sup_fr = `Dans cette phase, j'ai donc mis en place le serveur de supervision Zabbix, que j'ai pu découvrir lors de mon
+        stage à
+        la Préfecture de
+        l'Ain, pour sa simplicité d'installation, de configuration et le fait qu'il soit open source. Je n'ai donc pas
+        eu de
+        problèmes particuliers lors de
+        sa configuration et de sa mise en oeuvre dans notre SI. Zabbix s'est révélé efficace lors de la réalisation
+        d'attaque par notre professeur pour
+        tester
+        la robustesse du SI et le fonctionnement du serveur de supervision. En effet, il a su mettre en évidence les
+        augmentations de trafic sur les interfaces ainsi que différentes informations sur l'état du pare-feu durant les
+        attaques (puissance du CPU, nombre de processus en même temps...)
+
+        Voici une photo du tableau de bord que j'ai pu concevoir
+        lors de cette phase :`;
+  sae503_obj_secu_fr = `Concernant cette phase, notre but étaient de sécuriser un site web Wordpress. Nous nous sommes donc partagés cette
+    dernière tâche
+    avec mon binôme. Je me suis ainsi occupé de sécuriser l'accès à la console d'administration de wordpress :`;
+  sae503_secu2_fr = `Utilisation de Hide Login pour changer l'url de login de l'interface d'administration du site wordpress.`;
+  sae503_secu3_fr = `Changement du mot de passe admin`;
+  sae503_secu4_fr = `Inventaire des utilisateurs présents`;
+  sae503_secu5_fr = `Installation d'un plugin "Anti virus"`;
+  sae503_titre_retex_fr = `Ce que j'ai appris`;
+  sae503_retex1_fr = `Auditer un système d'information`;
+  sae503_retex2_fr = `Sécuriser et superviser un SI`;
+
+
+  sae503_presentation_en = `This SAE involved all students in the cybersecurity programme and was carried out in
+pairs.`;
+  sae503_objectif_en = `The aim of this project was to recreate the Livrac University Hospital's IT system while ensuring its security.
+The project was carried out in four phases and included certain non-negotiable requirements
+regarding website security:`;
+  sae503_phasetud_en = `Study phase`;
+  sae503_etude1_en = `Analysis of the current information system at Livrac University Hospital`;
+  sae503_etude2_en = `Establish IPS/IDS solutions on the market and extract a list of 3 solutions.`;
+  sae502_etude3_en = `Compare theses 3 selected solutions`;
+  sae502_etude4_en = `Select a solution and defend it during a presentation of our solution to decision-makers.`;
+  sae503_phasedep_en = `Deployment phase`;
+  sae503_dep1_en = `Installer et configurer l'infrastructure informatique (matérielle et logicielle) choisie`;
+  sae502_phasesup_en = `Monitoring phase`;
+  sae503_sup1_en = `Set up a supervision software in order to monitore the whole information system`;
+  sae503_phasesecu_en = `Secure phase`;
+  sae503_secu1_en = `Secure a wordpress website`;
+  sae502_phasetu_descr_en = `Here is a description of the Livrac University Hospital's IT system, which we used as a basis for our
+audit conclusions
+with the diagram `;
+  sae503_phasetu_descr1_en = `The central router is configured as a NAT gateway. Currently, the network
+            is
+            physically divided
+            into two subnetworks: a DMZ grouping together the servers, and a local network of workstations
+            that
+            can be used by hospital staff and terminals for controlling hospital equipment, such as
+            respiratory
+            support, etc. `;
+  sae503_phasetu_descr2_en = `The hospital's website has undergone a redesign. The new WordPress version is provided in the form of a
+Backup
+Wp
+Vivid. The database server manages both WordPress data and patient medical data. This
+backup
+includes patient and staff data.`;
+  sae503_schema_en = `here is the information system we had to audit : `;
+  sae503_si_fictif_en = `As this information system is only fictitious, we did not need to use any tools to audit it.
+We
+therefore made the following observations:
+`;
+  sae503_point_po_en = `Positive points`;
+  sae503_point_po1_en = `Separation of the database server from the web server`;
+  sae503_point_po2_en = `NAT policy on the central router.`;
+  sae503_pointnega_en = `Negative points`;
+  sae503_pointnega1_en = ` The isolation of servers from client stations is poorly implemented and can be optimised
+by using less physical hardware through the creation of VLANs.`;
+  sae503_pointnega2_en = `There is a lack of redundancy at the system level (web server/database) and at the
+                network level. Indeed, a failure of the central router would result in a complete outage,
+                as there is no equipment capable of taking over. It is therefore essential to implement
+                network redundancy solutions to ensure continuous availability.`;
+  sae503_phasetu_rap_en = `Regarding the study phase, we have drafted a document summarising all the findings that my partner and I have made.
+        : (Not translated in english yet)`;
+  sae503_new_archi_en = `We also proposed the following IT infrastructure to the client during our presentation of the
+document
+study:`;
+  sae503_orga_dep_en = `Regarding the deployment phase, I was responsible for setting up the IDS, while my partner took care of
+        the
+        firewall and switch setup. As for the firewall solution, we opted for
+        pfSense, an open source solution. In this context, I decided to install the Snort IPS directly on pfSense,
+        which
+        allows the addition of numerous plugins, including Snort. This allows the IPS to analyse all traffic
+        passing
+        through the firewall interfaces. This positioning benefits the security of the IT system since inter-VLAN routing
+        is also carried out on pfSense. Its installation and configuration were straightforward. Here is a rule I
+        created to prevent brute force attacks via the ICMP protocol. `;
+  sae503_regle_ids_en = `alerte icmp tout tout -> tout tout (msg : « ICMP Ping Flood détecté » ; icmp_type : 8 ; seuil : type les deux, suivi
+            par_src,
+            compte 50, secondes 1 ; sid : 1000001 ; rev : 1 ;)`;
+  sae503_orga_sup_en = `In this phase, I therefore set up the Zabbix monitoring server, which I discovered during my
+        internship at
+        the Prefecture of
+        Ain, because of its ease of installation and configuration and the fact that it is open source. I therefore did not
+        encounter any
+        particular problems when
+        configuring and implementing it in our IS. Zabbix proved to be effective when our teacher carried out
+        attacks to
+        test
+        the robustness of the IS and the functioning of the monitoring server. It was able to highlight
+        increases in traffic on the interfaces as well as various information on the status of the firewall during the
+        attacks (CPU power, number of simultaneous processes, etc.).
+
+        Here is a photo of the dashboard I designed
+        during this phase: `;
+  sae503_obj_secu_en = ` For this phase, our goal was to secure a WordPress website. So we divided this
+    last task
+    between my partner and me. I was responsible for securing access to the WordPress administration console:`;
+  sae503_secu2_en = `Using Hide Login to change the login URL for the WordPress site administration interface.`;
+  sae503_secu3_en = `Changing the admin password`;
+  sae503_secu4_en = `Inventory of present users`;
+  sae503_secu5_en = `Installation of an antivirus plugin`;
+  sae503_titre_retex_en = `What I learned`;
+  sae503_retex1_en = `Audit an information system`;
+  sae503_retex2_en = `Secure and monitore an information system`;
+
+
+
 
 
 
